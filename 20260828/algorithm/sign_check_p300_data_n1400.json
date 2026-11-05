@@ -1,0 +1,16 @@
+{
+  "data": "p300/data_n1400",
+  "n_classes": 2,
+  "seed": 42,
+  "teacher_val": 70.71,
+  "teacher_train": 94.07,
+  "overfit_gap_pp": 23.36,
+  "student_full": 72.32,
+  "teacher_minus_student_pp": -1.61,
+  "hard_30pct": 60.11,
+  "distilled_30pct": 66.0,
+  "gain_30pct_pp": 5.89,
+  "threshold_predict": "pos",
+  "actual": "pos",
+  "consistent": true
+}

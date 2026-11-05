@@ -1,0 +1,498 @@
+{
+  "Nasty Teacher cannot teach students undistillable": [
+    {
+      "title": "Undistillable: Making A Nasty Teacher That CANNOT teach students",
+      "year": 2021,
+      "cites": 28,
+      "doi": "https://doi.org/10.48550/arxiv.2105.07381",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge Distillation (KD) is a widely used technique to transfer knowledge from pre-trained teacher models to (usually more lightweight) student models. However, in certain situations, this technique is more of a curse than a blessing. For instance, KD poses a potential risk of exposing intellectual properties (IPs): even if a trained machine learning model is released in 'black boxes' (e.g., as executable software or APIs without open-sourcing code), it can still be replicated by KD through imitating input-output behaviors. To prevent this unwanted effect of KD, this paper introduces and investigates a concept called Nasty Teacher: a specially trained teacher network that yields nearly the same performance as a normal one, but would significantly degrade the performance of student models learned by imitating it. We propose a simple yet effective algorithm to build the nasty teacher, called self-undermining knowledge distillation. Specifically, we aim to maximize the difference between the output of the nasty teacher and a normal pre-trained network. Extensive experiments on several datasets demonstrate that our method is effective on both standard KD and data-free KD, providing the desirable KD-immunity to model owners for the first time. We hope our preliminary study can draw more awareness and interest in this new practical problem of both social and legal importance.",
+      "openalex_id": "https://openalex.org/W3122816624"
+    },
+    {
+      "title": "Adversarial Sparse Teacher: Defense Against Distillation-Based Model Stealing Attacks Using Adversarial Examples",
+      "year": 2025,
+      "cites": 2,
+      "doi": "https://doi.org/10.1109/access.2025.3573105",
+      "venue": "IEEE Access",
+      "type": "article",
+      "abstract": "We introduce Adversarial Sparse Teacher (AST), a robust defense method against distillation-based model stealing attacks. Our approach trains a teacher model using adversarial examples to produce sparse logit responses and increase the entropy of the output distribution. Typically, a model generates a peak in its output corresponding to its prediction. By leveraging adversarial examples, AST modifies the teacher model’s original response, embedding a few altered logits into the output while keeping the primary response slightly higher. Concurrently, all remaining logits are elevated to further increase the output distribution’s entropy. All these complex manipulations are performed using an optimization function with our proposed Exponential Predictive Divergence (EPD) loss function. EPD allows us to maintain higher entropy levels compared to traditional KL divergence, effectively confusing attackers. Experiments on CIFAR-10 and CIFAR-100 datasets demonstrate that AST outperforms state-of-the-art methods, providing effective defense against model stealing while preserving high accuracy. The source codes will be made publicly available in https://github.com/codeofanon/AdversarialSparseTeacher soon.",
+      "openalex_id": "https://openalex.org/W4410660747"
+    },
+    {
+      "title": "Distillation Traps and Guards: A Calibration Knob for LLM Distillability",
+      "year": 2026,
+      "cites": 0,
+      "doi": null,
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge distillation (KD) transfers capabilities from large language models (LLMs) to smaller students, yet it can fail unpredictably and also underpins model leakage risks. Our analysis revealed several distillation traps: tail noise, off-policy instability, and, most fundamentally, the teacher-student gap, that distort training signals. These traps manifest as overconfident hallucinations, self-correction collapse, and local decoding degradation, causing distillation to fail. Motivated by these findings, we propose a post-hoc calibration method that, to the best of our knowledge, for the first time enables control over a teacher's distillability via reinforcement fine-tuning (RFT). Our objective combines task utility, KL anchor, and across-tokenizer calibration reward. This makes distillability a practical safety lever for foundation models, connecting robust teacher-student transfer with deployment-aware model protection. Experiments across math, knowledge QA, and instruction-following tasks show that students distilled from distillable calibrated teachers outperform SFT and KD baselines, while undistillable calibrated teachers retain their task performance but cause distilled students to collapse, offering a practical knob for both better KD and model IP protection.",
+      "openalex_id": "https://openalex.org/W7155452060"
+    },
+    {
+      "title": "Distillation Traps and Guards: A Calibration Knob for LLM Distillability",
+      "year": 2026,
+      "cites": 1,
+      "doi": "https://doi.org/10.18653/v1/2026.acl-long.908",
+      "venue": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation (KD) transfers capabilities from large language models (LLMs) to smaller students, yet it can fail unpredictably and also underpins model leakage risks.Our analysis revealed several distillation traps: tail noise, off-policy instability, and, most fundamentally, the teacher-student gap, that distort training signals.These traps manifest as overconfident hallucinations, self-correction collapse, and local decoding degradation, causing distillation to fail.Motivated by these findings, we propose a post-hoc calibration method that, to the best of our knowledge, for the first time enables control over a teacher's distillability via reinforcement fine-tuning (RFT).Our objective combines task utility, KL anchor, and acrosstokenizer calibration reward.This makes distillability a practical safety lever for foundation models, connecting robust teacher-student transfer with deployment-aware model protection.Experiments across math, knowledge QA, and instruction-following tasks show that students distilled from distillable calibrated teachers outperform SFT and KD baselines, while undistillable calibrated teachers retain their task performance but cause distilled students to collapse, offering a practical knob for both better KD and model IP protection.",
+      "openalex_id": "https://openalex.org/W7166842531"
+    },
+    {
+      "title": "Black-box Few-shot Knowledge Distillation",
+      "year": 2022,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2207.12106",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge distillation (KD) is an efficient approach to transfer the knowledge from a large \"teacher\" network to a smaller \"student\" network. Traditional KD methods require lots of labeled training samples and a white-box teacher (parameters are accessible) to train a good student. However, these resources are not always available in real-world applications. The distillation process often happens at an external party side where we do not have access to much data, and the teacher does not disclose its parameters due to security and privacy concerns. To overcome these challenges, we propose a black-box few-shot KD method to train the student with few unlabeled training samples and a black-box teacher. Our main idea is to expand the training set by generating a diverse set of out-of-distribution synthetic images using MixUp and a conditional variational auto-encoder. These synthetic images along with their labels obtained from the teacher are used to train the student. We conduct extensive experiments to show that our method significantly outperforms recent SOTA few/zero-shot KD methods on image classification tasks. The code and models are available at: https://github.com/nphdang/FS-BBT",
+      "openalex_id": "https://openalex.org/W4288055056"
+    },
+    {
+      "title": "Lightweight Self-Knowledge Distillation with Multi-source Information Fusion",
+      "year": 2023,
+      "cites": 1,
+      "doi": "https://doi.org/10.48550/arxiv.2305.09183",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge Distillation (KD) is a powerful technique for transferring knowledge between neural network models, where a pre-trained teacher model is used to facilitate the training of the target student model. However, the availability of a suitable teacher model is not always guaranteed. To address this challenge, Self-Knowledge Distillation (SKD) attempts to construct a teacher model from itself. Existing SKD methods add Auxiliary Classifiers (AC) to intermediate layers of the model or use the history models and models with different input data within the same class. However, these methods are computationally expensive and only capture time-wise and class-wise features of data. In this paper, we propose a lightweight SKD framework that utilizes multi-source information to construct a more informative teacher. Specifically, we introduce a Distillation with Reverse Guidance (DRG) method that considers different levels of information extracted by the model, including edge, shape, and detail of the input data, to construct a more informative teacher. Additionally, we design a Distillation with Shape-wise Regularization (DSR) method that ensures a consistent shape of ranked model output for all data. We validate the performance of the proposed DRG, DSR, and their combination through comprehensive experiments on various datasets and models. Our results demonstrate the superiority of the proposed methods over baselines (up to 2.87%) and state-of-the-art SKD methods (up to 1.15%), while being computationally efficient and robust. The code is available at https://github.com/xucong-parsifal/LightSKD.",
+      "openalex_id": "https://openalex.org/W4376988792"
+    }
+  ],
+  "Revisiting Knowledge Distillation via Label Smoothing Regularization": [
+    {
+      "title": "Revisiting Knowledge Distillation via Label Smoothing Regularization",
+      "year": 2020,
+      "cites": 572,
+      "doi": "https://doi.org/10.1109/cvpr42600.2020.00396",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge Distillation (KD) aims to distill the knowledge of a cumbersome teacher model into a lightweight student model. Its success is generally attributed to the privileged information on similarities among categories provided by the teacher model, and in this sense, only strong teacher models are deployed to teach weaker students in practice. In this work, we challenge this common belief by following experimental observations: 1) beyond the acknowledgment that the teacher can improve the student, the student can also enhance the teacher significantly by reversing the KD procedure; 2) a poorly-trained teacher with much lower accuracy than the student can still improve the latter significantly. To explain these observations, we provide a theoretical analysis of the relationships between KD and label smoothing regularization. We prove that 1) KD is a type of learned label smoothing regularization and 2) label smoothing regularization provides a virtual teacher model for KD. From these results, we argue that the success of KD is not fully due to the similarity information between categories from teachers, but also to the regularization of soft targets, which is equally or even more important. Based on these analyses, we further propose a novel Teacher-free Knowledge Distillation (Tf-KD) framework, where a student model learns from itself or manually-designed regularization distribution. The Tf-KD achieves comparable performance with normal KD from a superior teacher, which is well applied when a stronger teacher model is unavailable. Meanwhile, Tf-KD is generic and can be directly deployed for training deep neural networks. Without any extra computation cost, Tf-KD achieves up to 0.65\\% improvement on ImageNet over well-established baseline models, which is superior to label smoothing regularization.",
+      "openalex_id": "https://openalex.org/W3034756453"
+    },
+    {
+      "title": "Revisiting Label Smoothing Regularization with Knowledge Distillation",
+      "year": 2021,
+      "cites": 13,
+      "doi": "https://doi.org/10.3390/app11104699",
+      "venue": "Applied Sciences",
+      "type": "article",
+      "abstract": "Label Smoothing Regularization (LSR) is a widely used tool to generalize classification models by replacing the one-hot ground truth with smoothed labels. Recent research on LSR has increasingly focused on the correlation between the LSR and Knowledge Distillation (KD), which transfers the knowledge from a teacher model to a lightweight student model by penalizing their output’s Kullback–Leibler-divergence. Based on this observation, a Teacher-free Knowledge Distillation (Tf-KD) method was proposed in previous work. Instead of a real teacher model, a handcrafted distribution similar to LSR was used to guide the student learning. Tf-KD is a promising substitute for LSR except for its hard-to-tune and model-dependent hyperparameters. This paper develops a new teacher-free framework LSR-OS-TC, which decomposes the Tf-KD method into two components: model Output Smoothing (OS) and Teacher Correction (TC). Firstly, the LSR-OS extends the LSR method to the KD regime and applies a softer temperature to the model output softmax layer. Output smoothing is critical for stabilizing the KD hyperparameters among different models. Secondly, in the TC part, a larger proportion is assigned to the uniform distribution teacher’s right class to provide a more informative teacher. The two-component method was evaluated exhaustively on the image (dataset CIFAR-100, CIFAR-10, and CINIC-10) and audio (dataset GTZAN) classification tasks. The results showed that LSR-OS can improve LSR performance independently with no extra computational cost, especially on several deep neural networks where LSR is ineffective. The further training boost by the TC component showed the effectiveness of our two-component strategy. Overall, LSR-OS-TC is a practical substitution of LSR that can be tuned on one model and directly applied to other models compared to the original Tf-KD method.",
+      "openalex_id": "https://openalex.org/W3165865052"
+    },
+    {
+      "title": "Revisiting Label Smoothing and Knowledge Distillation Compatibility: What was Missing?",
+      "year": 2022,
+      "cites": 17,
+      "doi": "https://doi.org/10.48550/arxiv.2206.14532",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "This work investigates the compatibility between label smoothing (LS) and knowledge distillation (KD). Contemporary findings addressing this thesis statement take dichotomous standpoints: Muller et al. (2019) and Shen et al. (2021b). Critically, there is no effort to understand and resolve these contradictory findings, leaving the primal question -- to smooth or not to smooth a teacher network? -- unanswered. The main contributions of our work are the discovery, analysis and validation of systematic diffusion as the missing concept which is instrumental in understanding and resolving these contradictory findings. This systematic diffusion essentially curtails the benefits of distilling from an LS-trained teacher, thereby rendering KD at increased temperatures ineffective. Our discovery is comprehensively supported by large-scale experiments, analyses and case studies including image classification, neural machine translation and compact student distillation tasks spanning across multiple datasets and teacher-student architectures. Based on our analysis, we suggest practitioners to use an LS-trained teacher with a low-temperature transfer to achieve high performance students. Code and models are available at https://keshik6.github.io/revisiting-ls-kd-compatibility/",
+      "openalex_id": "https://openalex.org/W4283764068"
+    },
+    {
+      "title": "Knowledge Distillation ≈ Label Smoothing: Fact or Fallacy? Label Smoothing: Fact or Fallacy?",
+      "year": 2023,
+      "cites": 2,
+      "doi": "https://doi.org/10.18653/v1/2023.emnlp-main.271",
+      "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "type": "conference-paper",
+      "abstract": "Originally proposed as a method for knowledge transfer from one model to another, some recent studies have suggested that knowledge distillation (KD) is in fact a form of regularization.Perhaps the strongest argument of all for this new perspective comes from its apparent similarities with label smoothing (LS).Here we re-examine this stated equivalence between the two methods by comparing the predictive confidences of the models they train.Experiments on four text classification tasks involving models of different sizes show that: (a) In most settings, KD and LS drive model confidence in completely opposite directions, and (b) In KD, the student inherits not only its knowledge but also its confidence from the teacher, reinforcing the classical knowledge transfer view.",
+      "openalex_id": "https://openalex.org/W4389518762"
+    },
+    {
+      "title": "Knowledge Distillation $\\approx$ Label Smoothing: Fact or Fallacy?",
+      "year": 2023,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2301.12609",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Originally proposed as a method for knowledge transfer from one model to another, some recent studies have suggested that knowledge distillation (KD) is in fact a form of regularization. Perhaps the strongest argument of all for this new perspective comes from its apparent similarities with label smoothing (LS). Here we re-examine this stated equivalence between the two methods by comparing the predictive confidences of the models they train. Experiments on four text classification tasks involving models of different sizes show that: (a) In most settings, KD and LS drive model confidence in completely opposite directions, and (b) In KD, the student inherits not only its knowledge but also its confidence from the teacher, reinforcing the classical knowledge transfer view.",
+      "openalex_id": "https://openalex.org/W4318719005"
+    },
+    {
+      "title": "A Novel Approach to Classifying Breast Cancer Histopathology Biopsy Images Using Bilateral Knowledge Distillation and Label Smoothing Regularization",
+      "year": 2021,
+      "cites": 45,
+      "doi": "https://doi.org/10.1155/2021/4019358",
+      "venue": "Computational and Mathematical Methods in Medicine",
+      "type": "article",
+      "abstract": "Breast cancer is the most common invasive cancer in women and the second main cause of cancer death in females, which can be classified benign or malignant. Research and prevention on breast cancer have attracted more concern of researchers in recent years. On the other hand, the development of data mining methods provides an effective way to extract more useful information from complex databases, and some prediction, classification, and clustering can be made according to the extracted information. The generic notion of knowledge distillation is that a network of higher capacity acts as a teacher and a network of lower capacity acts as a student. There are different pipelines of knowledge distillation known. However, previous work on knowledge distillation using label smoothing regularization produces experiments and results that break this general notion and prove that knowledge distillation also works when a student model distils a teacher model, i.e., reverse knowledge distillation. Not only this, but it is also proved that a poorly trained teacher model trains a student model to reach equivalent results. Building on the ideas from those works, we propose a novel bilateral knowledge distillation regime that enables multiple interactions between teacher and student models, i.e., teaching and distilling each other, eventually improving each other's performance and evaluating our results on BACH histopathology image dataset on breast cancer. The pretrained ResNeXt29 and MobileNetV2 models which are already tested on ImageNet dataset are used for \"transfer learning\" in our dataset, and we obtain a final accuracy of more than 96% using this novel approach of bilateral KD.",
+      "openalex_id": "https://openalex.org/W3206004176"
+    }
+  ],
+  "knowledge distillation teacher weaker than student": [
+    {
+      "title": "Revisit Knowledge Distillation: a Teacher-free Framework",
+      "year": 2019,
+      "cites": 70,
+      "doi": null,
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge Distillation (KD) aims to distill the knowledge of a cumbersome teacher model into a lightweight student model. Its success is generally attributed to the privileged information on similarities among categories provided by the teacher model, and in this sense, only strong teacher models are deployed to teach weaker students in practice. In this work, we challenge this common belief by following experimental observations: 1) beyond the acknowledgment that the teacher can improve the student, the student can also enhance the teacher significantly by reversing the KD procedure; 2) a poorly-trained teacher with much lower accuracy than the student can still improve the latter significantly. To explain these observations, we provide a theoretical analysis of the relationships between KD and label smoothing regularization. We prove that 1) KD is a type of learned label smoothing regularization and 2) label smoothing regularization provides a virtual teacher model for KD. From these results, we argue that the success of KD is not fully due to the similarity information between categories, but also to the regularization of soft targets, which is equally or even more important. \r\nBased on these analyses, we further propose a novel Teacher-free Knowledge Distillation (Tf-KD) framework, where a student model learns from itself or manually-designed regularization distribution. The Tf-KD achieves comparable performance with normal KD from a superior teacher, which is well applied when teacher model is unavailable. Meanwhile, Tf-KD is generic and can be directly deployed for training deep neural networks. Without any extra computation cost, Tf-KD achieves up to 0.65\\% improvement on ImageNet over well-established baseline models, which is superior to label smoothing regularization. The codes are in: \\url{this https URL}",
+      "openalex_id": "https://openalex.org/W2976135203"
+    },
+    {
+      "title": "Revisiting Knowledge Distillation via Label Smoothing Regularization",
+      "year": 2020,
+      "cites": 572,
+      "doi": "https://doi.org/10.1109/cvpr42600.2020.00396",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge Distillation (KD) aims to distill the knowledge of a cumbersome teacher model into a lightweight student model. Its success is generally attributed to the privileged information on similarities among categories provided by the teacher model, and in this sense, only strong teacher models are deployed to teach weaker students in practice. In this work, we challenge this common belief by following experimental observations: 1) beyond the acknowledgment that the teacher can improve the student, the student can also enhance the teacher significantly by reversing the KD procedure; 2) a poorly-trained teacher with much lower accuracy than the student can still improve the latter significantly. To explain these observations, we provide a theoretical analysis of the relationships between KD and label smoothing regularization. We prove that 1) KD is a type of learned label smoothing regularization and 2) label smoothing regularization provides a virtual teacher model for KD. From these results, we argue that the success of KD is not fully due to the similarity information between categories from teachers, but also to the regularization of soft targets, which is equally or even more important. Based on these analyses, we further propose a novel Teacher-free Knowledge Distillation (Tf-KD) framework, where a student model learns from itself or manually-designed regularization distribution. The Tf-KD achieves comparable performance with normal KD from a superior teacher, which is well applied when a stronger teacher model is unavailable. Meanwhile, Tf-KD is generic and can be directly deployed for training deep neural networks. Without any extra computation cost, Tf-KD achieves up to 0.65\\% improvement on ImageNet over well-established baseline models, which is superior to label smoothing regularization.",
+      "openalex_id": "https://openalex.org/W3034756453"
+    },
+    {
+      "title": "Teacher-student collaborative knowledge distillation for image classification",
+      "year": 2022,
+      "cites": 73,
+      "doi": "https://doi.org/10.1007/s10489-022-03486-4",
+      "venue": "Applied Intelligence",
+      "type": "article",
+      "abstract": "A single model usually cannot learn all the appropriate features with limited data, thus leading to poor performance when test data are used. To improve model performance, we propose a teacher-student collaborative knowledge distillation (TSKD) method based on knowledge distillation and self-distillation. The method consists of two parts: learning in the teacher network and self-teaching in the student network. Learning in the teacher network allows the student network to use knowledge from the teacher network. Self-teaching in the student network is to build a multi-exit network based on self-distillation and provide deep features as supervised information for training. In the inference stage, we use ensembles to vote on the classification results of multiple sub-models in the student network. The experimental results demonstrate the superior performance of our method compared with a traditional knowledge distillation method and a self-distillation-based multi-exit network.",
+      "openalex_id": "https://openalex.org/W4229453673"
+    },
+    {
+      "title": "Knowledge distillation: A good teacher is patient and consistent",
+      "year": 2022,
+      "cites": 256,
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01065",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "There is a growing discrepancy in computer vision between large-scale models that achieve state-of-the-art performance and models that are affordable in practical applications. In this paper we address this issue and significantly bridge the gap between these two types of models. Throughout our empirical investigation we do not aim to necessarily propose a new method, but strive to identify a robust and effective recipe for making state-of-the-art large scale models affordable in practice. We demonstrate that, when performed correctly, knowledge distillation can be a powerful tool for reducing the size of large models without compromising their performance. In particular, we uncover that there are certain implicit design choices, which may drastically affect the effectiveness of distillation. Our key contribution is the explicit identification of these design choices, which were not previously articulated in the literature. We back up our findings by a comprehensive empirical study, demonstrate compelling results on a wide range of vision datasets and, in particular, obtain a state-of-the-art ResNet-50 model for ImageNet, which achieves 82.8% top-1 accuracy.",
+      "openalex_id": "https://openalex.org/W3170224286"
+    },
+    {
+      "title": "Reinforced Multi-Teacher Selection for Knowledge Distillation",
+      "year": 2021,
+      "cites": 130,
+      "doi": "https://doi.org/10.1609/aaai.v35i16.17680",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "type": "conference-paper",
+      "abstract": "In natural language processing (NLP) tasks, slow inference speed and huge footprints in GPU usage remain the bottleneck of applying pre-trained deep models in production. As a popular method for model compression, knowledge distillation transfers knowledge from one or multiple large (teacher) models to a small (student) model. When multiple teacher models are available in distillation, the state-of-the-art methods assign a fixed weight to a teacher model in the whole distillation. Furthermore, most of the existing methods allocate an equal weight to every teacher model. In this paper, we observe that, due to the complexity of training examples and the differences in student model capability, learning differentially from teacher models can lead to better performance of student models distilled. We systematically develop a reinforced method to dynamically assign weights to teacher models for different training instances and optimize the performance of student model. Our extensive experimental results on several NLP tasks clearly verify the feasibility and effectiveness of our approach.",
+      "openalex_id": "https://openalex.org/W3110846353"
+    },
+    {
+      "title": "General Instance Distillation for Object Detection",
+      "year": 2021,
+      "cites": 271,
+      "doi": "https://doi.org/10.1109/cvpr46437.2021.00775",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "In recent years, knowledge distillation has been proved to be an effective solution for model compression. This approach can make lightweight student models acquire the knowledge extracted from cumbersome teacher models. However, previous distillation methods of detection have weak generalization for different detection frameworks and rely heavily on ground truth (GT), ignoring the valuable relation information between instances. Thus, we propose a novel distillation method for detection tasks based on discriminative instances without considering the positive or negative distinguished by GT, which is called general instance distillation (GID). Our approach contains a general instance selection module (GISM) to make full use of feature-based, relation-based and response-based knowledge for distillation. Extensive results demonstrate that the student model achieves significant AP improvement and even outperforms the teacher in various detection frame-works. Specifically, RetinaNet with ResNet-50 achieves 39.1% in mAP with GID on COCO dataset, which surpasses the baseline 36.2% by 2.9%, and even better than the ResNet-101 based teacher model with 38.1% AP.",
+      "openalex_id": "https://openalex.org/W3173270634"
+    }
+  ],
+  "knowledge distillation negative transfer harmful teacher student": [
+    {
+      "title": "Decoupled Knowledge Distillation",
+      "year": 2022,
+      "cites": 1031,
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01165",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "State-of-the-art distillation methods are mainly based on distilling deep features from intermediate layers, while the significance of logit distillation is greatly overlooked. To provide a novel viewpoint to study logit distillation, we re-formulate the classical KD loss into two parts, i.e., target class knowledge distillation (TCKD) and non-target class knowledge distillation (NCKD). We empirically investigate and prove the effects of the two parts: TCKD transfers knowledge concerning the “difficulty” of training samples, while NCKD is the prominent reason why logit distillation works. More importantly, we reveal that the classical KD loss is a coupled formulation, which (1) suppresses the effectiveness of NCKD and (2) limits the flexibility to balance these two parts. To address these issues, we present Decoupled Knowledge Distillation (DKD), enabling TCKD and NCKD to play their roles more efficiently and flexibly. Compared with complex feature-based methods, our DKD achieves comparable or even better results and has better training efficiency on CIFAR-100, ImageNet, and MS-COCO datasets for image classification and object detection tasks. This paper proves the great potential of logit distillation, and we hope it will be helpful for future research. The code is available at https://github.com/megviiresearch/mdistiller.",
+      "openalex_id": "https://openalex.org/W4226426325"
+    },
+    {
+      "title": "Class Attention Transfer Based Knowledge Distillation",
+      "year": 2023,
+      "cites": 170,
+      "doi": "https://doi.org/10.1109/cvpr52729.2023.01142",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Previous knowledge distillation methods have shown their impressive performance on model compression tasks, however, it is hard to explain how the knowledge they transferred helps to improve the performance of the student network. In this work, we focus on proposing a knowledge distillation method that has both high interpretability and competitive performance. We first revisit the structure of mainstream CNN models and reveal that possessing the capacity of identifying class discriminative regions of input is critical for CNN to perform classification. Furthermore, we demonstrate that this capacity can be obtained and enhanced by transferring class activation maps. Based on our findings, we propose class attention transfer based knowledge distillation (CAT-KD). Different from previous KD methods, we explore and present several properties of the knowledge transferred by our method, which not only improve the interpretability of CAT-KD but also contribute to a better understanding of CNN. While having high interpretability, CAT-KD achieves state-of-the-art performance on multiple benchmarks. Code is available at: https://github.com/GzyAftermath/CAT-KD.",
+      "openalex_id": "https://openalex.org/W4386072392"
+    },
+    {
+      "title": "Calibrating Teacher--Student Discrepancy for On-Policy Distillation",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2609.21619",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "On-policy distillation (OPD) improves reasoning models by learning the token-level discrepancy between a stronger teacher and an on-policy student. However, this discrepancy does not purely reflect the capability gap between the teacher and the student: it also contains deviations arising from the teacher itself, which are consequently mixed into the observed teacher--student discrepancy and indiscriminately learned by standard OPD during training. This issue is further exacerbated by privileged OPD, where privileged information induces larger teacher-side likelihood shifts, thereby encouraging the student to learn more of the teacher's own deviation. We introduce \\textbf{Calibrated On-Policy Distillation (Cal-OPD)}, which estimates the teacher's self-deviation region through positive and negative privileged interventions and calibrates the original teacher--student discrepancy by retaining only the component that lies beyond this region. Experiments on mathematical reasoning benchmarks show that, while retaining only about 52--65\\% of the original teacher--student discrepancy as the optimization signal, Cal-OPD consistently outperforms standard OPD and its variants across model scales.",
+      "openalex_id": "https://openalex.org/W7213863935"
+    },
+    {
+      "title": "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation",
+      "year": 2020,
+      "cites": 884,
+      "doi": "https://doi.org/10.18653/v1/2020.emnlp-main.365",
+      "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "type": "conference-paper",
+      "abstract": "We present an easy and efficient method to extend existing sentence embedding models to new languages.This allows to create multilingual versions from previously monolingual models.The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence.We use the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model.Compared to other methods for training multilingual sentence embeddings, this approach has several advantages: It is easy to extend existing models with relatively few samples to new languages, it is easier to ensure desired properties for the vector space, and the hardware requirements for training are lower.We demonstrate the effectiveness of our approach for 50+ languages from various language families.Code to extend sentence embeddings models to more than 400 languages is publicly available.1",
+      "openalex_id": "https://openalex.org/W3017604292"
+    },
+    {
+      "title": "A Comprehensive Overhaul of Feature Distillation",
+      "year": 2019,
+      "cites": 705,
+      "doi": "https://doi.org/10.1109/iccv.2019.00201",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "type": "conference-paper",
+      "abstract": "We investigate the design aspects of feature distillation methods achieving network compression and propose a novel feature distillation method in which the distillation loss is designed to make a synergy among various aspects: teacher transform, student transform, distillation feature position and distance function. Our proposed distillation loss includes a feature transform with a newly designed margin ReLU, a new distillation feature position, and a partial L2distance function to skip redundant information giving adverse effects to the compression of student. In ImageNet, our proposed method achieves 21.65% of top-1 error with ResNet50, which outperforms the performance of the teacher network, ResNet152. Our proposed method is evaluated on various tasks such as image classification, object detection and semantic segmentation and achieves a significant performance improvement in all tasks. The code is available at bhheo.github.io/overhaul.",
+      "openalex_id": "https://openalex.org/W2982157312"
+    },
+    {
+      "title": "Weight Distillation: Transferring the Knowledge in Neural Network Parameters",
+      "year": 2021,
+      "cites": 16,
+      "doi": "https://doi.org/10.18653/v1/2021.acl-long.162",
+      "venue": null,
+      "type": "conference-paper",
+      "abstract": "Ye Lin, Yanyang Li, Ziyang Wang, Bei Li, Quan Du, Tong Xiao, Jingbo Zhu. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 2021.",
+      "openalex_id": "https://openalex.org/W3173580669"
+    }
+  ],
+  "student outperforms teacher knowledge distillation": [
+    {
+      "title": "Can Students Outperform Teachers in Knowledge Distillation based Model Compression",
+      "year": 2021,
+      "cites": 1,
+      "doi": null,
+      "venue": null,
+      "type": "article",
+      "abstract": "Knowledge distillation (KD) is an effective technique to compress a large model (teacher) to a compact one (student) by knowledge transfer. The ideal case is that the teacher is compressed to the small student without any performance dropping. However, even for the state-of-the-art (SOTA) distillation approaches, there is still an obvious performance gap between the student and the teacher. The existing literature usually attributes this to model capacity differences between them. However, model capacity differences are unavoidable in model compression. In this work, we systematically study this question. By designing exploratory experiments, we find that model capacity differences are not necessarily the root reason, and the distillation data matters when the student capacity is greater than a threshold. In light of this, we propose to go beyond in-distribution distillation and accordingly develop KD+. KD+ is superior to the original KD as it outperforms KD and the other SOTA approaches substantially and is more compatible with the existing approaches to further improve their performances significantly.",
+      "openalex_id": "https://openalex.org/W3131143179"
+    },
+    {
+      "title": "When Babies Teach Babies: Can student knowledge sharing outperform Teacher-Guided Distillation on small datasets?",
+      "year": 2024,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2411.16487",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "We present our submission to the BabyLM challenge, aiming to push the boundaries of data-efficient language model pretraining. Our method builds upon deep mutual learning, introducing a student model search for diverse initialization. We address the limitation of treating students equally by formulating weighted mutual learning as a bi-level optimization problem. The inner loop learns compact students through online distillation, while the outer loop optimizes weights for better knowledge distillation from diverse students. This dynamic weighting strategy eliminates the need for a teacher model, reducing computational requirements. Our evaluations show that teacher-less methods can match or surpass teacher-supervised approaches.",
+      "openalex_id": "https://openalex.org/W4404987771"
+    },
+    {
+      "title": "Relational Knowledge Distillation",
+      "year": 2019,
+      "cites": 1778,
+      "doi": "https://doi.org/10.1109/cvpr.2019.00409",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation aims at transferring knowledge acquired in one model (a teacher) to another model (a student) that is typically smaller. Previous approaches can be expressed as a form of training the student to mimic output activations of individual data examples represented by the teacher. We introduce a novel approach, dubbed relational knowledge distillation (RKD), that transfers mutual relations of data examples instead. For concrete realizations of RKD, we propose distance-wise and angle-wise distillation losses that penalize structural differences in relations. Experiments conducted on different tasks show that the proposed method improves educated student models with a significant margin. In particular for metric learning, it allows students to outperform their teachers' performance, achieving the state of the arts on standard benchmark datasets.",
+      "openalex_id": "https://openalex.org/W2963140444"
+    },
+    {
+      "title": "Reciprocal Teacher-Student Learning via Forward and Feedback Knowledge Distillation",
+      "year": 2024,
+      "cites": 112,
+      "doi": "https://doi.org/10.1109/tmm.2024.3372833",
+      "venue": "IEEE Transactions on Multimedia",
+      "type": "article",
+      "abstract": "Knowledge distillation (KD) is a prevalent model compression technique in deep learning, aiming to leverage knowledge from a large teacher model to enhance the training of a smaller student model. It has found success in deploying compact deep models in intelligent applications like intelligent transportation, smart health, and distributed intelligence. Current knowledge distillation methods primarily fall into two categories: offline and online knowledge distillation. Offline methods involve a one-way distillation process, transferring unvaried knowledge from teacher to student, while online methods enable the simultaneous training of multiple peer students. However, existing knowledge distillation methods often face challenges where the student may not fully comprehend the teacher's knowledge due to model capacity gaps, and there might be knowledge incongruence among outputs of multiple students without teacher guidance. To address these issues, we propose a novel reciprocal teacher-student learning inspired by human teaching and examining through forward and feedback knowledge distillation (FFKD). Forward knowledge distillation operates offline, while feedback knowledge distillation follows an online scheme. The rationale is that feedback knowledge distillation enables the pre-trained teacher model to receive feedback from students, allowing the teacher to refine its teaching strategies accordingly. To achieve this, we introduce a new weighting constraint to gauge the extent of students' understanding of the teacher's knowledge, which is then utilized to enhance teaching strategies. Experimental results on five visual recognition datasets demonstrate that the proposed FFKD outperforms current state-of-the-art knowledge distillation methods.",
+      "openalex_id": "https://openalex.org/W4392826163"
+    },
+    {
+      "title": "Confidence-Aware Multi-Teacher Knowledge Distillation",
+      "year": 2022,
+      "cites": 140,
+      "doi": "https://doi.org/10.1109/icassp43922.2022.9747534",
+      "venue": "IEEE International Conference on Acoustics Speech and Signal Processing",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation is initially introduced to utilize additional supervision from a single teacher model for the student model training. To boost the student performance, some recent variants attempt to exploit diverse knowledge sources from multiple teachers. However, existing studies mainly integrate knowledge from diverse sources by averaging over multiple teacher predictions or combining them using other label-free strategies, which may mislead student in the presence of low-quality teacher predictions. To tackle this problem, we propose Confidence-Aware Multi-teacher Knowledge Distillation (CA-MKD), which adaptively assigns sample-wise reliability for each teacher prediction with the help of ground-truth labels, with those teacher predictions close to one-hot labels assigned large weights. Besides, CA-MKD incorporates features in intermediate layers to stable the knowledge transfer process. Extensive experiments show our CA-MKD consistently outperforms all compared state-of-the-art methods across various teacher-student architectures. Code is available: https://github.com/Rorozhl/CA-MKD.",
+      "openalex_id": "https://openalex.org/W4224927203"
+    },
+    {
+      "title": "Variational Information Distillation for Knowledge Transfer",
+      "year": 2019,
+      "cites": 700,
+      "doi": "https://doi.org/10.1109/cvpr.2019.00938",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Transferring knowledge from a teacher neural network pretrained on the same or a similar task to a student neural network can significantly improve the performance of the student neural network. Existing knowledge transfer approaches match the activations or the corresponding hand-crafted features of the teacher and the student networks. We propose an information-theoretic framework for knowledge transfer which formulates knowledge transfer as maximizing the mutual information between the teacher and the student networks. We compare our method with existing knowledge transfer methods on both knowledge distillation and transfer learning tasks and show that our method consistently outperforms existing methods. We further demonstrate the strength of our method on knowledge transfer across heterogeneous network architectures by transferring knowledge from a convolutional neural network (CNN) to a multi-layer perceptron (MLP) on CIFAR-10. The resulting MLP significantly outperforms the-state-of-the-art methods and it achieves similar performance to the CNN with a single convolutional layer.",
+      "openalex_id": "https://openalex.org/W2936864631"
+    }
+  ],
+  "EEG knowledge distillation": [
+    {
+      "title": "IR-Based Sleep Monitoring: Movement, Respiration, and Sleep Staging With a Structure-Aware Cross-Modal EEG Knowledge Distillation",
+      "year": 2025,
+      "cites": 3,
+      "doi": "https://doi.org/10.1109/jiot.2025.3583049",
+      "venue": "IEEE Internet of Things Journal",
+      "type": "article",
+      "abstract": "It is inevitably crucial to classify the sleep stage for assessing sleep quality and diagnosing related diseases. However, existing automated diagnosis methods mostly adopt the goldstandard Electroencephalogram (EEG) or other sensing signals from the PolySomnoGraphy (PSG) machine in hospital, which are expensive, importable, and therefore unsuitable for point-ofcare monitoring at home. To enable the sleep stage monitoring at home, in this paper, we integrate the external visual information from infrared (IR) videos with internal bio-electrical knowledge from EEG signals, and propose a novel IR-based sleep monitoring system in IoT scenarios: which can non-contact monitor and predict body movement, respiration rate, and sleep staging tasks based solely on IR video. It is different from previous video classification and multi-modal analysis systems, mainly in that (1) the temporal duration of the IR video is relatively long, reaching 10 hours per night. (2) the semantic gap between the EEG signal and IR video is disparate and much larger than conventional cross-modal data in multimedia analysis such as video and audio. To establish a solid cross-modal benchmark in sleep monitoring, we develop a new dataset (S3IE), which is a large-scale dataset including synchronized IR videos and EEG signals. We also propose a novel cross-modal knowledge distillation method, namely the structure-aware contrastive distillation (SACD) to distill the EEG bio-electrical knowledge to IR visual features. Our SACD achieves the SOTA performances on both our S3IE and other cross-modal distillation benchmarks. We expect to raise more attention and promote more developments for the sleep and, more importantly, the cross-modal distillation from clinical signal/media to conventional media in IoT scenarios.",
+      "openalex_id": "https://openalex.org/W4411639956"
+    },
+    {
+      "title": "Visual-to-EEG cross-modal knowledge distillation for continuous emotion recognition",
+      "year": 2022,
+      "cites": 93,
+      "doi": "https://doi.org/10.1016/j.patcog.2022.108833",
+      "venue": "Pattern Recognition",
+      "type": "article",
+      "abstract": "Visual modality is one of the most dominant modalities for current continuous emotion recognition methods. Compared to which the EEG modality is relatively less sound due to its intrinsic limitation such as subject bias and low spatial resolution. This work attempts to improve the continuous prediction of the EEG modality by using the dark knowledge from the visual modality. The teacher model is built by a cascade convolutional neural network - temporal convolutional network (CNN-TCN) architecture, and the student model is built by TCNs. They are fed by video frames and EEG average band power features, respectively. Two data partitioning schemes are employed, i.e., the trial-level random shuffling (TRS) and the leave-one-subject-out (LOSO). The standalone teacher and student can produce continuous prediction superior to the baseline method, and the employment of the visual-to-EEG cross-modal KD further improves the prediction with statistical significance, i.e., p-value <0.01 for TRS and p-value <0.05 for LOSO partitioning. The saliency maps of the trained student model show that the brain areas associated with the active valence state are not located in precise brain areas. Instead, it results from synchronized activity among various brain areas. And the fast beta and gamma waves, with the frequency of 18−30Hz and 30−45Hz, contribute the most to the human emotion process compared to other bands. The code is available at https://github.com/sucv/Visual_to_EEG_Cross_Modal_KD_for_CER.",
+      "openalex_id": "https://openalex.org/W4281710448"
+    },
+    {
+      "title": "EEG Lightformer-KD: a Lightweight Framework for Motor Imagery EEG Decoding via Knowledge Distillation",
+      "year": 2025,
+      "cites": 1,
+      "doi": "https://doi.org/10.1109/ecis65594.2025.11086653",
+      "venue": "IEEE International Conference on Electronics, Communications and Intelligent Science (ECIS)",
+      "type": "conference-paper",
+      "abstract": "This study proposes a lightweight convolutional-Transformer hybrid architecture named EEG Lightformer, coupled with a knowledge distillation framework based on the EEGPT large model, to address deployment challenges of motor imagery decoding models in resource-constrained brain-computer interface systems. To address the contradiction between insufficient representation capability of conventional shallow convolutional networks and excessive parameters in large models, we innovatively design a two-stage knowledge transfer strategy: First, constructing a lightweight backbone network using depthwise separable convolutions and multi-scale classification mechanisms to compress parameter scale while preserving discriminative features; second, proposing a joint distillation loss function combining KL divergence distribution alignment with cross-entropy supervision to effectively transfer EEGPT’s spatiotemporal perception capabilities. Cross-session experiments on three public datasets (BCI Competition IV 2a/2b and OpenBMI) demonstrate that the distilled EEG Lightformer achieves 2.47-5.52 percentage point accuracy improvements compared to baseline models like EEGNet and FBCnet, while maintaining only 127K-205K parameters. The architecture attains 78.67% average accuracy in four-class tasks, reducing parameters by 84% compared to classical models while maintaining comparable performance. This framework provides a practical solution for wearable BCI systems that balances computational efficiency and decoding accuracy.",
+      "openalex_id": "https://openalex.org/W4413158397"
+    },
+    {
+      "title": "A Knowledge Distillation Framework for Enhancing Ear-EEG Based Sleep Staging with Scalp-EEG Data",
+      "year": 2023,
+      "cites": 7,
+      "doi": "https://doi.org/10.1109/smc53992.2023.10394011",
+      "venue": "Conference proceedings/Conference proceedings - IEEE International Conference on Systems, Man, and Cybernetics",
+      "type": "conference-paper",
+      "abstract": "Sleep plays a crucial role in the well-being of human lives. Traditional sleep studies using Polysomnography are associated with discomfort and often lower sleep quality caused by the acquisition setup. Previous works have focused on developing less obtrusive methods to conduct high-quality sleep studies, and ear- EEG is among popular alternatives. However, the performance of sleep staging based on ear-EEG is still inferior to scalp- EEG based sleep staging. In order to address the performance gap between scalp-EEG and ear- EEG based sleep staging, we propose a cross-modal knowledge distillation strategy1†https://github.com/Mithunjha/EarEEG_KnowledgeDistillation, which is a domain adaptation approach. We employ model architectures from the transformer and convolutional neural network families to demonstrate the model-agnostic nature of the method. Our experiments and analysis validate the effectiveness of the proposed approach with existing architectures, where it enhances the accuracy of the ear-EEG based sleep staging by 3.46% and Cohen's kappa coefficient by a margin of 0.038. Furthermore, our findings indicate that our approach is not limited to a specific model architecture and can be applied to a wide range of deep learning models.",
+      "openalex_id": "https://openalex.org/W4391331307"
+    },
+    {
+      "title": "Knowledge Distillation-based Channel Reduction for Wearable EEG Applications",
+      "year": 2023,
+      "cites": 0,
+      "doi": "https://doi.org/10.36227/techrxiv.22651156",
+      "venue": null,
+      "type": "preprint",
+      "abstract": "Wearable EEG applications demand an optimal trade-off between performance and system power consumption. However, high-performing models usually require many features for training and inference, leading to a high computational and memory budget. In this paper, we present a novel knowledge distillation methodology to reduce the number of EEG channels (and therefore, the associated features) without compromising on performance. We aim to distill information from a model trained using all channels (teacher) to a model using a reduced set of channels (student). To this end, we first pre-train the state-of-the-art model on features extracted from all channels. Then, we train a naive model on features extracted from a few task-specific channels using the soft labels predicted by the teacher model. As a result, the student model with a reduced set of features learns to mimic the teacher via soft labels. We evaluate this methodology on two publicly available datasets: CHB-MIT for epileptic seizure detection and BCI competition IV-2a dataset for motor-imagery classification. Results show that the proposed channel reduction methodology improves the precision of the seizure detection task by about 8% and the motor-imagery classification accuracy by about 3.6%. Given these consistent results, we conclude that the proposed framework facilitates future lightweight wearable EEG systems without any degradation in performance.",
+      "openalex_id": "https://openalex.org/W4366985201"
+    },
+    {
+      "title": "Cross-Modal Knowledge Distillation with EEG-Guided Curriculum Learning for Emotion Recognition",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.2139/ssrn.6788057",
+      "venue": "SSRN Electronic Journal",
+      "type": "preprint",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W7161596191"
+    }
+  ],
+  "motor imagery knowledge distillation cross subject": [
+    {
+      "title": "Cross-Subject Motor Imagery Electroencephalogram Decoding with Domain Generalization",
+      "year": 2025,
+      "cites": 12,
+      "doi": "https://doi.org/10.3390/bioengineering12050495",
+      "venue": "Bioengineering",
+      "type": "article",
+      "abstract": "Decoding motor imagery (MI) electroencephalogram (EEG) signals in the brain-computer interface (BCI) can assist patients in accelerating motor function recovery. To realize the implementation of plug-and-play functionality for MI-BCI applications, cross-subject models are employed to alleviate time-consuming calibration and avoid additional model training for target subjects by utilizing EEG data from source subjects. However, the diversity in data distribution among subjects limits the model's robustness. In this study, we investigate a cross-subject MI-EEG decoding model with domain generalization based on a deep learning neural network that extracts domain-invariant features from source subjects. Firstly, a knowledge distillation framework is adopted to obtain the internally invariant representations based on spectral features fusion. Then, the correlation alignment approach aligns mutually invariant representations between each pair of sub-source domains. In addition, we use distance regularization on two kinds of invariant features to enhance generalizable information. To assess the effectiveness of our approach, experiments are conducted on the BCI Competition IV 2a and the Korean University dataset. The results demonstrate that the proposed model achieves 8.93% and 4.4% accuracy improvements on two datasets, respectively, compared with current state-of-the-art models, confirming that the proposed approach can effectively extract invariant features from source subjects and generalize to the unseen target distribution, hence paving the way for effective implementation of the plug-and-play functionality in MI-BCI applications.",
+      "openalex_id": "https://openalex.org/W4410159592"
+    },
+    {
+      "title": "A cybernetic-transformer fusion framework for robust motor imagery EEG classification: a unified knowledge distillation approach with provable stability guarantees",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.1117/12.3111886",
+      "venue": null,
+      "type": "conference-abstract",
+      "abstract": "Motor Imagery EEG classification faces a critical reliability gap in clinical deployment: while Transformer architectures achieve high accuracy in controlled settings, they exhibit severe confidence variance up to 18.7% under 10% input noise, leading to unreliable brain-computer interface systems. Existing knowledge distillation methods compress models efficiently but sacrifice critical topological relationships between motor cortex features, resulting in 15-20% accuracy degradation in real-world scenarios with non-stationary signals and artifact interference. This work introduces a Cybernetic-Transformer Knowledge Distillation (CTKD) framework that unifies three principled innovations: a biologically-inspired Feature Indicator Attention (FIA) mechanism for stable C3/C4 motor cortex signal targeting while filtering transient noise; a mathematically rigorous Edge Preservation Index (EPI) that preserves gradient topology and feature correlations during knowledge transfer; and a Globally Uniformly Ultimately Bounded (GUUB) cybernetic feedback controller providing provable stability guarantees through real-time confidence regulation. Comprehensive evaluation on BCI Competition IV 2a demonstrates state-of-the-art performance with 84.7% accuracy (0.792 Kappa) and critically reduces low-confidence decisions to below 3%—an 81.7% reduction compared to baseline Transformer models. Cross-subject high-noise tests simulating clinical interference maintain 76.4% accuracy (0.686 Kappa), outperforming existing distillation methods by 5.6-11.1%. Independent validation on PhysioNet Motor Imagery dataset confirms cross-dataset generalizability with 82.3% accuracy (0.764 Kappa), establishing CTKD as a robust solution bridging the accuracy-stability tradeoff for practical clinical BCI deployment in rehabilitation and assistive applications.",
+      "openalex_id": "https://openalex.org/W7163019151"
+    },
+    {
+      "title": "CKD: Contrastive Knowledge Distillation for Cross-Dataset EEG Classification",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.1109/tbme.2026.3701548",
+      "venue": "IEEE Transactions on Biomedical Engineering",
+      "type": "article",
+      "abstract": "OBJECTIVE: Cross-dataset transfer in electroencephalography (EEG)-based brain-computer interfaces (BCIs) remains challenging due to substantial distribution shifts across datasets, including differences in subjects, acquisition devices, and recording protocols. This study aims to improve cross-dataset EEG decoding by enhancing knowledge transfer beyond conventional output-level distillation. METHODS: We propose a contrastive knowledge distillation (CKD) framework for cross-dataset EEG classification. CKD follows a two-stage transfer strategy, consisting of cross-dataset teacher pretraining and cross-subject online adaptation, and jointly exploits logit-level distillation and feature-level contrastive alignment. In this way, the student model is encouraged to inherit both the predictive behavior and representation structure of the teacher. RESULTS: Experiments on five motor imagery EEG datasets showed that CKD consistently outperformed twelve conventional training, representative knowledge distillation, and domain adaptation baselines under both single-source and multi-source transfer settings. Additional visualizations and quantitative analyses further confirmed that CKD improves teacher-student alignment in terms of feature geometry and distribution consistency, and can be further enhanced by explicit domain adaptation. CONCLUSION: The proposed CKD provides an effective solution for cross-dataset EEG decoding by jointly improving predictive knowledge transfer and latent feature alignment under severe dataset shifts. SIGNIFICANCE: This work improves the robustness and generalizability of EEG decoding across heterogeneous datasets, which is important for practical BCI deployment under real-world acquisition conditions.",
+      "openalex_id": "https://openalex.org/W7163894350"
+    },
+    {
+      "title": "Entropy-Based Dual-Teacher Distillation for Efficient Motor Imagery EEG Classification",
+      "year": 2026,
+      "cites": 1,
+      "doi": "https://doi.org/10.3390/e28030310",
+      "venue": "Entropy",
+      "type": "article",
+      "abstract": "Motor imagery (MI) EEG classification is a key component of noninvasive brain-computer interfaces (BCIs) and often must satisfy strict latency constraints in online or edge deployments. Although ensembling can reliably improve MI decoding accuracy, its inference cost grows linearly with the number of ensemble members, making it impractical for low-latency applications. To address these issues, we propose an entropy-based dual-teacher distillation framework that transfers ensemble teacher knowledge to a single deployable backbone. From an information theoretic perspective, two failure modes are common in small and noisy MI datasets: elevated predictive entropy (noisy decisions) and large fluctuation across late training epochs (unstable convergence and unreliable checkpoint selection). Thus, we introduce an exponential moving average (EMA) teacher with entropy-gated activation as a low-pass filter in parameter space to reduce the student's prediction noise. In addition, a two-stage cosine annealing schedule is employed to suppress late-stage oscillations and improve the robustness of final checkpoint selection. Experiments on two public MI benchmarks (BCI Competition IV-2a and IV-2b) with three representative backbones (EEGNet, ShallowConvNet, and ATCNet) under the subject dependent protocol show consistent accuracy gains over the ensemble teacher and strong distillation baselines. On IV-2a, our method achieves an average accuracy of 0.7713 across the backbones, surpassing both the original models (0.7222) and the corresponding ensembles (0.7482); on IV-2b, it achieves 0.8583 versus 0.8432 (original) and 0.8529 (ensemble).",
+      "openalex_id": "https://openalex.org/W7134829407"
+    },
+    {
+      "title": "Motor Imagery Decoding Using Ensemble Curriculum Learning and Collaborative Training",
+      "year": 2024,
+      "cites": 14,
+      "doi": "https://doi.org/10.1109/bci60775.2024.10480476",
+      "venue": "International Winter Conference on Brain-Computer Interface (BCI)",
+      "type": "conference-paper",
+      "abstract": "In this work, we study the problem of cross-subject motor imagery (MI) decoding from electroencephalography (EEG) data. Multi-subject EEG datasets present several kinds of domain shifts due to various inter-individual differences (e.g. brain anatomy, personality and cognitive profile). These domain shifts render multi-subject training a challenging task and also impede robust cross-subject generalization. Inspired by the importance of domain generalization techniques for tackling such issues, we propose a two-stage model ensemble architecture built with multiple feature extractors (first stage) and a shared classifier (second stage), which we train end-toend with two novel loss terms. The first loss applies curriculum learning, forcing each feature extractor to specialize to a subset of the training subjects and promoting feature diversity. The second loss is an intra-ensemble distillation objective that allows collaborative exchange of knowledge between the models of the ensemble. We compare our method against several state-of-the-art techniques, conducting subject-independent experiments on two large MI datasets, namely PhysioNet and OpenBMI. Our algorithm outperforms all of the methods in both 5-fold cross-validation and leave-one-subject-out evaluation settings, using a substantially lower number of trainable parameters. We demonstrate that our model ensembling approach combining the powers of curriculum learning and collaborative training, leads to high learning capacity and robust performance. Our work addresses the issue of domain shifts in multi-subject EEG datasets, paving the way for calibration-free brain-computer interfaces. We make our code publicly available at: https://github.com/gzoumpourlis/Ensemble-MI.",
+      "openalex_id": "https://openalex.org/W4393407226"
+    },
+    {
+      "title": "Tsmd-net: two-stage multi-domain distillation network for cross-subject MI-EEG domain generalization",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.1007/s11571-026-10564-7",
+      "venue": "Cognitive Neurodynamics",
+      "type": "article",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W7214896988"
+    }
+  ],
+  "EEG based brain computer interface knowledge distillation compression": [
+    {
+      "title": "Enhancing Low-Density EEG-Based Brain-Computer Interfaces with Similarity-Keeping Knowledge Distillation",
+      "year": 2022,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2212.03329",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Electroencephalogram (EEG) has been one of the common neuromonitoring modalities for real-world brain-computer interfaces (BCIs) because of its non-invasiveness, low cost, and high temporal resolution. Recently, light-weight and portable EEG wearable devices based on low-density montages have increased the convenience and usability of BCI applications. However, loss of EEG decoding performance is often inevitable due to reduced number of electrodes and coverage of scalp regions of a low-density EEG montage. To address this issue, we introduce knowledge distillation (KD), a learning mechanism developed for transferring knowledge/information between neural network models, to enhance the performance of low-density EEG decoding. Our framework includes a newly proposed similarity-keeping (SK) teacher-student KD scheme that encourages a low-density EEG student model to acquire the inter-sample similarity as in a pre-trained teacher model trained on high-density EEG data. The experimental results validate that our SK-KD framework consistently improves motor-imagery EEG decoding accuracy when number of electrodes deceases for the input EEG data. For both common low-density headphone-like and headband-like montages, our method outperforms state-of-the-art KD methods across various EEG decoding model architectures. As the first KD scheme developed for enhancing EEG decoding, we foresee the proposed SK-KD framework to facilitate the practicality of low-density EEG-based BCI in real-world applications.",
+      "openalex_id": "https://openalex.org/W4310921851"
+    },
+    {
+      "title": "A multi-level teacher assistant-based knowledge distillation framework with dynamic feedback for motor imagery EEG decoding",
+      "year": 2025,
+      "cites": 6,
+      "doi": "https://doi.org/10.1016/j.neunet.2025.108180",
+      "venue": "Neural Networks",
+      "type": "article",
+      "abstract": "",
+      "openalex_id": "https://openalex.org/W4414676992"
+    },
+    {
+      "title": "Knowledge Distillation-based Channel Reduction for Wearable EEG Applications",
+      "year": 2023,
+      "cites": 0,
+      "doi": "https://doi.org/10.36227/techrxiv.22651156",
+      "venue": null,
+      "type": "preprint",
+      "abstract": "Wearable EEG applications demand an optimal trade-off between performance and system power consumption. However, high-performing models usually require many features for training and inference, leading to a high computational and memory budget. In this paper, we present a novel knowledge distillation methodology to reduce the number of EEG channels (and therefore, the associated features) without compromising on performance. We aim to distill information from a model trained using all channels (teacher) to a model using a reduced set of channels (student). To this end, we first pre-train the state-of-the-art model on features extracted from all channels. Then, we train a naive model on features extracted from a few task-specific channels using the soft labels predicted by the teacher model. As a result, the student model with a reduced set of features learns to mimic the teacher via soft labels. We evaluate this methodology on two publicly available datasets: CHB-MIT for epileptic seizure detection and BCI competition IV-2a dataset for motor-imagery classification. Results show that the proposed channel reduction methodology improves the precision of the seizure detection task by about 8% and the motor-imagery classification accuracy by about 3.6%. Given these consistent results, we conclude that the proposed framework facilitates future lightweight wearable EEG systems without any degradation in performance.",
+      "openalex_id": "https://openalex.org/W4366985201"
+    },
+    {
+      "title": "Recent Advances in Portable Dry Electrode EEG: Architecture and Applications in Brain-Computer Interfaces",
+      "year": 2025,
+      "cites": 31,
+      "doi": "https://doi.org/10.3390/s25165215",
+      "venue": "Sensors",
+      "type": "article",
+      "abstract": "As brain-computer interface (BCI) technology continues to advance, research on human brain function has gradually transitioned from theoretical investigation to practical engineering applications. To support EEG signal acquisition in a variety of real-world scenarios, BCI electrode systems must demonstrate a balanced combination of electrical performance, wearing comfort, and portability. Dry electrodes have emerged as a promising alternative for EEG acquisition due to their ability to operate without conductive gel or complex skin preparation. This paper reviews the latest progress in dry electrode EEG systems, summarizing key achievements in hardware design with a focus on structural innovation and material development. It also examines application advances in several representative BCI domains, including emotion recognition, fatigue and drowsiness detection, motor imagery, and steady-state visual evoked potentials, while analyzing system-level performance. Finally, the paper critically assesses existing challenges and identifies critical future research priorities. Key recommendations include developing a standardized evaluation framework to bolster research reliability, enhancing generalization performance, and fostering coordinated hardware-algorithm optimization. These steps are crucial for advancing the practical implementation of these technologies across diverse scenarios. With this survey, we aim to offer a comprehensive reference and roadmap for researchers engaged in the development and implementation of next-generation dry electrode EEG-based BCI systems.",
+      "openalex_id": "https://openalex.org/W4413396257"
+    },
+    {
+      "title": "Multi-Branch Mutual-Distillation Transformer for EEG-Based Seizure Subtype Classification",
+      "year": 2024,
+      "cites": 31,
+      "doi": "https://doi.org/10.1109/tnsre.2024.3365713",
+      "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+      "type": "article",
+      "abstract": "Cross-subject electroencephalogram (EEG) based seizure subtype classification is very important in precise epilepsy diagnostics. Deep learning is a promising solution, due to its ability to automatically extract latent patterns. However, it usually requires a large amount of training data, which may not always be available in clinical practice. This paper proposes Multi-Branch Mutual-Distillation (MBMD) Transformer for cross-subject EEG-based seizure subtype classification, which can be effectively trained from small labeled data. MBMD Transformer replaces all even-numbered encoder blocks of the vanilla Vision Transformer by our designed multi-branch encoder blocks. A mutual-distillation strategy is proposed to transfer knowledge between the raw EEG data and its wavelets of different frequency bands. Experiments on two public EEG datasets demonstrated that our proposed MBMD Transformer outperformed several traditional machine learning and state-of-the-art deep learning approaches. To our knowledge, this is the first work on knowledge distillation for EEG-based seizure subtype classification.",
+      "openalex_id": "https://openalex.org/W4394755634"
+    },
+    {
+      "title": "DistilCLIP-EEG: Enhancing Epileptic Seizure Detection Through Multi-modal Learning and Knowledge Distillation",
+      "year": 2025,
+      "cites": 13,
+      "doi": "https://doi.org/10.1109/jbhi.2025.3603022",
+      "venue": "IEEE Journal of Biomedical and Health Informatics",
+      "type": "article",
+      "abstract": "Epilepsy is a prevalent neurological disorder marked by sudden, brief episodes of excessive neuronal activity caused by abnormal electrical discharges, which may lead to some mental disorders. Most existing deep learning methods for epilepsy detection rely solely on unimodal EEG signals, neglecting the potential benefits of multimodal information. To address this, we propose a novel multimodal model, DistilCLIP-EEG, based on the CLIP framework, which integrates both EEG signals and text descriptions to capture comprehensive features of epileptic seizures. The model involves an EEG encoder based on the Conformer architecture as a text encoder, the proposed Learnable BERT (BERT-LP) as prompt learning within the encoders. Both operate in a shared latent space for effective cross-modal representation learning. To enhance efficiency and adaptability, we introduce a knowledge distillation method where the trained DistilCLIP-EEG serves as a teacher to guide a more compact student model to reduce training complexity and time. On the TUSZ, AUBMC, and CHB-MIT datasets, both the teacher and student models achieved accuracy rates exceeding 97%. Across all datasets, the F1-scores were consistently above 0.94, demonstrating the robustness and reliability of the proposed framework. Moreover, the student model's parameter count and model size are approximately 58.1% of those of the teacher model, significantly reducing model complexity and storage requirements while maintaining high performance. These results highlight the potential of our proposed model for EEG-based epilepsy detection and establish a solid foundation for deploying lightweight models in resource-constrained settings.",
+      "openalex_id": "https://openalex.org/W4413754808"
+    }
+  ]
+}

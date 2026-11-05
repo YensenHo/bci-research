@@ -1,0 +1,80 @@
+[
+  {
+    "tag": "ann",
+    "activation": "relu",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.13594771241830064,
+    "test_acc": 0.14806656877141458,
+    "fr_act1": 0.0,
+    "fr_act2": 0.0,
+    "epoch": 40
+  },
+  {
+    "tag": "ann52_global",
+    "activation": "relu",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.32483660130718955,
+    "test_acc": 0.3257464512971121,
+    "fr_act1": 0.0,
+    "fr_act2": 0.0,
+    "epoch": 26
+  },
+  {
+    "tag": "ann17_global",
+    "activation": "relu",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.46586345381526106,
+    "test_acc": 0.44385832705350414,
+    "fr_act1": 0.0,
+    "fr_act2": 0.0,
+    "epoch": 30
+  },
+  {
+    "tag": "ann12_global",
+    "activation": "relu",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.5174337517433751,
+    "test_acc": 0.5197095435684648,
+    "fr_act1": 0.0,
+    "fr_act2": 0.0,
+    "epoch": 27
+  },
+  {
+    "tag": "ann12_elu",
+    "activation": "elu",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.5216178521617852,
+    "test_acc": 0.48132780082987553,
+    "fr_act1": 0.0,
+    "fr_act2": 0.0,
+    "epoch": 29
+  },
+  {
+    "tag": "lif12_warm",
+    "activation": "lif",
+    "split": "rep",
+    "threshold": 1.0,
+    "tau": 2.0,
+    "timesteps": 8,
+    "best_val_acc": 0.5536959553695955,
+    "test_acc": 0.5228215767634855,
+    "fr_act1": 0.0939002452549598,
+    "fr_act2": 0.18114955791299273,
+    "epoch": 26
+  }
+]

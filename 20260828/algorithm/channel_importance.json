@@ -1,0 +1,465 @@
+{
+  "baseline_ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_aug_s42.pth",
+  "channels": [
+    "Fz",
+    "FC3",
+    "FC1",
+    "FCz",
+    "FC2",
+    "FC4",
+    "C5",
+    "C3",
+    "C1",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP3",
+    "CP1",
+    "CPz",
+    "CP2",
+    "CP4",
+    "P1",
+    "Pz",
+    "P2",
+    "POz"
+  ],
+  "regions": {
+    "额区(前额/Fz+FCx)": [
+      "Fz",
+      "FC3",
+      "FC1",
+      "FCz",
+      "FC2",
+      "FC4"
+    ],
+    "中央运动区(Cx+CPx)": [
+      "C5",
+      "C3",
+      "C1",
+      "Cz",
+      "C2",
+      "C4",
+      "C6",
+      "CP3",
+      "CP1",
+      "CPz",
+      "CP2",
+      "CP4"
+    ],
+    "顶枕区(Px+POz)": [
+      "P1",
+      "Pz",
+      "P2",
+      "POz"
+    ]
+  },
+  "device": "mps",
+  "acc_clean": 0.6358,
+  "depthwise_norm": {
+    "Fz": 0.5666361451148987,
+    "FC3": 0.6275678277015686,
+    "FC1": 0.5751708149909973,
+    "FCz": 0.6266713738441467,
+    "FC2": 0.5128440856933594,
+    "FC4": 0.7547862529754639,
+    "C5": 0.8075588345527649,
+    "C3": 0.7673346996307373,
+    "C1": 0.6661047339439392,
+    "Cz": 0.7569442391395569,
+    "C2": 0.40747398138046265,
+    "C4": 0.70393306016922,
+    "C6": 0.766400158405304,
+    "CP3": 1.1421364545822144,
+    "CP1": 0.5404345393180847,
+    "CPz": 0.8087949156761169,
+    "CP2": 0.7906584739685059,
+    "CP4": 0.9056395888328552,
+    "P1": 0.9341210126876831,
+    "Pz": 0.5884059071540833,
+    "P2": 0.5339807868003845,
+    "POz": 0.892552375793457
+  },
+  "ablation_drop": {
+    "Fz": 0.0324,
+    "FC3": 0.0448,
+    "FC1": 0.1057,
+    "FCz": 0.0594,
+    "FC2": 0.0644,
+    "FC4": 0.1169,
+    "C5": 0.1285,
+    "C3": 0.1281,
+    "C1": 0.054,
+    "Cz": 0.1802,
+    "C2": 0.0667,
+    "C4": 0.1574,
+    "C6": 0.0721,
+    "CP3": 0.2612,
+    "CP1": 0.1026,
+    "CPz": 0.1281,
+    "CP2": 0.0965,
+    "CP4": 0.2361,
+    "P1": 0.1061,
+    "Pz": 0.1431,
+    "P2": 0.1034,
+    "POz": 0.0895
+  },
+  "region_analysis": {
+    "额区(前额/Fz+FCx)": {
+      "channels": [
+        "Fz",
+        "FC3",
+        "FC1",
+        "FCz",
+        "FC2",
+        "FC4"
+      ],
+      "acc_region_zeroed": 0.3395,
+      "drop_pp": 29.63
+    },
+    "中央运动区(Cx+CPx)": {
+      "channels": [
+        "C5",
+        "C3",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "CP3",
+        "CP1",
+        "CPz",
+        "CP2",
+        "CP4"
+      ],
+      "acc_region_zeroed": 0.2917,
+      "drop_pp": 34.41
+    },
+    "顶枕区(Px+POz)": {
+      "channels": [
+        "P1",
+        "Pz",
+        "P2",
+        "POz"
+      ],
+      "acc_region_zeroed": 0.4896,
+      "drop_pp": 14.62
+    },
+    "仅中央运动区12ch": {
+      "acc": 0.2897
+    },
+    "仅外周10ch": {
+      "acc": 0.2917
+    }
+  },
+  "importance_ranking": [
+    {
+      "rank": 1,
+      "idx": 13,
+      "channel": "CP3",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 1.1421,
+      "abl_drop_pp": 26.12,
+      "region_prior": 1.0,
+      "score": 1.0
+    },
+    {
+      "rank": 2,
+      "idx": 17,
+      "channel": "CP4",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.9056,
+      "abl_drop_pp": 23.61,
+      "region_prior": 1.0,
+      "score": 0.8274
+    },
+    {
+      "rank": 3,
+      "idx": 9,
+      "channel": "Cz",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.7569,
+      "abl_drop_pp": 18.02,
+      "region_prior": 1.0,
+      "score": 0.6486
+    },
+    {
+      "rank": 4,
+      "idx": 6,
+      "channel": "C5",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.8076,
+      "abl_drop_pp": 12.85,
+      "region_prior": 1.0,
+      "score": 0.5858
+    },
+    {
+      "rank": 5,
+      "idx": 15,
+      "channel": "CPz",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.8088,
+      "abl_drop_pp": 12.81,
+      "region_prior": 1.0,
+      "score": 0.5858
+    },
+    {
+      "rank": 6,
+      "idx": 11,
+      "channel": "C4",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.7039,
+      "abl_drop_pp": 15.74,
+      "region_prior": 1.0,
+      "score": 0.58
+    },
+    {
+      "rank": 7,
+      "idx": 7,
+      "channel": "C3",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.7673,
+      "abl_drop_pp": 12.81,
+      "region_prior": 1.0,
+      "score": 0.5632
+    },
+    {
+      "rank": 8,
+      "idx": 18,
+      "channel": "P1",
+      "region": "顶枕区(Px+POz)",
+      "norm": 0.9341,
+      "abl_drop_pp": 10.61,
+      "region_prior": 0.627,
+      "score": 0.541
+    },
+    {
+      "rank": 9,
+      "idx": 16,
+      "channel": "CP2",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.7907,
+      "abl_drop_pp": 9.65,
+      "region_prior": 1.0,
+      "score": 0.5206
+    },
+    {
+      "rank": 10,
+      "idx": 21,
+      "channel": "POz",
+      "region": "顶枕区(Px+POz)",
+      "norm": 0.8926,
+      "abl_drop_pp": 8.95,
+      "region_prior": 0.627,
+      "score": 0.4893
+    },
+    {
+      "rank": 11,
+      "idx": 12,
+      "channel": "C6",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.7664,
+      "abl_drop_pp": 7.21,
+      "region_prior": 1.0,
+      "score": 0.4649
+    },
+    {
+      "rank": 12,
+      "idx": 19,
+      "channel": "Pz",
+      "region": "顶枕区(Px+POz)",
+      "norm": 0.5884,
+      "abl_drop_pp": 14.31,
+      "region_prior": 0.627,
+      "score": 0.4175
+    },
+    {
+      "rank": 13,
+      "idx": 14,
+      "channel": "CP1",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.5404,
+      "abl_drop_pp": 10.26,
+      "region_prior": 1.0,
+      "score": 0.3952
+    },
+    {
+      "rank": 14,
+      "idx": 8,
+      "channel": "C1",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.6661,
+      "abl_drop_pp": 5.4,
+      "region_prior": 1.0,
+      "score": 0.3786
+    },
+    {
+      "rank": 15,
+      "idx": 5,
+      "channel": "FC4",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.7548,
+      "abl_drop_pp": 11.69,
+      "region_prior": 0.0,
+      "score": 0.3368
+    },
+    {
+      "rank": 16,
+      "idx": 20,
+      "channel": "P2",
+      "region": "顶枕区(Px+POz)",
+      "norm": 0.534,
+      "abl_drop_pp": 10.34,
+      "region_prior": 0.627,
+      "score": 0.3184
+    },
+    {
+      "rank": 17,
+      "idx": 10,
+      "channel": "C2",
+      "region": "中央运动区(Cx+CPx)",
+      "norm": 0.4075,
+      "abl_drop_pp": 6.67,
+      "region_prior": 1.0,
+      "score": 0.26
+    },
+    {
+      "rank": 18,
+      "idx": 2,
+      "channel": "FC1",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.5752,
+      "abl_drop_pp": 10.57,
+      "region_prior": 0.0,
+      "score": 0.2195
+    },
+    {
+      "rank": 19,
+      "idx": 3,
+      "channel": "FCz",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.6267,
+      "abl_drop_pp": 5.94,
+      "region_prior": 0.0,
+      "score": 0.1666
+    },
+    {
+      "rank": 20,
+      "idx": 1,
+      "channel": "FC3",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.6276,
+      "abl_drop_pp": 4.48,
+      "region_prior": 0.0,
+      "score": 0.1414
+    },
+    {
+      "rank": 21,
+      "idx": 4,
+      "channel": "FC2",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.5128,
+      "abl_drop_pp": 6.44,
+      "region_prior": 0.0,
+      "score": 0.1134
+    },
+    {
+      "rank": 22,
+      "idx": 0,
+      "channel": "Fz",
+      "region": "额区(前额/Fz+FCx)",
+      "norm": 0.5666,
+      "abl_drop_pp": 3.24,
+      "region_prior": 0.0,
+      "score": 0.0867
+    }
+  ],
+  "prune_keep16": {
+    "keep_idx": [
+      13,
+      17,
+      9,
+      6,
+      15,
+      11,
+      7,
+      18,
+      16,
+      21,
+      12,
+      19,
+      14,
+      8,
+      5,
+      20
+    ],
+    "keep_ch": [
+      "CP3",
+      "CP4",
+      "Cz",
+      "C5",
+      "CPz",
+      "C4",
+      "C3",
+      "P1",
+      "CP2",
+      "POz",
+      "C6",
+      "Pz",
+      "CP1",
+      "C1",
+      "FC4",
+      "P2"
+    ],
+    "drop_ch": [
+      "C2",
+      "FC1",
+      "FCz",
+      "FC3",
+      "FC2",
+      "Fz"
+    ]
+  },
+  "prune_keep12": {
+    "keep_idx": [
+      13,
+      17,
+      9,
+      6,
+      15,
+      11,
+      7,
+      18,
+      16,
+      21,
+      12,
+      19
+    ],
+    "keep_ch": [
+      "CP3",
+      "CP4",
+      "Cz",
+      "C5",
+      "CPz",
+      "C4",
+      "C3",
+      "P1",
+      "CP2",
+      "POz",
+      "C6",
+      "Pz"
+    ],
+    "drop_ch": [
+      "CP1",
+      "C1",
+      "FC4",
+      "P2",
+      "C2",
+      "FC1",
+      "FCz",
+      "FC3",
+      "FC2",
+      "Fz"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+ "cell": "lif_ssl_30_42",
+ "act": "lif",
+ "init": "ssl",
+ "frac": 0.3,
+ "seed": 42,
+ "init_desc": "SSL 预训练热启动（ssl_ae_aug.pth，52 键 conv/BN 权重；fc 随机初始化 ['fc.bias', 'fc.weight']）",
+ "best_epoch": 13,
+ "best_val_acc": 0.4017,
+ "n_train": 661,
+ "n_val": 117,
+ "n_params": 9512,
+ "acc_clean": 0.3306,
+ "acc_8db": 0.338,
+ "acc_8db_burst": 0.3299,
+ "noise_seed": 20240828,
+ "aug_desc": "HBC增强[5bit+AWGN SNR∈[10,20]dB +burst]"
+}

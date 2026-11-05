@@ -1,0 +1,2906 @@
+{
+  "半干电极": {
+    "query": "semi-dry EEG electrode",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Epidermal Electronics",
+        "year": 2011,
+        "cited": 4741,
+        "doi": "https://doi.org/10.1126/science.1206157",
+        "authors": [
+          "Dae‐Hyeong Kim",
+          "Nanshu Lu",
+          "Rui Ma"
+        ],
+        "venue": "Science"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Highly Selective Receptive Fields in Mouse Visual Cortex",
+        "year": 2008,
+        "cited": 1206,
+        "doi": "https://doi.org/10.1523/jneurosci.0623-08.2008",
+        "authors": [
+          "Cristopher M. Niell",
+          "Michael P. Stryker"
+        ],
+        "venue": "Journal of Neuroscience"
+      },
+      {
+        "title": "Control strategies for active lower extremity prosthetics and orthotics: a review",
+        "year": 2015,
+        "cited": 1074,
+        "doi": "https://doi.org/10.1186/1743-0003-12-1",
+        "authors": [
+          "Michael R. Tucker",
+          "Jérémy Olivier",
+          "Anna Pagel"
+        ],
+        "venue": "Journal of NeuroEngineering and Rehabilitation"
+      },
+      {
+        "title": "ECG-based heartbeat classification for arrhythmia detection: A survey",
+        "year": 2015,
+        "cited": 896,
+        "doi": "https://doi.org/10.1016/j.cmpb.2015.12.008",
+        "authors": [
+          "Eduardo Luz",
+          "William Robson Schwartz",
+          "Guillermo Cámara-Chávez"
+        ],
+        "venue": "Computer Methods and Programs in Biomedicine"
+      },
+      {
+        "title": "Additive manufacturing of structural materials",
+        "year": 2021,
+        "cited": 702,
+        "doi": "https://doi.org/10.1016/j.mser.2020.100596",
+        "authors": [
+          "Guo Liu",
+          "Xiaofeng Zhang",
+          "Xuliang Chen"
+        ],
+        "venue": "Materials Science and Engineering R Reports"
+      },
+      {
+        "title": "Exercise under heat stress: thermoregulation, hydration, performance implications, and mitigation strategies",
+        "year": 2021,
+        "cited": 628,
+        "doi": "https://doi.org/10.1152/physrev.00038.2020",
+        "authors": [
+          "Julien D. Périard",
+          "Thijs M.H. Eijsvogels",
+          "H.A.M. Daanen"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "Flexible Electronics and Devices as Human–Machine Interfaces for Medical Robotics",
+        "year": 2021,
+        "cited": 598,
+        "doi": "https://doi.org/10.1002/adma.202107902",
+        "authors": [
+          "Wenzheng Heng",
+          "Samuel A. Solomon",
+          "Wei Gao"
+        ],
+        "venue": "Advanced Materials"
+      },
+      {
+        "title": "Wearable chemical sensors for biomarker discovery in the omics era",
+        "year": 2022,
+        "cited": 596,
+        "doi": "https://doi.org/10.1038/s41570-022-00439-w",
+        "authors": [
+          "Juliane R. Sempionatto",
+          "José A. Lasalde‐Ramírez",
+          "Kuldeep Mahato"
+        ],
+        "venue": "Nature Reviews Chemistry"
+      },
+      {
+        "title": "Advanced Functional Materials",
+        "year": 2006,
+        "cited": 589,
+        "doi": "https://doi.org/10.1002/(issn)1616-3028",
+        "authors": [
+          "Baijie Cheng",
+          "Yexi Jin",
+          "Ruixue Wang"
+        ],
+        "venue": "Advanced Functional Materials"
+      },
+      {
+        "title": "Human Emotion Recognition: Review of Sensors and Methods",
+        "year": 2020,
+        "cited": 588,
+        "doi": "https://doi.org/10.3390/s20030592",
+        "authors": [
+          "Andrius Dzedzickis",
+          "Artūras Kaklauskas",
+          "Vytautas Bučinskas"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "The Harvard Automated Processing Pipeline for Electroencephalography (HAPPE): Standardized Processing Software for Developmental and High-Artifact Data",
+        "year": 2018,
+        "cited": 583,
+        "doi": "https://doi.org/10.3389/fnins.2018.00097",
+        "authors": [
+          "Laurel J. Gabard‐Durnam",
+          "Adriana S. Méndez Leal",
+          "Carol L. Wilkinson"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "Current Status, Challenges, and Possible Solutions of EEG-Based Brain-Computer Interface: A Comprehensive Review",
+        "year": 2020,
+        "cited": 507,
+        "doi": "https://doi.org/10.3389/fnbot.2020.00025",
+        "authors": [
+          "Mamunur Rashid",
+          "Norizam Sulaiman",
+          "Anwar P. P. Abdul Majeed"
+        ],
+        "venue": "Frontiers in Neurorobotics"
+      },
+      {
+        "title": "Tau association with synaptic vesicles causes presynaptic dysfunction",
+        "year": 2017,
+        "cited": 465,
+        "doi": "https://doi.org/10.1038/ncomms15295",
+        "authors": [
+          "Lujia Zhou",
+          "Joseph McInnes",
+          "Keimpe Wierda"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Recent Advances in Flexible Perovskite Solar Cells: Fabrication and Applications",
+        "year": 2018,
+        "cited": 460,
+        "doi": "https://doi.org/10.1002/anie.201809781",
+        "authors": [
+          "Dong Yang",
+          "Ruixia Yang",
+          "Shashank Priya"
+        ],
+        "venue": "Angewandte Chemie International Edition"
+      }
+    ]
+  },
+  "干电极脑电": {
+    "query": "dry electrode EEG",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Epidermal Electronics",
+        "year": 2011,
+        "cited": 4741,
+        "doi": "https://doi.org/10.1126/science.1206157",
+        "authors": [
+          "Dae‐Hyeong Kim",
+          "Nanshu Lu",
+          "Rui Ma"
+        ],
+        "venue": "Science"
+      },
+      {
+        "title": "Hydrogel bioelectronics",
+        "year": 2018,
+        "cited": 2115,
+        "doi": "https://doi.org/10.1039/c8cs00595h",
+        "authors": [
+          "Hyunwoo Yuk",
+          "Baoyang Lu",
+          "Xuanhe Zhao"
+        ],
+        "venue": "Chemical Society Reviews"
+      },
+      {
+        "title": "Wearable Electronics and Smart Textiles: A Critical Review",
+        "year": 2014,
+        "cited": 2085,
+        "doi": "https://doi.org/10.3390/s140711957",
+        "authors": [
+          "Matteo Stoppa",
+          "Alessandro Chiolerio"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "Perineuronal nets stabilize the grid cell network",
+        "year": 2021,
+        "cited": 1879,
+        "doi": "https://doi.org/10.1038/s41467-020-20241-w",
+        "authors": [
+          "Ane Charlotte Christensen",
+          "Kristian Kinden Lensjø",
+          "Mikkel Elle Lepperød"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Cognitive Deficit in 7-Year-Old Children with Prenatal Exposure to Methylmercury",
+        "year": 1997,
+        "cited": 1741,
+        "doi": "https://doi.org/10.1016/s0892-0362(97)00097-4",
+        "authors": [
+          "Philippe Grandjean",
+          "Pál Weihe",
+          "Roberta F. White"
+        ],
+        "venue": "Neurotoxicology and Teratology"
+      },
+      {
+        "title": "A technical guide to tDCS, and related non-invasive brain stimulation tools",
+        "year": 2015,
+        "cited": 1475,
+        "doi": "https://doi.org/10.1016/j.clinph.2015.11.012",
+        "authors": [
+          "Adam J. Woods",
+          "Andrea Antal",
+          "Marom Bikson"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Wearable sensors: modalities, challenges, and prospects",
+        "year": 2017,
+        "cited": 1407,
+        "doi": "https://doi.org/10.1039/c7lc00914c",
+        "authors": [
+          "Jason Heikenfeld",
+          "Andrew J. Jajack",
+          "John A. Rogers"
+        ],
+        "venue": "Lab on a Chip"
+      },
+      {
+        "title": "Wearable Sensors for Remote Health Monitoring",
+        "year": 2017,
+        "cited": 1373,
+        "doi": "https://doi.org/10.3390/s17010130",
+        "authors": [
+          "Sumit Majumder",
+          "Tapas Mondal",
+          "M. Jamal Deen"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "Publication recommendations for electrodermal measurements",
+        "year": 2012,
+        "cited": 1302,
+        "doi": "https://doi.org/10.1111/j.1469-8986.2012.01384.x",
+        "authors": [
+          "Society for Psychophysiological Research Ad Hoc Committee on Electrodermal Measures"
+        ],
+        "venue": "Psychophysiology"
+      },
+      {
+        "title": "Review of the BCI Competition IV",
+        "year": 2012,
+        "cited": 1280,
+        "doi": "https://doi.org/10.3389/fnins.2012.00055",
+        "authors": [
+          "Michael Tangermann",
+          "Klaus‐Robert Müller",
+          "Ad Aertsen"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Highly Selective Receptive Fields in Mouse Visual Cortex",
+        "year": 2008,
+        "cited": 1206,
+        "doi": "https://doi.org/10.1523/jneurosci.0623-08.2008",
+        "authors": [
+          "Cristopher M. Niell",
+          "Michael P. Stryker"
+        ],
+        "venue": "Journal of Neuroscience"
+      },
+      {
+        "title": "Columnar specificity of intrinsic horizontal and corticocortical connections in cat visual cortex",
+        "year": 1989,
+        "cited": 1191,
+        "doi": "https://doi.org/10.1523/jneurosci.09-07-02432.1989",
+        "authors": [
+          "CD Gilbert",
+          "TN Wiesel"
+        ],
+        "venue": "Journal of Neuroscience"
+      },
+      {
+        "title": "A framework for the analysis of mixed time series/point process data—Theory and application to the study of physiological tremor, single motor unit discharges and electromyograms",
+        "year": 1995,
+        "cited": 1133,
+        "doi": "https://doi.org/10.1016/s0079-6107(96)00009-0",
+        "authors": [
+          "David M. Halliday",
+          "J.R. Rosenberg",
+          "Ammar Amjad"
+        ],
+        "venue": "Progress in Biophysics and Molecular Biology"
+      },
+      {
+        "title": "Sharp wave-associated high-frequency oscillation (200 Hz) in the intact hippocampus: network and intracellular mechanisms",
+        "year": 1995,
+        "cited": 1117,
+        "doi": "https://doi.org/10.1523/jneurosci.15-01-00030.1995",
+        "authors": [
+          "Aarne Ylinen",
+          "Anatol Bragin",
+          "Zoltán Nádasdy"
+        ],
+        "venue": "Journal of Neuroscience"
+      }
+    ]
+  },
+  "石墨烯脑电电极": {
+    "query": "graphene electrode EEG",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Hydrogel bioelectronics",
+        "year": 2018,
+        "cited": 2115,
+        "doi": "https://doi.org/10.1039/c8cs00595h",
+        "authors": [
+          "Hyunwoo Yuk",
+          "Baoyang Lu",
+          "Xuanhe Zhao"
+        ],
+        "venue": "Chemical Society Reviews"
+      },
+      {
+        "title": "Electronic Skin: Recent Progress and Future Prospects for Skin‐Attachable Devices for Health Monitoring, Robotics, and Prosthetics",
+        "year": 2019,
+        "cited": 1660,
+        "doi": "https://doi.org/10.1002/adma.201904765",
+        "authors": [
+          "Jun Chang Yang",
+          "Jaewan Mun",
+          "Se Young Kwon"
+        ],
+        "venue": "Advanced Materials"
+      },
+      {
+        "title": "Wearable sensors: modalities, challenges, and prospects",
+        "year": 2017,
+        "cited": 1407,
+        "doi": "https://doi.org/10.1039/c7lc00914c",
+        "authors": [
+          "Jason Heikenfeld",
+          "Andrew J. Jajack",
+          "John A. Rogers"
+        ],
+        "venue": "Lab on a Chip"
+      },
+      {
+        "title": "Wearable Sensors for Remote Health Monitoring",
+        "year": 2017,
+        "cited": 1373,
+        "doi": "https://doi.org/10.3390/s17010130",
+        "authors": [
+          "Sumit Majumder",
+          "Tapas Mondal",
+          "M. Jamal Deen"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Fractal design concepts for stretchable electronics",
+        "year": 2014,
+        "cited": 1079,
+        "doi": "https://doi.org/10.1038/ncomms4266",
+        "authors": [
+          "Jonathan A. Fan",
+          "Woon‐Hong Yeo",
+          "Yewang Su"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Current progress achieved in novel materials for supercapacitor electrodes: mini review",
+        "year": 2019,
+        "cited": 921,
+        "doi": "https://doi.org/10.1039/c9na00345b",
+        "authors": [
+          "Sumaiyah Najib",
+          "Emre Erdem"
+        ],
+        "venue": "Nanoscale Advances"
+      },
+      {
+        "title": "Some basic aspects of polymer nanocomposites: A critical review",
+        "year": 2019,
+        "cited": 878,
+        "doi": "https://doi.org/10.1016/j.nanoms.2019.02.006",
+        "authors": [
+          "Shao‐Yun Fu",
+          "Zheng Sun",
+          "Pei Huang"
+        ],
+        "venue": "Nano Materials Science"
+      },
+      {
+        "title": "A Survey of Wearable Devices and Challenges",
+        "year": 2017,
+        "cited": 813,
+        "doi": "https://doi.org/10.1109/comst.2017.2731979",
+        "authors": [
+          "Suranga Seneviratne",
+          "Yining Hu",
+          "Tham Nguyen"
+        ],
+        "venue": "IEEE Communications Surveys & Tutorials"
+      },
+      {
+        "title": "Nature-Inspired Structural Materials for Flexible Electronic Devices",
+        "year": 2017,
+        "cited": 808,
+        "doi": "https://doi.org/10.1021/acs.chemrev.7b00291",
+        "authors": [
+          "Yaqing Liu",
+          "Ke He",
+          "Geng Chen"
+        ],
+        "venue": "Chemical Reviews"
+      },
+      {
+        "title": "Glucose Sensing for Diabetes Monitoring: Recent Developments",
+        "year": 2017,
+        "cited": 785,
+        "doi": "https://doi.org/10.3390/s17081866",
+        "authors": [
+          "Danielle Bruen",
+          "Colm Delaney",
+          "Larisa Florea"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "Unobtrusive Sensing and Wearable Devices for Health Informatics",
+        "year": 2014,
+        "cited": 728,
+        "doi": "https://doi.org/10.1109/tbme.2014.2309951",
+        "authors": [
+          "Ya-Li Zheng",
+          "Xiaorong Ding",
+          "Carmen C. Y. Poon"
+        ],
+        "venue": "IEEE Transactions on Biomedical Engineering"
+      },
+      {
+        "title": "High-performance transistors for bioelectronics through tuning of channel thickness",
+        "year": 2015,
+        "cited": 722,
+        "doi": "https://doi.org/10.1126/sciadv.1400251",
+        "authors": [
+          "Jonathan Rivnay",
+          "P. Leleux",
+          "Marc Ferro"
+        ],
+        "venue": "Science Advances"
+      },
+      {
+        "title": "Advances in healthcare wearable devices",
+        "year": 2021,
+        "cited": 711,
+        "doi": "https://doi.org/10.1038/s41528-021-00107-x",
+        "authors": [
+          "Sheikh Muhammad Asher Iqbal",
+          "Imad Mahgoub",
+          "E Du"
+        ],
+        "venue": "npj Flexible Electronics"
+      },
+      {
+        "title": "Additive manufacturing of structural materials",
+        "year": 2021,
+        "cited": 702,
+        "doi": "https://doi.org/10.1016/j.mser.2020.100596",
+        "authors": [
+          "Guo Liu",
+          "Xiaofeng Zhang",
+          "Xuliang Chen"
+        ],
+        "venue": "Materials Science and Engineering R Reports"
+      }
+    ]
+  },
+  "电子纹身电极": {
+    "query": "electronic tattoo electrode EEG",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Epidermal Electronics",
+        "year": 2011,
+        "cited": 4741,
+        "doi": "https://doi.org/10.1126/science.1206157",
+        "authors": [
+          "Dae‐Hyeong Kim",
+          "Nanshu Lu",
+          "Rui Ma"
+        ],
+        "venue": "Science"
+      },
+      {
+        "title": "Wearable sensors: modalities, challenges, and prospects",
+        "year": 2017,
+        "cited": 1407,
+        "doi": "https://doi.org/10.1039/c7lc00914c",
+        "authors": [
+          "Jason Heikenfeld",
+          "Andrew J. Jajack",
+          "John A. Rogers"
+        ],
+        "venue": "Lab on a Chip"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Sensor Mania! The Internet of Things, Wearable Computing, Objective Metrics, and the Quantified Self 2.0",
+        "year": 2012,
+        "cited": 935,
+        "doi": "https://doi.org/10.3390/jsan1030217",
+        "authors": [
+          "Melanie Swan"
+        ],
+        "venue": "Journal of Sensor and Actuator Networks"
+      },
+      {
+        "title": "A wearable chemical–electrophysiological hybrid biosensing system for real-time health and fitness monitoring",
+        "year": 2016,
+        "cited": 865,
+        "doi": "https://doi.org/10.1038/ncomms11650",
+        "authors": [
+          "Somayeh Imani",
+          "Amay J. Bandodkar",
+          "A. M. Vinu Mohan"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "A Survey of Wearable Devices and Challenges",
+        "year": 2017,
+        "cited": 813,
+        "doi": "https://doi.org/10.1109/comst.2017.2731979",
+        "authors": [
+          "Suranga Seneviratne",
+          "Yining Hu",
+          "Tham Nguyen"
+        ],
+        "venue": "IEEE Communications Surveys & Tutorials"
+      },
+      {
+        "title": "Nature-Inspired Structural Materials for Flexible Electronic Devices",
+        "year": 2017,
+        "cited": 808,
+        "doi": "https://doi.org/10.1021/acs.chemrev.7b00291",
+        "authors": [
+          "Yaqing Liu",
+          "Ke He",
+          "Geng Chen"
+        ],
+        "venue": "Chemical Reviews"
+      },
+      {
+        "title": "Glucose Sensing for Diabetes Monitoring: Recent Developments",
+        "year": 2017,
+        "cited": 785,
+        "doi": "https://doi.org/10.3390/s17081866",
+        "authors": [
+          "Danielle Bruen",
+          "Colm Delaney",
+          "Larisa Florea"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "Unobtrusive Sensing and Wearable Devices for Health Informatics",
+        "year": 2014,
+        "cited": 728,
+        "doi": "https://doi.org/10.1109/tbme.2014.2309951",
+        "authors": [
+          "Ya-Li Zheng",
+          "Xiaorong Ding",
+          "Carmen C. Y. Poon"
+        ],
+        "venue": "IEEE Transactions on Biomedical Engineering"
+      },
+      {
+        "title": "Advances in healthcare wearable devices",
+        "year": 2021,
+        "cited": 711,
+        "doi": "https://doi.org/10.1038/s41528-021-00107-x",
+        "authors": [
+          "Sheikh Muhammad Asher Iqbal",
+          "Imad Mahgoub",
+          "E Du"
+        ],
+        "venue": "npj Flexible Electronics"
+      },
+      {
+        "title": "Graphene Electronic Tattoo Sensors",
+        "year": 2017,
+        "cited": 681,
+        "doi": "https://doi.org/10.1021/acsnano.7b02182",
+        "authors": [
+          "Shideh Kabiri Ameri",
+          "Rebecca Ho",
+          "Hongwoo Jang"
+        ],
+        "venue": "ACS Nano"
+      },
+      {
+        "title": "Wearables and the Medical Revolution",
+        "year": 2018,
+        "cited": 674,
+        "doi": "https://doi.org/10.2217/pme-2018-0044",
+        "authors": [
+          "Jessilyn Dunn",
+          "Ryan Runge",
+          "M Snyder"
+        ],
+        "venue": "Personalized Medicine"
+      },
+      {
+        "title": "Wearable chemical sensors for biomarker discovery in the omics era",
+        "year": 2022,
+        "cited": 596,
+        "doi": "https://doi.org/10.1038/s41570-022-00439-w",
+        "authors": [
+          "Juliane R. Sempionatto",
+          "José A. Lasalde‐Ramírez",
+          "Kuldeep Mahato"
+        ],
+        "venue": "Nature Reviews Chemistry"
+      },
+      {
+        "title": "Fully organic compliant dry electrodes self-adhesive to skin for long-term motion-robust epidermal biopotential monitoring",
+        "year": 2020,
+        "cited": 560,
+        "doi": "https://doi.org/10.1038/s41467-020-18503-8",
+        "authors": [
+          "Lei Zhang",
+          "Kirthika Senthil Kumar",
+          "Hao He"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Wearable sensors for monitoring the physiological and biochemical profile of the athlete",
+        "year": 2019,
+        "cited": 536,
+        "doi": "https://doi.org/10.1038/s41746-019-0150-9",
+        "authors": [
+          "Dhruv R. Seshadri",
+          "Ryan Li",
+          "James E. Voos"
+        ],
+        "venue": "npj Digital Medicine"
+      }
+    ]
+  },
+  "耳内脑电": {
+    "query": "ear-EEG wearable",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+        "year": 2017,
+        "cited": 3740,
+        "doi": "https://doi.org/10.1002/hbm.23730",
+        "authors": [
+          "Robin Tibor Schirrmeister",
+          "Jost Tobias Springenberg",
+          "Lukas D. J. Fiederer"
+        ],
+        "venue": "Human Brain Mapping"
+      },
+      {
+        "title": "A review of wearable sensors and systems with application in rehabilitation",
+        "year": 2012,
+        "cited": 2386,
+        "doi": "https://doi.org/10.1186/1743-0003-9-21",
+        "authors": [
+          "Shyamal Patel",
+          "Hyung Park",
+          "Paolo Bonato"
+        ],
+        "venue": "Journal of NeuroEngineering and Rehabilitation"
+      },
+      {
+        "title": "Safety and recommendations for TMS use in healthy subjects and patient populations, with updates on training, ethical and regulatory issues: Expert Guidelines",
+        "year": 2020,
+        "cited": 1593,
+        "doi": "https://doi.org/10.1016/j.clinph.2020.10.003",
+        "authors": [
+          "Símone Rossi",
+          "Andrea Antal",
+          "Sven Bestmann"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Augmented visual, auditory, haptic, and multimodal feedback in motor learning: A review",
+        "year": 2012,
+        "cited": 1411,
+        "doi": "https://doi.org/10.3758/s13423-012-0333-8",
+        "authors": [
+          "Roland Sigrist",
+          "Georg Rauter",
+          "Robert Riener"
+        ],
+        "venue": "Psychonomic Bulletin & Review"
+      },
+      {
+        "title": "Wearable sensors: modalities, challenges, and prospects",
+        "year": 2017,
+        "cited": 1407,
+        "doi": "https://doi.org/10.1039/c7lc00914c",
+        "authors": [
+          "Jason Heikenfeld",
+          "Andrew J. Jajack",
+          "John A. Rogers"
+        ],
+        "venue": "Lab on a Chip"
+      },
+      {
+        "title": "Wearable Sensors for Remote Health Monitoring",
+        "year": 2017,
+        "cited": 1373,
+        "doi": "https://doi.org/10.3390/s17010130",
+        "authors": [
+          "Sumit Majumder",
+          "Tapas Mondal",
+          "M. Jamal Deen"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "Hearing Impairment and Cognitive Energy: The Framework for Understanding Effortful Listening (FUEL)",
+        "year": 2016,
+        "cited": 1352,
+        "doi": "https://doi.org/10.1097/aud.0000000000000312",
+        "authors": [
+          "M. Kathleen Pichora‐Fuller",
+          "Sophia E. Kramer",
+          "Mark A. Eckert"
+        ],
+        "venue": "Ear and Hearing"
+      },
+      {
+        "title": "EmotionMeter: A Multimodal Framework for Recognizing Human Emotions",
+        "year": 2018,
+        "cited": 1269,
+        "doi": "https://doi.org/10.1109/tcyb.2018.2797176",
+        "authors": [
+          "Wei‐Long Zheng",
+          "Wei Liu",
+          "Yifei Lu"
+        ],
+        "venue": "IEEE Transactions on Cybernetics"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Urban Green Space and Its Impact on Human Health",
+        "year": 2018,
+        "cited": 1183,
+        "doi": "https://doi.org/10.3390/ijerph15030445",
+        "authors": [
+          "Michelle C. Kondo",
+          "Jaime Fluehr",
+          "Thomas P. McKeon"
+        ],
+        "venue": "International Journal of Environmental Research and Public Health"
+      },
+      {
+        "title": "A review on wearable photoplethysmography sensors and their potential future applications in health care",
+        "year": 2018,
+        "cited": 964,
+        "doi": "https://doi.org/10.15406/ijbsbe.2018.04.00125",
+        "authors": [
+          "Mohammad Ghamari"
+        ],
+        "venue": "International Journal of Biosensors & Bioelectronics"
+      },
+      {
+        "title": "State of the art and practice in AI in education",
+        "year": 2022,
+        "cited": 962,
+        "doi": "https://doi.org/10.1111/ejed.12533",
+        "authors": [
+          "W. Holmes",
+          "Ilkka Tuomi"
+        ],
+        "venue": "European Journal of Education"
+      },
+      {
+        "title": "Sensor Mania! The Internet of Things, Wearable Computing, Objective Metrics, and the Quantified Self 2.0",
+        "year": 2012,
+        "cited": 935,
+        "doi": "https://doi.org/10.3390/jsan1030217",
+        "authors": [
+          "Melanie Swan"
+        ],
+        "venue": "Journal of Sensor and Actuator Networks"
+      },
+      {
+        "title": "A Review of Emotion Recognition Using Physiological Signals",
+        "year": 2018,
+        "cited": 925,
+        "doi": "https://doi.org/10.3390/s18072074",
+        "authors": [
+          "Lin Shu",
+          "Jinyan Xie",
+          "Mingyue Yang"
+        ],
+        "venue": "Sensors"
+      }
+    ]
+  },
+  "高密度脑电阵列": {
+    "query": "high-density EEG array",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Epidermal Electronics",
+        "year": 2011,
+        "cited": 4741,
+        "doi": "https://doi.org/10.1126/science.1206157",
+        "authors": [
+          "Dae‐Hyeong Kim",
+          "Nanshu Lu",
+          "Rui Ma"
+        ],
+        "venue": "Science"
+      },
+      {
+        "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+        "year": 2012,
+        "cited": 4526,
+        "doi": "https://doi.org/10.1038/nrn3241",
+        "authors": [
+          "György Buzsáki",
+          "Costas A. Anastassiou",
+          "Christof Koch"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "MEG and EEG data analysis with MNE-Python",
+        "year": 2013,
+        "cited": 4175,
+        "doi": "https://doi.org/10.3389/fnins.2013.00267",
+        "authors": [
+          "Alexandre Gramfort"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "Molecular ecological network analyses",
+        "year": 2012,
+        "cited": 3306,
+        "doi": "https://doi.org/10.1186/1471-2105-13-113",
+        "authors": [
+          "Ye Deng",
+          "Yi‐Huei Jiang",
+          "Yunfeng Yang"
+        ],
+        "venue": "BMC Bioinformatics"
+      },
+      {
+        "title": "The Human Connectome Project: A data acquisition perspective",
+        "year": 2012,
+        "cited": 2879,
+        "doi": "https://doi.org/10.1016/j.neuroimage.2012.02.018",
+        "authors": [
+          "David C. Van Essen",
+          "Kǎmil Uǧurbil",
+          "Edward J. Auerbach"
+        ],
+        "venue": "NeuroImage"
+      },
+      {
+        "title": "Methods for interpreting and understanding deep neural networks",
+        "year": 2017,
+        "cited": 2767,
+        "doi": "https://doi.org/10.1016/j.dsp.2017.10.011",
+        "authors": [
+          "Grégoire Montavon",
+          "Wojciech Samek",
+          "Klaus‐Robert Müller"
+        ],
+        "venue": "Digital Signal Processing"
+      },
+      {
+        "title": "Machine learning for neuroimaging with scikit-learn",
+        "year": 2014,
+        "cited": 2709,
+        "doi": "https://doi.org/10.3389/fninf.2014.00014",
+        "authors": [
+          "Alexandre Abraham",
+          "Fabian Pedregosa",
+          "Michael Eickenberg"
+        ],
+        "venue": "Frontiers in Neuroinformatics"
+      },
+      {
+        "title": "A review of uncertainty quantification in deep learning: Techniques, applications and challenges",
+        "year": 2021,
+        "cited": 2686,
+        "doi": "https://doi.org/10.1016/j.inffus.2021.05.008",
+        "authors": [
+          "Moloud Abdar",
+          "Farhad Pourpanah",
+          "Sadiq Hussain"
+        ],
+        "venue": "Information Fusion"
+      },
+      {
+        "title": "Neuronal Avalanches in Neocortical Circuits",
+        "year": 2003,
+        "cited": 2427,
+        "doi": "https://doi.org/10.1523/jneurosci.23-35-11167.2003",
+        "authors": [
+          "John M. Beggs",
+          "Dietmar Plenz"
+        ],
+        "venue": "Journal of Neuroscience"
+      },
+      {
+        "title": "A comprehensive survey on support vector machine classification: Applications, challenges and trends",
+        "year": 2020,
+        "cited": 2377,
+        "doi": "https://doi.org/10.1016/j.neucom.2019.10.118",
+        "authors": [
+          "Jair Cervantes",
+          "Farid García‐Lamont",
+          "Lisbeth Rodríguez-Mazahua"
+        ],
+        "venue": "Neurocomputing"
+      },
+      {
+        "title": "The brain basis of emotion: A meta-analytic review",
+        "year": 2012,
+        "cited": 2367,
+        "doi": "https://doi.org/10.1017/s0140525x11000446",
+        "authors": [
+          "Kristen A. Lindquist",
+          "Tor D. Wager",
+          "Hedy Kober"
+        ],
+        "venue": "Behavioral and Brain Sciences"
+      },
+      {
+        "title": "A review of classification algorithms for EEG-based brain–computer interfaces: a 10 year update",
+        "year": 2018,
+        "cited": 2233,
+        "doi": "https://doi.org/10.1088/1741-2552/aab2f2",
+        "authors": [
+          "Fabien Lotte",
+          "Laurent Bougrain",
+          "Andrzej Cichocki"
+        ],
+        "venue": "Journal of Neural Engineering"
+      },
+      {
+        "title": "The Corticosteroid Receptor Hypothesis of Depression",
+        "year": 2000,
+        "cited": 2185,
+        "doi": "https://doi.org/10.1016/s0893-133x(00)00159-7",
+        "authors": [
+          "Florian Holsboer"
+        ],
+        "venue": "Neuropsychopharmacology"
+      },
+      {
+        "title": "Hydrogel bioelectronics",
+        "year": 2018,
+        "cited": 2115,
+        "doi": "https://doi.org/10.1039/c8cs00595h",
+        "authors": [
+          "Hyunwoo Yuk",
+          "Baoyang Lu",
+          "Xuanhe Zhao"
+        ],
+        "venue": "Chemical Society Reviews"
+      }
+    ]
+  },
+  "脑电去噪深度学习": {
+    "query": "EEG artifact removal deep learning",
+    "count": 15,
+    "papers": [
+      {
+        "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+        "year": 2018,
+        "cited": 4693,
+        "doi": "https://doi.org/10.1088/1741-2552/aace8c",
+        "authors": [
+          "Vernon J Lawhern",
+          "Amelia J Solon",
+          "Nicholas R Waytowich"
+        ],
+        "venue": "Journal of Neural Engineering"
+      },
+      {
+        "title": "MEG and EEG data analysis with MNE-Python",
+        "year": 2013,
+        "cited": 4175,
+        "doi": "https://doi.org/10.3389/fnins.2013.00267",
+        "authors": [
+          "Alexandre Gramfort"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+        "year": 2017,
+        "cited": 3740,
+        "doi": "https://doi.org/10.1002/hbm.23730",
+        "authors": [
+          "Robin Tibor Schirrmeister",
+          "Jost Tobias Springenberg",
+          "Lukas D. J. Fiederer"
+        ],
+        "venue": "Human Brain Mapping"
+      },
+      {
+        "title": "Methods for interpreting and understanding deep neural networks",
+        "year": 2017,
+        "cited": 2767,
+        "doi": "https://doi.org/10.1016/j.dsp.2017.10.011",
+        "authors": [
+          "Grégoire Montavon",
+          "Wojciech Samek",
+          "Klaus‐Robert Müller"
+        ],
+        "venue": "Digital Signal Processing"
+      },
+      {
+        "title": "Deep learning for electroencephalogram (EEG) classification tasks: a review",
+        "year": 2019,
+        "cited": 1769,
+        "doi": "https://doi.org/10.1088/1741-2552/ab0ab5",
+        "authors": [
+          "Alexander Craik",
+          "Yongtian He",
+          "José L. Contreras-Vidal"
+        ],
+        "venue": "Journal of Neural Engineering"
+      },
+      {
+        "title": "Techniques of EMG signal analysis: detection, processing, classification and applications",
+        "year": 2006,
+        "cited": 1639,
+        "doi": "https://doi.org/10.1251/bpo115",
+        "authors": [
+          "Mamun Bin Ibne Reaz",
+          "Muddassar Hussain",
+          "Faisal Mohd-Yasin"
+        ],
+        "venue": "Biological Procedures Online"
+      },
+      {
+        "title": "Functional Brain Networks Develop from a “Local to Distributed” Organization",
+        "year": 2009,
+        "cited": 1592,
+        "doi": "https://doi.org/10.1371/journal.pcbi.1000381",
+        "authors": [
+          "Damien A. Fair",
+          "Alexander L. Cohen",
+          "Jonathan D. Power"
+        ],
+        "venue": "PLoS Computational Biology"
+      },
+      {
+        "title": "The PREP pipeline: standardized preprocessing for large-scale EEG analysis",
+        "year": 2015,
+        "cited": 1467,
+        "doi": "https://doi.org/10.3389/fninf.2015.00016",
+        "authors": [
+          "Nima Bigdely-Shamlo",
+          "Tim Mullen",
+          "Christian Kothe"
+        ],
+        "venue": "Frontiers in Neuroinformatics"
+      },
+      {
+        "title": "Studies on single neurons in dorsal hippocampal formation and septum in unrestrained rats",
+        "year": 1973,
+        "cited": 1348,
+        "doi": "https://doi.org/10.1016/0014-4886(73)90290-2",
+        "authors": [
+          "James B. Ranck"
+        ],
+        "venue": "Experimental Neurology"
+      },
+      {
+        "title": "Publication recommendations for electrodermal measurements",
+        "year": 2012,
+        "cited": 1302,
+        "doi": "https://doi.org/10.1111/j.1469-8986.2012.01384.x",
+        "authors": [
+          "Society for Psychophysiological Research Ad Hoc Committee on Electrodermal Measures"
+        ],
+        "venue": "Psychophysiology"
+      },
+      {
+        "title": "Toward Direct Brain-Computer Communication",
+        "year": 1973,
+        "cited": 1276,
+        "doi": "https://doi.org/10.1146/annurev.bb.02.060173.001105",
+        "authors": [
+          "J.J. Vidal"
+        ],
+        "venue": "Annual Review of Biophysics and Bioengineering"
+      },
+      {
+        "title": "End-to-end design of wearable sensors",
+        "year": 2022,
+        "cited": 1256,
+        "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+        "authors": [
+          "H. Ceren Ates",
+          "Peter Q. Nguyen",
+          "Laura Gonzalez‐Macia"
+        ],
+        "venue": "Nature Reviews Materials"
+      },
+      {
+        "title": "Clinical applications of resting state functional connectivity",
+        "year": 2010,
+        "cited": 1221,
+        "doi": "https://doi.org/10.3389/fnsys.2010.00019",
+        "authors": [
+          "Michael Fox"
+        ],
+        "venue": "Frontiers in Systems Neuroscience"
+      },
+      {
+        "title": "Topographic ERP Analyses: A Step-by-Step Tutorial Review",
+        "year": 2008,
+        "cited": 1179,
+        "doi": "https://doi.org/10.1007/s10548-008-0054-5",
+        "authors": [
+          "Micah M. Murray",
+          "Denis Brunet",
+          "Christoph M. Michel"
+        ],
+        "venue": "Brain Topography"
+      },
+      {
+        "title": "fNIRS-based brain-computer interfaces: a review",
+        "year": 2015,
+        "cited": 992,
+        "doi": "https://doi.org/10.3389/fnhum.2015.00003",
+        "authors": [
+          "Noman Naseer",
+          "Keum‐Shik Hong"
+        ],
+        "venue": "Frontiers in Human Neuroscience"
+      }
+    ]
+  },
+  "主动电极": {
+    "query": "active electrode EEG",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Cognitive and emotional influences in anterior cingulate cortex",
+        "year": 2000,
+        "cited": 6302,
+        "doi": "https://doi.org/10.1016/s1364-6613(00)01483-2",
+        "authors": [
+          "George Bush",
+          "George Bush",
+          "Phan Luu"
+        ],
+        "venue": "Trends in Cognitive Sciences"
+      },
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Epidermal Electronics",
+        "year": 2011,
+        "cited": 4741,
+        "doi": "https://doi.org/10.1126/science.1206157",
+        "authors": [
+          "Dae‐Hyeong Kim",
+          "Nanshu Lu",
+          "Rui Ma"
+        ],
+        "venue": "Science"
+      },
+      {
+        "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+        "year": 2018,
+        "cited": 4693,
+        "doi": "https://doi.org/10.1088/1741-2552/aace8c",
+        "authors": [
+          "Vernon J Lawhern",
+          "Amelia J Solon",
+          "Nicholas R Waytowich"
+        ],
+        "venue": "Journal of Neural Engineering"
+      },
+      {
+        "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+        "year": 2012,
+        "cited": 4526,
+        "doi": "https://doi.org/10.1038/nrn3241",
+        "authors": [
+          "György Buzsáki",
+          "Costas A. Anastassiou",
+          "Christof Koch"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "Measuring phase synchrony in brain signals",
+        "year": 1999,
+        "cited": 4023,
+        "doi": "https://doi.org/10.1002/(sici)1097-0193(1999)8:4<194::aid-hbm4>3.0.co;2-c",
+        "authors": [
+          "Jean-Philippe Lachaux",
+          "Eugenio Rodríguez",
+          "Jacques Martinerie"
+        ],
+        "venue": "Human Brain Mapping"
+      },
+      {
+        "title": "Brainstorm: A User-Friendly Application for MEG/EEG Analysis",
+        "year": 2011,
+        "cited": 3991,
+        "doi": "https://doi.org/10.1155/2011/879716",
+        "authors": [
+          "François Tadel",
+          "Sylvain Baillet",
+          "John C. Mosher"
+        ],
+        "venue": "Computational Intelligence and Neuroscience"
+      },
+      {
+        "title": "Recurrence plots for the analysis of complex systems",
+        "year": 2007,
+        "cited": 3874,
+        "doi": "https://doi.org/10.1016/j.physrep.2006.11.001",
+        "authors": [
+          "Norbert Marwan",
+          "M. Carmen Romano",
+          "Marko Thiel"
+        ],
+        "venue": "Physics Reports"
+      },
+      {
+        "title": "Excitatory and Inhibitory Interactions in Localized Populations of Model Neurons",
+        "year": 1972,
+        "cited": 3802,
+        "doi": "https://doi.org/10.1016/s0006-3495(72)86068-5",
+        "authors": [
+          "Hugh R. Wilson",
+          "Jack D. Cowan"
+        ],
+        "venue": "Biophysical Journal"
+      },
+      {
+        "title": "A Randomized Controlled Trial of Surgery for Temporal Lobe Epilepsy",
+        "year": 2001,
+        "cited": 3542,
+        "doi": "https://doi.org/10.1056/nejm200108023450501",
+        "authors": [
+          "Samuel Wiebe",
+          "Warren T. Blume",
+          "John P. Girvin"
+        ],
+        "venue": "New England Journal of Medicine"
+      },
+      {
+        "title": "About Sleep's Role in Memory",
+        "year": 2013,
+        "cited": 2881,
+        "doi": "https://doi.org/10.1152/physrev.00032.2012",
+        "authors": [
+          "Björn Rasch",
+          "Jan Born"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "The Human Connectome Project: A data acquisition perspective",
+        "year": 2012,
+        "cited": 2879,
+        "doi": "https://doi.org/10.1016/j.neuroimage.2012.02.018",
+        "authors": [
+          "David C. Van Essen",
+          "Kǎmil Uǧurbil",
+          "Edward J. Auerbach"
+        ],
+        "venue": "NeuroImage"
+      },
+      {
+        "title": "Non-invasive electrical and magnetic stimulation of the brain, spinal cord, roots and peripheral nerves: Basic principles and procedures for routine clinical and research application. An updated report from an I.F.C.N. Committee",
+        "year": 2015,
+        "cited": 2851,
+        "doi": "https://doi.org/10.1016/j.clinph.2015.02.001",
+        "authors": [
+          "Paolo Maria Rossini",
+          "David Burke",
+          "Robert Chen"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "ERPLAB: an open-source toolbox for the analysis of event-related potentials",
+        "year": 2014,
+        "cited": 2751,
+        "doi": "https://doi.org/10.3389/fnhum.2014.00213",
+        "authors": [
+          "Javier López‐Calderón",
+          "Steven J. Luck"
+        ],
+        "venue": "Frontiers in Human Neuroscience"
+      },
+      {
+        "title": "Traumatic brain injury: integrated approaches to improve prevention, clinical care, and research",
+        "year": 2017,
+        "cited": 2652,
+        "doi": "https://doi.org/10.1016/s1474-4422(17)30371-x",
+        "authors": [
+          "Andrew I.R. Maas",
+          "David Menon",
+          "P. David Adelson"
+        ],
+        "venue": "The Lancet Neurology"
+      }
+    ]
+  },
+  "时间干涉刺激": {
+    "query": "temporal interference stimulation",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Maps of Dust Infrared Emission for Use in Estimation of Reddening and Cosmic Microwave Background Radiation Foregrounds",
+        "year": 1998,
+        "cited": 15411,
+        "doi": "https://doi.org/10.1086/305772",
+        "authors": [
+          "David J. Schlegel",
+          "Douglas P. Finkbeiner",
+          "Marc Davis"
+        ],
+        "venue": "The Astrophysical Journal"
+      },
+      {
+        "title": "Diagnosis and Classification of Diabetes Mellitus",
+        "year": 2010,
+        "cited": 14029,
+        "doi": "https://doi.org/10.2337/dc11-s062",
+        "authors": [
+          "American Diabetes Association"
+        ],
+        "venue": "Diabetes Care"
+      },
+      {
+        "title": "Diagnosing Non-Intermittent Anomalies in Reinforcement Learning Policy Executions (Short Paper)",
+        "year": 2017,
+        "cited": 11358,
+        "doi": "https://doi.org/10.4230/oasics.dx.2024.16",
+        "authors": [
+          "Esper, Khalil",
+          "Spieck, Jan",
+          "Sixdenier, Pierre-Louis"
+        ],
+        "venue": "arXiv (Cornell University)"
+      },
+      {
+        "title": "Spintronics: Fundamentals and applications",
+        "year": 2004,
+        "cited": 11297,
+        "doi": "https://doi.org/10.1103/revmodphys.76.323",
+        "authors": [
+          "Igor Žutić",
+          "Jaroslav Fabian",
+          "S. Das Sarma"
+        ],
+        "venue": "Reviews of Modern Physics"
+      },
+      {
+        "title": "Quantum cryptography",
+        "year": 2002,
+        "cited": 8491,
+        "doi": "https://doi.org/10.1103/revmodphys.74.145",
+        "authors": [
+          "Nicolas Gisin",
+          "G. Ribordy",
+          "Wolfgang Tittel"
+        ],
+        "venue": "Reviews of Modern Physics"
+      },
+      {
+        "title": "Engineering precision nanoparticles for drug delivery",
+        "year": 2020,
+        "cited": 7831,
+        "doi": "https://doi.org/10.1038/s41573-020-0090-8",
+        "authors": [
+          "Michael J. Mitchell",
+          "Margaret M. Billingsley",
+          "Rebecca M. Haley"
+        ],
+        "venue": "Nature Reviews Drug Discovery"
+      },
+      {
+        "title": "DNA methylation patterns and epigenetic memory",
+        "year": 2002,
+        "cited": 7182,
+        "doi": "https://doi.org/10.1101/gad.947102",
+        "authors": [
+          "Adrian Bird"
+        ],
+        "venue": "Genes & Development"
+      },
+      {
+        "title": "A Feasibility Study Of Fricke Dosimetry As An Absorbed Dose To Water Standard For192ir Hdr Sources",
+        "year": 2011,
+        "cited": 7154,
+        "doi": "https://doi.org/10.1371/journal.pone",
+        "authors": [
+          "Núria Mallorquí‐Bagué",
+          "Ana B. Fagundo",
+          "Susana Jiménez Murcia"
+        ],
+        "venue": "Americanae (AECID Library)"
+      },
+      {
+        "title": "Sparse MRI: The application of compressed sensing for rapid MR imaging",
+        "year": 2007,
+        "cited": 7058,
+        "doi": "https://doi.org/10.1002/mrm.21391",
+        "authors": [
+          "Michael Lustig",
+          "David L. Donoho",
+          "John M. Pauly"
+        ],
+        "venue": "Magnetic Resonance in Medicine"
+      },
+      {
+        "title": "The magical number 4 in short-term memory: A reconsideration of mental storage capacity",
+        "year": 2001,
+        "cited": 6910,
+        "doi": "https://doi.org/10.1017/s0140525x01003922",
+        "authors": [
+          "Nelson Cowan"
+        ],
+        "venue": "Behavioral and Brain Sciences"
+      },
+      {
+        "title": "Revised American Thyroid Association Management Guidelines for Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+        "year": 2009,
+        "cited": 6770,
+        "doi": "https://doi.org/10.1089/thy.2009.0110",
+        "authors": [
+          "David S. Cooper",
+          "Gerard M. Doherty",
+          "Bryan R. Haugen"
+        ],
+        "venue": "Thyroid"
+      },
+      {
+        "title": "Nitric Oxide and Peroxynitrite in Health and Disease",
+        "year": 2007,
+        "cited": 6362,
+        "doi": "https://doi.org/10.1152/physrev.00029.2006",
+        "authors": [
+          "Pál Pacher",
+          "Joseph S. Beckman",
+          "Lucas Liaudet"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "Whatever next? Predictive brains, situated agents, and the future of cognitive science",
+        "year": 2013,
+        "cited": 6104,
+        "doi": "https://doi.org/10.1017/s0140525x12000477",
+        "authors": [
+          "Andy Clark"
+        ],
+        "venue": "Behavioral and Brain Sciences"
+      },
+      {
+        "title": "The quantum internet",
+        "year": 2008,
+        "cited": 6005,
+        "doi": "https://doi.org/10.1038/nature07127",
+        "authors": [
+          "H. J. Kimble"
+        ],
+        "venue": "Nature"
+      },
+      {
+        "title": "Cancer nanomedicine: progress, challenges and opportunities",
+        "year": 2016,
+        "cited": 5812,
+        "doi": "https://doi.org/10.1038/nrc.2016.108",
+        "authors": [
+          "Jinjun Shi",
+          "Philip W. Kantoff",
+          "Richard Wooster"
+        ],
+        "venue": "Nature reviews. Cancer"
+      }
+    ]
+  },
+  "经颅聚焦超声调控": {
+    "query": "transcranial focused ultrasound neuromodulation",
+    "count": 15,
+    "papers": [
+      {
+        "title": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+        "year": 2022,
+        "cited": 1832,
+        "doi": "https://doi.org/10.15585/mmwr.rr7103a1",
+        "authors": [
+          "Deborah Dowell",
+          "Kathleen Ragan",
+          "Christopher M. Jones"
+        ],
+        "venue": "MMWR Recommendations and Reports"
+      },
+      {
+        "title": "Transcranial focused ultrasound modulates the activity of primary somatosensory cortex in humans",
+        "year": 2014,
+        "cited": 1023,
+        "doi": "https://doi.org/10.1038/nn.3620",
+        "authors": [
+          "Wynn Legon",
+          "Tomokazu Sato",
+          "Alexander Opitz"
+        ],
+        "venue": "Nature Neuroscience"
+      },
+      {
+        "title": "A Pilot Study of Focused Ultrasound Thalamotomy for Essential Tremor",
+        "year": 2013,
+        "cited": 872,
+        "doi": "https://doi.org/10.1056/nejmoa1300962",
+        "authors": [
+          "W. Jeffrey Elias",
+          "Diane Huss",
+          "Tiffini Voss"
+        ],
+        "venue": "New England Journal of Medicine"
+      },
+      {
+        "title": "Spinal cord injury: molecular mechanisms and therapeutic interventions",
+        "year": 2023,
+        "cited": 757,
+        "doi": "https://doi.org/10.1038/s41392-023-01477-6",
+        "authors": [
+          "Xiao Hu",
+          "Wei Xu",
+          "Yilong Ren"
+        ],
+        "venue": "Signal Transduction and Targeted Therapy"
+      },
+      {
+        "title": "Recovery from disorders of consciousness: mechanisms, prognosis and emerging therapies",
+        "year": 2020,
+        "cited": 740,
+        "doi": "https://doi.org/10.1038/s41582-020-00428-x",
+        "authors": [
+          "Brian L. Edlow",
+          "Jan Claassen",
+          "Nicholas D. Schiff"
+        ],
+        "venue": "Nature Reviews Neurology"
+      },
+      {
+        "title": "Remote Excitation of Neuronal Circuits Using Low-Intensity, Low-Frequency Ultrasound",
+        "year": 2008,
+        "cited": 725,
+        "doi": "https://doi.org/10.1371/journal.pone.0003511",
+        "authors": [
+          "William J. Tyler",
+          "Yusuf Tufail",
+          "Michael Finsterwald"
+        ],
+        "venue": "PLoS ONE"
+      },
+      {
+        "title": "Transcranial magnetic stimulation of the brain: What is stimulated? – A consensus and critical position paper",
+        "year": 2022,
+        "cited": 580,
+        "doi": "https://doi.org/10.1016/j.clinph.2022.04.022",
+        "authors": [
+          "Hartwig R. Siebner",
+          "Klaus Funke",
+          "Aman S. Aberra"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Ultrasound Neuromodulation: A Review of Results, Mechanisms and Safety",
+        "year": 2019,
+        "cited": 576,
+        "doi": "https://doi.org/10.1016/j.ultrasmedbio.2018.12.015",
+        "authors": [
+          "Joseph Blackmore",
+          "S. K. Shrivastava",
+          "Jérôme Sallet"
+        ],
+        "venue": "Ultrasound in Medicine & Biology"
+      },
+      {
+        "title": "Advances in TRP channel drug discovery: from target validation to clinical studies",
+        "year": 2021,
+        "cited": 549,
+        "doi": "https://doi.org/10.1038/s41573-021-00268-4",
+        "authors": [
+          "Ari Koivisto",
+          "Maria G. Belvisi",
+          "Rachelle Gaudet"
+        ],
+        "venue": "Nature Reviews Drug Discovery"
+      },
+      {
+        "title": "Focused ultrasound excites cortical neurons via mechanosensitive calcium accumulation and ion channel amplification",
+        "year": 2022,
+        "cited": 503,
+        "doi": "https://doi.org/10.1038/s41467-022-28040-1",
+        "authors": [
+          "Sangjin Yoo",
+          "David R. Mittelstein",
+          "Robert C. Hurt"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Optogenetics for light control of biological systems",
+        "year": 2022,
+        "cited": 484,
+        "doi": "https://doi.org/10.1038/s43586-022-00136-4",
+        "authors": [
+          "Valentina Emiliani",
+          "Emilia Entcheva",
+          "Rainer Hedrich"
+        ],
+        "venue": "Nature Reviews Methods Primers"
+      },
+      {
+        "title": "Substance use disorders: a comprehensive update of classification, epidemiology, neurobiology, clinical aspects, treatment and prevention",
+        "year": 2023,
+        "cited": 479,
+        "doi": "https://doi.org/10.1002/wps.21073",
+        "authors": [
+          "Nora D. Volkow",
+          "Carlos Blanco"
+        ],
+        "venue": "World Psychiatry"
+      },
+      {
+        "title": "An Introduction to High Intensity Focused Ultrasound: Systematic Review on Principles, Devices, and Clinical Applications",
+        "year": 2020,
+        "cited": 459,
+        "doi": "https://doi.org/10.3390/jcm9020460",
+        "authors": [
+          "Zahra Izadifar",
+          "Zohreh Izadifar",
+          "Dean Chapman"
+        ],
+        "venue": "Journal of Clinical Medicine"
+      },
+      {
+        "title": "Spasticity after stroke: Physiology, assessment and treatment",
+        "year": 2013,
+        "cited": 454,
+        "doi": "https://doi.org/10.3109/02699052.2013.804202",
+        "authors": [
+          "Aurore Thibaut",
+          "Camille Chatelle",
+          "Erik Ziegler"
+        ],
+        "venue": "Brain Injury"
+      },
+      {
+        "title": "Therapeutic interventions in patients with prolonged disorders of consciousness",
+        "year": 2019,
+        "cited": 440,
+        "doi": "https://doi.org/10.1016/s1474-4422(19)30031-6",
+        "authors": [
+          "Aurore Thibaut",
+          "Nicholas D. Schiff",
+          "Joseph T. Giacino"
+        ],
+        "venue": "The Lancet Neurology"
+      }
+    ]
+  },
+  "经颅电刺激": {
+    "query": "transcranial electrical stimulation",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Excitability changes induced in the human motor cortex by weak transcranial direct current stimulation",
+        "year": 2000,
+        "cited": 5757,
+        "doi": "https://doi.org/10.1111/j.1469-7793.2000.t01-1-00633.x",
+        "authors": [
+          "Michael A. Nitsche",
+          "Walter Paulus"
+        ],
+        "venue": "The Journal of Physiology"
+      },
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Action recognition in the premotor cortex",
+        "year": 1996,
+        "cited": 4974,
+        "doi": "https://doi.org/10.1093/brain/119.2.593",
+        "authors": [
+          "Vittorio Gallese",
+          "Luciano Fadiga",
+          "Leonardo Fogassi"
+        ],
+        "venue": "Brain"
+      },
+      {
+        "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+        "year": 2012,
+        "cited": 4526,
+        "doi": "https://doi.org/10.1038/nrn3241",
+        "authors": [
+          "György Buzsáki",
+          "Costas A. Anastassiou",
+          "Christof Koch"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "Theta Burst Stimulation of the Human Motor Cortex",
+        "year": 2005,
+        "cited": 4250,
+        "doi": "https://doi.org/10.1016/j.neuron.2004.12.033",
+        "authors": [
+          "Ying‐Zu Huang",
+          "Mark J. Edwards",
+          "Elisabeth Rounis"
+        ],
+        "venue": "Neuron"
+      },
+      {
+        "title": "Human brain mechanisms of pain perception and regulation in health and disease",
+        "year": 2005,
+        "cited": 3149,
+        "doi": "https://doi.org/10.1016/j.ejpain.2004.11.001",
+        "authors": [
+          "A. Vania Apkarian",
+          "M. Catherine Bushnell",
+          "Rolf‐Detlef Treede"
+        ],
+        "venue": "European Journal of Pain"
+      },
+      {
+        "title": "Transcranial direct current stimulation: State of the art 2008",
+        "year": 2008,
+        "cited": 3104,
+        "doi": "https://doi.org/10.1016/j.brs.2008.06.004",
+        "authors": [
+          "Michael A. Nitsche",
+          "Leonardo G. Cohen",
+          "Eric M. Wassermann"
+        ],
+        "venue": "Brain stimulation"
+      },
+      {
+        "title": "About Sleep's Role in Memory",
+        "year": 2013,
+        "cited": 2881,
+        "doi": "https://doi.org/10.1152/physrev.00032.2012",
+        "authors": [
+          "Björn Rasch",
+          "Jan Born"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "Non-invasive electrical and magnetic stimulation of the brain, spinal cord, roots and peripheral nerves: Basic principles and procedures for routine clinical and research application. An updated report from an I.F.C.N. Committee",
+        "year": 2015,
+        "cited": 2851,
+        "doi": "https://doi.org/10.1016/j.clinph.2015.02.001",
+        "authors": [
+          "Paolo Maria Rossini",
+          "David Burke",
+          "Robert Chen"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Language within our grasp",
+        "year": 1998,
+        "cited": 2831,
+        "doi": "https://doi.org/10.1016/s0166-2236(98)01260-0",
+        "authors": [
+          "Giacomo Rizzolatti",
+          "Michael A. Arbib"
+        ],
+        "venue": "Trends in Neurosciences"
+      },
+      {
+        "title": "Photoacoustic imaging in biomedicine",
+        "year": 2006,
+        "cited": 2733,
+        "doi": "https://doi.org/10.1063/1.2195024",
+        "authors": [
+          "Minghua Xu",
+          "Lihong V. Wang"
+        ],
+        "venue": "Review of Scientific Instruments"
+      },
+      {
+        "title": "Guidelines for Management of Ischaemic Stroke and Transient Ischaemic Attack 2008",
+        "year": 2008,
+        "cited": 2509,
+        "doi": "https://doi.org/10.1159/000131083",
+        "authors": [
+          "The European Stroke Organisation (ESO) Executive Committee and the ESO Writing Committee"
+        ],
+        "venue": "Cerebrovascular Diseases"
+      },
+      {
+        "title": "Evidence-based guidelines on the therapeutic use of repetitive transcranial magnetic stimulation (rTMS): An update (2014–2018)",
+        "year": 2019,
+        "cited": 2409,
+        "doi": "https://doi.org/10.1016/j.clinph.2019.11.002",
+        "authors": [
+          "Jean‐Pascal Lefaucheur",
+          "André Alemán",
+          "Chris Baeken"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Which academic search systems are suitable for systematic reviews or meta‐analyses? Evaluating retrieval qualities of Google Scholar, PubMed, and 26 other resources",
+        "year": 2019,
+        "cited": 2281,
+        "doi": "https://doi.org/10.1002/jrsm.1378",
+        "authors": [
+          "Michael Gusenbauer",
+          "Neal Haddaway"
+        ],
+        "venue": "Research Synthesis Methods"
+      },
+      {
+        "title": "Evidence-based guidelines on the therapeutic use of repetitive transcranial magnetic stimulation (rTMS)",
+        "year": 2014,
+        "cited": 2169,
+        "doi": "https://doi.org/10.1016/j.clinph.2014.05.021",
+        "authors": [
+          "Jean‐Pascal Lefaucheur",
+          "Nathalie André‐Obadia",
+          "Andrea Antal"
+        ],
+        "venue": "Clinical Neurophysiology"
+      }
+    ]
+  },
+  "经颅磁刺激": {
+    "query": "transcranial magnetic stimulation",
+    "count": 15,
+    "papers": [
+      {
+        "title": "Power failure: why small sample size undermines the reliability of neuroscience",
+        "year": 2013,
+        "cited": 8046,
+        "doi": "https://doi.org/10.1038/nrn3475",
+        "authors": [
+          "Katherine S. Button",
+          "John P. A. Ioannidis",
+          "Claire Mokrysz"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "Excitability changes induced in the human motor cortex by weak transcranial direct current stimulation",
+        "year": 2000,
+        "cited": 5757,
+        "doi": "https://doi.org/10.1111/j.1469-7793.2000.t01-1-00633.x",
+        "authors": [
+          "Michael A. Nitsche",
+          "Walter Paulus"
+        ],
+        "venue": "The Journal of Physiology"
+      },
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Action recognition in the premotor cortex",
+        "year": 1996,
+        "cited": 4974,
+        "doi": "https://doi.org/10.1093/brain/119.2.593",
+        "authors": [
+          "Vittorio Gallese",
+          "Luciano Fadiga",
+          "Leonardo Fogassi"
+        ],
+        "venue": "Brain"
+      },
+      {
+        "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+        "year": 2012,
+        "cited": 4526,
+        "doi": "https://doi.org/10.1038/nrn3241",
+        "authors": [
+          "György Buzsáki",
+          "Costas A. Anastassiou",
+          "Christof Koch"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "Handbook of Psychophysiology",
+        "year": 2001,
+        "cited": 4508,
+        "doi": "https://doi.org/10.1017/cbo9780511546396",
+        "authors": [
+          "John T. Cacioppo",
+          "Louis G. Tassinary",
+          "Gary G. Berntson"
+        ],
+        "venue": "Cambridge University Press eBooks"
+      },
+      {
+        "title": "Theta Burst Stimulation of the Human Motor Cortex",
+        "year": 2005,
+        "cited": 4250,
+        "doi": "https://doi.org/10.1016/j.neuron.2004.12.033",
+        "authors": [
+          "Ying‐Zu Huang",
+          "Mark J. Edwards",
+          "Elisabeth Rounis"
+        ],
+        "venue": "Neuron"
+      },
+      {
+        "title": "Where Is the Semantic System? A Critical Review and Meta-Analysis of 120 Functional Neuroimaging Studies",
+        "year": 2009,
+        "cited": 4238,
+        "doi": "https://doi.org/10.1093/cercor/bhp055",
+        "authors": [
+          "Jeffrey R. Binder",
+          "Rutvik H. Desai",
+          "William W. Graves"
+        ],
+        "venue": "Cerebral Cortex"
+      },
+      {
+        "title": "Parkinson's disease",
+        "year": 2021,
+        "cited": 3878,
+        "doi": "https://doi.org/10.1016/s0140-6736(21)00218-x",
+        "authors": [
+          "Bastiaan R. Bloem",
+          "Michael S. Okun",
+          "Christine Klein"
+        ],
+        "venue": "The Lancet"
+      },
+      {
+        "title": "The Neurology of Eye Movements",
+        "year": 2015,
+        "cited": 3828,
+        "doi": "https://doi.org/10.1093/med/9780199969289.001.0001",
+        "authors": [
+          "Richard Leigh",
+          "David S. Zee"
+        ],
+        "venue": "Oxford University Press eBooks"
+      },
+      {
+        "title": "Spinal and Supraspinal Factors in Human Muscle Fatigue",
+        "year": 2001,
+        "cited": 3638,
+        "doi": "https://doi.org/10.1152/physrev.2001.81.4.1725",
+        "authors": [
+          "Simon C. Gandevia"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "2017 ESC Guidelines on the Diagnosis and Treatment of Peripheral Arterial Diseases, in collaboration with the European Society for Vascular Surgery (ESVS)",
+        "year": 2017,
+        "cited": 3333,
+        "doi": "https://doi.org/10.1093/eurheartj/ehx095",
+        "authors": [
+          "Victor Aboyans",
+          "Jean‐Baptiste Ricco",
+          "Marie-Louise Bartelink"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "A saliency-based search mechanism for overt and covert shifts of visual attention",
+        "year": 2000,
+        "cited": 3223,
+        "doi": "https://doi.org/10.1016/s0042-6989(99)00163-7",
+        "authors": [
+          "L. Itti",
+          "Christof Koch"
+        ],
+        "venue": "Vision Research"
+      },
+      {
+        "title": "2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack: A Guideline From the American Heart Association/American Stroke Association",
+        "year": 2021,
+        "cited": 3167,
+        "doi": "https://doi.org/10.1161/str.0000000000000375",
+        "authors": [
+          "Dawn Kleindorfer",
+          "Amytis Towfighi",
+          "Seemant Chaturvedi"
+        ],
+        "venue": "Stroke"
+      },
+      {
+        "title": "Corticocortical inhibition in human motor cortex.",
+        "year": 1993,
+        "cited": 3164,
+        "doi": "https://doi.org/10.1113/jphysiol.1993.sp019912",
+        "authors": [
+          "Takashi Kujirai",
+          "M.D. Caramia",
+          "John C. Rothwell"
+        ],
+        "venue": "The Journal of Physiology"
+      }
+    ]
+  },
+  "迷走神经刺激": {
+    "query": "vagus nerve stimulation",
+    "count": 15,
+    "papers": [
+      {
+        "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+        "year": 2015,
+        "cited": 16676,
+        "doi": "https://doi.org/10.1089/thy.2015.0020",
+        "authors": [
+          "Bryan R. Haugen",
+          "Erik K. Alexander",
+          "Keith C. Bible"
+        ],
+        "venue": "Thyroid"
+      },
+      {
+        "title": "The International Classification of Headache Disorders, 3rd edition (beta version)",
+        "year": 2013,
+        "cited": 8285,
+        "doi": "https://doi.org/10.1177/0333102413485658",
+        "authors": [
+          "Ettlin, Dominik A"
+        ],
+        "venue": "Cephalalgia"
+      },
+      {
+        "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+        "year": 2018,
+        "cited": 7662,
+        "doi": "https://doi.org/10.48550/arxiv.1802.03426",
+        "authors": [
+          "Leland McInnes",
+          "John J. Healy",
+          "Melville, James"
+        ],
+        "venue": "arXiv (Cornell University)"
+      },
+      {
+        "title": "An Overview of Heart Rate Variability Metrics and Norms",
+        "year": 2017,
+        "cited": 7201,
+        "doi": "https://doi.org/10.3389/fpubh.2017.00258",
+        "authors": [
+          "Fred Shaffer",
+          "J. P. Ginsberg"
+        ],
+        "venue": "Frontiers in Public Health"
+      },
+      {
+        "title": "Safety, ethical considerations, and application guidelines for the use of transcranial magnetic stimulation in clinical practice and research",
+        "year": 2009,
+        "cited": 5530,
+        "doi": "https://doi.org/10.1016/j.clinph.2009.08.016",
+        "authors": [
+          "Símone Rossi",
+          "Mark Hallett",
+          "Paolo Maria Rossini"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "The Microbiota-Gut-Brain Axis",
+        "year": 2019,
+        "cited": 5195,
+        "doi": "https://doi.org/10.1152/physrev.00018.2018",
+        "authors": [
+          "John F. Cryan",
+          "Kenneth J. O’Riordan",
+          "Caitlin S.M. Cowan"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "Vagus nerve stimulation attenuates the systemic inflammatory response to endotoxin",
+        "year": 2000,
+        "cited": 4224,
+        "doi": "https://doi.org/10.1038/35013070",
+        "authors": [
+          "L. V. Borovikova",
+          "Svetlana Ivanova",
+          "Minghuang Zhang"
+        ],
+        "venue": "Nature"
+      },
+      {
+        "title": "Severe Sepsis and Septic Shock",
+        "year": 2013,
+        "cited": 4017,
+        "doi": "https://doi.org/10.1056/nejmra1208623",
+        "authors": [
+          "Derek C. Angus",
+          "Tom van der Poll"
+        ],
+        "venue": "New England Journal of Medicine"
+      },
+      {
+        "title": "Gut Microbiota Regulate Motor Deficits and Neuroinflammation in a Model of Parkinson’s Disease",
+        "year": 2016,
+        "cited": 3677,
+        "doi": "https://doi.org/10.1016/j.cell.2016.11.018",
+        "authors": [
+          "Timothy R. Sampson",
+          "Justine W. Debelius",
+          "Taren Thron"
+        ],
+        "venue": "Cell"
+      },
+      {
+        "title": "Cardiovascular neural regulation explored in the frequency domain.",
+        "year": 1991,
+        "cited": 3583,
+        "doi": "https://doi.org/10.1161/01.cir.84.2.482",
+        "authors": [
+          "Alberto Malliani",
+          "M. Pagani",
+          "Federico Lombardi"
+        ],
+        "venue": "Circulation"
+      },
+      {
+        "title": "Neurons Containing Hypocretin (Orexin) Project to Multiple Neuronal Systems",
+        "year": 1998,
+        "cited": 3494,
+        "doi": "https://doi.org/10.1523/jneurosci.18-23-09996.1998",
+        "authors": [
+          "Christelle Peyron",
+          "Devin K. Tighe",
+          "Anthony N. van den Pol"
+        ],
+        "venue": "Journal of Neuroscience"
+      },
+      {
+        "title": "The role of short-chain fatty acids in microbiota–gut–brain communication",
+        "year": 2019,
+        "cited": 3383,
+        "doi": "https://doi.org/10.1038/s41575-019-0157-3",
+        "authors": [
+          "Boushra Dalile",
+          "Lukas Van Oudenhove",
+          "Bram Vervliet"
+        ],
+        "venue": "Nature Reviews Gastroenterology & Hepatology"
+      },
+      {
+        "title": "Cytokine Storm",
+        "year": 2020,
+        "cited": 3271,
+        "doi": "https://doi.org/10.1056/nejmra2026131",
+        "authors": [
+          "David C. Fajgenbaum",
+          "Carl H. June"
+        ],
+        "venue": "New England Journal of Medicine"
+      },
+      {
+        "title": "National Institute on Aging–Alzheimer's Association guidelines for the neuropathologic assessment of Alzheimer's disease",
+        "year": 2012,
+        "cited": 3239,
+        "doi": "https://doi.org/10.1016/j.jalz.2011.10.007",
+        "authors": [
+          "Bradley T. Hyman",
+          "Creighton H. Phelps",
+          "Thomas G. Beach"
+        ],
+        "venue": "Alzheimer s & Dementia"
+      },
+      {
+        "title": "Nicotinic acetylcholine receptor α7 subunit is an essential regulator of inflammation",
+        "year": 2002,
+        "cited": 3233,
+        "doi": "https://doi.org/10.1038/nature01339",
+        "authors": [
+          "Hong Wang",
+          "Man Yu",
+          "Mahendar Ochani"
+        ],
+        "venue": "Nature"
+      }
+    ]
+  },
+  "功能性电刺激": {
+    "query": "functional electrical stimulation muscle",
+    "count": 15,
+    "papers": [
+      {
+        "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+        "year": 2021,
+        "cited": 13612,
+        "doi": "https://doi.org/10.1093/eurheartj/ehab368",
+        "authors": [
+          "Theresa A. McDonagh",
+          "Marco Metra",
+          "Marianna Adamo"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure",
+        "year": 2016,
+        "cited": 11598,
+        "doi": "https://doi.org/10.1093/eurheartj/ehw128",
+        "authors": [
+          "Piotr Ponikowski",
+          "Adriaan A Voors",
+          "Stefan D Anker"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "Spontaneous Initiation of Atrial Fibrillation by Ectopic Beats Originating in the Pulmonary Veins",
+        "year": 1998,
+        "cited": 8044,
+        "doi": "https://doi.org/10.1056/nejm199809033391003",
+        "authors": [
+          "Michel Haı̈ssaguerre",
+          "Pierre Jaı̈s",
+          "Dipen Shah"
+        ],
+        "venue": "New England Journal of Medicine"
+      },
+      {
+        "title": "An introduction to cybernetics",
+        "year": 1956,
+        "cited": 7357,
+        "doi": "https://doi.org/10.5962/bhl.title.5851",
+        "authors": [
+          "W. Ross Ashby"
+        ],
+        "venue": null
+      },
+      {
+        "title": "Nano based drug delivery systems: recent developments and future prospects",
+        "year": 2018,
+        "cited": 6708,
+        "doi": "https://doi.org/10.1186/s12951-018-0392-8",
+        "authors": [
+          "Jayanta Kumar Patra",
+          "Gitishree Das",
+          "Leonardo Fernandes Fraceto"
+        ],
+        "venue": "Journal of Nanobiotechnology"
+      },
+      {
+        "title": "2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+        "year": 2016,
+        "cited": 6495,
+        "doi": "https://doi.org/10.1093/eurheartj/ehw210",
+        "authors": [
+          "Paulus Kirchhof",
+          "Stefano Benussi",
+          "Dipak Kotecha"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+        "year": 2016,
+        "cited": 6480,
+        "doi": "https://doi.org/10.1093/europace/euw295",
+        "authors": [
+          "Paulus Kirchhof",
+          "Stefano Benussi",
+          "Dipak Kotecha"
+        ],
+        "venue": "EP Europace"
+      },
+      {
+        "title": "Nitric Oxide and Peroxynitrite in Health and Disease",
+        "year": 2007,
+        "cited": 6362,
+        "doi": "https://doi.org/10.1152/physrev.00029.2006",
+        "authors": [
+          "Pál Pacher",
+          "Joseph S. Beckman",
+          "Lucas Liaudet"
+        ],
+        "venue": "Physiological Reviews"
+      },
+      {
+        "title": "Biological properties of extracellular vesicles and their physiological functions",
+        "year": 2015,
+        "cited": 6112,
+        "doi": "https://doi.org/10.3402/jev.v4.27066",
+        "authors": [
+          "María Yáñez‐Mó",
+          "Pia Siljander",
+          "Zoraida Andreu"
+        ],
+        "venue": "Journal of Extracellular Vesicles"
+      },
+      {
+        "title": "Expert consensus document on arterial stiffness: methodological issues and clinical applications",
+        "year": 2006,
+        "cited": 6078,
+        "doi": "https://doi.org/10.1093/eurheartj/ehl254",
+        "authors": [
+          "Stéphane Laurent",
+          "Jeremy K. Cockcroft",
+          "Luc Van Bortel"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "2016 ESC Guidelines for the Diagnosis and Treatment of Acute and Chronic Heart Failure",
+        "year": 2016,
+        "cited": 5924,
+        "doi": "https://doi.org/10.1002/ejhf.592",
+        "authors": [
+          "Piotr Ponikowski",
+          "Adriaan A. Voors",
+          "Stefan D. Anker"
+        ],
+        "venue": "European Journal of Heart Failure"
+      },
+      {
+        "title": "Guidelines for the management of atrial fibrillation",
+        "year": 2010,
+        "cited": 5889,
+        "doi": "https://doi.org/10.1093/eurheartj/ehq278",
+        "authors": [
+          "Authors/Task Force Members",
+          "A. John Camm",
+          "Paulus Kirchhof"
+        ],
+        "venue": "European Heart Journal"
+      },
+      {
+        "title": "Emerging applications of stimuli-responsive polymer materials",
+        "year": 2010,
+        "cited": 5707,
+        "doi": "https://doi.org/10.1038/nmat2614",
+        "authors": [
+          "Martien A. Cohen Stuart",
+          "Wilhelm T. S. Huck",
+          "Jan Genzer"
+        ],
+        "venue": "Nature Materials"
+      },
+      {
+        "title": "Calcium signalling: dynamics, homeostasis and remodelling",
+        "year": 2003,
+        "cited": 5628,
+        "doi": "https://doi.org/10.1038/nrm1155",
+        "authors": [
+          "Michael J. Berridge",
+          "Martin D. Bootman",
+          "H. Llewelyn Roderick"
+        ],
+        "venue": "Nature Reviews Molecular Cell Biology"
+      },
+      {
+        "title": "Regulation of the Voltage Gated K+ Channel Kv1.3 by Recombinant Human Klotho Protein",
+        "year": 2014,
+        "cited": 5609,
+        "doi": "https://doi.org/10.1159/000368472",
+        "authors": [
+          "Ahmad Almilaji",
+          "Sabina Honisch",
+          "Guilai Liu"
+        ],
+        "venue": "Kidney & Blood Pressure Research"
+      }
+    ]
+  },
+  "非侵入脑机接口信号质量": {
+    "query": "non-invasive brain computer interface signal quality",
+    "count": 15,
+    "papers": [
+      {
+        "title": "FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data",
+        "year": 2010,
+        "cited": 11520,
+        "doi": "https://doi.org/10.1155/2011/156869",
+        "authors": [
+          "Robert Oostenveld",
+          "Pascal Fries",
+          "Eric Maris"
+        ],
+        "venue": "Computational Intelligence and Neuroscience"
+      },
+      {
+        "title": "3D Slicer as an image computing platform for the Quantitative Imaging Network",
+        "year": 2012,
+        "cited": 9198,
+        "doi": "https://doi.org/10.1016/j.mri.2012.05.001",
+        "authors": [
+          "Andriy Fedorov",
+          "Reinhard Beichel",
+          "Jayashree Kalpathy–Cramer"
+        ],
+        "venue": "Magnetic Resonance Imaging"
+      },
+      {
+        "title": "Nano based drug delivery systems: recent developments and future prospects",
+        "year": 2018,
+        "cited": 6708,
+        "doi": "https://doi.org/10.1186/s12951-018-0392-8",
+        "authors": [
+          "Jayanta Kumar Patra",
+          "Gitishree Das",
+          "Leonardo Fernandes Fraceto"
+        ],
+        "venue": "Journal of Nanobiotechnology"
+      },
+      {
+        "title": "Minimal information for studies of extracellular vesicles (MISEV2023): From basic to advanced approaches",
+        "year": 2024,
+        "cited": 4323,
+        "doi": "https://doi.org/10.1002/jev2.12404",
+        "authors": [
+          "Joshua A Welsh",
+          "Deborah C. I. Goberdhan",
+          "Lorraine O’Driscoll"
+        ],
+        "venue": "Journal of Extracellular Vesicles"
+      },
+      {
+        "title": "MEG and EEG data analysis with MNE-Python",
+        "year": 2013,
+        "cited": 4175,
+        "doi": "https://doi.org/10.3389/fnins.2013.00267",
+        "authors": [
+          "Alexandre Gramfort"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "Nanomaterials and nanoparticles: Sources and toxicity",
+        "year": 2007,
+        "cited": 3761,
+        "doi": "https://doi.org/10.1116/1.2815690",
+        "authors": [
+          "Cristina Buzea",
+          "Ivan I. Pacheco",
+          "Kevin Robbie"
+        ],
+        "venue": "Biointerphases"
+      },
+      {
+        "title": "Internet of things: Vision, applications and research challenges",
+        "year": 2012,
+        "cited": 3594,
+        "doi": "https://doi.org/10.1016/j.adhoc.2012.02.016",
+        "authors": [
+          "Daniele Miorandi",
+          "Sabrina Sicari",
+          "Francesco De Pellegrini"
+        ],
+        "venue": "Ad Hoc Networks"
+      },
+      {
+        "title": "The Internet of Things for Health Care: A Comprehensive Survey",
+        "year": 2015,
+        "cited": 3095,
+        "doi": "https://doi.org/10.1109/access.2015.2437951",
+        "authors": [
+          "S. M. Riazul Islam",
+          "Daehan Kwak",
+          "Md. Humaun Kabir"
+        ],
+        "venue": "IEEE Access"
+      },
+      {
+        "title": "Non-invasive electrical and magnetic stimulation of the brain, spinal cord, roots and peripheral nerves: Basic principles and procedures for routine clinical and research application. An updated report from an I.F.C.N. Committee",
+        "year": 2015,
+        "cited": 2851,
+        "doi": "https://doi.org/10.1016/j.clinph.2015.02.001",
+        "authors": [
+          "Paolo Maria Rossini",
+          "David Burke",
+          "Robert Chen"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of atrial fibrillation",
+        "year": 2017,
+        "cited": 2769,
+        "doi": "https://doi.org/10.1016/j.hrthm.2017.05.012",
+        "authors": [
+          "Hugh Calkins",
+          "Gerhard Hindricks",
+          "Riccardo Cappato"
+        ],
+        "venue": "Heart Rhythm"
+      },
+      {
+        "title": "ERPLAB: an open-source toolbox for the analysis of event-related potentials",
+        "year": 2014,
+        "cited": 2751,
+        "doi": "https://doi.org/10.3389/fnhum.2014.00213",
+        "authors": [
+          "Javier López‐Calderón",
+          "Steven J. Luck"
+        ],
+        "venue": "Frontiers in Human Neuroscience"
+      },
+      {
+        "title": "Optical tomography in medical imaging",
+        "year": 1999,
+        "cited": 2584,
+        "doi": "https://doi.org/10.1088/0266-5611/15/2/022",
+        "authors": [
+          "Simon Arridge"
+        ],
+        "venue": "Inverse Problems"
+      },
+      {
+        "title": "International network of cancer genome projects",
+        "year": 2010,
+        "cited": 2435,
+        "doi": "https://doi.org/10.1038/nature08987",
+        "authors": [
+          "Jennifer L. Jennings",
+          "T. J. Hudson",
+          "Arek Kasprzyk"
+        ],
+        "venue": "Nature"
+      },
+      {
+        "title": "A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM)",
+        "year": 2001,
+        "cited": 2435,
+        "doi": "https://doi.org/10.1098/rstb.2001.0915",
+        "authors": [
+          "John C. Mazziotta",
+          "Arthur W. Toga",
+          "Alan C. Evans"
+        ],
+        "venue": "Philosophical Transactions of the Royal Society B Biological Sciences"
+      },
+      {
+        "title": "The management of respiratory motion in radiation oncology report of AAPM Task Group 76a)",
+        "year": 2006,
+        "cited": 2287,
+        "doi": "https://doi.org/10.1118/1.2349696",
+        "authors": [
+          "Paul Keall",
+          "G Mageras",
+          "James M. Balter"
+        ],
+        "venue": "Medical Physics"
+      }
+    ]
+  },
+  "脑机接口电极阻抗": {
+    "query": "brain computer interface electrode impedance",
+    "count": 15,
+    "papers": [
+      {
+        "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+        "year": 2012,
+        "cited": 4526,
+        "doi": "https://doi.org/10.1038/nrn3241",
+        "authors": [
+          "György Buzsáki",
+          "Costas A. Anastassiou",
+          "Christof Koch"
+        ],
+        "venue": "Nature reviews. Neuroscience"
+      },
+      {
+        "title": "The dielectric properties of biological tissues: II. Measurements in the frequency range 10 Hz to 20 GHz",
+        "year": 1996,
+        "cited": 4264,
+        "doi": "https://doi.org/10.1088/0031-9155/41/11/002",
+        "authors": [
+          "Sami Gabriel",
+          "R W M Lau",
+          "Camelia Gabriel"
+        ],
+        "venue": "Physics in Medicine and Biology"
+      },
+      {
+        "title": "Non-invasive electrical and magnetic stimulation of the brain, spinal cord, roots and peripheral nerves: Basic principles and procedures for routine clinical and research application. An updated report from an I.F.C.N. Committee",
+        "year": 2015,
+        "cited": 2851,
+        "doi": "https://doi.org/10.1016/j.clinph.2015.02.001",
+        "authors": [
+          "Paolo Maria Rossini",
+          "David Burke",
+          "Robert Chen"
+        ],
+        "venue": "Clinical Neurophysiology"
+      },
+      {
+        "title": "Reach and grasp by people with tetraplegia using a neurally controlled robotic arm",
+        "year": 2012,
+        "cited": 2778,
+        "doi": "https://doi.org/10.1038/nature11076",
+        "authors": [
+          "Leigh R. Hochberg",
+          "Daniel Bacher",
+          "Beata Jarosiewicz"
+        ],
+        "venue": "Nature"
+      },
+      {
+        "title": "ERPLAB: an open-source toolbox for the analysis of event-related potentials",
+        "year": 2014,
+        "cited": 2751,
+        "doi": "https://doi.org/10.3389/fnhum.2014.00213",
+        "authors": [
+          "Javier López‐Calderón",
+          "Steven J. Luck"
+        ],
+        "venue": "Frontiers in Human Neuroscience"
+      },
+      {
+        "title": "A Review on Biosensors and Recent Development of Nanostructured Materials-Enabled Biosensors",
+        "year": 2021,
+        "cited": 2049,
+        "doi": "https://doi.org/10.3390/s21041109",
+        "authors": [
+          "V. Naresh",
+          "Nohyun Lee"
+        ],
+        "venue": "Sensors"
+      },
+      {
+        "title": "A non-volatile organic electrochemical device as a low-voltage artificial synapse for neuromorphic computing",
+        "year": 2017,
+        "cited": 1855,
+        "doi": "https://doi.org/10.1038/nmat4856",
+        "authors": [
+          "Yoeri van de Burgt",
+          "Ewout Lubberman",
+          "Elliot J. Fuller"
+        ],
+        "venue": "Nature Materials"
+      },
+      {
+        "title": "Neuromorphic Silicon Neuron Circuits",
+        "year": 2011,
+        "cited": 1841,
+        "doi": "https://doi.org/10.3389/fnins.2011.00073",
+        "authors": [
+          "Giacomo Indiveri",
+          "B. Linares-Barranco",
+          "Tara Julia Hamilton"
+        ],
+        "venue": "Frontiers in Neuroscience"
+      },
+      {
+        "title": "Conductive polymers: Towards a smart biomaterial for tissue engineering",
+        "year": 2014,
+        "cited": 1781,
+        "doi": "https://doi.org/10.1016/j.actbio.2014.02.015",
+        "authors": [
+          "Richard Balint",
+          "Nigel J. Cassidy",
+          "Sarah H. Cartmell"
+        ],
+        "venue": "Acta Biomaterialia"
+      },
+      {
+        "title": "Electronic Skin: Recent Progress and Future Prospects for Skin‐Attachable Devices for Health Monitoring, Robotics, and Prosthetics",
+        "year": 2019,
+        "cited": 1660,
+        "doi": "https://doi.org/10.1002/adma.201904765",
+        "authors": [
+          "Jun Chang Yang",
+          "Jaewan Mun",
+          "Se Young Kwon"
+        ],
+        "venue": "Advanced Materials"
+      },
+      {
+        "title": "Techniques of EMG signal analysis: detection, processing, classification and applications",
+        "year": 2006,
+        "cited": 1639,
+        "doi": "https://doi.org/10.1251/bpo115",
+        "authors": [
+          "Mamun Bin Ibne Reaz",
+          "Muddassar Hussain",
+          "Faisal Mohd-Yasin"
+        ],
+        "venue": "Biological Procedures Online"
+      },
+      {
+        "title": "Human organs-on-chips for disease modelling, drug development and personalized medicine",
+        "year": 2022,
+        "cited": 1548,
+        "doi": "https://doi.org/10.1038/s41576-022-00466-9",
+        "authors": [
+          "Donald E. Ingber"
+        ],
+        "venue": "Nature Reviews Genetics"
+      },
+      {
+        "title": "An ultra-sensitive resistive pressure sensor based on hollow-sphere microstructure induced elasticity in conducting polymer film",
+        "year": 2014,
+        "cited": 1519,
+        "doi": "https://doi.org/10.1038/ncomms4002",
+        "authors": [
+          "Lijia Pan",
+          "Alex Chortos",
+          "Guihua Yu"
+        ],
+        "venue": "Nature Communications"
+      },
+      {
+        "title": "Review on spintronics: Principles and device applications",
+        "year": 2020,
+        "cited": 1494,
+        "doi": "https://doi.org/10.1016/j.jmmm.2020.166711",
+        "authors": [
+          "Atsufumi Hirohata",
+          "K. Yamada",
+          "Y. Nakatani"
+        ],
+        "venue": "Journal of Magnetism and Magnetic Materials"
+      },
+      {
+        "title": "Augmented visual, auditory, haptic, and multimodal feedback in motor learning: A review",
+        "year": 2012,
+        "cited": 1411,
+        "doi": "https://doi.org/10.3758/s13423-012-0333-8",
+        "authors": [
+          "Roland Sigrist",
+          "Georg Rauter",
+          "Robert Riener"
+        ],
+        "venue": "Psychonomic Bulletin & Review"
+      }
+    ]
+  }
+}

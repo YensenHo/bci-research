@@ -1,0 +1,15 @@
+{
+  "data": "chbmit/data",
+  "n_classes": 2,
+  "seed": 42,
+  "teacher_full": 77.48,
+  "teacher_30pct": 89.72,
+  "student_full": 86.52,
+  "hard_30pct": 86.52,
+  "ts_full_pp": -9.04,
+  "gain_full_pp": 0.0,
+  "ts_low_pp": 3.19,
+  "gain_low_pp": 6.91,
+  "A_consistent": false,
+  "B_consistent": true
+}

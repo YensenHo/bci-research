@@ -1,0 +1,121 @@
+{
+  "task": "EEG STDP 无监督 vs 随机（T→E）",
+  "n_tr": 2592,
+  "n_te": 2592,
+  "theta_rate_k": 8.0,
+  "theta_delta_k": 0.5,
+  "configs": [
+    {
+      "tag": "rate_stdp",
+      "seeds": {
+        "1": {
+          "tag": "rate_stdp",
+          "enc": "rate",
+          "learn": true,
+          "seed": 1,
+          "te_acc": 0.25848765432098764,
+          "tr_acc": 0.3314043209876543,
+          "min_cls": 0.044753086419753084,
+          "train_s": 39.6
+        },
+        "2": {
+          "tag": "rate_stdp",
+          "enc": "rate",
+          "learn": true,
+          "seed": 2,
+          "te_acc": 0.25578703703703703,
+          "tr_acc": 0.33371913580246915,
+          "min_cls": 0.05478395061728395,
+          "train_s": 40.3
+        }
+      },
+      "te_acc_mean": 0.25713734567901236,
+      "te_acc_std": 0.0013503086419753008
+    },
+    {
+      "tag": "rate_rand",
+      "seeds": {
+        "1": {
+          "tag": "rate_rand",
+          "enc": "rate",
+          "learn": false,
+          "seed": 1,
+          "te_acc": 0.2789351851851852,
+          "tr_acc": 0.37962962962962965,
+          "min_cls": 0.06172839506172839,
+          "train_s": 11.4
+        },
+        "2": {
+          "tag": "rate_rand",
+          "enc": "rate",
+          "learn": false,
+          "seed": 2,
+          "te_acc": 0.2638888888888889,
+          "tr_acc": 0.38657407407407407,
+          "min_cls": 0.05478395061728395,
+          "train_s": 12.0
+        }
+      },
+      "te_acc_mean": 0.27141203703703703,
+      "te_acc_std": 0.00752314814814814
+    },
+    {
+      "tag": "delta_stdp",
+      "seeds": {
+        "1": {
+          "tag": "delta_stdp",
+          "enc": "delta",
+          "learn": true,
+          "seed": 1,
+          "te_acc": 0.2638888888888889,
+          "tr_acc": 0.3699845679012346,
+          "min_cls": 0.055169753086419755,
+          "train_s": 30.5
+        },
+        "2": {
+          "tag": "delta_stdp",
+          "enc": "delta",
+          "learn": true,
+          "seed": 2,
+          "te_acc": 0.2318672839506173,
+          "tr_acc": 0.3734567901234568,
+          "min_cls": 0.0466820987654321,
+          "train_s": 30.5
+        }
+      },
+      "te_acc_mean": 0.2478780864197531,
+      "te_acc_std": 0.016010802469135804
+    },
+    {
+      "tag": "delta_rand",
+      "seeds": {
+        "1": {
+          "tag": "delta_rand",
+          "enc": "delta",
+          "learn": false,
+          "seed": 1,
+          "te_acc": 0.3194444444444444,
+          "tr_acc": 0.4174382716049383,
+          "min_cls": 0.06558641975308642,
+          "train_s": 10.0
+        },
+        "2": {
+          "tag": "delta_rand",
+          "enc": "delta",
+          "learn": false,
+          "seed": 2,
+          "te_acc": 0.33719135802469136,
+          "tr_acc": 0.43132716049382713,
+          "min_cls": 0.06712962962962964,
+          "train_s": 10.0
+        }
+      },
+      "te_acc_mean": 0.3283179012345679,
+      "te_acc_std": 0.008873456790123468
+    }
+  ],
+  "density": {
+    "rate": 0.0499,
+    "delta": 0.0426
+  }
+}

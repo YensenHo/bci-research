@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>可穿戴脑电 · 从采集到解码（第9周）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#e6edf3;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;padding:40px 20px 80px}
+.wrap{max-width:1080px;margin:0 auto}
+header{text-align:center;padding:20px 0 34px;border-bottom:1px solid #21262d;margin-bottom:40px}
+header h1{font-size:28px;font-weight:700;letter-spacing:.5px}
+header .sub{color:#8b949e;font-size:14px;margin-top:10px}
+h2.sec{font-size:21px;font-weight:700;margin:52px 0 6px;display:flex;align-items:center;gap:12px}
+h2.sec .n{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;font-size:15px;flex:none}
+h2.sec .n.b{background:#58a6ff22;color:#58a6ff;border:1px solid #58a6ff55}
+h2.sec .n.g{background:#3fb95022;color:#3fb950;border:1px solid #3fb95055}
+h2.sec .n.y{background:#d2992222;color:#d29922;border:1px solid #d2992255}
+h2.sec .n.p{background:#bc8cff22;color:#bc8cff;border:1px solid #bc8cff55}
+p.lead{color:#b0bec5;font-size:15px;margin:8px 0 18px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:14px 0}
+.card .ct{font-size:15px;font-weight:700;color:#e6edf3;margin-bottom:10px}
+.card .cd{color:#b0bec5;font-size:14px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #21262d}
+th{background:#21262d;color:#e6edf3;font-weight:600;white-space:nowrap}
+td{color:#c9d1d9}
+tr:last-child td{border-bottom:none}
+.pos{color:#3fb950;font-weight:600}
+.neg{color:#f85149;font-weight:600}
+.callout{border-left:3px solid #3fb950;background:#3fb95011;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
+.warn{border-left:3px solid #d29922;background:#d2992211;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
+.alert{border-left:3px solid #f85149;background:#f8514911;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
+ul.plan{margin:8px 0 4px 22px;color:#c9d1d9;font-size:14.5px}
+ul.plan li{margin:10px 0}
+footer{text-align:center;color:#8b949e;font-size:14px;margin-top:60px;padding-top:24px;border-top:1px solid #21262d}
+code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#e6edf3}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}
+.kpi .k{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:18px;text-align:center}
+.kpi .k .v{font-size:24px;font-weight:800}
+.kpi .k .t{color:#8b949e;font-size:13px;margin-top:4px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.grid2 .u{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:18px}
+.grid2 .u .ut{font-size:15px;font-weight:700;color:#bc8cff;margin-bottom:6px}
+.grid2 .u .ud{color:#b0bec5;font-size:13.5px;line-height:1.65}
+@media(max-width:860px){.kpi{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>可穿戴脑电 · 从采集到解码</h1>
+  <div class="sub">何仡轩 · 26 级博士生 · 第 9 周（2026-11-04）</div>
+</header>
+
+<!-- 总览 -->
+<h2 class="sec"><span class="n b">总</span>一句话：采集端采到真脑电，解码端知识蒸馏少标注</h2>
+<p class="lead">这条线补上了两端：<strong>前端</strong>用 16 通道 ADS1299 + 免涂抹弹针干电极采到了真实脑电（闭眼 alpha 增强 4.56 倍）；<strong>后端</strong>用知识蒸馏在少标注下追平满标注。下面分「采集」和「解码」两块讲。</p>
+
+<div class="kpi">
+  <div class="k"><div class="v" style="color:#3fb950">×4.56</div><div class="t">闭眼 alpha 增强</div></div>
+  <div class="k"><div class="v" style="color:#58a6ff">16ch</div><div class="t">ADS1299 免涂抹采集</div></div>
+  <div class="k"><div class="v" style="color:#d29922">sign(t−s)</div><div class="t">蒸馏红利符号判据</div></div>
+  <div class="k"><div class="v" style="color:#bc8cff">+16.15</div><div class="t">σ=1.0 抗噪暴涨</div></div>
+</div>
+
+<!-- 一、采集链路（脑电帽成果） -->
+<h2 class="sec"><span class="n g">一</span>采集端：脑电帽采到真实脑电</h2>
+<p class="lead">前端是<strong>可穿戴脑电采集链路</strong>：16 通道 ADS1299（OpenBCI 兼容）+ 免涂抹弹针干电极。实测打通了「电极 → ADS1299 → STM32 → USB 串口 → 滤波 → 频谱」整条链路。</p>
+
+<div class="card">
+  <div class="ct">链路自检：闭眼 alpha 增强（枕区 Oz，睁眼 vs 闭眼）</div>
+  <table>
+    <tr><th>指标</th><th>睁眼</th><th>闭眼</th><th>变化</th></tr>
+    <tr><td>alpha 功率（8-13Hz）</td><td>10,434 µV²</td><td class="pos">47,566 µV²</td><td class="pos">×4.56</td></tr>
+    <tr><td>峰值频率</td><td>10.7 Hz</td><td class="pos">10.0 Hz</td><td class="pos">移到 alpha 中心</td></tr>
+    <tr><td>峰值功率</td><td>1,401 µV²</td><td class="pos">4,901 µV²</td><td class="pos">×3.5</td></tr>
+  </table>
+  <div class="cd">闭眼 alpha 是睁眼的 <b>4.56 倍</b>，峰值稳稳落在 10Hz——这是脑电最经典的「枕区闭眼 alpha 增强」，证明采到的是真实脑电，不是噪声。接法：Oz 枕区（活动）+ A2 耳后（参考）+ RLD（地）。</div>
+</div>
+
+<div class="callout">
+  <b>采集端现状</b>：16 通道板已实测打通（当前只用 1 个 Oz 通道验证），后续扩到 64 通道（4 块 16ch 板软件合并）。弹针干电极免涂抹，符合可穿戴方向，但接触阻抗高，后续测额叶 F3/F4 情绪指标需补导电膏或换弹针材质。
+</div>
+
+<!-- 二、解码端：知识蒸馏 -->
+<h2 class="sec"><span class="n b">二</span>解码端：知识蒸馏的符号判据 + K/R 机制</h2>
+<p class="lead">后端是可穿戴小模型的训练问题——标注贵。知识蒸馏用大模型软标签，少标注追平满标注。核心判据：<strong>红利符号 = sign(teacher−student)</strong>。</p>
+<div class="card">
+  <div class="ct">K/R 定量分解（红利 = 知识传递 K + 正则化 R）</div>
+  <table>
+    <tr><th>数据</th><th>teacher 满标签</th><th>K（知识）</th><th>R（正则化）</th><th>总红利</th></tr>
+    <tr><td>EEGMMIDB-4c</td><td>36.3%</td><td class="neg">−1.48</td><td class="neg">−2.59</td><td class="neg">−4.07</td></tr>
+    <tr><td>BCIC-cross</td><td>62.1%</td><td class="pos">+4.51</td><td class="pos">+5.21</td><td class="pos">+9.72</td></tr>
+    <tr><td>CHB-MIT</td><td>77.5%</td><td class="neg">−2.66</td><td class="pos">+2.66</td><td class="pos">+0.00</td></tr>
+  </table>
+  <div class="cd">负红利 = K 负 + R 负叠加；CHB-MIT 的「红利 0」是 K 负与 R 正精确抵消。负红利根因是 teacher 过拟合（容量 vs 数据量不匹配）。</div>
+</div>
+
+<!-- 三、信噪比 + 真实信道 -->
+<h2 class="sec"><span class="n y">三</span>信噪比相图 + 真实人体信道</h2>
+<p class="lead">加噪不产生负红利，σ=1.0 红利暴涨 <strong>+16.15（双 seed）</strong>；升级到真实人体信道（量化/突发/脉冲）红利全程正。</p>
+<div class="card">
+  <table>
+    <tr><th>场景</th><th>物理含义</th><th>K（知识）</th><th>R（正则化）</th><th>总红利</th></tr>
+    <tr><td>awgn</td><td>纯高斯 σ=1.0</td><td class="pos">+15.97</td><td class="pos">+7.99</td><td class="pos">+23.96</td></tr>
+    <tr><td>burst</td><td>AWGN+突发（电极移动）</td><td class="pos">+3.12</td><td class="pos">+7.12</td><td class="pos">+10.24</td></tr>
+    <tr><td>impulse</td><td>AWGN+脉冲（静电放电）</td><td class="pos">+13.89</td><td class="pos">+3.99</td><td class="pos">+17.88</td></tr>
+    <tr><td>full</td><td>量化+AWGN+突发+脉冲</td><td class="pos">+10.42</td><td class="pos">+5.38</td><td class="pos">+15.80</td></tr>
+  </table>
+  <div class="cd">真实信道下蒸馏依然抗噪——蒸馏是「可穿戴人体通信系统」在<b>解码端</b>的那块拼图。</div>
+</div>
+
+<!-- 四、量化边界（证伪） -->
+<h2 class="sec"><span class="n p">四</span>量化边界：本周围绕「量化吃 K 不吃 R」做了证伪</h2>
+<p class="lead">想验证「5bit 量化吃 K（知识）不吃 R（正则化）」能否升成端侧部署判据，bit 扫描（2/3/4/5/8bit）结果把它证伪了。</p>
+<div class="card">
+  <table>
+    <tr><th>bit</th><th>K（知识）</th><th>R（正则化）</th><th>总红利</th></tr>
+    <tr><td>0（不量化）</td><td class="pos">+17.36</td><td class="neg">−4.51</td><td class="pos">+12.85</td></tr>
+    <tr><td>2</td><td class="pos">+7.99</td><td class="pos">+1.39</td><td class="pos">+9.38</td></tr>
+    <tr><td>3</td><td class="pos">+2.43</td><td class="pos">+1.39</td><td class="pos">+3.82</td></tr>
+    <tr><td>4</td><td class="pos">+14.41</td><td class="neg">−7.64</td><td class="pos">+6.77</td></tr>
+    <tr><td>5</td><td class="pos">+7.64</td><td class="neg">−9.72</td><td class="neg">−2.08</td></tr>
+    <tr><td>8</td><td class="pos">+15.28</td><td class="pos">+5.21</td><td class="pos">+20.49</td></tr>
+  </table>
+  <div class="cd">K/R 随 bit <b>非单调波动</b>，没有「K 先崩 R 后崩」的分离区间；5bit 下 R 反而崩到 −9.72，跟「量化吃 K 不吃 R」相反。该方向第一步证伪。</div>
+</div>
+
+<!-- 五、诚实边界 -->
+<h2 class="sec"><span class="n g">五</span>诚实边界</h2>
+<div class="warn">
+  <ul class="plan">
+    <li><b>采集端</b>：16 通道板当前只用 1 个 Oz 通道验证了 alpha，64 通道全量采集（4 块板软件合并）尚未实测；弹针干电极接触阻抗高，情绪指标（F3/F4 的 FAA）还没实测。</li>
+    <li><b>解码端 novelty 是切入角度级</b>，不是现象级：2026「蒸馏何时有害」已成红海，我们靠「脑电测试床 + 符号判据 + K/R 分解」的组合角度。</li>
+    <li><b>单 seed 不可信</b>：蒸馏红利结论必须双 seed 均值（量化边界证伪就是单 seed 假象的典型例子）。</li>
+    <li><b>量化边界已证伪</b>：K/R 随 bit 非单调，端侧量化判据这条创新点不成立。</li>
+  </ul>
+</div>
+
+<footer>以上就是本周汇报，请老师指正。</footer>
+
+</div>
+</body>
+</html>

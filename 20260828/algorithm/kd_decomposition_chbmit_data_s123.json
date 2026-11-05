@@ -1,0 +1,13 @@
+{
+  "data": "chbmit/data",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 123,
+  "teacher_eval": 80.85,
+  "hard": 85.64,
+  "label_smoothing": 84.04,
+  "distilled": 83.87,
+  "R_pp": -1.6,
+  "K_pp": -0.18,
+  "total_gain_pp": -1.77
+}

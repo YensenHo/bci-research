@@ -1,0 +1,177 @@
+{
+  "sfreq": 100.0,
+  "epoch_sec": 30.0,
+  "channel": "Fpz-Cz",
+  "bandpass": [
+    0.5,
+    35.0
+  ],
+  "stage_map": {
+    "sleep stage w": 0,
+    "sleep stage 1": 1,
+    "sleep stage 2": 2,
+    "sleep stage 3": 3,
+    "sleep stage 4": 3,
+    "sleep stage r": 4
+  },
+  "drop_stages": [
+    "",
+    "movement time",
+    "sleep stage ?",
+    "unknown"
+  ],
+  "per_file": {
+    "subj0/SC4001": {
+      "n_signal_samples": 7950000,
+      "n_annotations": 154,
+      "n_epoch_signal": 2650,
+      "dropped_epochs": 0,
+      "n_valid": 2650,
+      "psg_bytes": 48338048,
+      "hyp_bytes": 4620,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    },
+    "subj1/SC4011": {
+      "n_signal_samples": 8406000,
+      "n_annotations": 126,
+      "n_epoch_signal": 2802,
+      "dropped_epochs": 0,
+      "n_valid": 2802,
+      "psg_bytes": 51110528,
+      "hyp_bytes": 3896,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    },
+    "subj2/SC4021": {
+      "n_signal_samples": 8412000,
+      "n_annotations": 161,
+      "n_epoch_signal": 2804,
+      "dropped_epochs": 0,
+      "n_valid": 2804,
+      "psg_bytes": 51147008,
+      "hyp_bytes": 4804,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    },
+    "subj3/SC4031": {
+      "n_signal_samples": 8460000,
+      "n_annotations": 119,
+      "n_epoch_signal": 2820,
+      "dropped_epochs": 0,
+      "n_valid": 2820,
+      "psg_bytes": 51438848,
+      "hyp_bytes": 3700,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    },
+    "subj4/SC4041": {
+      "n_signal_samples": 7710000,
+      "n_annotations": 161,
+      "n_epoch_signal": 2570,
+      "dropped_epochs": 1,
+      "n_valid": 2569,
+      "psg_bytes": 46878848,
+      "hyp_bytes": 4830,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    },
+    "subj5/SC4051": {
+      "n_signal_samples": 8166000,
+      "n_annotations": 130,
+      "n_epoch_signal": 2722,
+      "dropped_epochs": 0,
+      "n_valid": 2722,
+      "psg_bytes": 49651328,
+      "hyp_bytes": 3976,
+      "channel_labels": [
+        "EEG FPZ-CZ",
+        "EEG PZ-OZ",
+        "EOG HORIZONTAL",
+        "RESP ORO-NASAL",
+        "EMG SUBMENTAL",
+        "TEMP RECTAL",
+        "EVENT MARKER"
+      ]
+    }
+  },
+  "train_subjects": [
+    "subj0",
+    "subj1",
+    "subj2",
+    "subj3"
+  ],
+  "train_recordings": [
+    "SC4001",
+    "SC4011",
+    "SC4021",
+    "SC4031"
+  ],
+  "train_n": 11076,
+  "train_dist": {
+    "0": 7768,
+    "1": 322,
+    "2": 1842,
+    "3": 477,
+    "4": 667
+  },
+  "eval_subjects": [
+    "subj4",
+    "subj5"
+  ],
+  "eval_recordings": [
+    "SC4041",
+    "SC4051"
+  ],
+  "eval_n": 5291,
+  "eval_dist": {
+    "0": 3792,
+    "1": 210,
+    "2": 837,
+    "3": 188,
+    "4": 264
+  },
+  "class_weights": {
+    "0": 0.0873016729508615,
+    "1": 2.106085079137553,
+    "2": 0.3681647098166624,
+    "3": 1.421717810235413,
+    "4": 1.0167307278595084
+  },
+  "smoke": false
+}

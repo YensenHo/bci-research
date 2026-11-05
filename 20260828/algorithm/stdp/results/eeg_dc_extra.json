@@ -1,0 +1,33 @@
+{
+  "task": "DC-WTA 引擎 EEG 灵敏度检查（补充，非主表）",
+  "configs": [
+    {
+      "tag": "dc_rate_s1",
+      "enc": "rate",
+      "seed": 1,
+      "te_acc": 0.2511574074074074,
+      "train_s": 22.8
+    },
+    {
+      "tag": "dc_rate_s2",
+      "enc": "rate",
+      "seed": 2,
+      "te_acc": 0.2507716049382716,
+      "train_s": 24.1
+    },
+    {
+      "tag": "dc_delta_s1",
+      "enc": "delta",
+      "seed": 1,
+      "te_acc": 0.27662037037037035,
+      "train_s": 18.1
+    },
+    {
+      "tag": "dc_delta_s2",
+      "enc": "delta",
+      "seed": 2,
+      "te_acc": 0.28665123456790126,
+      "train_s": 18.1
+    }
+  ]
+}

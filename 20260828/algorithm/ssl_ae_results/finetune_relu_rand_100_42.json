@@ -1,0 +1,18 @@
+{
+ "cell": "relu_rand_100_42",
+ "act": "relu",
+ "init": "rand",
+ "frac": 1.0,
+ "seed": 42,
+ "init_desc": "随机初始化（真·从零）",
+ "best_epoch": 81,
+ "best_val_acc": 0.6118,
+ "n_train": 2203,
+ "n_val": 389,
+ "n_params": 9512,
+ "acc_clean": 0.5883,
+ "acc_8db": 0.5586,
+ "acc_8db_burst": 0.5571,
+ "noise_seed": 20240828,
+ "aug_desc": "HBC增强[5bit+AWGN SNR∈[10,20]dB +burst]"
+}

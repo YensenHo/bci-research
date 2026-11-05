@@ -1,0 +1,25 @@
+[
+  {
+    "subject": "A06",
+    "acc": 54.17,
+    "best_val": 69.77,
+    "best_epoch": 31,
+    "n_train": 245,
+    "n_val": 43,
+    "test_n": 288,
+    "seed": 123,
+    "activation": "lif",
+    "elapsed_sec": 46.5,
+    "n_epochs": 56,
+    "firing_rates": {
+      "act1": 14.0,
+      "act2": 21.8,
+      "tcn.0.act_a": 15.9,
+      "tcn.0.act_b": 25.2,
+      "tcn.0.act_res": 34.4,
+      "tcn.1.act_a": 21.3,
+      "tcn.1.act_b": 28.6,
+      "tcn.1.act_res": 38.4
+    }
+  }
+]

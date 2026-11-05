@@ -1,0 +1,18 @@
+{
+ "cell": "lif_warm_30_42",
+ "act": "lif",
+ "init": "warm",
+ "frac": 0.3,
+ "seed": 42,
+ "init_desc": "监督热启动（eeg_tcnet_4class_relu_brief.pth，全量监督 relu 分类器，strict=True）",
+ "best_epoch": 3,
+ "best_val_acc": 0.641,
+ "n_train": 661,
+ "n_val": 117,
+ "n_params": 9512,
+ "acc_clean": 0.5648,
+ "acc_8db": 0.517,
+ "acc_8db_burst": 0.517,
+ "noise_seed": 20240828,
+ "aug_desc": "HBC增强[5bit+AWGN SNR∈[10,20]dB +burst]"
+}

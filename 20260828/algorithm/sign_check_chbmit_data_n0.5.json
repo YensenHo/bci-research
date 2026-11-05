@@ -1,0 +1,16 @@
+{
+  "data": "chbmit/data_n0.5",
+  "n_classes": 2,
+  "seed": 42,
+  "teacher_val": 81.91,
+  "teacher_train": 99.95,
+  "overfit_gap_pp": 18.04,
+  "student_full": 85.99,
+  "teacher_minus_student_pp": -4.08,
+  "hard_30pct": 92.02,
+  "distilled_30pct": 92.55,
+  "gain_30pct_pp": 0.53,
+  "threshold_predict": "pos",
+  "actual": "pos",
+  "consistent": true
+}

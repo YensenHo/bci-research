@@ -1,0 +1,54 @@
+{
+  "source": "https://hf-mirror.com/datasets/ronaldvandenbroek/physionet-sleep-data/resolve/main/physionet-sleep-data.zip",
+  "zip_total_bytes": 1044035855,
+  "files": {
+    "SC4001E0-PSG.edf": {
+      "bytes": 48338048,
+      "ok": true
+    },
+    "SC4001EC-Hypnogram.edf": {
+      "bytes": 4620,
+      "ok": true
+    },
+    "SC4011E0-PSG.edf": {
+      "bytes": 51110528,
+      "ok": true
+    },
+    "SC4011EH-Hypnogram.edf": {
+      "bytes": 3896,
+      "ok": true
+    },
+    "SC4021E0-PSG.edf": {
+      "bytes": 51147008,
+      "ok": true
+    },
+    "SC4021EH-Hypnogram.edf": {
+      "bytes": 4804,
+      "ok": true
+    },
+    "SC4031E0-PSG.edf": {
+      "bytes": 51438848,
+      "ok": true
+    },
+    "SC4031EC-Hypnogram.edf": {
+      "bytes": 3700,
+      "ok": true
+    },
+    "SC4041E0-PSG.edf": {
+      "bytes": 46878848,
+      "ok": true
+    },
+    "SC4041EC-Hypnogram.edf": {
+      "bytes": 4830,
+      "ok": true
+    },
+    "SC4051E0-PSG.edf": {
+      "bytes": 49651328,
+      "ok": true
+    },
+    "SC4051EC-Hypnogram.edf": {
+      "bytes": 3976,
+      "ok": true
+    }
+  }
+}

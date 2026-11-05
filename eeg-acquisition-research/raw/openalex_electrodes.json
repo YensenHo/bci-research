@@ -1,0 +1,2158 @@
+{
+ "semi-dry electrode": [
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "Towards conductive-gel-free electrodes: Understanding the wet electrode, semi-dry electrode and dry electrode-skin interface impedance using electrochemical impedance spectroscopy fitting",
+   "year": 2018,
+   "doi": "10.1016/j.snb.2018.08.155",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 202,
+   "authors": "Guangli Li; Sizhe Wang; Yanwen Y. Duan"
+  },
+  {
+   "title": "Novel semi-dry electrodes for brain–computer interface applications",
+   "year": 2016,
+   "doi": "10.1088/1741-2560/13/4/046021",
+   "venue": "Journal of Neural Engineering",
+   "cites": 78,
+   "authors": "Fei Wang; Guangli Li; Jingjing Chen"
+  },
+  {
+   "title": "Novel passive ceramic based semi-dry electrodes for recording electroencephalography signals from the hairy scalp",
+   "year": 2016,
+   "doi": "10.1016/j.snb.2016.06.045",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 106,
+   "authors": "Guangli Li; Dan Zhang; Sizhe Wang"
+  },
+  {
+   "title": "Flexible Multi-Layer Semi-Dry Electrode for Scalp EEG Measurements at Hairy Sites",
+   "year": 2019,
+   "doi": "10.3390/mi10080518",
+   "venue": "Micromachines",
+   "cites": 76,
+   "authors": "Haoqiang Hua; Wei Tang; Xiangmin Xu"
+  },
+  {
+   "title": "A Novel Bristle-Shaped Semi-Dry Electrode With Low Contact Impedance and Ease of Use Features for EEG Signal Measurements",
+   "year": 2019,
+   "doi": "10.1109/tbme.2019.2920711",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 51,
+   "authors": "Kunpeng Gao; Han-Jia Yang; Lu-Lu Liao"
+  },
+  {
+   "title": "Polyvinyl alcohol/polyacrylamide double-network hydrogel-based semi-dry electrodes for robust electroencephalography recording at hairy scalp for noninvasive brain–computer interfaces",
+   "year": 2023,
+   "doi": "10.1088/1741-2552/acc098",
+   "venue": "Journal of Neural Engineering",
+   "cites": 67,
+   "authors": "Guangli Li; Ying Liu; Yu‐Wei Chen"
+  },
+  {
+   "title": "Evaluation of flexible multi-claw and multi-channel semi-dry electrodes for evoked electroencephalography recording",
+   "year": 2022,
+   "doi": "10.1016/j.sna.2022.113547",
+   "venue": "Sensors and Actuators A Physical",
+   "cites": 21,
+   "authors": "Penghai Li; Juanjuan Huang; Mingji Li"
+  },
+  {
+   "title": "Towards real-life EEG applications: novel superporous hydrogel-based semi-dry EEG electrodes enabling automatically ‘charge–discharge’ electrolyte",
+   "year": 2021,
+   "doi": "10.1088/1741-2552/abeeab",
+   "venue": "Journal of Neural Engineering",
+   "cites": 123,
+   "authors": "Guangli Li; Sizhe Wang; Mingzhe Li"
+  },
+  {
+   "title": "A flexible, stable, semi-dry electrode with low impedance for electroencephalography recording",
+   "year": 2024,
+   "doi": "10.1039/d4ra05560h",
+   "venue": "RSC Advances",
+   "cites": 11,
+   "authors": "Yiyan Zhu; Caicaike Bayin; Hongjie Li"
+  },
+  {
+   "title": "A Novel Semi-Dry Electrode Suitable for Collecting EEG Data for Detecting Driving Fatigue in Long-Period Driving Case",
+   "year": 2023,
+   "doi": "10.1109/jsen.2023.3292499",
+   "venue": "IEEE Sensors Journal",
+   "cites": 16,
+   "authors": "Fuwang Wang; Daping Chen; Bin Lu"
+  },
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  }
+ ],
+ "dry electrode EEG": [
+  {
+   "title": "Comparison between a wireless dry electrode EEG system with a conventional wired wet electrode EEG system for clinical applications",
+   "year": 2020,
+   "doi": "10.1038/s41598-020-62154-0",
+   "venue": "Scientific Reports",
+   "cites": 227,
+   "authors": "Hermann Hinrichs; Michael Scholz; Anne Katrin Baum"
+  },
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  },
+  {
+   "title": "Monitoring Pilot’s Mental Workload Using ERPs and Spectral Power with a Six-Dry-Electrode EEG System in Real Flight Conditions",
+   "year": 2019,
+   "doi": "10.3390/s19061324",
+   "venue": "Sensors",
+   "cites": 178,
+   "authors": "Frédéric Dehais; Alban Duprès; Sarah Blum"
+  },
+  {
+   "title": "Novel Dry Polymer Foam Electrodes for Long-Term EEG Measurement",
+   "year": 2011,
+   "doi": "10.1109/tbme.2010.2102353",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 336,
+   "authors": "Chin‐Teng Lin; Lun‐De Liao; Yuhang Liu"
+  },
+  {
+   "title": "A 3D printed dry electrode for ECG/EEG recording",
+   "year": 2011,
+   "doi": "10.1016/j.sna.2011.12.017",
+   "venue": "Sensors and Actuators A Physical",
+   "cites": 266,
+   "authors": "Pietro Salvo; Robrecht Raedt; Evelien Carrette"
+  },
+  {
+   "title": "High and dry? Comparing active dry EEG electrodes to active and passive wet electrodes",
+   "year": 2016,
+   "doi": "10.1111/psyp.12536",
+   "venue": "Psychophysiology",
+   "cites": 224,
+   "authors": "Kyle E. Mathewson; Tyler Harrison; Sayeed A. D. Kizuk"
+  },
+  {
+   "title": "A dry electrode for EEG recording",
+   "year": 1994,
+   "doi": "10.1016/0013-4694(94)90053-1",
+   "venue": "Electroencephalography and Clinical Neurophysiology",
+   "cites": 173,
+   "authors": "Babak Taheri; Robert T. Knight; R. L. Smith"
+  },
+  {
+   "title": "Dry-Contact Electrode Ear-EEG",
+   "year": 2018,
+   "doi": "10.1109/tbme.2018.2835778",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 176,
+   "authors": "Simon L. Kappel; Mike Lind Rank; Hans O. Toft"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "Effects of an Integrated Neurofeedback System with Dry Electrodes: EEG Acquisition and Cognition Assessment",
+   "year": 2018,
+   "doi": "10.3390/s18103396",
+   "venue": "Sensors",
+   "cites": 52,
+   "authors": "Guangying Pei; Jinglong Wu; Duanduan Chen"
+  },
+  {
+   "title": "Soft, Comfortable Polymer Dry Electrodes for High Quality ECG and EEG Recording",
+   "year": 2014,
+   "doi": "10.3390/s141223758",
+   "venue": "Sensors",
+   "cites": 243,
+   "authors": "Yun-Hsuan Chen; Maaike Op de Beeck; Luc Vanderheyden"
+  },
+  {
+   "title": "Systematic comparison between a wireless EEG system with dry electrodes and a wired EEG system with wet electrodes",
+   "year": 2018,
+   "doi": "10.1016/j.neuroimage.2018.09.012",
+   "venue": "NeuroImage",
+   "cites": 197,
+   "authors": "Julia W. Y. Kam; Sandon Griffin; Alan Shen"
+  }
+ ],
+ "graphene electrode EEG": [
+  {
+   "title": "Graphene Electronic Tattoo Sensors",
+   "year": 2017,
+   "doi": "10.1021/acsnano.7b02182",
+   "venue": "ACS Nano",
+   "cites": 681,
+   "authors": "Shideh Kabiri Ameri; Rebecca Ho; Hongwoo Jang"
+  },
+  {
+   "title": "Flexible graphene/GO electrode for gel-free EEG",
+   "year": 2021,
+   "doi": "10.1088/1741-2552/abf609",
+   "venue": "Journal of Neural Engineering",
+   "cites": 30,
+   "authors": "Li‐Wei Ko; Cheng-Hua Su; Pei‐Lun Liao"
+  },
+  {
+   "title": "Transparent and flexible low noise graphene electrodes for simultaneous electrophysiology and neuroimaging",
+   "year": 2014,
+   "doi": "10.1038/ncomms6259",
+   "venue": "Nature Communications",
+   "cites": 556,
+   "authors": "Duygu Kuzum; Hajime Takano; Euijae Shim"
+  },
+  {
+   "title": "Graphene-based carbon-layered electrode array technology for neural imaging and optogenetic applications",
+   "year": 2014,
+   "doi": "10.1038/ncomms6258",
+   "venue": "Nature Communications",
+   "cites": 576,
+   "authors": "Dong‐Wook Park; Amelia A. Schendel; Solomon Mikael"
+  },
+  {
+   "title": "Graphene-enhanced electrodes for scalable supercapacitors",
+   "year": 2017,
+   "doi": "10.1016/j.electacta.2017.10.056",
+   "venue": "Electrochimica Acta",
+   "cites": 85,
+   "authors": "I-Ling Tsai; Jianyun Cao; Lewis W. Le Fevre"
+  },
+  {
+   "title": "Wearable EEG and beyond",
+   "year": 2019,
+   "doi": "10.1007/s13534-018-00093-6",
+   "venue": "Biomedical Engineering Letters",
+   "cites": 352,
+   "authors": "Alexander J. Casson"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "High Performance Fe- and N- Doped Carbon Catalyst with Graphene Structure for Oxygen Reduction",
+   "year": 2013,
+   "doi": "10.1038/srep01765",
+   "venue": "Scientific Reports",
+   "cites": 604,
+   "authors": "Hongliang Peng; Zaiyong Mo; Shijun Liao"
+  },
+  {
+   "title": "Current progress achieved in novel materials for supercapacitor electrodes: mini review",
+   "year": 2019,
+   "doi": "10.1039/c9na00345b",
+   "venue": "Nanoscale Advances",
+   "cites": 921,
+   "authors": "Sumaiyah Najib; Emre Erdem"
+  },
+  {
+   "title": "Flexible Graphene Electrodes for Prolonged Dynamic ECG Monitoring",
+   "year": 2016,
+   "doi": "10.3390/s16111833",
+   "venue": "Sensors",
+   "cites": 144,
+   "authors": "Cunguang Lou; Ruikai Li; Zhaopeng Li"
+  },
+  {
+   "title": "3D Printed Dry EEG Electrodes",
+   "year": 2016,
+   "doi": "10.3390/s16101635",
+   "venue": "Sensors",
+   "cites": 113,
+   "authors": "Sammy Krachunov; Alexander J. Casson"
+  },
+  {
+   "title": "On-skin graphene electrodes for large area electrophysiological monitoring and human-machine interfaces",
+   "year": 2020,
+   "doi": "10.1016/j.carbon.2020.03.058",
+   "venue": "Carbon",
+   "cites": 91,
+   "authors": "Zhuo Li; Wei Guo; Yuyan Huang"
+  }
+ ],
+ "e-tattoo EEG electrode": [
+  {
+   "title": "Ultraconformable Temporary Tattoo Electrodes for Electrophysiology",
+   "year": 2018,
+   "doi": "10.1002/advs.201700771",
+   "venue": "Advanced Science",
+   "cites": 198,
+   "authors": "Laura M. Ferrari; Sudha Sudha; Sergio Tarantino"
+  },
+  {
+   "title": "Wearable EEG and beyond",
+   "year": 2019,
+   "doi": "10.1007/s13534-018-00093-6",
+   "venue": "Biomedical Engineering Letters",
+   "cites": 352,
+   "authors": "Alexander J. Casson"
+  },
+  {
+   "title": "Soft, Comfortable Polymer Dry Electrodes for High Quality ECG and EEG Recording",
+   "year": 2014,
+   "doi": "10.3390/s141223758",
+   "venue": "Sensors",
+   "cites": 243,
+   "authors": "Yun-Hsuan Chen; Maaike Op de Beeck; Luc Vanderheyden"
+  },
+  {
+   "title": "Conducting polymer tattoo electrodes in clinical electro- and magneto-encephalography",
+   "year": 2020,
+   "doi": "10.1038/s41528-020-0067-z",
+   "venue": "npj Flexible Electronics",
+   "cites": 116,
+   "authors": "Laura M. Ferrari; Usein Ismailov; J. Badier"
+  },
+  {
+   "title": "Fully organic compliant dry electrodes self-adhesive to skin for long-term motion-robust epidermal biopotential monitoring",
+   "year": 2020,
+   "doi": "10.1038/s41467-020-18503-8",
+   "venue": "Nature Communications",
+   "cites": 560,
+   "authors": "Lei Zhang; Kirthika Senthil Kumar; Hao He"
+  },
+  {
+   "title": "Wireless EEG: A survey of systems and studies",
+   "year": 2022,
+   "doi": "10.1016/j.neuroimage.2022.119774",
+   "venue": "NeuroImage",
+   "cites": 260,
+   "authors": "Guiomar Niso; Elena Romero; Jeremy T. Moreau"
+  },
+  {
+   "title": "A mind-brain-body dataset of MRI, EEG, cognition, emotion, and peripheral physiology in young and old adults",
+   "year": 2019,
+   "doi": "10.1038/sdata.2018.308",
+   "venue": "Scientific Data",
+   "cites": 419,
+   "authors": "Anahit Babayan; Miray Erbey; Deniz Kumral"
+  },
+  {
+   "title": "On-scalp printing of personalized electroencephalography e-tattoos",
+   "year": 2025,
+   "doi": "10.1016/j.celbio.2024.100004",
+   "venue": "Cell Biomaterials",
+   "cites": 27,
+   "authors": "Luize Scalco de Vasconcelos; Yichen Yan; Pukar Maharjan"
+  },
+  {
+   "title": "Materials, Devices, and Systems of On‐Skin Electrodes for Electrophysiological Monitoring and Human–Machine Interfaces",
+   "year": 2020,
+   "doi": "10.1002/advs.202001938",
+   "venue": "Advanced Science",
+   "cites": 391,
+   "authors": "Hao Wu; Ganguang Yang; Kanhao Zhu"
+  },
+  {
+   "title": "Epidermal Electronics",
+   "year": 2011,
+   "doi": "10.1126/science.1206157",
+   "venue": "Science",
+   "cites": 4741,
+   "authors": "Dae‐Hyeong Kim; Nanshu Lu; Rui Ma"
+  },
+  {
+   "title": "Graphene e-tattoos for unobstructive ambulatory electrodermal activity sensing on the palm enabled by heterogeneous serpentine ribbons",
+   "year": 2022,
+   "doi": "10.1038/s41467-022-34406-2",
+   "venue": "Nature Communications",
+   "cites": 127,
+   "authors": "Hongwoo Jang; Kaan Sel; Eunbin Kim"
+  },
+  {
+   "title": "Wearable System Based on Ultra-Thin Parylene C Tattoo Electrodes for EEG Recording",
+   "year": 2023,
+   "doi": "10.3390/s23020766",
+   "venue": "Sensors",
+   "cites": 29,
+   "authors": "Antonello Mascia; Riccardo Collu; Andrea Spanu"
+  }
+ ],
+ "epidermal electronics EEG": [
+  {
+   "title": "Epidermal Electronics",
+   "year": 2011,
+   "doi": "10.1126/science.1206157",
+   "venue": "Science",
+   "cites": 4741,
+   "authors": "Dae‐Hyeong Kim; Nanshu Lu; Rui Ma"
+  },
+  {
+   "title": "Fractal design concepts for stretchable electronics",
+   "year": 2014,
+   "doi": "10.1038/ncomms4266",
+   "venue": "Nature Communications",
+   "cites": 1079,
+   "authors": "Jonathan A. Fan; Woon‐Hong Yeo; Yewang Su"
+  },
+  {
+   "title": "Wearable EEG and beyond",
+   "year": 2019,
+   "doi": "10.1007/s13534-018-00093-6",
+   "venue": "Biomedical Engineering Letters",
+   "cites": 352,
+   "authors": "Alexander J. Casson"
+  },
+  {
+   "title": "Flexible Electronics and Devices as Human–Machine Interfaces for Medical Robotics",
+   "year": 2021,
+   "doi": "10.1002/adma.202107902",
+   "venue": "Advanced Materials",
+   "cites": 598,
+   "authors": "Wenzheng Heng; Samuel A. Solomon; Wei Gao"
+  },
+  {
+   "title": "Graphene Electronic Tattoo Sensors",
+   "year": 2017,
+   "doi": "10.1021/acsnano.7b02182",
+   "venue": "ACS Nano",
+   "cites": 681,
+   "authors": "Shideh Kabiri Ameri; Rebecca Ho; Hongwoo Jang"
+  },
+  {
+   "title": "Fully organic compliant dry electrodes self-adhesive to skin for long-term motion-robust epidermal biopotential monitoring",
+   "year": 2020,
+   "doi": "10.1038/s41467-020-18503-8",
+   "venue": "Nature Communications",
+   "cites": 560,
+   "authors": "Lei Zhang; Kirthika Senthil Kumar; Hao He"
+  },
+  {
+   "title": "Self-adhesive epidermal carbon nanotube electronics for tether-free long-term continuous recording of biosignals",
+   "year": 2014,
+   "doi": "10.1038/srep06074",
+   "venue": "Scientific Reports",
+   "cites": 185,
+   "authors": "Seung Min Lee; Hang Jin Byeon; Joong Hoon Lee"
+  },
+  {
+   "title": "Self-assembled three dimensional network designs for soft electronics",
+   "year": 2017,
+   "doi": "10.1038/ncomms15894",
+   "venue": "Nature Communications",
+   "cites": 447,
+   "authors": "Kyung‐In Jang; Kan Li; Ha Uk Chung"
+  },
+  {
+   "title": "Wearable EEG electronics for a Brain–AI Closed-Loop System to enhance autonomous machine decision-making",
+   "year": 2022,
+   "doi": "10.1038/s41528-022-00164-w",
+   "venue": "npj Flexible Electronics",
+   "cites": 120,
+   "authors": "Joo Hwan Shin; Junmo Kwon; Jong Uk Kim"
+  },
+  {
+   "title": "Soft, Comfortable Polymer Dry Electrodes for High Quality ECG and EEG Recording",
+   "year": 2014,
+   "doi": "10.3390/s141223758",
+   "venue": "Sensors",
+   "cites": 243,
+   "authors": "Yun-Hsuan Chen; Maaike Op de Beeck; Luc Vanderheyden"
+  },
+  {
+   "title": "Axonal swellings predict the degeneration of epidermal nerve fibers in painful neuropathies",
+   "year": 2003,
+   "doi": "10.1212/01.wnl.0000070781.92512.a4",
+   "venue": "Neurology",
+   "cites": 251,
+   "authors": "Giuseppe Lauria; Michela Morbin; Raffaella Lombardi"
+  },
+  {
+   "title": "Ultra-conformal skin electrodes with synergistically enhanced conductivity for long-time and low-motion artifact epidermal electrophysiology",
+   "year": 2021,
+   "doi": "10.1038/s41467-021-25152-y",
+   "venue": "Nature Communications",
+   "cites": 312,
+   "authors": "Yan Zhao; Song Zhang; Tianhao Yu"
+  }
+ ],
+ "ear-EEG": [
+  {
+   "title": "EEG Recorded from the Ear: Characterizing the Ear-EEG Method",
+   "year": 2015,
+   "doi": "10.3389/fnins.2015.00438",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 205,
+   "authors": "Kaare B. Mikkelsen; Simon L. Kappel; Danilo P. Mandic"
+  },
+  {
+   "title": "Dry-Contact Electrode Ear-EEG",
+   "year": 2018,
+   "doi": "10.1109/tbme.2018.2835778",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 176,
+   "authors": "Simon L. Kappel; Mike Lind Rank; Hans O. Toft"
+  },
+  {
+   "title": "A Study of Evoked Potentials From Ear-EEG",
+   "year": 2013,
+   "doi": "10.1109/tbme.2013.2264956",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 207,
+   "authors": "Preben Kidmose; David Looney; Michael Ungstrup"
+  },
+  {
+   "title": "Physiological artifacts in scalp EEG and ear-EEG",
+   "year": 2017,
+   "doi": "10.1186/s12938-017-0391-2",
+   "venue": "BioMedical Engineering OnLine",
+   "cites": 104,
+   "authors": "Simon L. Kappel; David Looney; Danilo P. Mandic"
+  },
+  {
+   "title": "In-Ear EEG From Viscoelastic Generic Earpieces: Robust and Unobtrusive 24/7 Monitoring",
+   "year": 2015,
+   "doi": "10.1109/jsen.2015.2471183",
+   "venue": "IEEE Sensors Journal",
+   "cites": 196,
+   "authors": "Valentin Goverdovsky; David Looney; Preben Kidmose"
+  },
+  {
+   "title": "Hearables: Automatic Overnight Sleep Monitoring With Standardized In-Ear EEG Sensor",
+   "year": 2019,
+   "doi": "10.1109/tbme.2019.2911423",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 150,
+   "authors": "Takashi Nakamura; Yousef D. Alqurashi; Mary J. Morrell"
+  },
+  {
+   "title": "Automatic sleep staging using ear-EEG",
+   "year": 2017,
+   "doi": "10.1186/s12938-017-0400-5",
+   "venue": "BioMedical Engineering OnLine",
+   "cites": 99,
+   "authors": "Kaare B. Mikkelsen; David Bové Villadsen; Marit Otto"
+  },
+  {
+   "title": "A Wearable In-Ear EEG Device for Emotion Monitoring",
+   "year": 2019,
+   "doi": "10.3390/s19184014",
+   "venue": "Sensors",
+   "cites": 109,
+   "authors": "Chanavit Athavipach; Setha Pan-ngum; Pasin Israsena"
+  },
+  {
+   "title": "Accurate whole-night sleep monitoring with dry-contact ear-EEG",
+   "year": 2019,
+   "doi": "10.1038/s41598-019-53115-3",
+   "venue": "Scientific Reports",
+   "cites": 127,
+   "authors": "Kaare B. Mikkelsen; Yousef R. Tabar; Simon L. Kappel"
+  },
+  {
+   "title": "Automatic Sleep Monitoring Using Ear-EEG",
+   "year": 2017,
+   "doi": "10.1109/jtehm.2017.2702558",
+   "venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+   "cites": 88,
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Mary J. Morrell"
+  },
+  {
+   "title": "In-Ear EEG Biometrics for Feasible and Readily Collectable Real-World Person Authentication",
+   "year": 2017,
+   "doi": "10.1109/tifs.2017.2763124",
+   "venue": "IEEE Transactions on Information Forensics and Security",
+   "cites": 136,
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Danilo P. Mandic"
+  },
+  {
+   "title": "Comparison between Scalp EEG and Behind-the-Ear EEG for Development of a Wearable Seizure Detection System for Patients with Focal Epilepsy",
+   "year": 2017,
+   "doi": "10.3390/s18010029",
+   "venue": "Sensors",
+   "cites": 135,
+   "authors": "Ying Gu; Evy Cleeren; Jonathan Dan"
+  }
+ ],
+ "in-ear EEG": [
+  {
+   "title": "EEG Recorded from the Ear: Characterizing the Ear-EEG Method",
+   "year": 2015,
+   "doi": "10.3389/fnins.2015.00438",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 205,
+   "authors": "Kaare B. Mikkelsen; Simon L. Kappel; Danilo P. Mandic"
+  },
+  {
+   "title": "Dry-Contact Electrode Ear-EEG",
+   "year": 2018,
+   "doi": "10.1109/tbme.2018.2835778",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 176,
+   "authors": "Simon L. Kappel; Mike Lind Rank; Hans O. Toft"
+  },
+  {
+   "title": "A Study of Evoked Potentials From Ear-EEG",
+   "year": 2013,
+   "doi": "10.1109/tbme.2013.2264956",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 207,
+   "authors": "Preben Kidmose; David Looney; Michael Ungstrup"
+  },
+  {
+   "title": "Physiological artifacts in scalp EEG and ear-EEG",
+   "year": 2017,
+   "doi": "10.1186/s12938-017-0391-2",
+   "venue": "BioMedical Engineering OnLine",
+   "cites": 104,
+   "authors": "Simon L. Kappel; David Looney; Danilo P. Mandic"
+  },
+  {
+   "title": "In-Ear EEG From Viscoelastic Generic Earpieces: Robust and Unobtrusive 24/7 Monitoring",
+   "year": 2015,
+   "doi": "10.1109/jsen.2015.2471183",
+   "venue": "IEEE Sensors Journal",
+   "cites": 196,
+   "authors": "Valentin Goverdovsky; David Looney; Preben Kidmose"
+  },
+  {
+   "title": "Hearables: Automatic Overnight Sleep Monitoring With Standardized In-Ear EEG Sensor",
+   "year": 2019,
+   "doi": "10.1109/tbme.2019.2911423",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 150,
+   "authors": "Takashi Nakamura; Yousef D. Alqurashi; Mary J. Morrell"
+  },
+  {
+   "title": "Automatic sleep staging using ear-EEG",
+   "year": 2017,
+   "doi": "10.1186/s12938-017-0400-5",
+   "venue": "BioMedical Engineering OnLine",
+   "cites": 99,
+   "authors": "Kaare B. Mikkelsen; David Bové Villadsen; Marit Otto"
+  },
+  {
+   "title": "A Wearable In-Ear EEG Device for Emotion Monitoring",
+   "year": 2019,
+   "doi": "10.3390/s19184014",
+   "venue": "Sensors",
+   "cites": 109,
+   "authors": "Chanavit Athavipach; Setha Pan-ngum; Pasin Israsena"
+  },
+  {
+   "title": "Accurate whole-night sleep monitoring with dry-contact ear-EEG",
+   "year": 2019,
+   "doi": "10.1038/s41598-019-53115-3",
+   "venue": "Scientific Reports",
+   "cites": 127,
+   "authors": "Kaare B. Mikkelsen; Yousef R. Tabar; Simon L. Kappel"
+  },
+  {
+   "title": "Automatic Sleep Monitoring Using Ear-EEG",
+   "year": 2017,
+   "doi": "10.1109/jtehm.2017.2702558",
+   "venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+   "cites": 88,
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Mary J. Morrell"
+  },
+  {
+   "title": "In-Ear EEG Biometrics for Feasible and Readily Collectable Real-World Person Authentication",
+   "year": 2017,
+   "doi": "10.1109/tifs.2017.2763124",
+   "venue": "IEEE Transactions on Information Forensics and Security",
+   "cites": 136,
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Danilo P. Mandic"
+  },
+  {
+   "title": "Comparison between Scalp EEG and Behind-the-Ear EEG for Development of a Wearable Seizure Detection System for Patients with Focal Epilepsy",
+   "year": 2017,
+   "doi": "10.3390/s18010029",
+   "venue": "Sensors",
+   "cites": 135,
+   "authors": "Ying Gu; Evy Cleeren; Jonathan Dan"
+  }
+ ],
+ "active electrode EEG": [
+  {
+   "title": "A Wearable 8-Channel Active-Electrode EEG/ETI Acquisition System for Body Area Networks",
+   "year": 2014,
+   "doi": "10.1109/jssc.2014.2325557",
+   "venue": "IEEE Journal of Solid-State Circuits",
+   "cites": 125,
+   "authors": "Jiawei Xu; Srinjoy Mitra; Akinori Matsumoto"
+  },
+  {
+   "title": "High and dry? Comparing active dry EEG electrodes to active and passive wet electrodes",
+   "year": 2016,
+   "doi": "10.1111/psyp.12536",
+   "venue": "Psychophysiology",
+   "cites": 224,
+   "authors": "Kyle E. Mathewson; Tyler Harrison; Sayeed A. D. Kizuk"
+  },
+  {
+   "title": "Impedance and Noise of Passive and Active Dry EEG Electrodes: A Review",
+   "year": 2020,
+   "doi": "10.1109/jsen.2020.3012394",
+   "venue": "IEEE Sensors Journal",
+   "cites": 183,
+   "authors": "Erwin H. T. Shad; Marta Molinas; Trond Ytterdal"
+  },
+  {
+   "title": "Active Electrodes for Wearable EEG Acquisition: Review and Electronics Design Methodology",
+   "year": 2017,
+   "doi": "10.1109/rbme.2017.2656388",
+   "venue": "IEEE Reviews in Biomedical Engineering",
+   "cites": 200,
+   "authors": "Jiawei Xu; Srinjoy Mitra; Chris Van Hoof"
+  },
+  {
+   "title": "A Novel Dry Active Electrode for EEG Recording",
+   "year": 2006,
+   "doi": "10.1109/tbme.2006.884649",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 153,
+   "authors": "Carlos Fonseca; João Paulo Silva Cunha; Rui Escadas Martins"
+  },
+  {
+   "title": "A $160~\\mu {\\rm W}$ 8-Channel Active Electrode System for EEG Monitoring",
+   "year": 2011,
+   "doi": "10.1109/tbcas.2011.2170985",
+   "venue": "IEEE Transactions on Biomedical Circuits and Systems",
+   "cites": 223,
+   "authors": "Jiawei Xu; Refet Fırat Yazıcıoğlu; Bernard Grundlehner"
+  },
+  {
+   "title": "EEG source imaging",
+   "year": 2004,
+   "doi": "10.1016/j.clinph.2004.06.001",
+   "venue": "Clinical Neurophysiology",
+   "cites": 1690,
+   "authors": "Christoph M. Michel; Micah M. Murray; Göran Lantz"
+  },
+  {
+   "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+   "year": 2012,
+   "doi": "10.1038/nrn3241",
+   "venue": "Nature reviews. Neuroscience",
+   "cites": 4526,
+   "authors": "György Buzsáki; Costas A. Anastassiou; Christof Koch"
+  },
+  {
+   "title": "Phase lag index: Assessment of functional connectivity from multi channel EEG and MEG with diminished bias from common sources",
+   "year": 2007,
+   "doi": "10.1002/hbm.20346",
+   "venue": "Human Brain Mapping",
+   "cites": 2107,
+   "authors": "Cornelis J. Stam; Guido Nolte; Andreas Daffertshofer"
+  },
+  {
+   "title": "Brainstorm: A User-Friendly Application for MEG/EEG Analysis",
+   "year": 2011,
+   "doi": "10.1155/2011/879716",
+   "venue": "Computational Intelligence and Neuroscience",
+   "cites": 3991,
+   "authors": "François Tadel; Sylvain Baillet; John C. Mosher"
+  },
+  {
+   "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "year": 2018,
+   "doi": "10.1088/1741-2552/aace8c",
+   "venue": "Journal of Neural Engineering",
+   "cites": 4693,
+   "authors": "Vernon J Lawhern; Amelia J Solon; Nicholas R Waytowich"
+  },
+  {
+   "title": "Novel Active Comb-Shaped Dry Electrode for EEG Measurement in Hairy Site",
+   "year": 2014,
+   "doi": "10.1109/tbme.2014.2347318",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 125,
+   "authors": "Yan-Jun Huang; Chung‐Yu Wu; May‐Kuen Wong"
+  }
+ ],
+ "high-density EEG electrode": [
+  {
+   "title": "Epileptic source localization with high density EEG: how many electrodes are needed?",
+   "year": 2002,
+   "doi": "10.1016/s1388-2457(02)00337-1",
+   "venue": "Clinical Neurophysiology",
+   "cites": 423,
+   "authors": "Göran Lantz; Rolando Grave de Peralta; Lorenzo Spinelli"
+  },
+  {
+   "title": "Automated detection and labeling of high-density EEG electrodes from structural MR images",
+   "year": 2016,
+   "doi": "10.1088/1741-2560/13/5/056003",
+   "venue": "Journal of Neural Engineering",
+   "cites": 51,
+   "authors": "Marco Marino; Quanying Liu; Silvia Brem"
+  },
+  {
+   "title": "The five percent electrode system for high-resolution EEG and ERP measurements",
+   "year": 2001,
+   "doi": "10.1016/s1388-2457(00)00527-7",
+   "venue": "Clinical Neurophysiology",
+   "cites": 2019,
+   "authors": "Robert Oostenveld; Peter Praamstra"
+  },
+  {
+   "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+   "year": 2012,
+   "doi": "10.1038/nrn3241",
+   "venue": "Nature reviews. Neuroscience",
+   "cites": 4526,
+   "authors": "György Buzsáki; Costas A. Anastassiou; Christof Koch"
+  },
+  {
+   "title": "Brainstorm: A User-Friendly Application for MEG/EEG Analysis",
+   "year": 2011,
+   "doi": "10.1155/2011/879716",
+   "venue": "Computational Intelligence and Neuroscience",
+   "cites": 3991,
+   "authors": "François Tadel; Sylvain Baillet; John C. Mosher"
+  },
+  {
+   "title": "The standardized EEG electrode array of the IFCN",
+   "year": 2017,
+   "doi": "10.1016/j.clinph.2017.06.254",
+   "venue": "Clinical Neurophysiology",
+   "cites": 488,
+   "authors": "Margitta Seeck; Laurent Koessler; Thomas Bast"
+  },
+  {
+   "title": "Non-contact Low Power EEG/ECG Electrode for High Density Wearable Biopotential Sensor Networks",
+   "year": 2009,
+   "doi": "10.1109/bsn.2009.52",
+   "venue": null,
+   "cites": 128,
+   "authors": "Miao Yu; Stephen Deiss; Gert Cauwenberghs"
+  },
+  {
+   "title": "FASTER: Fully Automated Statistical Thresholding for EEG artifact Rejection",
+   "year": 2010,
+   "doi": "10.1016/j.jneumeth.2010.07.015",
+   "venue": "Journal of Neuroscience Methods",
+   "cites": 1147,
+   "authors": "Hugh Nolan; Robert Whelan; Richard B. Reilly"
+  },
+  {
+   "title": "Accuracy of high-density EEG electrode position measurement using an optical scanner compared with the photogrammetry method",
+   "year": 2022,
+   "doi": "10.1016/j.cnp.2022.04.002",
+   "venue": "Clinical Neurophysiology Practice",
+   "cites": 13,
+   "authors": "Orsolya Györfi; Cheng-Teng Ip; Anders Bach Justesen"
+  },
+  {
+   "title": "Real-time neuroimaging and cognitive monitoring using wearable dry EEG",
+   "year": 2015,
+   "doi": "10.1109/tbme.2015.2481482",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 846,
+   "authors": "Tim Mullen; Christian Kothe; Yu Mike"
+  },
+  {
+   "title": "Flexible, foldable, actively multiplexed, high-density electrode array for mapping brain activity in vivo",
+   "year": 2011,
+   "doi": "10.1038/nn.2973",
+   "venue": "Nature Neuroscience",
+   "cites": 1147,
+   "authors": "Jonathan Viventi; Dae‐Hyeong Kim; Leif Vigeland"
+  },
+  {
+   "title": "Subcortical electrophysiological activity is detectable with high-density EEG source imaging",
+   "year": 2019,
+   "doi": "10.1038/s41467-019-08725-w",
+   "venue": "Nature Communications",
+   "cites": 305,
+   "authors": "Martin Seeber; Lucia-Manuela Cantonas; Mauritius Hoevels"
+  }
+ ],
+ "flexible electrode EEG": [
+  {
+   "title": "Unobtrusive ambulatory EEG using a smartphone and flexible printed electrodes around the ear",
+   "year": 2015,
+   "doi": "10.1038/srep16743",
+   "venue": "Scientific Reports",
+   "cites": 403,
+   "authors": "Stefan Debener; Reiner Emkes; Maarten De Vos"
+  },
+  {
+   "title": "Bristle-sensors—low-cost flexible passive dry EEG electrodes for neurofeedback and BCI applications",
+   "year": 2011,
+   "doi": "10.1088/1741-2560/8/2/025008",
+   "venue": "Journal of Neural Engineering",
+   "cites": 259,
+   "authors": "Cristian Grozea; C Voinescu; Siamac Fazli"
+  },
+  {
+   "title": "A microneedle electrode array on flexible substrate for long-term EEG monitoring",
+   "year": 2017,
+   "doi": "10.1016/j.snb.2017.01.052",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 146,
+   "authors": "Renxin Wang; Xiaoming Jiang; Wei Wang"
+  },
+  {
+   "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+   "year": 2012,
+   "doi": "10.1038/nrn3241",
+   "venue": "Nature reviews. Neuroscience",
+   "cites": 4526,
+   "authors": "György Buzsáki; Costas A. Anastassiou; Christof Koch"
+  },
+  {
+   "title": "Contact Pressure and Flexibility of Multipin Dry EEG Electrodes",
+   "year": 2018,
+   "doi": "10.1109/tnsre.2018.2811752",
+   "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+   "cites": 104,
+   "authors": "Patrique Fiedler; Richard Mühle; Stefan Griebel"
+  },
+  {
+   "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "year": 2018,
+   "doi": "10.1088/1741-2552/aace8c",
+   "venue": "Journal of Neural Engineering",
+   "cites": 4693,
+   "authors": "Vernon J Lawhern; Amelia J Solon; Nicholas R Waytowich"
+  },
+  {
+   "title": "PDMS-Based Low Cost Flexible Dry Electrode for Long-Term EEG Measurement",
+   "year": 2012,
+   "doi": "10.1109/jsen.2012.2204339",
+   "venue": "IEEE Sensors Journal",
+   "cites": 118,
+   "authors": "Longfei Wang; Jingquan Liu; Bin Yang"
+  },
+  {
+   "title": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+   "year": 2017,
+   "doi": "10.1002/hbm.23730",
+   "venue": "Human Brain Mapping",
+   "cites": 3740,
+   "authors": "Robin Tibor Schirrmeister; Jost Tobias Springenberg; Lukas D. J. Fiederer"
+  },
+  {
+   "title": "Flexible 3D-Printed EEG Electrodes",
+   "year": 2019,
+   "doi": "10.3390/s19071650",
+   "venue": "Sensors",
+   "cites": 53,
+   "authors": "Andrei Velcescu; Alexander Lindley; Ciro Cursio"
+  },
+  {
+   "title": "Towards emerging EEG applications: a novel printable flexible Ag/AgCl dry electrode array for robust recording of EEG signals at forehead sites",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/ab71ea",
+   "venue": "Journal of Neural Engineering",
+   "cites": 96,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "Flexible Multi-Layer Semi-Dry Electrode for Scalp EEG Measurements at Hairy Sites",
+   "year": 2019,
+   "doi": "10.3390/mi10080518",
+   "venue": "Micromachines",
+   "cites": 76,
+   "authors": "Haoqiang Hua; Wei Tang; Xiangmin Xu"
+  },
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  }
+ ],
+ "carbon nanotube EEG electrode": [
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  },
+  {
+   "title": "CNT/PDMS-based canal-typed ear electrodes for inconspicuous EEG recording",
+   "year": 2014,
+   "doi": "10.1088/1741-2560/11/4/046014",
+   "venue": "Journal of Neural Engineering",
+   "cites": 114,
+   "authors": "Joong Hoon Lee; Seung Min Lee; Hang Jin Byeon"
+  },
+  {
+   "title": "Carbon nanotube-based multi electrode arrays for neuronal interfacing: progress and prospects",
+   "year": 2013,
+   "doi": "10.3389/fncir.2012.00122",
+   "venue": "Frontiers in Neural Circuits",
+   "cites": 171,
+   "authors": "Lilach Bareket; Yael Hanein"
+  },
+  {
+   "title": "Interfacing Neurons with Carbon Nanotubes: Electrical Signal Transfer and Synaptic Stimulation in Cultured Brain Circuits",
+   "year": 2007,
+   "doi": "10.1523/jneurosci.1051-07.2007",
+   "venue": "Journal of Neuroscience",
+   "cites": 348,
+   "authors": "Andrea Mazzatenta; Michèle Giugliano; Stéphane Campidelli"
+  },
+  {
+   "title": "First human trials of a dry electrophysiology sensor using a carbon nanotube array interface",
+   "year": 2008,
+   "doi": "10.1016/j.sna.2008.03.007",
+   "venue": "Sensors and Actuators A Physical",
+   "cites": 119,
+   "authors": "Giulio Ruffini; Stephen Dunne; Lluís Fuentemilla"
+  },
+  {
+   "title": "Current progress achieved in novel materials for supercapacitor electrodes: mini review",
+   "year": 2019,
+   "doi": "10.1039/c9na00345b",
+   "venue": "Nanoscale Advances",
+   "cites": 921,
+   "authors": "Sumaiyah Najib; Emre Erdem"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "CNT/PDMS Composite Flexible Dry Electrodesfor Long-Term ECG Monitoring",
+   "year": 2012,
+   "doi": "10.1109/tbme.2012.2190288",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 434,
+   "authors": "Hachul Jung; Jinhee Moon; Dong-Hyun Baek"
+  },
+  {
+   "title": "Soft, Comfortable Polymer Dry Electrodes for High Quality ECG and EEG Recording",
+   "year": 2014,
+   "doi": "10.3390/s141223758",
+   "venue": "Sensors",
+   "cites": 243,
+   "authors": "Yun-Hsuan Chen; Maaike Op de Beeck; Luc Vanderheyden"
+  },
+  {
+   "title": "Impedance and Noise of Passive and Active Dry EEG Electrodes: A Review",
+   "year": 2020,
+   "doi": "10.1109/jsen.2020.3012394",
+   "venue": "IEEE Sensors Journal",
+   "cites": 183,
+   "authors": "Erwin H. T. Shad; Marta Molinas; Trond Ytterdal"
+  },
+  {
+   "title": "Simple and cost-effective method of highly conductive and elastic carbon nanotube/polydimethylsiloxane composite for wearable electronics",
+   "year": 2018,
+   "doi": "10.1038/s41598-017-18209-w",
+   "venue": "Scientific Reports",
+   "cites": 270,
+   "authors": "Jeong Hun Kim; Ji‐Young Hwang; Ha Ryeon Hwang"
+  },
+  {
+   "title": "3D Printed Dry EEG Electrodes",
+   "year": 2016,
+   "doi": "10.3390/s16101635",
+   "venue": "Sensors",
+   "cites": 113,
+   "authors": "Sammy Krachunov; Alexander J. Casson"
+  }
+ ],
+ "hydrogel electrode EEG": [
+  {
+   "title": "Novel Hydrogel-Based Preparation-Free EEG Electrode",
+   "year": 2010,
+   "doi": "10.1109/tnsre.2010.2048579",
+   "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+   "cites": 101,
+   "authors": "Nicolas Alba; Robert J. Sclabassi; Mingui Sun"
+  },
+  {
+   "title": "Hydrogel bioelectronics",
+   "year": 2018,
+   "doi": "10.1039/c8cs00595h",
+   "venue": "Chemical Society Reviews",
+   "cites": 2115,
+   "authors": "Hyunwoo Yuk; Baoyang Lu; Xuanhe Zhao"
+  },
+  {
+   "title": "Hydrogel electrodes with conductive and substrate-adhesive layers for noninvasive long-term EEG acquisition",
+   "year": 2023,
+   "doi": "10.1038/s41378-023-00524-0",
+   "venue": "Microsystems & Nanoengineering",
+   "cites": 109,
+   "authors": "Hailing Xue; Dongyang Wang; Mingyan Jin"
+  },
+  {
+   "title": "Towards real-life EEG applications: novel superporous hydrogel-based semi-dry EEG electrodes enabling automatically ‘charge–discharge’ electrolyte",
+   "year": 2021,
+   "doi": "10.1088/1741-2552/abeeab",
+   "venue": "Journal of Neural Engineering",
+   "cites": 123,
+   "authors": "Guangli Li; Sizhe Wang; Mingzhe Li"
+  },
+  {
+   "title": "Design of hydrogel-based wearable EEG electrodes for medical applications",
+   "year": 2022,
+   "doi": "10.1039/d2tb00618a",
+   "venue": "Journal of Materials Chemistry B",
+   "cites": 76,
+   "authors": "Ju-Chun Hsieh; Yang Li; Huiqian Wang"
+  },
+  {
+   "title": "A novel flexible hydrogel electrode with a strong moisturizing ability for long-term EEG recording",
+   "year": 2021,
+   "doi": "10.1088/1741-2552/ac41ab",
+   "venue": "Journal of Neural Engineering",
+   "cites": 58,
+   "authors": "Gencai Shen; Kunpeng Gao; Nan Zhao"
+  },
+  {
+   "title": "A Fully Flexible Hydrogel Electrode for Daily EEG Monitoring",
+   "year": 2022,
+   "doi": "10.1109/jsen.2022.3179416",
+   "venue": "IEEE Sensors Journal",
+   "cites": 32,
+   "authors": "Gencai Shen; Kunpeng Gao; Nan Zhao"
+  },
+  {
+   "title": "Unobtrusive ambulatory EEG using a smartphone and flexible printed electrodes around the ear",
+   "year": 2015,
+   "doi": "10.1038/srep16743",
+   "venue": "Scientific Reports",
+   "cites": 403,
+   "authors": "Stefan Debener; Reiner Emkes; Maarten De Vos"
+  },
+  {
+   "title": "Hydrogel Nanoarchitectonics of a Flexible and Self‐Adhesive Electrode for Long‐Term Wireless Electroencephalogram Recording and High‐Accuracy Sustained Attention Evaluation",
+   "year": 2023,
+   "doi": "10.1002/adma.202209606",
+   "venue": "Advanced Materials",
+   "cites": 180,
+   "authors": "Qingquan Han; Chao Zhang; Taoming Guo"
+  },
+  {
+   "title": "A Gelatin-Based Hydrogel Electrode With High Moisturizing Ability for Wearable EEG Recording",
+   "year": 2023,
+   "doi": "10.1109/jsen.2023.3317538",
+   "venue": "IEEE Sensors Journal",
+   "cites": 19,
+   "authors": "Gencai Shen; Kunyu Zheng; Chunpeng Jiang"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "MATLAB Toolboxes for Reference Electrode Standardization Technique (REST) of Scalp EEG",
+   "year": 2017,
+   "doi": "10.3389/fnins.2017.00601",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 241,
+   "authors": "Li Dong; Fali Li; Qiang Liu"
+  }
+ ],
+ "conductive polymer electrode EEG PEDOT": [
+  {
+   "title": "Conductive Polymer Combined Silk Fiber Bundle for Bioelectrical Signal Recording",
+   "year": 2012,
+   "doi": "10.1371/journal.pone.0033689",
+   "venue": "PLoS ONE",
+   "cites": 166,
+   "authors": "Shingo Tsukada; Hiroshi Nakashima; Keiichi Torimitsu"
+  },
+  {
+   "title": "Tailoring PEDOT properties for applications in bioelectronics",
+   "year": 2020,
+   "doi": "10.1016/j.mser.2020.100546",
+   "venue": "Materials Science and Engineering R Reports",
+   "cites": 235,
+   "authors": "Mary J. Donahue; Ana Sanchez‐Sanchez; Sahika Inal"
+  },
+  {
+   "title": "Fully organic compliant dry electrodes self-adhesive to skin for long-term motion-robust epidermal biopotential monitoring",
+   "year": 2020,
+   "doi": "10.1038/s41467-020-18503-8",
+   "venue": "Nature Communications",
+   "cites": 560,
+   "authors": "Lei Zhang; Kirthika Senthil Kumar; Hao He"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "Poly(3,4-ethylenedioxythiophene) (PEDOT) as interface material for improving electrochemical performance of microneedles array-based dry electrode",
+   "year": 2013,
+   "doi": "10.1016/j.snb.2013.07.075",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 64,
+   "authors": "Yuanfang Chen; Weihua Pei; Sanyuan Chen"
+  },
+  {
+   "title": "Hydrogel electrodes with conductive and substrate-adhesive layers for noninvasive long-term EEG acquisition",
+   "year": 2023,
+   "doi": "10.1038/s41378-023-00524-0",
+   "venue": "Microsystems & Nanoengineering",
+   "cites": 109,
+   "authors": "Hailing Xue; Dongyang Wang; Mingyan Jin"
+  },
+  {
+   "title": "Impedance and Noise of Passive and Active Dry EEG Electrodes: A Review",
+   "year": 2020,
+   "doi": "10.1109/jsen.2020.3012394",
+   "venue": "IEEE Sensors Journal",
+   "cites": 183,
+   "authors": "Erwin H. T. Shad; Marta Molinas; Trond Ytterdal"
+  },
+  {
+   "title": "Functional Conductive Hydrogels for Bioelectronics",
+   "year": 2020,
+   "doi": "10.1021/acsmaterialslett.0c00309",
+   "venue": "ACS Materials Letters",
+   "cites": 360,
+   "authors": "Fanfan Fu; Jilei Wang; Hongbo Zeng"
+  },
+  {
+   "title": "Light-cured polymer electrodes for non-invasive EEG recordings",
+   "year": 2018,
+   "doi": "10.1038/s41598-018-32304-6",
+   "venue": "Scientific Reports",
+   "cites": 30,
+   "authors": "Nora Vanessa de Camp; Gerhard Kalinka; Jürgen Bergeler"
+  },
+  {
+   "title": "Some basic aspects of polymer nanocomposites: A critical review",
+   "year": 2019,
+   "doi": "10.1016/j.nanoms.2019.02.006",
+   "venue": "Nano Materials Science",
+   "cites": 878,
+   "authors": "Shao‐Yun Fu; Zheng Sun; Pei Huang"
+  },
+  {
+   "title": "Polymeric Conductive Adhesive‐Based Ultrathin Epidermal Electrodes for Long‐Term Monitoring of Electrophysiological Signals",
+   "year": 2024,
+   "doi": "10.1002/adma.202313157",
+   "venue": "Advanced Materials",
+   "cites": 103,
+   "authors": "Joo Hwan Shin; Ji Yeong Choi; Keonuk June"
+  },
+  {
+   "title": "Recent developments in conducting polymers: applications for electrochemistry",
+   "year": 2020,
+   "doi": "10.1039/d0ra06160c",
+   "venue": "RSC Advances",
+   "cites": 254,
+   "authors": "Somayeh Tajik; Hadi Beitollahi; Fariba Garkani Nejad"
+  }
+ ],
+ "microneedle electrode EEG": [
+  {
+   "title": "A microneedle electrode array on flexible substrate for long-term EEG monitoring",
+   "year": 2017,
+   "doi": "10.1016/j.snb.2017.01.052",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 146,
+   "authors": "Renxin Wang; Xiaoming Jiang; Wei Wang"
+  },
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  },
+  {
+   "title": "Fabrication of Flexible Microneedle Array Electrodes for Wearable Bio-Signal Recording",
+   "year": 2018,
+   "doi": "10.3390/s18041191",
+   "venue": "Sensors",
+   "cites": 104,
+   "authors": "Lei Ren; Shujia Xu; Jie Gao"
+  },
+  {
+   "title": "Microneedle array electrode for human EEG recording",
+   "year": 2009,
+   "doi": "10.1007/978-3-540-89208-3_297",
+   "venue": "World Congress on Medical Physics and Biomedical Engineering, September 7 - 12, 2009, Munich, Germany",
+   "cites": 8,
+   "authors": "Regina Lüttge; S. Bystrova; Michel J. A. M. van Putten"
+  },
+  {
+   "title": "Preliminary technological assessment of microneedles-based dry electrodes for biopotential monitoring in clinical examinations",
+   "year": 2012,
+   "doi": "10.1016/j.sna.2012.04.019",
+   "venue": "Sensors and Actuators A Physical",
+   "cites": 89,
+   "authors": "Elena Forvi; Marzia Bedoni; Roberta Carabalona"
+  },
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "Characterization of micromachined spiked biopotential electrodes",
+   "year": 2002,
+   "doi": "10.1109/tbme.2002.1001974",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 149,
+   "authors": "Patrick Griss; Heli Tolvanen-Laakso; Pekka Meriläinen"
+  },
+  {
+   "title": "SU-8 microneedles based dry electrodes for Electroencephalogram",
+   "year": 2016,
+   "doi": "10.1016/j.mee.2016.02.062",
+   "venue": "Microelectronic Engineering",
+   "cites": 57,
+   "authors": "Г. Ставринидис; K. Michelakis; V. Kontomitrou"
+  },
+  {
+   "title": "Flexible microneedle array electrode using magnetorheological drawing lithography for bio-signal monitoring",
+   "year": 2017,
+   "doi": "10.1016/j.sna.2017.10.042",
+   "venue": "Sensors and Actuators A Physical",
+   "cites": 93,
+   "authors": "Lei Ren; Qing Jiang; Zhipeng Chen"
+  },
+  {
+   "title": "3D-printed microneedles in biomedical applications",
+   "year": 2020,
+   "doi": "10.1016/j.isci.2020.102012",
+   "venue": "iScience",
+   "cites": 229,
+   "authors": "Sajjad Rahmani Dabbagh; Misagh Rezapour Sarabi; Reza Rahbarghazi‬"
+  },
+  {
+   "title": "Impedance and Noise of Passive and Active Dry EEG Electrodes: A Review",
+   "year": 2020,
+   "doi": "10.1109/jsen.2020.3012394",
+   "venue": "IEEE Sensors Journal",
+   "cites": 183,
+   "authors": "Erwin H. T. Shad; Marta Molinas; Trond Ytterdal"
+  },
+  {
+   "title": "EEG-Hat with Candle-like Microneedle Electrode",
+   "year": 2019,
+   "doi": "10.1109/embc.2019.8857477",
+   "venue": null,
+   "cites": 5,
+   "authors": "Takumi KAWANA; Yuri Yoshida; Yuta Kudo"
+  }
+ ],
+ "electrogel electrode": [
+  {
+   "title": "Electric field-driven fabrication of anisotropic hydrogels from plant proteins: Microstructure, gel performance and formation mechanism",
+   "year": 2022,
+   "doi": "10.1016/j.foodhyd.2022.108297",
+   "venue": "Food Hydrocolloids",
+   "cites": 54,
+   "authors": "Mengmeng Cao; Li Liao; Xingcai Zhang"
+  },
+  {
+   "title": "Low voltage electric field governs fibrous silk electrogels",
+   "year": 2020,
+   "doi": "10.1016/j.matdes.2020.109401",
+   "venue": "Materials & Design",
+   "cites": 7,
+   "authors": "Hao Liu; Jinfa Ming; Xiaolan Guo"
+  },
+  {
+   "title": "Mechanically Adaptive Metal-Coordinated Electrogel Membranes",
+   "year": 2024,
+   "doi": "10.1021/acsami.4c09740",
+   "venue": "ACS Applied Materials & Interfaces",
+   "cites": 4,
+   "authors": "Roberto Baretta; Valeria Gabrielli; Elena Missale"
+  },
+  {
+   "title": "Electrochemical gelation of quantum dots using non-noble metal electrodes at high oxidation potentials",
+   "year": 2021,
+   "doi": "10.1039/d1nr06615c",
+   "venue": "Nanoscale",
+   "cites": 5,
+   "authors": "Chathuranga C. Hewa‐Rahinduwage; Karunamuni L. Silva; Xin Geng"
+  },
+  {
+   "title": "Electrochemical Gelation of Metal Chalcogenide Quantum Dots: Applications in Gas Sensing and Photocatalysis",
+   "year": 2023,
+   "doi": "10.1021/acs.accounts.3c00042",
+   "venue": "Accounts of Chemical Research",
+   "cites": 28,
+   "authors": "Xin Geng; Daohua Liu; Chathuranga C. Hewa‐Rahinduwage"
+  },
+  {
+   "title": "Closed-loop neuromuscular electrical stimulation using feedforward-feedback control and textile electrodes to regulate grasp force in quadriplegia",
+   "year": 2019,
+   "doi": "10.1186/s42234-019-0034-y",
+   "venue": "Bioelectronic Medicine",
+   "cites": 26,
+   "authors": "John G. Ciancibello; Kevin King; Milad Alizadeh-Meghrazi"
+  },
+  {
+   "title": "Fast, visual specialization for reading in English revealed by the topography of the N170 ERP response",
+   "year": 2005,
+   "doi": "10.1186/1744-9081-1-13",
+   "venue": "Behavioral and Brain Functions",
+   "cites": 292,
+   "authors": "Urs Maurer; Daniel Brandeis; Bruce D. McCandliss"
+  },
+  {
+   "title": "Brain EEG activity correlates of chronic pain in persons with spinal cord injury: clinical implications",
+   "year": 2012,
+   "doi": "10.1038/sc.2012.84",
+   "venue": "Spinal Cord",
+   "cites": 142,
+   "authors": "Mark P. Jensen; Leslie Sherlin; Kevin J. Gertz"
+  },
+  {
+   "title": "Reduced discomfort during high-definition transcutaneous stimulation using 6% benzocaine",
+   "year": 2014,
+   "doi": "10.3389/fneng.2014.00028",
+   "venue": "Frontiers in Neuroengineering",
+   "cites": 54,
+   "authors": "Berkan Guleyupoglu; Nicole Febles; Preet Minhas"
+  },
+  {
+   "title": "Enhancement of Neuroplastic P2 and N1c Auditory Evoked Potentials in Musicians",
+   "year": 2003,
+   "doi": "10.1523/jneurosci.23-13-05545.2003",
+   "venue": "Journal of Neuroscience",
+   "cites": 388,
+   "authors": "Antoine J. Shahin; Daniel J. Bosnyak; Laurel J. Trainor"
+  },
+  {
+   "title": "Design, modelling and preliminary characterisation of microneedle-based electrodes for tissue electroporationin vivo",
+   "year": 2016,
+   "doi": "10.1088/1742-6596/757/1/012040",
+   "venue": "Journal of Physics Conference Series",
+   "cites": 5,
+   "authors": "Conor O’Mahony; Ruth Houlihan; Konstantin Grygoryev"
+  },
+  {
+   "title": "A new ICA-based fingerprint method for the automatic removal of physiological artifacts from EEG recordings",
+   "year": 2018,
+   "doi": "10.7717/peerj.4380",
+   "venue": "PeerJ",
+   "cites": 54,
+   "authors": "Gabriella Tamburro; Patrique Fiedler; David B. Stone"
+  }
+ ],
+ "saline sponge electrode EEG": [
+  {
+   "title": "Review of semi-dry electrodes for EEG recording",
+   "year": 2020,
+   "doi": "10.1088/1741-2552/abbd50",
+   "venue": "Journal of Neural Engineering",
+   "cites": 178,
+   "authors": "Guangli Li; Jingtao Wu; Yonghui Xia"
+  },
+  {
+   "title": "EEG complexity as a biomarker for autism spectrum disorder risk",
+   "year": 2011,
+   "doi": "10.1186/1741-7015-9-18",
+   "venue": "BMC Medicine",
+   "cites": 495,
+   "authors": "William J. Bosl; Adrienne Tierney; Helen Tager‐Flusberg"
+  },
+  {
+   "title": "Subcortical electrophysiological activity is detectable with high-density EEG source imaging",
+   "year": 2019,
+   "doi": "10.1038/s41467-019-08725-w",
+   "venue": "Nature Communications",
+   "cites": 305,
+   "authors": "Martin Seeber; Lucia-Manuela Cantonas; Mauritius Hoevels"
+  },
+  {
+   "title": "Usability of four commercially-oriented EEG systems",
+   "year": 2014,
+   "doi": "10.1088/1741-2560/11/4/046018",
+   "venue": "Journal of Neural Engineering",
+   "cites": 220,
+   "authors": "W. David Hairston; Keith W. Whitaker; Anthony J. Ries"
+  },
+  {
+   "title": "Electrode Positioning and Montage in Transcranial Direct Current Stimulation",
+   "year": 2011,
+   "doi": "10.3791/2744",
+   "venue": "Journal of Visualized Experiments",
+   "cites": 308,
+   "authors": "Alexandre F. DaSilva; Magdalena Sarah Volz; Marom Bikson"
+  },
+  {
+   "title": "A finite element analysis of the effect of electrode area and inter-electrode distance on the spatial distribution of the current density in tDCS",
+   "year": 2011,
+   "doi": "10.1088/1741-2560/8/6/066017",
+   "venue": "Journal of Neural Engineering",
+   "cites": 253,
+   "authors": "Paula Pascoal‐Faria; Mark Hallett; Pedro C. Miranda"
+  },
+  {
+   "title": "Materials, Devices, and Systems of On‐Skin Electrodes for Electrophysiological Monitoring and Human–Machine Interfaces",
+   "year": 2020,
+   "doi": "10.1002/advs.202001938",
+   "venue": "Advanced Science",
+   "cites": 391,
+   "authors": "Hao Wu; Ganguang Yang; Kanhao Zhu"
+  },
+  {
+   "title": "Developmental Trajectories of Resting EEG Power: An Endophenotype of Autism Spectrum Disorder",
+   "year": 2012,
+   "doi": "10.1371/journal.pone.0039127",
+   "venue": "PLoS ONE",
+   "cites": 235,
+   "authors": "Adrienne Tierney; Laurel J. Gabard‐Durnam; Vanessa Vogel‐Farley"
+  },
+  {
+   "title": "Low-Cost Carbon Fiber-Based Conductive Silicone Sponge EEG Electrodes",
+   "year": 2018,
+   "doi": "10.1109/embc.2018.8512521",
+   "venue": null,
+   "cites": 12,
+   "authors": "Ashwati Krishnan; Ritesh Kumar; Praveen Venkatesh"
+  },
+  {
+   "title": "Electrode Positioning and Montage in Transcranial Direct Current Stimulation",
+   "year": 2011,
+   "doi": "10.3791/2744-v",
+   "venue": "Journal of Visualized Experiments",
+   "cites": 139,
+   "authors": "Alexandre F. DaSilva; Magdalena Sarah Volz; Marom Bikson"
+  },
+  {
+   "title": "14 challenges and their solutions for conducting social neuroscience and longitudinal EEG research with infants",
+   "year": 2019,
+   "doi": "10.1016/j.infbeh.2019.101393",
+   "venue": "Infant Behavior and Development",
+   "cites": 91,
+   "authors": "Valdas Noreika; Stanimira Georgieva; Sam Wass"
+  },
+  {
+   "title": "The Feature, Performance, and Prospect of Advanced Electrodes for Electroencephalogram",
+   "year": 2023,
+   "doi": "10.3390/bios13010101",
+   "venue": "Biosensors",
+   "cites": 70,
+   "authors": "Qing Liu; Liangtao Yang; Zhilin Zhang"
+  }
+ ],
+ "EEG artifact removal deep learning": [
+  {
+   "title": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+   "year": 2017,
+   "doi": "10.1002/hbm.23730",
+   "venue": "Human Brain Mapping",
+   "cites": 3740,
+   "authors": "Robin Tibor Schirrmeister; Jost Tobias Springenberg; Lukas D. J. Fiederer"
+  },
+  {
+   "title": "Automatic ocular artifacts removal in EEG using deep learning",
+   "year": 2018,
+   "doi": "10.1016/j.bspc.2018.02.021",
+   "venue": "Biomedical Signal Processing and Control",
+   "cites": 158,
+   "authors": "Banghua Yang; Kaiwen Duan; Chengcheng Fan"
+  },
+  {
+   "title": "Deep learning for electroencephalogram (EEG) classification tasks: a review",
+   "year": 2019,
+   "doi": "10.1088/1741-2552/ab0ab5",
+   "venue": "Journal of Neural Engineering",
+   "cites": 1769,
+   "authors": "Alexander Craik; Yongtian He; José L. Contreras-Vidal"
+  },
+  {
+   "title": "MEG and EEG data analysis with MNE-Python",
+   "year": 2013,
+   "doi": "10.3389/fnins.2013.00267",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 4175,
+   "authors": "Alexandre Gramfort"
+  },
+  {
+   "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "year": 2018,
+   "doi": "10.1088/1741-2552/aace8c",
+   "venue": "Journal of Neural Engineering",
+   "cites": 4693,
+   "authors": "Vernon J Lawhern; Amelia J Solon; Nicholas R Waytowich"
+  },
+  {
+   "title": "AnEEG: leveraging deep learning for effective artifact removal in EEG data",
+   "year": 2024,
+   "doi": "10.1038/s41598-024-75091-z",
+   "venue": "Scientific Reports",
+   "cites": 54,
+   "authors": "Bhabesh Kalita; Nabamita Deb; Daisy Das"
+  },
+  {
+   "title": "A novel adaptive artifacts wavelet Denoising for EEG artifacts removal using deep learning with Meta-heuristic approach",
+   "year": 2023,
+   "doi": "10.1007/s11042-023-14949-2",
+   "venue": "Multimedia Tools and Applications",
+   "cites": 33,
+   "authors": "A Narmada; Monika shukla"
+  },
+  {
+   "title": "EEG Artifact Removal by Bayesian Deep Learning & ICA",
+   "year": 2020,
+   "doi": "10.1109/embc44109.2020.9175785",
+   "venue": null,
+   "cites": 19,
+   "authors": "Sangmin S. Lee; Kiwon Lee; Guiyeom Kang"
+  },
+  {
+   "title": "The PREP pipeline: standardized preprocessing for large-scale EEG analysis",
+   "year": 2015,
+   "doi": "10.3389/fninf.2015.00016",
+   "venue": "Frontiers in Neuroinformatics",
+   "cites": 1467,
+   "authors": "Nima Bigdely-Shamlo; Tim Mullen; Christian Kothe"
+  },
+  {
+   "title": "A Machine Learning-Based Big EEG Data Artifact Detection and Wavelet-Based Removal: An Empirical Approach",
+   "year": 2021,
+   "doi": "10.1155/2021/2942808",
+   "venue": "Mathematical Problems in Engineering",
+   "cites": 288,
+   "authors": "Shalini Stalin; Vandana Roy; Prashant Kumar Shukla"
+  },
+  {
+   "title": "Removal of Ocular Artifacts in EEG Using Deep Learning",
+   "year": 2022,
+   "doi": "10.1109/tiptekno56568.2022.9960203",
+   "venue": null,
+   "cites": 12,
+   "authors": "Mehmet Akif Özdemir; Sumeyye Kizilisik; Onan Güren"
+  },
+  {
+   "title": "Methods for interpreting and understanding deep neural networks",
+   "year": 2017,
+   "doi": "10.1016/j.dsp.2017.10.011",
+   "venue": "Digital Signal Processing",
+   "cites": 2767,
+   "authors": "Grégoire Montavon; Wojciech Samek; Klaus‐Robert Müller"
+  }
+ ],
+ "Artifact Subspace Reconstruction EEG": [
+  {
+   "title": "Evaluation of Artifact Subspace Reconstruction for Automatic Artifact Components Removal in Multi-Channel EEG Recordings",
+   "year": 2019,
+   "doi": "10.1109/tbme.2019.2930186",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 573,
+   "authors": "Chi-Yuan Chang; Sheng-Hsiou Hsu; Luca Pion-Tonachini"
+  },
+  {
+   "title": "Evaluation of Artifact Subspace Reconstruction for Automatic EEG Artifact Removal",
+   "year": 2018,
+   "doi": "10.1109/embc.2018.8512547",
+   "venue": null,
+   "cites": 352,
+   "authors": "Chi-Yuan Chang; Sheng-Hsiou Hsu; Luca Pion-Tonachini"
+  },
+  {
+   "title": "A Riemannian Modification of Artifact Subspace Reconstruction for EEG Artifact Handling",
+   "year": 2019,
+   "doi": "10.3389/fnhum.2019.00141",
+   "venue": "Frontiers in Human Neuroscience",
+   "cites": 196,
+   "authors": "Sarah Blum; Nadine Jacobsen; Martin G. Bleichner"
+  },
+  {
+   "title": "MEG and EEG data analysis with MNE-Python",
+   "year": 2013,
+   "doi": "10.3389/fnins.2013.00267",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 4175,
+   "authors": "Alexandre Gramfort"
+  },
+  {
+   "title": "The Artifact Subspace Reconstruction (ASR) for EEG Signal Correction. A Comparative Study",
+   "year": 2018,
+   "doi": "10.1007/978-3-319-99996-8_12",
+   "venue": "Advances in intelligent systems and computing",
+   "cites": 72,
+   "authors": "Małgorzata Plechawska–Wójcik; Monika Kaczorowska; Dariusz Zapała"
+  },
+  {
+   "title": "EEG artifact removal—state-of-the-art and guidelines",
+   "year": 2015,
+   "doi": "10.1088/1741-2560/12/3/031001",
+   "venue": "Journal of Neural Engineering",
+   "cites": 977,
+   "authors": "José Antonio Urigüen; Begonya García-Zapirain"
+  },
+  {
+   "title": "A Method for Optimizing the Artifact Subspace Reconstruction Performance in Low-Density EEG",
+   "year": 2022,
+   "doi": "10.1109/jsen.2022.3208768",
+   "venue": "IEEE Sensors Journal",
+   "cites": 31,
+   "authors": "Andrea Cataldo; Sabatina Criscuolo; Egidio De Benedetto"
+  },
+  {
+   "title": "The influence of motor tasks and cut-off parameter selection on artifact subspace reconstruction in EEG recordings",
+   "year": 2020,
+   "doi": "10.1007/s11517-020-02252-3",
+   "venue": "Medical & Biological Engineering & Computing",
+   "cites": 35,
+   "authors": "Phillipp Anders; Helen Müller; Nina Skjæret-Maroni"
+  },
+  {
+   "title": "Automatic Classification of Artifactual ICA-Components for Artifact Removal in EEG Signals",
+   "year": 2011,
+   "doi": "10.1186/1744-9081-7-30",
+   "venue": "Behavioral and Brain Functions",
+   "cites": 826,
+   "authors": "Irene Winkler; Stefan Haufe; Michael Tangermann"
+  },
+  {
+   "title": "The Influence Assessment of Artifact Subspace Reconstruction on the EEG Signal Characteristics",
+   "year": 2023,
+   "doi": "10.3390/app13031605",
+   "venue": "Applied Sciences",
+   "cites": 23,
+   "authors": "Małgorzata Plechawska–Wójcik; Paweł Augustynowicz; Monika Kaczorowska"
+  },
+  {
+   "title": "EEG Conformer: Convolutional Transformer for EEG Decoding and Visualization",
+   "year": 2022,
+   "doi": "10.1109/tnsre.2022.3230250",
+   "venue": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+   "cites": 1047,
+   "authors": "Yonghao Song; Qingqing Zheng; Bingchuan Liu"
+  },
+  {
+   "title": "Artifact subspace reconstruction: a candidate for a dream solution for EEG studies, sleep or awake",
+   "year": 2023,
+   "doi": "10.1093/sleep/zsad241",
+   "venue": "SLEEP",
+   "cites": 22,
+   "authors": "Makoto Miyakoshi"
+  }
+ ],
+ "EEG motion artifact removal": [
+  {
+   "title": "Designing Efficient Blind Source Separation Methods for EEG Motion Artifact Removal Based on Statistical Evaluation",
+   "year": 2019,
+   "doi": "10.1007/s11277-019-06470-3",
+   "venue": "Wireless Personal Communications",
+   "cites": 139,
+   "authors": "Vandana Roy; Shailja Shukla"
+  },
+  {
+   "title": "Gaussian Elimination-Based Novel Canonical Correlation Analysis Method for EEG Motion Artifact Removal",
+   "year": 2017,
+   "doi": "10.1155/2017/9674712",
+   "venue": "Journal of Healthcare Engineering",
+   "cites": 128,
+   "authors": "Vandana Roy; Shailja Shukla; Piyush Kumar Shukla"
+  },
+  {
+   "title": "Motion Artifact Removal Techniques for Wearable EEG and PPG Sensor Systems",
+   "year": 2021,
+   "doi": "10.3389/felec.2021.685513",
+   "venue": "Frontiers in Electronics",
+   "cites": 143,
+   "authors": "Dongyeol Seok; Sang-Hyun Lee; Minjae Kim"
+  },
+  {
+   "title": "Effective EEG Motion Artifact Removal with KS test Blind Source Separation and Wavelet Transform",
+   "year": 2016,
+   "doi": "10.14257/ijbsbt.2016.8.5.13",
+   "venue": "International Journal of Bio-Science and Bio-Technology",
+   "cites": 60,
+   "authors": "Vandana Roy; Shailja Shukla"
+  },
+  {
+   "title": "Motion and Ballistocardiogram Artifact Removal for Interleaved Recording of EEG and EPs during MRI",
+   "year": 2002,
+   "doi": "10.1006/nimg.2002.1125",
+   "venue": "NeuroImage",
+   "cites": 219,
+   "authors": "Giorgio Bonmassar"
+  },
+  {
+   "title": "MLMRS-Net: Electroencephalography (EEG) motion artifacts removal using a multi-layer multi-resolution spatially pooled 1D signal reconstruction network",
+   "year": 2022,
+   "doi": "10.1007/s00521-022-08111-6",
+   "venue": "Neural Computing and Applications",
+   "cites": 39,
+   "authors": "Sakib Mahmud; Md Shafayet Hossain; Muhammad E. H. Chowdhury"
+  },
+  {
+   "title": "Removal of Artifacts from EEG Signals: A Review",
+   "year": 2019,
+   "doi": "10.3390/s19050987",
+   "venue": "Sensors",
+   "cites": 848,
+   "authors": "Jiang Xiao; Gui‐Bin Bian; Zean Tian"
+  },
+  {
+   "title": "Application of multivariate empirical mode decomposition and canonical correlation analysis for EEG motion artifact removal",
+   "year": 2016,
+   "doi": "10.1109/casp.2016.7746155",
+   "venue": null,
+   "cites": 17,
+   "authors": "Siddhi Tavildar; Ashkan Ashrafi"
+  },
+  {
+   "title": "EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces",
+   "year": 2018,
+   "doi": "10.1088/1741-2552/aace8c",
+   "venue": "Journal of Neural Engineering",
+   "cites": 4693,
+   "authors": "Vernon J Lawhern; Amelia J Solon; Nicholas R Waytowich"
+  },
+  {
+   "title": "Novel Approaches for the Removal of Motion Artifact From EEG Recordings",
+   "year": 2019,
+   "doi": "10.1109/jsen.2019.2931727",
+   "venue": "IEEE Sensors Journal",
+   "cites": 57,
+   "authors": "Pranjali Gajbhiye; Rajesh Kumar Tripathy; Abhijit Bhattacharyya"
+  },
+  {
+   "title": "Characterization and real-time removal of motion artifacts from EEG signals",
+   "year": 2019,
+   "doi": "10.1088/1741-2552/ab2b61",
+   "venue": "Journal of Neural Engineering",
+   "cites": 74,
+   "authors": "Atilla Kilicarslan; José L. Contreras-Vidal"
+  },
+  {
+   "title": "Wavelet Domain Optimized Savitzky–Golay Filter for the Removal of Motion Artifacts From EEG Recordings",
+   "year": 2020,
+   "doi": "10.1109/tim.2020.3041099",
+   "venue": "IEEE Transactions on Instrumentation and Measurement",
+   "cites": 72,
+   "authors": "Pranjali Gajbhiye; Nopparada Mingchinda; Wei Chen"
+  }
+ ],
+ "independent component analysis EEG artifact": [
+  {
+   "title": "EEGLAB: an open source toolbox for analysis of single-trial EEG dynamics including independent component analysis",
+   "year": 2004,
+   "doi": "10.1016/j.jneumeth.2003.10.009",
+   "venue": "Journal of Neuroscience Methods",
+   "cites": 25635,
+   "authors": "Arnaud Delorme; Scott Makeig"
+  },
+  {
+   "title": "Enhanced detection of artifacts in EEG data using higher-order statistics and independent component analysis",
+   "year": 2007,
+   "doi": "10.1016/j.neuroimage.2006.11.004",
+   "venue": "NeuroImage",
+   "cites": 1824,
+   "authors": "Arnaud Delorme; T. J. Sejnowski; Scott Makeig"
+  },
+  {
+   "title": "Recovering EEG brain signals: Artifact suppression with wavelet enhanced independent component analysis",
+   "year": 2006,
+   "doi": "10.1016/j.jneumeth.2006.05.033",
+   "venue": "Journal of Neuroscience Methods",
+   "cites": 595,
+   "authors": "Nazareth P. Castellanos; Valeri A. Makarov"
+  },
+  {
+   "title": "Independent Component Analysis as a Tool to Eliminate Artifacts in EEG: A Quantitative Study",
+   "year": 2003,
+   "doi": "10.1097/00004691-200307000-00004",
+   "venue": "Journal of Clinical Neurophysiology",
+   "cites": 289,
+   "authors": "Jorge Iriarte; Elena Urrestarazu; Miguel Valencia"
+  },
+  {
+   "title": "FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data",
+   "year": 2010,
+   "doi": "10.1155/2011/156869",
+   "venue": "Computational Intelligence and Neuroscience",
+   "cites": 11520,
+   "authors": "Robert Oostenveld; Pascal Fries; Eric Maris"
+  },
+  {
+   "title": "Removing electroencephalographic artifacts by blind source separation",
+   "year": 2000,
+   "doi": "10.1111/1469-8986.3720163",
+   "venue": "Psychophysiology",
+   "cites": 3220,
+   "authors": "Tzyy‐Ping Jung; Scott Makeig; Colin Humphries"
+  },
+  {
+   "title": "Complete artifact removal for EEG recorded during continuous fMRI using independent component analysis",
+   "year": 2006,
+   "doi": "10.1016/j.neuroimage.2006.09.037",
+   "venue": "NeuroImage",
+   "cites": 234,
+   "authors": "Dante Mantini; Mauro Gianni Perrucci; Simone Cugini"
+  },
+  {
+   "title": "ADJUST: An automatic EEG artifact detector based on the joint use of spatial and temporal features",
+   "year": 2010,
+   "doi": "10.1111/j.1469-8986.2010.01061.x",
+   "venue": "Psychophysiology",
+   "cites": 1338,
+   "authors": "Andrea Mognon; Jorge Jovicich; Lorenzo Bruzzone"
+  },
+  {
+   "title": "FASTER: Fully Automated Statistical Thresholding for EEG artifact Rejection",
+   "year": 2010,
+   "doi": "10.1016/j.jneumeth.2010.07.015",
+   "venue": "Journal of Neuroscience Methods",
+   "cites": 1147,
+   "authors": "Hugh Nolan; Robert Whelan; Richard B. Reilly"
+  },
+  {
+   "title": "MEG and EEG data analysis with MNE-Python",
+   "year": 2013,
+   "doi": "10.3389/fnins.2013.00267",
+   "venue": "Frontiers in Neuroscience",
+   "cites": 4175,
+   "authors": "Alexandre Gramfort"
+  },
+  {
+   "title": "A system for automatic artifact removal in ictal scalp EEG based on independent component analysis and Bayesian classification",
+   "year": 2006,
+   "doi": "10.1016/j.clinph.2005.12.013",
+   "venue": "Clinical Neurophysiology",
+   "cites": 164,
+   "authors": "Pierre LeVan; Elena Urrestarazu; Jean Gotman"
+  },
+  {
+   "title": "EEG artifact removal—state-of-the-art and guidelines",
+   "year": 2015,
+   "doi": "10.1088/1741-2560/12/3/031001",
+   "venue": "Journal of Neural Engineering",
+   "cites": 977,
+   "authors": "José Antonio Urigüen; Begonya García-Zapirain"
+  }
+ ],
+ "electrode-skin impedance EEG": [
+  {
+   "title": "Scalp electrode impedance, infection risk, and EEG data quality",
+   "year": 2001,
+   "doi": "10.1016/s1388-2457(00)00533-2",
+   "venue": "Clinical Neurophysiology",
+   "cites": 1019,
+   "authors": "Thomas C. Ferrée; Phan Luu; Gerald S. Russell"
+  },
+  {
+   "title": "The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes",
+   "year": 2012,
+   "doi": "10.1038/nrn3241",
+   "venue": "Nature reviews. Neuroscience",
+   "cites": 4526,
+   "authors": "György Buzsáki; Costas A. Anastassiou; Christof Koch"
+  },
+  {
+   "title": "Effect of Sweating on Electrode-Skin Contact Impedances and Artifacts in EEG Recordings With Various Screen-Printed Ag/Agcl Electrodes",
+   "year": 2020,
+   "doi": "10.1109/access.2020.2977172",
+   "venue": "IEEE Access",
+   "cites": 68,
+   "authors": "Laura Kalevo; T A Miettinen; Akseli Leino"
+  },
+  {
+   "title": "Fully organic compliant dry electrodes self-adhesive to skin for long-term motion-robust epidermal biopotential monitoring",
+   "year": 2020,
+   "doi": "10.1038/s41467-020-18503-8",
+   "venue": "Nature Communications",
+   "cites": 560,
+   "authors": "Lei Zhang; Kirthika Senthil Kumar; Hao He"
+  },
+  {
+   "title": "Novel Dry Polymer Foam Electrodes for Long-Term EEG Measurement",
+   "year": 2011,
+   "doi": "10.1109/tbme.2010.2102353",
+   "venue": "IEEE Transactions on Biomedical Engineering",
+   "cites": 336,
+   "authors": "Chin‐Teng Lin; Lun‐De Liao; Yuhang Liu"
+  },
+  {
+   "title": "Towards gel-free electrodes: A systematic study of electrode-skin impedance",
+   "year": 2016,
+   "doi": "10.1016/j.snb.2016.10.005",
+   "venue": "Sensors and Actuators B Chemical",
+   "cites": 190,
+   "authors": "Guangli Li; Sizhe Wang; Yanwen Y. Duan"
+  },
+  {
+   "title": "Signal Quality in Dry Electrode EEG and the Relation to Skin-electrode Contact Impedance Magnitude",
+   "year": 2014,
+   "doi": "10.5220/0004738700120022",
+   "venue": null,
+   "cites": 35,
+   "authors": "Alexandra-Maria Tăuţan; Vojkan Mihajlović; Yun-Hsuan Chen"
+  },
+  {
+   "title": "Impedance and Noise of Passive and Active Dry EEG Electrodes: A Review",
+   "year": 2020,
+   "doi": "10.1109/jsen.2020.3012394",
+   "venue": "IEEE Sensors Journal",
+   "cites": 183,
+   "authors": "Erwin H. T. Shad; Marta Molinas; Trond Ytterdal"
+  },
+  {
+   "title": "Dry EEG Electrodes",
+   "year": 2014,
+   "doi": "10.3390/s140712847",
+   "venue": "Sensors",
+   "cites": 410,
+   "authors": "M. A. López-Gordo; Daniel Morillo; F. Della Valle"
+  },
+  {
+   "title": "Soft, Comfortable Polymer Dry Electrodes for High Quality ECG and EEG Recording",
+   "year": 2014,
+   "doi": "10.3390/s141223758",
+   "venue": "Sensors",
+   "cites": 243,
+   "authors": "Yun-Hsuan Chen; Maaike Op de Beeck; Luc Vanderheyden"
+  },
+  {
+   "title": "A low-impedance, skin-grabbing, and gel-free EEG electrode",
+   "year": 2012,
+   "doi": "10.1109/embc.2012.6346347",
+   "venue": null,
+   "cites": 19,
+   "authors": "Mingui Sun; Wenyan Jia; Liang Wei"
+  },
+  {
+   "title": "A dry electrode for EEG recording",
+   "year": 1994,
+   "doi": "10.1016/0013-4694(94)90053-1",
+   "venue": "Electroencephalography and Clinical Neurophysiology",
+   "cites": 173,
+   "authors": "Babak Taheri; Robert T. Knight; R. L. Smith"
+  }
+ ],
+ "EEG signal quality assessment": [
+  {
+   "title": "FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data",
+   "year": 2010,
+   "doi": "10.1155/2011/156869",
+   "venue": "Computational Intelligence and Neuroscience",
+   "cites": 11520,
+   "authors": "Robert Oostenveld; Pascal Fries; Eric Maris"
+  },
+  {
+   "title": "Comparison of a Pragmatic and Regression Approach for Wearable EEG Signal Quality Assessment",
+   "year": 2019,
+   "doi": "10.1109/jbhi.2019.2920381",
+   "venue": "IEEE Journal of Biomedical and Health Informatics",
+   "cites": 21,
+   "authors": "Jolanda Witteveen; Paruthi Pradhapan; Vojkan Mihajlović"
+  },
+  {
+   "title": "Signal Quality Assessment Model for Wearable EEG Sensor on Prediction of Mental Stress",
+   "year": 2015,
+   "doi": "10.1109/tnb.2015.2420576",
+   "venue": "IEEE Transactions on NanoBioscience",
+   "cites": 74,
+   "authors": "Bin Hu; Hong Peng; Qinglin Zhao"
+  },
+  {
+   "title": "Towards automated quality assessment measure for EEG signals",
+   "year": 2017,
+   "doi": "10.1016/j.neucom.2017.01.002",
+   "venue": "Neurocomputing",
+   "cites": 28,
+   "authors": "Shady Mohamed; Sherif Haggag; Saeid Nahavandi"
+  },
+  {
+   "title": "EEG Integrated Platform Lossless (EEG-IP-L) pre-processing pipeline for objective signal quality assessment incorporating data annotation and blind source separation",
+   "year": 2020,
+   "doi": "10.1016/j.jneumeth.2020.108961",
+   "venue": "Journal of Neuroscience Methods",
+   "cites": 71,
+   "authors": "James A. Desjardins; Stefon van Noordt; Scott Huberty"
+  },
+  {
+   "title": "Systematic Review on Resting-State EEG for Alzheimer’s Disease Diagnosis and Progression Assessment",
+   "year": 2018,
+   "doi": "10.1155/2018/5174815",
+   "venue": "Disease Markers",
+   "cites": 395,
+   "authors": "Raymundo Cassani; Mar Estarellas; Rodrigo San-Martin"
+  },
+  {
+   "title": "EEG artifact removal—state-of-the-art and guidelines",
+   "year": 2015,
+   "doi": "10.1088/1741-2560/12/3/031001",
+   "venue": "Journal of Neural Engineering",
+   "cites": 977,
+   "authors": "José Antonio Urigüen; Begonya García-Zapirain"
+  },
+  {
+   "title": "Assessment of EEG Signal Quality in Motion Environments",
+   "year": 2009,
+   "doi": "",
+   "venue": null,
+   "cites": 27,
+   "authors": "Scott E. Kerick; Kelvin S. Oie; Kaleb McDowell"
+  },
+  {
+   "title": "Independent EEG Sources Are Dipolar",
+   "year": 2012,
+   "doi": "10.1371/journal.pone.0030135",
+   "venue": "PLoS ONE",
+   "cites": 853,
+   "authors": "Arnaud Delorme; Jason Palmer; Julie Onton"
+  },
+  {
+   "title": "Wavelet Based Waveform Distortion Measures for Assessment of Denoised EEG Quality With Reference to Noise-Free EEG Signal",
+   "year": 2020,
+   "doi": "10.1109/lsp.2020.3006417",
+   "venue": "IEEE Signal Processing Letters",
+   "cites": 42,
+   "authors": "Manali Saini; Udit Satija; Madhur Deo Upadhayay"
+  },
+  {
+   "title": "Review on solving the inverse problem in EEG source analysis",
+   "year": 2008,
+   "doi": "10.1186/1743-0003-5-25",
+   "venue": "Journal of NeuroEngineering and Rehabilitation",
+   "cites": 1219,
+   "authors": "Roberta Grech; Tracey Cassar; Joseph Muscat"
+  },
+  {
+   "title": "Epileptic Seizure Detection Based on EEG Signals and CNN",
+   "year": 2018,
+   "doi": "10.3389/fninf.2018.00095",
+   "venue": "Frontiers in Neuroinformatics",
+   "cites": 493,
+   "authors": "Mengni Zhou; Cheng Tian; Rui Cao"
+  }
+ ]
+}

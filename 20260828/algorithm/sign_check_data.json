@@ -1,0 +1,16 @@
+{
+  "data": "bci2b/data",
+  "n_classes": 2,
+  "seed": 42,
+  "teacher_val": 82.64,
+  "teacher_train": 92.45,
+  "overfit_gap_pp": 9.8,
+  "student_full": 81.97,
+  "teacher_minus_student_pp": 0.67,
+  "hard_30pct": 78.87,
+  "distilled_30pct": 81.41,
+  "gain_30pct_pp": 2.54,
+  "threshold_predict": "pos",
+  "actual": "pos",
+  "consistent": true
+}

@@ -1,0 +1,16 @@
+{
+  "data": "sleep/data_1k_n0.7",
+  "n_classes": 5,
+  "seed": 42,
+  "teacher_val": 18.16,
+  "teacher_train": 90.3,
+  "overfit_gap_pp": 72.14,
+  "student_full": 16.58,
+  "teacher_minus_student_pp": 1.59,
+  "hard_30pct": 54.11,
+  "distilled_30pct": 46.95,
+  "gain_30pct_pp": -7.16,
+  "threshold_predict": "neg",
+  "actual": "neg",
+  "consistent": true
+}

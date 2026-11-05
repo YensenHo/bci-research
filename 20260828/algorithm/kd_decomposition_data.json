@@ -1,0 +1,13 @@
+{
+  "data": "EEGMMIDB 4类（跨被试）",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 36.3,
+  "hard": 40.0,
+  "label_smoothing": 37.41,
+  "distilled": 35.93,
+  "R_pp": -2.59,
+  "K_pp": -1.48,
+  "total_gain_pp": -4.07
+}

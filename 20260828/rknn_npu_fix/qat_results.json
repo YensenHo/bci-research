@@ -1,0 +1,19 @@
+{
+  "bits": 8,
+  "per_channel_weight": false,
+  "quant_every_op": false,
+  "modes": {
+    "baseline": {
+      "accuracy": 76.39
+    },
+    "ptq": {
+      "accuracy": 76.7,
+      "argmax_agreement_vs_ref": 98.46
+    },
+    "qat": {
+      "accuracy": 76.93,
+      "argmax_agreement_vs_ref": 94.83
+    }
+  },
+  "baseline_acc": 76.39
+}

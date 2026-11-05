@@ -1,0 +1,13 @@
+{
+  "data": "myo_cross_17_n1.0",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 25.9,
+  "hard": 20.33,
+  "label_smoothing": 18.62,
+  "distilled": 20.15,
+  "R_pp": -1.71,
+  "K_pp": 1.53,
+  "total_gain_pp": -0.18
+}

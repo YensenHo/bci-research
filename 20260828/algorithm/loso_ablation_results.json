@@ -1,0 +1,30 @@
+{
+  "eegnet": {
+    "mean": 47.45,
+    "std": 11.35
+  },
+  "lif": {
+    "mean": 46.49,
+    "std": 10.67
+  },
+  "signed_lif": {
+    "mean": 47.03,
+    "std": 11.26
+  },
+  "signed_lif_T1": {
+    "mean": 46.68,
+    "std": 9.11
+  },
+  "signed_lif_T4": {
+    "mean": 47.22,
+    "std": 10.9
+  },
+  "signed_lif_T8": {
+    "mean": 47.03,
+    "std": 11.26
+  },
+  "signed_lif_T16": {
+    "mean": 47.15,
+    "std": 10.85
+  }
+}

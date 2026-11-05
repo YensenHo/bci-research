@@ -1,0 +1,15 @@
+{
+  "data": "eegmmidb/data",
+  "n_classes": 4,
+  "seed": 42,
+  "teacher_full": 36.3,
+  "teacher_30pct": 37.41,
+  "student_full": 37.41,
+  "hard_30pct": 40.0,
+  "ts_full_pp": -1.11,
+  "gain_full_pp": -4.07,
+  "ts_low_pp": -2.59,
+  "gain_low_pp": -4.81,
+  "A_consistent": true,
+  "B_consistent": true
+}

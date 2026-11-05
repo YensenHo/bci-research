@@ -1,0 +1,158 @@
+设备     : mps
+预训练集 : 2333（train.npz T 会话内 hold-out，无标签）| val 259
+增强     : 无增强（消融） | mask 比例 0.5（块 50-100 样本）
+泄漏红线 : eval.npz（E 会话）绝不进入预训练 ✓
+参数量   : encoder body 9,460（= 下游可热启动权重，不含 fc）| 全 AE 12,734
+自检     : enc → (2, 12, 15) | recon → (2, 22, 500) | mask 覆盖率 0.490（目标 0.5）
+val 固定 mask 已生成（9 batch，噪声关闭）
+
+开始预训练（ssl_ae_noaug，150 epochs）...
+  Epoch   1 | train_mask_mse=0.99759 val_mask_mse=0.97846 val_full_mse=0.99350 | mask=0.51 | 1.8s
+  Epoch   2 | train_mask_mse=0.97782 val_mask_mse=0.95553 val_full_mse=0.94780 | mask=0.51 | 1.3s
+  Epoch   3 | train_mask_mse=0.96358 val_mask_mse=0.94206 val_full_mse=0.90265 | mask=0.51 | 1.2s
+  Epoch   4 | train_mask_mse=0.95594 val_mask_mse=0.93919 val_full_mse=0.88861 | mask=0.51 | 1.3s
+  Epoch   5 | train_mask_mse=0.95393 val_mask_mse=0.93565 val_full_mse=0.88697 | mask=0.51 | 1.2s
+  Epoch   6 | train_mask_mse=0.95310 val_mask_mse=0.93544 val_full_mse=0.88212 | mask=0.51 | 1.2s
+  Epoch   7 | train_mask_mse=0.95024 val_mask_mse=0.93576 val_full_mse=0.88396 | mask=0.51 | 1.2s
+  Epoch   8 | train_mask_mse=0.94937 val_mask_mse=0.93256 val_full_mse=0.87773 | mask=0.51 | 1.3s
+  Epoch   9 | train_mask_mse=0.95580 val_mask_mse=0.93349 val_full_mse=0.87850 | mask=0.51 | 1.2s
+  Epoch  10 | train_mask_mse=0.94710 val_mask_mse=0.93231 val_full_mse=0.87167 | mask=0.51 | 1.2s
+  Epoch  11 | train_mask_mse=0.95058 val_mask_mse=0.93160 val_full_mse=0.87633 | mask=0.51 | 1.2s
+  Epoch  12 | train_mask_mse=0.94647 val_mask_mse=0.93256 val_full_mse=0.87530 | mask=0.51 | 1.3s
+  Epoch  13 | train_mask_mse=0.94451 val_mask_mse=0.93019 val_full_mse=0.86921 | mask=0.51 | 1.2s
+  Epoch  14 | train_mask_mse=0.95194 val_mask_mse=0.93170 val_full_mse=0.87291 | mask=0.51 | 1.2s
+  Epoch  15 | train_mask_mse=0.94635 val_mask_mse=0.92982 val_full_mse=0.86716 | mask=0.51 | 1.3s
+  Epoch  16 | train_mask_mse=0.94498 val_mask_mse=0.93066 val_full_mse=0.87267 | mask=0.51 | 1.2s
+  Epoch  17 | train_mask_mse=0.95145 val_mask_mse=0.93086 val_full_mse=0.87003 | mask=0.51 | 1.2s
+  Epoch  18 | train_mask_mse=0.94042 val_mask_mse=0.92919 val_full_mse=0.86789 | mask=0.51 | 1.2s
+  Epoch  19 | train_mask_mse=0.94634 val_mask_mse=0.92890 val_full_mse=0.86785 | mask=0.51 | 1.3s
+  Epoch  20 | train_mask_mse=0.95046 val_mask_mse=0.93059 val_full_mse=0.87001 | mask=0.51 | 1.2s
+  Epoch  21 | train_mask_mse=0.94474 val_mask_mse=0.92921 val_full_mse=0.86541 | mask=0.51 | 1.2s
+  Epoch  22 | train_mask_mse=0.94640 val_mask_mse=0.93103 val_full_mse=0.86740 | mask=0.51 | 1.2s
+  Epoch  23 | train_mask_mse=0.94492 val_mask_mse=0.93005 val_full_mse=0.86581 | mask=0.51 | 1.3s
+  Epoch  24 | train_mask_mse=0.94385 val_mask_mse=0.92934 val_full_mse=0.86807 | mask=0.51 | 1.2s
+  Epoch  25 | train_mask_mse=0.94831 val_mask_mse=0.92860 val_full_mse=0.86647 | mask=0.51 | 1.2s
+  Epoch  26 | train_mask_mse=0.94746 val_mask_mse=0.93033 val_full_mse=0.87076 | mask=0.51 | 1.3s
+  Epoch  27 | train_mask_mse=0.94529 val_mask_mse=0.92935 val_full_mse=0.86895 | mask=0.51 | 1.2s
+  Epoch  28 | train_mask_mse=0.94470 val_mask_mse=0.92851 val_full_mse=0.86213 | mask=0.51 | 1.2s
+  Epoch  29 | train_mask_mse=0.94347 val_mask_mse=0.92905 val_full_mse=0.86725 | mask=0.51 | 1.2s
+  Epoch  30 | train_mask_mse=0.94620 val_mask_mse=0.92730 val_full_mse=0.86367 | mask=0.51 | 1.3s
+  Epoch  31 | train_mask_mse=0.94615 val_mask_mse=0.92867 val_full_mse=0.86368 | mask=0.51 | 1.2s
+  Epoch  32 | train_mask_mse=0.94342 val_mask_mse=0.92914 val_full_mse=0.86283 | mask=0.51 | 1.2s
+  Epoch  33 | train_mask_mse=0.94432 val_mask_mse=0.92715 val_full_mse=0.86248 | mask=0.51 | 1.2s
+  Epoch  34 | train_mask_mse=0.94711 val_mask_mse=0.92682 val_full_mse=0.85756 | mask=0.51 | 1.3s
+  Epoch  35 | train_mask_mse=0.94284 val_mask_mse=0.92708 val_full_mse=0.85720 | mask=0.51 | 1.2s
+  Epoch  36 | train_mask_mse=0.94498 val_mask_mse=0.92786 val_full_mse=0.86003 | mask=0.51 | 1.2s
+  Epoch  37 | train_mask_mse=0.94536 val_mask_mse=0.92623 val_full_mse=0.85768 | mask=0.51 | 1.3s
+  Epoch  38 | train_mask_mse=0.94635 val_mask_mse=0.92550 val_full_mse=0.85531 | mask=0.51 | 1.2s
+  Epoch  39 | train_mask_mse=0.94298 val_mask_mse=0.92595 val_full_mse=0.85362 | mask=0.51 | 1.2s
+  Epoch  40 | train_mask_mse=0.93493 val_mask_mse=0.92583 val_full_mse=0.85565 | mask=0.51 | 1.2s
+  Epoch  41 | train_mask_mse=0.94211 val_mask_mse=0.92651 val_full_mse=0.85220 | mask=0.51 | 1.3s
+  Epoch  42 | train_mask_mse=0.94341 val_mask_mse=0.92512 val_full_mse=0.85117 | mask=0.51 | 1.2s
+  Epoch  43 | train_mask_mse=0.94041 val_mask_mse=0.92561 val_full_mse=0.85366 | mask=0.51 | 1.2s
+  Epoch  44 | train_mask_mse=0.94695 val_mask_mse=0.92636 val_full_mse=0.85268 | mask=0.51 | 1.2s
+  Epoch  45 | train_mask_mse=0.94341 val_mask_mse=0.92502 val_full_mse=0.84864 | mask=0.51 | 1.3s
+  Epoch  46 | train_mask_mse=0.94412 val_mask_mse=0.92417 val_full_mse=0.84957 | mask=0.51 | 1.2s
+  Epoch  47 | train_mask_mse=0.93358 val_mask_mse=0.92542 val_full_mse=0.84762 | mask=0.51 | 1.2s
+  Epoch  48 | train_mask_mse=0.93355 val_mask_mse=0.92410 val_full_mse=0.84572 | mask=0.51 | 1.3s
+  Epoch  49 | train_mask_mse=0.94515 val_mask_mse=0.92528 val_full_mse=0.84827 | mask=0.51 | 1.3s
+  Epoch  50 | train_mask_mse=0.93687 val_mask_mse=0.92490 val_full_mse=0.84561 | mask=0.51 | 1.2s
+  Epoch  51 | train_mask_mse=0.94250 val_mask_mse=0.92407 val_full_mse=0.84630 | mask=0.51 | 1.2s
+  Epoch  52 | train_mask_mse=0.94442 val_mask_mse=0.92550 val_full_mse=0.84701 | mask=0.51 | 1.3s
+  Epoch  53 | train_mask_mse=0.94020 val_mask_mse=0.92379 val_full_mse=0.84357 | mask=0.51 | 1.2s
+  Epoch  54 | train_mask_mse=0.93773 val_mask_mse=0.92601 val_full_mse=0.84867 | mask=0.51 | 1.2s
+  Epoch  55 | train_mask_mse=0.94108 val_mask_mse=0.92417 val_full_mse=0.84354 | mask=0.51 | 1.3s
+  Epoch  56 | train_mask_mse=0.94340 val_mask_mse=0.92516 val_full_mse=0.84626 | mask=0.51 | 1.2s
+  Epoch  57 | train_mask_mse=0.94028 val_mask_mse=0.92543 val_full_mse=0.84773 | mask=0.51 | 1.2s
+  Epoch  58 | train_mask_mse=0.94217 val_mask_mse=0.92529 val_full_mse=0.84795 | mask=0.51 | 1.2s
+  Epoch  59 | train_mask_mse=0.93891 val_mask_mse=0.92357 val_full_mse=0.84209 | mask=0.51 | 1.3s
+  Epoch  60 | train_mask_mse=0.93847 val_mask_mse=0.92462 val_full_mse=0.84316 | mask=0.51 | 1.2s
+  Epoch  61 | train_mask_mse=0.93986 val_mask_mse=0.92405 val_full_mse=0.84217 | mask=0.51 | 1.2s
+  Epoch  62 | train_mask_mse=0.94331 val_mask_mse=0.92582 val_full_mse=0.84273 | mask=0.51 | 1.2s
+  Epoch  63 | train_mask_mse=0.94463 val_mask_mse=0.92323 val_full_mse=0.84104 | mask=0.51 | 1.3s
+  Epoch  64 | train_mask_mse=0.93979 val_mask_mse=0.92477 val_full_mse=0.84442 | mask=0.51 | 1.3s
+  Epoch  65 | train_mask_mse=0.94119 val_mask_mse=0.92290 val_full_mse=0.84098 | mask=0.51 | 1.2s
+  Epoch  66 | train_mask_mse=0.93795 val_mask_mse=0.92468 val_full_mse=0.84137 | mask=0.51 | 1.3s
+  Epoch  67 | train_mask_mse=0.93631 val_mask_mse=0.92386 val_full_mse=0.84198 | mask=0.51 | 1.2s
+  Epoch  68 | train_mask_mse=0.94472 val_mask_mse=0.92295 val_full_mse=0.84130 | mask=0.51 | 1.2s
+  Epoch  69 | train_mask_mse=0.94303 val_mask_mse=0.92295 val_full_mse=0.83852 | mask=0.51 | 1.2s
+  Epoch  70 | train_mask_mse=0.93573 val_mask_mse=0.92240 val_full_mse=0.84278 | mask=0.51 | 1.3s
+  Epoch  71 | train_mask_mse=0.94278 val_mask_mse=0.92252 val_full_mse=0.83889 | mask=0.51 | 1.2s
+  Epoch  72 | train_mask_mse=0.93866 val_mask_mse=0.92261 val_full_mse=0.83831 | mask=0.51 | 1.2s
+  Epoch  73 | train_mask_mse=0.93382 val_mask_mse=0.92299 val_full_mse=0.84137 | mask=0.51 | 1.2s
+  Epoch  74 | train_mask_mse=0.93969 val_mask_mse=0.92364 val_full_mse=0.84059 | mask=0.51 | 1.3s
+  Epoch  75 | train_mask_mse=0.94132 val_mask_mse=0.92411 val_full_mse=0.84227 | mask=0.51 | 1.2s
+  Epoch  76 | train_mask_mse=0.93577 val_mask_mse=0.92251 val_full_mse=0.84041 | mask=0.51 | 1.2s
+  Epoch  77 | train_mask_mse=0.93875 val_mask_mse=0.92276 val_full_mse=0.83999 | mask=0.51 | 1.3s
+  Epoch  78 | train_mask_mse=0.93822 val_mask_mse=0.92254 val_full_mse=0.83630 | mask=0.51 | 1.2s
+  Epoch  79 | train_mask_mse=0.94098 val_mask_mse=0.92291 val_full_mse=0.83989 | mask=0.51 | 1.2s
+  Epoch  80 | train_mask_mse=0.93679 val_mask_mse=0.92323 val_full_mse=0.83910 | mask=0.51 | 1.2s
+  Epoch  81 | train_mask_mse=0.93845 val_mask_mse=0.92287 val_full_mse=0.83765 | mask=0.51 | 1.3s
+  Epoch  82 | train_mask_mse=0.94007 val_mask_mse=0.92183 val_full_mse=0.83650 | mask=0.51 | 1.2s
+  Epoch  83 | train_mask_mse=0.94034 val_mask_mse=0.92195 val_full_mse=0.83580 | mask=0.51 | 1.2s
+  Epoch  84 | train_mask_mse=0.94169 val_mask_mse=0.92333 val_full_mse=0.83932 | mask=0.51 | 1.2s
+  Epoch  85 | train_mask_mse=0.94280 val_mask_mse=0.92307 val_full_mse=0.83850 | mask=0.51 | 1.3s
+  Epoch  86 | train_mask_mse=0.93715 val_mask_mse=0.92248 val_full_mse=0.83727 | mask=0.51 | 1.2s
+  Epoch  87 | train_mask_mse=0.93796 val_mask_mse=0.92211 val_full_mse=0.83751 | mask=0.51 | 1.2s
+  Epoch  88 | train_mask_mse=0.94421 val_mask_mse=0.92333 val_full_mse=0.83714 | mask=0.51 | 1.3s
+  Epoch  89 | train_mask_mse=0.93710 val_mask_mse=0.92206 val_full_mse=0.83681 | mask=0.51 | 1.2s
+  Epoch  90 | train_mask_mse=0.93975 val_mask_mse=0.92271 val_full_mse=0.83659 | mask=0.51 | 1.2s
+  Epoch  91 | train_mask_mse=0.94267 val_mask_mse=0.92304 val_full_mse=0.83645 | mask=0.51 | 1.2s
+  Epoch  92 | train_mask_mse=0.94077 val_mask_mse=0.92255 val_full_mse=0.83463 | mask=0.51 | 1.3s
+  Epoch  93 | train_mask_mse=0.93712 val_mask_mse=0.92304 val_full_mse=0.83672 | mask=0.51 | 1.2s
+  Epoch  94 | train_mask_mse=0.93801 val_mask_mse=0.92266 val_full_mse=0.83530 | mask=0.51 | 1.2s
+  Epoch  95 | train_mask_mse=0.94024 val_mask_mse=0.92306 val_full_mse=0.83757 | mask=0.51 | 1.2s
+  Epoch  96 | train_mask_mse=0.93913 val_mask_mse=0.92309 val_full_mse=0.83712 | mask=0.51 | 1.3s
+  Epoch  97 | train_mask_mse=0.93852 val_mask_mse=0.92206 val_full_mse=0.83516 | mask=0.51 | 1.2s
+  Epoch  98 | train_mask_mse=0.93780 val_mask_mse=0.92277 val_full_mse=0.83629 | mask=0.51 | 1.2s
+  Epoch  99 | train_mask_mse=0.93645 val_mask_mse=0.92268 val_full_mse=0.83737 | mask=0.51 | 1.3s
+  Epoch 100 | train_mask_mse=0.93908 val_mask_mse=0.92246 val_full_mse=0.83800 | mask=0.51 | 1.2s
+  Epoch 101 | train_mask_mse=0.94068 val_mask_mse=0.92253 val_full_mse=0.83646 | mask=0.51 | 1.2s
+  Epoch 102 | train_mask_mse=0.94008 val_mask_mse=0.92262 val_full_mse=0.83636 | mask=0.51 | 1.2s
+  Epoch 103 | train_mask_mse=0.93618 val_mask_mse=0.92246 val_full_mse=0.83645 | mask=0.51 | 1.3s
+  Epoch 104 | train_mask_mse=0.93621 val_mask_mse=0.92229 val_full_mse=0.83641 | mask=0.51 | 1.2s
+  Epoch 105 | train_mask_mse=0.93513 val_mask_mse=0.92147 val_full_mse=0.83450 | mask=0.51 | 1.2s
+  Epoch 106 | train_mask_mse=0.93131 val_mask_mse=0.92233 val_full_mse=0.83586 | mask=0.51 | 1.3s
+  Epoch 107 | train_mask_mse=0.94111 val_mask_mse=0.92181 val_full_mse=0.83555 | mask=0.51 | 1.3s
+  Epoch 108 | train_mask_mse=0.94484 val_mask_mse=0.92249 val_full_mse=0.83640 | mask=0.51 | 1.2s
+  Epoch 109 | train_mask_mse=0.93784 val_mask_mse=0.92163 val_full_mse=0.83359 | mask=0.51 | 1.2s
+  Epoch 110 | train_mask_mse=0.93443 val_mask_mse=0.92217 val_full_mse=0.83529 | mask=0.51 | 1.3s
+  Epoch 111 | train_mask_mse=0.93442 val_mask_mse=0.92225 val_full_mse=0.83597 | mask=0.51 | 1.2s
+  Epoch 112 | train_mask_mse=0.94160 val_mask_mse=0.92231 val_full_mse=0.83527 | mask=0.51 | 1.2s
+  Epoch 113 | train_mask_mse=0.93832 val_mask_mse=0.92215 val_full_mse=0.83481 | mask=0.51 | 1.2s
+  Epoch 114 | train_mask_mse=0.93996 val_mask_mse=0.92175 val_full_mse=0.83426 | mask=0.51 | 1.3s
+  Epoch 115 | train_mask_mse=0.93151 val_mask_mse=0.92243 val_full_mse=0.83533 | mask=0.51 | 1.2s
+  Epoch 116 | train_mask_mse=0.93991 val_mask_mse=0.92227 val_full_mse=0.83493 | mask=0.51 | 1.2s
+  Epoch 117 | train_mask_mse=0.94341 val_mask_mse=0.92213 val_full_mse=0.83577 | mask=0.51 | 1.3s
+  Epoch 118 | train_mask_mse=0.93776 val_mask_mse=0.92129 val_full_mse=0.83316 | mask=0.51 | 1.3s
+  Epoch 119 | train_mask_mse=0.93782 val_mask_mse=0.92214 val_full_mse=0.83514 | mask=0.51 | 1.2s
+  Epoch 120 | train_mask_mse=0.93568 val_mask_mse=0.92172 val_full_mse=0.83462 | mask=0.51 | 1.2s
+  Epoch 121 | train_mask_mse=0.93613 val_mask_mse=0.92214 val_full_mse=0.83557 | mask=0.51 | 1.3s
+  Epoch 122 | train_mask_mse=0.93783 val_mask_mse=0.92242 val_full_mse=0.83568 | mask=0.51 | 1.2s
+  Epoch 123 | train_mask_mse=0.93802 val_mask_mse=0.92160 val_full_mse=0.83449 | mask=0.51 | 1.2s
+  Epoch 124 | train_mask_mse=0.93487 val_mask_mse=0.92152 val_full_mse=0.83449 | mask=0.51 | 1.2s
+  Epoch 125 | train_mask_mse=0.93883 val_mask_mse=0.92192 val_full_mse=0.83494 | mask=0.51 | 1.3s
+  Epoch 126 | train_mask_mse=0.94158 val_mask_mse=0.92176 val_full_mse=0.83405 | mask=0.51 | 1.2s
+  Epoch 127 | train_mask_mse=0.93609 val_mask_mse=0.92204 val_full_mse=0.83562 | mask=0.51 | 1.2s
+  Epoch 128 | train_mask_mse=0.93636 val_mask_mse=0.92180 val_full_mse=0.83516 | mask=0.51 | 1.3s
+  Epoch 129 | train_mask_mse=0.93274 val_mask_mse=0.92164 val_full_mse=0.83501 | mask=0.51 | 1.2s
+  Epoch 130 | train_mask_mse=0.93454 val_mask_mse=0.92190 val_full_mse=0.83518 | mask=0.51 | 1.2s
+  Epoch 131 | train_mask_mse=0.94108 val_mask_mse=0.92169 val_full_mse=0.83477 | mask=0.51 | 1.2s
+  Epoch 132 | train_mask_mse=0.93687 val_mask_mse=0.92180 val_full_mse=0.83535 | mask=0.51 | 1.3s
+  Epoch 133 | train_mask_mse=0.93716 val_mask_mse=0.92163 val_full_mse=0.83443 | mask=0.51 | 1.2s
+  Epoch 134 | train_mask_mse=0.93646 val_mask_mse=0.92184 val_full_mse=0.83488 | mask=0.51 | 1.2s
+  Epoch 135 | train_mask_mse=0.94159 val_mask_mse=0.92186 val_full_mse=0.83452 | mask=0.51 | 1.2s
+  Epoch 136 | train_mask_mse=0.93776 val_mask_mse=0.92175 val_full_mse=0.83496 | mask=0.51 | 1.3s
+  Epoch 137 | train_mask_mse=0.93830 val_mask_mse=0.92182 val_full_mse=0.83445 | mask=0.51 | 1.2s
+  Epoch 138 | train_mask_mse=0.93708 val_mask_mse=0.92171 val_full_mse=0.83437 | mask=0.51 | 1.2s
+  Epoch 139 | train_mask_mse=0.93397 val_mask_mse=0.92164 val_full_mse=0.83407 | mask=0.51 | 1.3s
+  Epoch 140 | train_mask_mse=0.93667 val_mask_mse=0.92154 val_full_mse=0.83380 | mask=0.51 | 1.2s
+  Epoch 141 | train_mask_mse=0.93541 val_mask_mse=0.92163 val_full_mse=0.83460 | mask=0.51 | 1.3s
+  Epoch 142 | train_mask_mse=0.93912 val_mask_mse=0.92174 val_full_mse=0.83433 | mask=0.51 | 1.2s
+  Epoch 143 | train_mask_mse=0.93595 val_mask_mse=0.92166 val_full_mse=0.83477 | mask=0.51 | 1.3s
+
+早停：val masked MSE 连续 25 epoch 未下降（best ep 118）
+
+✓ 预训练完成：best val masked MSE = 0.92129（epoch 118）
+✓ 产物：/Users/heyixuan/BCI/20260828/algorithm/ssl_ae_results/ssl_ae_noaug.pth
+✓ 曲线/示例图已保存：ssl_ae_noaug_curve.png / ssl_ae_noaug_recon_example.png

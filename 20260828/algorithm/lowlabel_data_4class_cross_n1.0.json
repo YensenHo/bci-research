@@ -1,0 +1,15 @@
+{
+  "data": "data_4class_cross_n1.0",
+  "n_classes": 4,
+  "seed": 42,
+  "teacher_full": 50.52,
+  "teacher_30pct": 36.63,
+  "student_full": 45.83,
+  "hard_30pct": 20.31,
+  "ts_full_pp": 4.69,
+  "gain_full_pp": 23.96,
+  "ts_low_pp": 16.32,
+  "gain_low_pp": 13.72,
+  "A_consistent": true,
+  "B_consistent": true
+}

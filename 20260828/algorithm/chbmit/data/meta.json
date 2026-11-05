@@ -1,0 +1,649 @@
+{
+ "dataset": "CHB-MIT subset (chb01-05)",
+ "sfreq": 256,
+ "window_sec": 2.0,
+ "window_samples": 512,
+ "step_sec": 2.0,
+ "channels": 23,
+ "pos_criterion": "overlap>=1.0s",
+ "bandpass_hz": [
+  0.5,
+  50.0
+ ],
+ "normalization": "per-file per-channel z-score",
+ "train_patients": [
+  "chb01",
+  "chb02",
+  "chb03",
+  "chb04"
+ ],
+ "eval_patients": [
+  "chb05"
+ ],
+ "train_neg_pos_ratio": 2.0,
+ "eval_neg_pos_ratio": 1.0,
+ "balance_seed": 42,
+ "train": {
+  "n": 2112,
+  "pos": 704,
+  "neg": 1408,
+  "raw_pool": {
+   "n": 99561,
+   "pos": 704
+  }
+ },
+ "eval": {
+  "n": 564,
+  "pos": 282,
+  "neg": 282,
+  "raw_pool": {
+   "n": 70205,
+   "pos": 282
+  }
+ },
+ "per_file": {
+  "chb01/chb01_03.edf": {
+   "n_windows": 1800,
+   "n_pos": 20,
+   "n_neg": 1780,
+   "seizures": [
+    [
+     2996.0,
+     3036.0
+    ]
+   ]
+  },
+  "chb01/chb01_04.edf": {
+   "n_windows": 1800,
+   "n_pos": 14,
+   "n_neg": 1786,
+   "seizures": [
+    [
+     1467.0,
+     1494.0
+    ]
+   ]
+  },
+  "chb01/chb01_07.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb01/chb01_10.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb01/chb01_12.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb01/chb01_14.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb01/chb01_15.edf": {
+   "n_windows": 1800,
+   "n_pos": 20,
+   "n_neg": 1780,
+   "seizures": [
+    [
+     1732.0,
+     1772.0
+    ]
+   ]
+  },
+  "chb01/chb01_16.edf": {
+   "n_windows": 1800,
+   "n_pos": 26,
+   "n_neg": 1774,
+   "seizures": [
+    [
+     1015.0,
+     1066.0
+    ]
+   ]
+  },
+  "chb01/chb01_18.edf": {
+   "n_windows": 1800,
+   "n_pos": 45,
+   "n_neg": 1755,
+   "seizures": [
+    [
+     1720.0,
+     1810.0
+    ]
+   ]
+  },
+  "chb01/chb01_20.edf": {
+   "n_windows": 1331,
+   "n_pos": 0,
+   "n_neg": 1331,
+   "seizures": []
+  },
+  "chb01/chb01_21.edf": {
+   "n_windows": 1800,
+   "n_pos": 47,
+   "n_neg": 1753,
+   "seizures": [
+    [
+     327.0,
+     420.0
+    ]
+   ]
+  },
+  "chb01/chb01_25.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb01/chb01_26.edf": {
+   "n_windows": 1162,
+   "n_pos": 51,
+   "n_neg": 1111,
+   "seizures": [
+    [
+     1862.0,
+     1963.0
+    ]
+   ]
+  },
+  "chb01/chb01_30.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb02/chb02_03.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb02/chb02_10.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb02/chb02_16+.edf": {
+   "n_windows": 1800,
+   "n_pos": 41,
+   "n_neg": 1759,
+   "seizures": [
+    [
+     2972.0,
+     3053.0
+    ]
+   ]
+  },
+  "chb02/chb02_16.edf": {
+   "n_windows": 479,
+   "n_pos": 41,
+   "n_neg": 438,
+   "seizures": [
+    [
+     130.0,
+     212.0
+    ]
+   ]
+  },
+  "chb02/chb02_19.edf": {
+   "n_windows": 1800,
+   "n_pos": 5,
+   "n_neg": 1795,
+   "seizures": [
+    [
+     3369.0,
+     3378.0
+    ]
+   ]
+  },
+  "chb02/chb02_22.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_01.edf": {
+   "n_windows": 1800,
+   "n_pos": 26,
+   "n_neg": 1774,
+   "seizures": [
+    [
+     362.0,
+     414.0
+    ]
+   ]
+  },
+  "chb03/chb03_02.edf": {
+   "n_windows": 1800,
+   "n_pos": 33,
+   "n_neg": 1767,
+   "seizures": [
+    [
+     731.0,
+     796.0
+    ]
+   ]
+  },
+  "chb03/chb03_03.edf": {
+   "n_windows": 1800,
+   "n_pos": 35,
+   "n_neg": 1765,
+   "seizures": [
+    [
+     432.0,
+     501.0
+    ]
+   ]
+  },
+  "chb03/chb03_04.edf": {
+   "n_windows": 1800,
+   "n_pos": 26,
+   "n_neg": 1774,
+   "seizures": [
+    [
+     2162.0,
+     2214.0
+    ]
+   ]
+  },
+  "chb03/chb03_06.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_09.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_11.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_15.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_18.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_22.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_28.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb03/chb03_34.edf": {
+   "n_windows": 1800,
+   "n_pos": 24,
+   "n_neg": 1776,
+   "seizures": [
+    [
+     1982.0,
+     2029.0
+    ]
+   ]
+  },
+  "chb03/chb03_35.edf": {
+   "n_windows": 1800,
+   "n_pos": 32,
+   "n_neg": 1768,
+   "seizures": [
+    [
+     2592.0,
+     2656.0
+    ]
+   ]
+  },
+  "chb03/chb03_36.edf": {
+   "n_windows": 1800,
+   "n_pos": 27,
+   "n_neg": 1773,
+   "seizures": [
+    [
+     1725.0,
+     1778.0
+    ]
+   ]
+  },
+  "chb04/chb04_02.edf": {
+   "n_windows": 7200,
+   "n_pos": 0,
+   "n_neg": 7200,
+   "seizures": []
+  },
+  "chb04/chb04_05.edf": {
+   "n_windows": 4768,
+   "n_pos": 25,
+   "n_neg": 4743,
+   "seizures": [
+    [
+     7804.0,
+     7853.0
+    ]
+   ]
+  },
+  "chb04/chb04_08.edf": {
+   "n_windows": 7200,
+   "n_pos": 56,
+   "n_neg": 7144,
+   "seizures": [
+    [
+     6446.0,
+     6557.0
+    ]
+   ]
+  },
+  "chb04/chb04_12.edf": {
+   "n_windows": 7210,
+   "n_pos": 0,
+   "n_neg": 7210,
+   "seizures": []
+  },
+  "chb04/chb04_25.edf": {
+   "n_windows": 7200,
+   "n_pos": 0,
+   "n_neg": 7200,
+   "seizures": []
+  },
+  "chb04/chb04_28.edf": {
+   "n_windows": 7211,
+   "n_pos": 110,
+   "n_neg": 7101,
+   "seizures": [
+    [
+     1679.0,
+     1781.0
+    ],
+    [
+     3782.0,
+     3898.0
+    ]
+   ]
+  },
+  "chb05/chb05_01.edf": {
+   "n_windows": 1805,
+   "n_pos": 0,
+   "n_neg": 1805,
+   "seizures": []
+  },
+  "chb05/chb05_02.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_03.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_04.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_05.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_06.edf": {
+   "n_windows": 1800,
+   "n_pos": 58,
+   "n_neg": 1742,
+   "seizures": [
+    [
+     417.0,
+     532.0
+    ]
+   ]
+  },
+  "chb05/chb05_07.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_08.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_09.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_10.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_11.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_12.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_13.edf": {
+   "n_windows": 1800,
+   "n_pos": 55,
+   "n_neg": 1745,
+   "seizures": [
+    [
+     1086.0,
+     1196.0
+    ]
+   ]
+  },
+  "chb05/chb05_14.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_15.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_16.edf": {
+   "n_windows": 1800,
+   "n_pos": 49,
+   "n_neg": 1751,
+   "seizures": [
+    [
+     2317.0,
+     2413.0
+    ]
+   ]
+  },
+  "chb05/chb05_17.edf": {
+   "n_windows": 1800,
+   "n_pos": 61,
+   "n_neg": 1739,
+   "seizures": [
+    [
+     2451.0,
+     2571.0
+    ]
+   ]
+  },
+  "chb05/chb05_18.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_19.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_20.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_21.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_22.edf": {
+   "n_windows": 1800,
+   "n_pos": 59,
+   "n_neg": 1741,
+   "seizures": [
+    [
+     2348.0,
+     2465.0
+    ]
+   ]
+  },
+  "chb05/chb05_23.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_24.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_25.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_26.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_27.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_28.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_29.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_30.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_31.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_32.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_33.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_34.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_35.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_36.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_37.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_38.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  },
+  "chb05/chb05_39.edf": {
+   "n_windows": 1800,
+   "n_pos": 0,
+   "n_neg": 1800,
+   "seizures": []
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "config": {
+    "epochs": 20,
+    "seed": 42,
+    "smoke": false,
+    "eta": 0.02
+  },
+  "per_subject": {
+    "A01": {
+      "frozen": 37.5,
+      "tta": 36.46
+    }
+  },
+  "frozen_mean": 37.5,
+  "frozen_std": 0.0,
+  "tta_mean": 36.46,
+  "tta_std": 0.0,
+  "gain_mean_pp": -1.04
+}

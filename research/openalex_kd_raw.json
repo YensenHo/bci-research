@@ -1,0 +1,258 @@
+{
+  "Strong Teacher Not Needed knowledge distillation": [
+    {
+      "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2605.23857",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge distillation generally assumes a strong-to-weak relationship where stronger teachers yield better students. In this work, we examine this assumption about distillation in large language model pretraining. By varying architecture sizes and training token budgets, we create strong-to-weak, same-level, and weak-to-strong teacher-student relationships, and study distillation's effectiveness under each. We find that the teacher need not be strong: with proper mixing of the language modeling and knowledge distillation losses, even small and undertrained teachers improve larger students. At the same time, a stronger teacher is not always better: pushing the teacher further, through more parameters or more training tokens, can saturate or even reverse the distillation gains. We further observe that distillation improves generalization (out-of-distribution and downstream performance) more readily than in-domain fitting. Together, these results challenge the common belief that distillation pretraining always requires a strong teacher.",
+      "openalex_id": "https://openalex.org/W7162308311"
+    },
+    {
+      "title": "Knowledge distillation: A good teacher is patient and consistent",
+      "year": 2022,
+      "cites": 256,
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01065",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "There is a growing discrepancy in computer vision between large-scale models that achieve state-of-the-art performance and models that are affordable in practical applications. In this paper we address this issue and significantly bridge the gap between these two types of models. Throughout our empirical investigation we do not aim to necessarily propose a new method, but strive to identify a robust and effective recipe for making state-of-the-art large scale models affordable in practice. We demonstrate that, when performed correctly, knowledge distillation can be a powerful tool for reducing the size of large models without compromising their performance. In particular, we uncover that there are certain implicit design choices, which may drastically affect the effectiveness of distillation. Our key contribution is the explicit identification of these design choices, which were not previously articulated in the literature. We back up our findings by a comprehensive empirical study, demonstrate compelling results on a wide range of vision datasets and, in particular, obtain a state-of-the-art ResNet-50 model for ImageNet, which achieves 82.8% top-1 accuracy.",
+      "openalex_id": "https://openalex.org/W3170224286"
+    },
+    {
+      "title": "Relational Knowledge Distillation",
+      "year": 2019,
+      "cites": 1778,
+      "doi": "https://doi.org/10.1109/cvpr.2019.00409",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation aims at transferring knowledge acquired in one model (a teacher) to another model (a student) that is typically smaller. Previous approaches can be expressed as a form of training the student to mimic output activations of individual data examples represented by the teacher. We introduce a novel approach, dubbed relational knowledge distillation (RKD), that transfers mutual relations of data examples instead. For concrete realizations of RKD, we propose distance-wise and angle-wise distillation losses that penalize structural differences in relations. Experiments conducted on different tasks show that the proposed method improves educated student models with a significant margin. In particular for metric learning, it allows students to outperform their teachers' performance, achieving the state of the arts on standard benchmark datasets.",
+      "openalex_id": "https://openalex.org/W2963140444"
+    }
+  ],
+  "Toward Understanding Adversarial Distillation why robust teachers fail": [
+    {
+      "title": "Toward Understanding Adversarial Distillation: Why Robust Teachers Fail",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2605.21999",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Adversarial Distillation aims to enhance student robustness by guiding the student with a robust teacher's soft labels within the min-max adversarial training framework, yet its success is notoriously inconsistent: a more robust teacher often fails to improve, or even harms, the student's robust generalization. In this paper, we identify a key mechanism of this teacher dependency: the misalignment between the teacher's supervisory confidence and the student's representational limitations on a consistent subset of training data -- the Robustly Unlearnable Set. We present a theoretical framework analyzing the feature learning dynamics of a two-layer neural network, demonstrating that this mismatch creates a dichotomy in distillation outcomes. We prove that when a teacher provides confident supervision on unlearnable samples, it compels the student to memorize spurious noise patterns that eventually overpower the learned robust signal, thereby driving robust overfitting. Conversely, a teacher that exhibits high uncertainty on these samples effectively suppresses noise memorization, allowing the student to rely solely on the learnable signal for robust generalization. We empirically va",
+      "openalex_id": "https://openalex.org/W7162107115"
+    },
+    {
+      "title": "Adversarial Dual On-Policy Distillation from Expressive Teacher",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2605.27095",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Learning from demonstrations in embodied control is often cast as behavioral cloning, and recent diffusion or flow-matching policies improve this paradigm by modeling multi-modal expert actions. Yet these methods remain offline supervised learners: the policy is trained only on expert states and receives no corrective signal on the states it actually visits. On-policy distillation (OPD) offers a natural remedy, but standard OPD assumes a strong fixed teacher, which is unavailable in demonstration-only control. We propose \\textbf{FA-OPD}, an \\emph{adversarial dual on-policy distillation} method in which a Flow Matching (FM) teacher is learned from demonstrations and co-trained with a lightweight MLP student. The teacher provides two complementary signals on student rollouts. The reward channel learns an expert-likeness objective over state-action pairs and drives online exploration through long-horizon policy optimization. The action channel supplies dense local targets at student-visited states, stabilizing exploitation. FA-OPD couples them so that reward distillation enables generalization beyond point-wise demonstrations, while action distillation keeps exploration anchored near ",
+      "openalex_id": "https://openalex.org/W7162562660"
+    },
+    {
+      "title": "Improving Adversarial Robust Fairness via Anti-Bias Soft Label Distillation",
+      "year": 2024,
+      "cites": 3,
+      "doi": "https://doi.org/10.52202/079017-2828",
+      "venue": "neural information processing systems",
+      "type": "conference-paper",
+      "abstract": "Adversarial Training (AT) has been widely proved to be an effective method to improve the adversarial robustness against adversarial examples for Deep Neural Networks (DNNs). As a variant of AT, Adversarial Robustness Distillation (ARD) has demonstrated its superior performance in improving the robustness of small student models with the guidance of large teacher models. However, both AT and ARD encounter the robust fairness problem: these models exhibit strong robustness when facing part of classes (easy class), but weak robustness when facing others (hard class). In this paper, we give an in-depth analysis of the potential factors and argue that the smoothness degree of samples' soft labels for different classes (i.e., hard class or easy class) will affect the robust fairness of DNNs from both empirical observation and theoretical analysis. Based on the above finding, we propose an Anti-Bias Soft Label Distillation (ABSLD) method to mitigate the adversarial robust fairness problem within the framework of Knowledge Distillation (KD). Specifically, ABSLD adaptively reduces the student's error risk gap between different classes to achieve fairness by adjusting the class-wise smoothn",
+      "openalex_id": "https://openalex.org/W4415796564"
+    }
+  ],
+  "Below the Noise Floor small model knowledge distillation": [
+    {
+      "title": "Below the Noise Floor: Bimodal Seed Collapse and Distinct Failure Modes in Small-Model Knowledge Distillation",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2608.27729",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Function routing -- selecting the correct API call from a fixed catalog given a natural-language request -- is a deployment problem where small students are attractive but knowledge distillation gains are typically reported single-seed, at scales where seed variance is unknown. On a 740-instance healthcare API routing task with a 1.5B Qwen student and a 20B teacher, we compare eight KD variants against supervised cross-entropy, using three to six seeds for key configurations. We find: (i) per-seed standard deviation ranges from 2.8 to 48.7 percentage points, swallowing every claimed KD gain below five points; (ii) three of seven KD variants exhibit bimodal collapse, with at least one in three to five seeds falling below 55% accuracy while the others train normally, and a fourth showing elevated variance; (iii) collapse has distinct modes -- wrong-function selection for ce_kd and ce_paraphrase, and a previously undocumented output-truncation mode for reasoning_kd, where the model emits reasoning but terminates before producing a function name (0.9% accuracy); (iv) only progressive_kd and rank_kd avoid collapse across observed seeds, with sigma <= 3.9 pp; (v) a naive cross-split +3.7",
+      "openalex_id": "https://openalex.org/W7204783725"
+    },
+    {
+      "title": "KNOWLEDGE DISTILLATION FROM A LARGE VISION-LANGUAGE MODEL TO COMPACT STUDENTS FOR ARCHITECTURAL FLOOR PLAN UNDERSTANDING",
+      "year": 2026,
+      "cites": 0,
+      "doi": null,
+      "venue": "Aquila Digital Community (University of Southern Mississippi)",
+      "type": "dissertation",
+      "abstract": "In this research, the use of a large vision-language model to train smaller, deployable models for architectural floor plan question answering is investigated. Reading a floor plan today requires either a human expert or a paid query to a proprietary model, and neither option is practical for real-estate platforms that must process thousands of units at scale. To address this problem, a knowledge distillation approach is employed in which a large teacher model (GPT-4.1-mini) generates labeled question-answer pairs from floor plan images, and smaller student models learn from those labels. The teacher produced 37,027 labeled pairs from 12,343 floor plan images. Three Qwen2.5-VL students (0.8B, 2B, and 4B parameters) were then fine-tuned on those labels using Low-Rank Adaptation (LoRA), a parameter-efficient fine-tuning method that freezes the original model weights and trains a small set of additive matrices, keeping memory requirements low enough for a single commodity graphics processing unit (GPU). The 0.8B model performed best, reaching 52.9% exact match on a 51-sample evaluation set, which is 15.7 points above its zero-shot score, at roughly 126 ms per query on one GPU. The 4B ",
+      "openalex_id": "https://openalex.org/W7160682514"
+    },
+    {
+      "title": "The Distributional View of Knowledge Distillation",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2608.15215",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Token-level knowledge distillation (KD) matches two conditional distributions per position, yet the standard objectives compare them pointwise: a Kullback-Leibler gradient is blind to which wrong token receives probability mass. We develop a distributional view in which the teacher is represented not by a single softened output but by a family of multi-temperature views - marginals of the annealing path of its logits - and the student is trained against a geometry-aware aggregate of these views under an embedding-based ground cost. We formalize the resulting design space (mixtures, log-linear pooling, entropic Wasserstein barycenters, and a debiased Sinkhorn-divergence flagship in hub and path forms), prove an exact collapse result showing log-linear pooling of tempered views is equivalent to a single temperature, and give a multi-marginal Schrodinger-bridge reading that yields falsifiable predictions. On instruction-tuned Pythia pairs, experiments yield three empirical laws: (i) dispersion law - the benefit of multi-temperature aggregation grows monotonically with the effective temperature dispersion of the views, not with their number; (ii) dispersed views unlock the aggregation ",
+      "openalex_id": "https://openalex.org/W7203706128"
+    }
+  ],
+  "When Does Knowledge Distillation Hurt": [
+    {
+      "title": "When Does Knowledge Distillation Hurt? Reliability-Aware Distillation for Low-Resource Language Summarization",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2607.19956",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge distillation (KD) is a standard approach for compressing sequence-to-sequence models, but its per-sample effects are rarely examined. On the BanSum Bangla summarization benchmark, we find that standard KD improves ROUGE-L by only +0.0003 over a cross-entropy baseline, and that approximately 51.3% of training samples are estimated to actively harm student validation loss under standard KD. We propose two complementary reliability-aware distillation methods. CHAD (Counterfactual Harm-Aware Distillation) measures per-sample KD usefulness via gradient alignment with the validation loss direction and trains a lightweight gate that generalizes this counterfactual judgment to the full training set. EWAD+CPDP combines token-level entropy-weighted adaptive distillation with a capacity-proportional geometric constraint from a second, vocabulary-incompatible teacher. On BanSum, both methods substantially outperform standard KD: CHAD by +0.0173 ROUGE-L and EWAD+CPDP by +0.0219 ROUGE-L, where standard KD itself improves ROUGE-L by only +0.0003; despite using only 60M parameters, both outperform a fine-tuned Qwen 2.5-3B model (50x larger). We further evaluate the stronger method, EWAD+",
+      "openalex_id": "https://openalex.org/W7170132385"
+    },
+    {
+      "title": "On the Efficacy of Knowledge Distillation",
+      "year": 2019,
+      "cites": 687,
+      "doi": "https://doi.org/10.1109/iccv.2019.00489",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "type": "conference-paper",
+      "abstract": "In this paper, we present a thorough evaluation of the efficacy of knowledge distillation and its dependence on student and teacher architectures. Starting with the observation that more accurate teachers often don't make good teachers, we attempt to tease apart the factors that affect knowledge distillation performance. We find crucially that larger models do not often make better teachers. We show that this is a consequence of mismatched capacity, and that small students are unable to mimic large teachers. We find typical ways of circumventing this (such as performing a sequence of knowledge distillation steps) to be ineffective. Finally, we show that this effect can be mitigated by stopping the teacher's training early. Our results generalize across datasets and models.",
+      "openalex_id": "https://openalex.org/W2979125527"
+    },
+    {
+      "title": "Communication-efficient federated learning via knowledge distillation",
+      "year": 2022,
+      "cites": 624,
+      "doi": "https://doi.org/10.1038/s41467-022-29763-x",
+      "venue": "Nature Communications",
+      "type": "article",
+      "abstract": "Federated learning is a privacy-preserving machine learning technique to train intelligent models from decentralized data, which enables exploiting private data by communicating local model updates in each iteration of model learning rather than the raw data. However, model updates can be extremely large if they contain numerous parameters, and many rounds of communication are needed for model training. The huge communication cost in federated learning leads to heavy overheads on clients and high environmental burdens. Here, we present a federated learning method named FedKD that is both communication-efficient and effective, based on adaptive mutual knowledge distillation and dynamic gradient compression techniques. FedKD is validated on three different scenarios that need privacy protection, showing that it maximally can reduce 94.89% of communication cost and achieve competitive results with centralized model learning. FedKD provides a potential to efficiently deploy privacy-preserving intelligent systems in many scenarios, such as intelligent healthcare and personalization.",
+      "openalex_id": "https://openalex.org/W4224227775"
+    }
+  ],
+  "Nasty Teacher bounded knowledge distillation": [
+    {
+      "title": "Black-box Few-shot Knowledge Distillation",
+      "year": 2022,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2207.12106",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Knowledge distillation (KD) is an efficient approach to transfer the knowledge from a large \"teacher\" network to a smaller \"student\" network. Traditional KD methods require lots of labeled training samples and a white-box teacher (parameters are accessible) to train a good student. However, these resources are not always available in real-world applications. The distillation process often happens at an external party side where we do not have access to much data, and the teacher does not disclose its parameters due to security and privacy concerns. To overcome these challenges, we propose a black-box few-shot KD method to train the student with few unlabeled training samples and a black-box teacher. Our main idea is to expand the training set by generating a diverse set of out-of-distribution synthetic images using MixUp and a conditional variational auto-encoder. These synthetic images along with their labels obtained from the teacher are used to train the student. We conduct extensive experiments to show that our method significantly outperforms recent SOTA few/zero-shot KD methods on image classification tasks. The code and models are available at: https://github.com/nphdang/FS-",
+      "openalex_id": "https://openalex.org/W4288055056"
+    },
+    {
+      "title": "HYDRA-FL: Hybrid Knowledge Distillation for Robust and Accurate Federated Learning",
+      "year": 2024,
+      "cites": 2,
+      "doi": "https://doi.org/10.52202/079017-1599",
+      "venue": "neural information processing systems",
+      "type": "conference-paper",
+      "abstract": "Data heterogeneity among Federated Learning (FL) users poses a significant challenge, resulting in reduced global model performance. The community has designed various techniques to tackle this issue, among which Knowledge Distillation (KD)-based techniques are common. While these techniques effectively improve performance under high heterogeneity, they inadvertently cause higher accuracy degradation under model poisoning attacks (known as attack amplification). This paper presents a case study to reveal this critical vulnerability in KD-based FL systems. We show why KD causes this issue through empirical evidence and use it as motivation to design a hybrid distillation technique. We introduce a novel algorithm, Hybrid Knowledge Distillation for Robust and Accurate FL (HYDRA-FL), which reduces the impact of attacks in attack scenarios by offloading some of the KD loss to a shallow layer via an auxiliary classifier. We model HYDRA-FL as a generic framework and adapt it to two KD-based FL algorithms, FedNTD and MOON. Using these two as case studies, we demonstrate that our technique outperforms baselines in attack settings while maintaining comparable performance in benign settings.",
+      "openalex_id": "https://openalex.org/W4415797734"
+    },
+    {
+      "title": "Safeguarding Text-to-Image Generative Models Against Unauthorized Knowledge Distillation",
+      "year": 2026,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2605.22060",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "Closed-weight generative services are increasingly deployed through query-based APIs, where users can obtain generated outputs while model parameters remain inaccessible. However, such deployment does not prevent model stealing: an attacker can repeatedly query the service, collect large volumes of released synthetic images, and use them as training data for a private substitute model. This query-output-driven process enables unauthorized knowledge distillation and capability replication without direct access to the original weights. To mitigate this threat, a practical defense should preserve the visual fidelity of released images, provide explicit control over perturbation magnitude, and scale efficiently to large-volume output release. We present WaveGuard, a single-pass, generator-based protection framework that safeguards released synthetic images under a user-specified perturbation budget. WaveGuard employs a frequency-aware perturbation generator to inject structured, imperceptible perturbations that maintain perceptual utility for benign viewers while reducing the usefulness of protected images as training data for unauthorized student models. Extensive experiments under Wi",
+      "openalex_id": "https://openalex.org/W7162123383"
+    }
+  ],
+  "Can Students Outperform Teachers knowledge distillation": [
+    {
+      "title": "Can Students Outperform Teachers in Knowledge Distillation based Model Compression",
+      "year": 2021,
+      "cites": 1,
+      "doi": null,
+      "venue": null,
+      "type": "article",
+      "abstract": "Knowledge distillation (KD) is an effective technique to compress a large model (teacher) to a compact one (student) by knowledge transfer. The ideal case is that the teacher is compressed to the small student without any performance dropping. However, even for the state-of-the-art (SOTA) distillation approaches, there is still an obvious performance gap between the student and the teacher. The existing literature usually attributes this to model capacity differences between them. However, model capacity differences are unavoidable in model compression. In this work, we systematically study this question. By designing exploratory experiments, we find that model capacity differences are not necessarily the root reason, and the distillation data matters when the student capacity is greater than a threshold. In light of this, we propose to go beyond in-distribution distillation and accordingly develop KD+. KD+ is superior to the original KD as it outperforms KD and the other SOTA approaches substantially and is more compatible with the existing approaches to further improve their performances significantly.",
+      "openalex_id": "https://openalex.org/W3131143179"
+    },
+    {
+      "title": "When Babies Teach Babies: Can student knowledge sharing outperform Teacher-Guided Distillation on small datasets?",
+      "year": 2024,
+      "cites": 0,
+      "doi": "https://doi.org/10.48550/arxiv.2411.16487",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "We present our submission to the BabyLM challenge, aiming to push the boundaries of data-efficient language model pretraining. Our method builds upon deep mutual learning, introducing a student model search for diverse initialization. We address the limitation of treating students equally by formulating weighted mutual learning as a bi-level optimization problem. The inner loop learns compact students through online distillation, while the outer loop optimizes weights for better knowledge distillation from diverse students. This dynamic weighting strategy eliminates the need for a teacher model, reducing computational requirements. Our evaluations show that teacher-less methods can match or surpass teacher-supervised approaches.",
+      "openalex_id": "https://openalex.org/W4404987771"
+    },
+    {
+      "title": "Relational Knowledge Distillation",
+      "year": 2019,
+      "cites": 1778,
+      "doi": "https://doi.org/10.1109/cvpr.2019.00409",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation aims at transferring knowledge acquired in one model (a teacher) to another model (a student) that is typically smaller. Previous approaches can be expressed as a form of training the student to mimic output activations of individual data examples represented by the teacher. We introduce a novel approach, dubbed relational knowledge distillation (RKD), that transfers mutual relations of data examples instead. For concrete realizations of RKD, we propose distance-wise and angle-wise distillation losses that penalize structural differences in relations. Experiments conducted on different tasks show that the proposed method improves educated student models with a significant margin. In particular for metric learning, it allows students to outperform their teachers' performance, achieving the state of the arts on standard benchmark datasets.",
+      "openalex_id": "https://openalex.org/W2963140444"
+    }
+  ],
+  "On the Efficacy of Knowledge Distillation Cho Hariharan": [
+    {
+      "title": "On the Efficacy of Knowledge Distillation",
+      "year": 2019,
+      "cites": 687,
+      "doi": "https://doi.org/10.1109/iccv.2019.00489",
+      "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "type": "conference-paper",
+      "abstract": "In this paper, we present a thorough evaluation of the efficacy of knowledge distillation and its dependence on student and teacher architectures. Starting with the observation that more accurate teachers often don't make good teachers, we attempt to tease apart the factors that affect knowledge distillation performance. We find crucially that larger models do not often make better teachers. We show that this is a consequence of mismatched capacity, and that small students are unable to mimic large teachers. We find typical ways of circumventing this (such as performing a sequence of knowledge distillation steps) to be ineffective. Finally, we show that this effect can be mitigated by stopping the teacher's training early. Our results generalize across datasets and models.",
+      "openalex_id": "https://openalex.org/W2979125527"
+    },
+    {
+      "title": "Decoupled Knowledge Distillation",
+      "year": 2022,
+      "cites": 1031,
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01165",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "State-of-the-art distillation methods are mainly based on distilling deep features from intermediate layers, while the significance of logit distillation is greatly overlooked. To provide a novel viewpoint to study logit distillation, we re-formulate the classical KD loss into two parts, i.e., target class knowledge distillation (TCKD) and non-target class knowledge distillation (NCKD). We empirically investigate and prove the effects of the two parts: TCKD transfers knowledge concerning the “difficulty” of training samples, while NCKD is the prominent reason why logit distillation works. More importantly, we reveal that the classical KD loss is a coupled formulation, which (1) suppresses the effectiveness of NCKD and (2) limits the flexibility to balance these two parts. To address these issues, we present Decoupled Knowledge Distillation (DKD), enabling TCKD and NCKD to play their roles more efficiently and flexibly. Compared with complex feature-based methods, our DKD achieves comparable or even better results and has better training efficiency on CIFAR-100, ImageNet, and MS-COCO datasets for image classification and object detection tasks. This paper proves the great potential ",
+      "openalex_id": "https://openalex.org/W4226426325"
+    },
+    {
+      "title": "Logit Standardization in Knowledge Distillation",
+      "year": 2024,
+      "cites": 263,
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01489",
+      "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+      "type": "conference-paper",
+      "abstract": "Knowledge distillation involves transferring soft labels from a teacher to a student using a shared temperature-based softmax function. However, the assumption of a shared temperature between teacher and student implies a mandatory exact match between their logits in terms of logit range and variance. This side-effect limits the performance of student, considering the capacity discrepancy between them and the finding that the innate logit relations of teacher are sufficient for student to learn. To address this issue, we propose setting the temperature as the weighted standard deviation of logit and performing a plug-and-play Z-score pre-process of logit standardization before applying softmax and Kullback-Leibler divergence. Our pre-process enables student to focus on essential logit relationsfrom teacher rather than requiring a magnitude match, and can improve the performance of existing logit-based distillation methods. We also show a typical case where the conventional setting of sharing temperature between teacher and student cannot reliably yield the authentic dis-tillation evaluation; nonetheless, this challenge is success-fully alleviated by our Z-score. We extensively eval",
+      "openalex_id": "https://openalex.org/W4402667890"
+    }
+  ],
+  "Revisiting Knowledge Distillation via Label Smoothing Regularization Yuan": [
+    {
+      "title": "Revisiting Label Smoothing Regularization with Knowledge Distillation",
+      "year": 2021,
+      "cites": 13,
+      "doi": "https://doi.org/10.3390/app11104699",
+      "venue": "Applied Sciences",
+      "type": "article",
+      "abstract": "Label Smoothing Regularization (LSR) is a widely used tool to generalize classification models by replacing the one-hot ground truth with smoothed labels. Recent research on LSR has increasingly focused on the correlation between the LSR and Knowledge Distillation (KD), which transfers the knowledge from a teacher model to a lightweight student model by penalizing their output’s Kullback–Leibler-divergence. Based on this observation, a Teacher-free Knowledge Distillation (Tf-KD) method was proposed in previous work. Instead of a real teacher model, a handcrafted distribution similar to LSR was used to guide the student learning. Tf-KD is a promising substitute for LSR except for its hard-to-tune and model-dependent hyperparameters. This paper develops a new teacher-free framework LSR-OS-TC, which decomposes the Tf-KD method into two components: model Output Smoothing (OS) and Teacher Correction (TC). Firstly, the LSR-OS extends the LSR method to the KD regime and applies a softer temperature to the model output softmax layer. Output smoothing is critical for stabilizing the KD hyperparameters among different models. Secondly, in the TC part, a larger proportion is assigned to the u",
+      "openalex_id": "https://openalex.org/W3165865052"
+    },
+    {
+      "title": "Revisiting Label Smoothing and Knowledge Distillation Compatibility: What was Missing?",
+      "year": 2022,
+      "cites": 17,
+      "doi": "https://doi.org/10.48550/arxiv.2206.14532",
+      "venue": "arXiv (Cornell University)",
+      "type": "preprint",
+      "abstract": "This work investigates the compatibility between label smoothing (LS) and knowledge distillation (KD). Contemporary findings addressing this thesis statement take dichotomous standpoints: Muller et al. (2019) and Shen et al. (2021b). Critically, there is no effort to understand and resolve these contradictory findings, leaving the primal question -- to smooth or not to smooth a teacher network? -- unanswered. The main contributions of our work are the discovery, analysis and validation of systematic diffusion as the missing concept which is instrumental in understanding and resolving these contradictory findings. This systematic diffusion essentially curtails the benefits of distilling from an LS-trained teacher, thereby rendering KD at increased temperatures ineffective. Our discovery is comprehensively supported by large-scale experiments, analyses and case studies including image classification, neural machine translation and compact student distillation tasks spanning across multiple datasets and teacher-student architectures. Based on our analysis, we suggest practitioners to use an LS-trained teacher with a low-temperature transfer to achieve high performance students. Code a",
+      "openalex_id": "https://openalex.org/W4283764068"
+    },
+    {
+      "title": "Knowledge Distillation ≈ Label Smoothing: Fact or Fallacy? Label Smoothing: Fact or Fallacy?",
+      "year": 2023,
+      "cites": 2,
+      "doi": "https://doi.org/10.18653/v1/2023.emnlp-main.271",
+      "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "type": "conference-paper",
+      "abstract": "Originally proposed as a method for knowledge transfer from one model to another, some recent studies have suggested that knowledge distillation (KD) is in fact a form of regularization.Perhaps the strongest argument of all for this new perspective comes from its apparent similarities with label smoothing (LS).Here we re-examine this stated equivalence between the two methods by comparing the predictive confidences of the models they train.Experiments on four text classification tasks involving models of different sizes show that: (a) In most settings, KD and LS drive model confidence in completely opposite directions, and (b) In KD, the student inherits not only its knowledge but also its confidence from the teacher, reinforcing the classical knowledge transfer view.",
+      "openalex_id": "https://openalex.org/W4389518762"
+    }
+  ]
+}

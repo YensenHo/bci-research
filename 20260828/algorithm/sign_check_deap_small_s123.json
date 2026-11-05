@@ -1,0 +1,16 @@
+{
+  "data": "deap_small",
+  "n_classes": 2,
+  "seed": 123,
+  "teacher_val": 46.71,
+  "teacher_train": 94.37,
+  "overfit_gap_pp": 47.66,
+  "student_full": 44.83,
+  "teacher_minus_student_pp": 1.88,
+  "hard_30pct": 49.65,
+  "distilled_30pct": 52.56,
+  "gain_30pct_pp": 2.92,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}

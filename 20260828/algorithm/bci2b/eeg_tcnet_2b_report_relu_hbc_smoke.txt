@@ -1,0 +1,22 @@
+BCIC 2b 3ch 二分类训练报告 — RELU-EEG-TCNet + HBC 噪声增强（跨数据集验证）
+================================================================
+tag             : smoke
+训练增强        : HBC增强[5bit+AWGN σ/H=10^(-SNR/20), SNR∈[10.0,20.0]dB +burst σb/H=0.3 len=16 p=0.005]
+最佳验证准确率  : 58.70%（epoch 2，hold-out 早停用）
+final test(eval): 63.49%（held-out session，只测一次）
+chance level    : 50.0%
+n_channels      : 3 | n_classes : 2
+训练样本数      : 3128 | 验证 552 | final test 2840
+参数量          : 9,182
+设备            : mps
+超参数          : lr=0.001, batch=16, epochs=2, patience=25, seed=42, val_split=0.15, dropout=0.25, cosine=True
+结构            : F1=8, D=2, F2=16, FT=12, kernel=63, tcn_kernel=12, dilations=(1,2), pool1=4, pool2=8, readout=gap
+LIF 超参        : threshold=1.0, tau=2.0, timesteps=8, alpha=4.0
+热启动          : False（eeg_tcnet_2b_relu_hbc_relu_s42.pth）
+对照(未微调)    : N/A（无热启动）
+发放率(eval)    : 
+噪声模型        : hbc_noise_advanced.hbc_noise（5bit 量化 + AWGN + 突发，与 luckfox-deploy/model/noise.py 严格一致）
+----------------------------------------------------------------
+逐 epoch 记录 (epoch, train_loss, train_acc, val_acc):
+    1  0.693664  51.92%  50.00%
+    2  0.680070  56.84%  58.70%

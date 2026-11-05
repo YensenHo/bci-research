@@ -1,0 +1,16 @@
+{
+  "data": "eegmmidb/data2c",
+  "n_classes": 2,
+  "seed": 42,
+  "teacher_val": 70.37,
+  "teacher_train": 99.72,
+  "overfit_gap_pp": 29.35,
+  "student_full": 69.63,
+  "teacher_minus_student_pp": 0.74,
+  "hard_30pct": 63.33,
+  "distilled_30pct": 65.56,
+  "gain_30pct_pp": 2.22,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}

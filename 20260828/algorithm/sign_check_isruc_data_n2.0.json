@@ -1,0 +1,16 @@
+{
+  "data": "isruc/data_n2.0",
+  "n_classes": 5,
+  "seed": 42,
+  "teacher_val": 28.9,
+  "teacher_train": 64.4,
+  "overfit_gap_pp": 35.5,
+  "student_full": 25.76,
+  "teacher_minus_student_pp": 3.14,
+  "hard_30pct": 28.52,
+  "distilled_30pct": 31.94,
+  "gain_30pct_pp": 3.43,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}

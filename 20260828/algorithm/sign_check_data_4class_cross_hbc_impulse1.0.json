@@ -1,0 +1,16 @@
+{
+  "data": "data_4class_cross_hbc_impulse1.0",
+  "n_classes": 4,
+  "seed": 42,
+  "teacher_val": 50.35,
+  "teacher_train": 76.58,
+  "overfit_gap_pp": 26.24,
+  "student_full": 51.74,
+  "teacher_minus_student_pp": -1.39,
+  "hard_30pct": 31.42,
+  "distilled_30pct": 49.31,
+  "gain_30pct_pp": 17.88,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}

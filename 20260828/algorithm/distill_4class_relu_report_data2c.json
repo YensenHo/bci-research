@@ -1,0 +1,111 @@
+{
+  "config": {
+    "student": "relu",
+    "teacher_params": 35098,
+    "student_params": 9470,
+    "temperature": 4.0,
+    "alpha": 0.5,
+    "epochs": 100,
+    "cosine": true,
+    "seeds": [
+      42,
+      123
+    ],
+    "smoke": false
+  },
+  "per_seed": {
+    "42": {
+      "100%": {
+        "n_labels": 1080,
+        "hard": 68.89,
+        "distilled": 73.33,
+        "gain_pp": 4.44
+      },
+      "30%": {
+        "n_labels": 324,
+        "hard": 63.33,
+        "distilled": 65.56,
+        "gain_pp": 2.22
+      },
+      "10%": {
+        "n_labels": 108,
+        "hard": 66.67,
+        "distilled": 64.81,
+        "gain_pp": -1.85
+      }
+    },
+    "123": {
+      "100%": {
+        "n_labels": 1080,
+        "hard": 68.15,
+        "distilled": 71.11,
+        "gain_pp": 2.96
+      },
+      "30%": {
+        "n_labels": 324,
+        "hard": 67.04,
+        "distilled": 69.26,
+        "gain_pp": 2.22
+      },
+      "10%": {
+        "n_labels": 108,
+        "hard": 58.89,
+        "distilled": 63.7,
+        "gain_pp": 4.81
+      }
+    }
+  },
+  "aggregated": {
+    "100%": {
+      "hard_mean": 68.52,
+      "hard": [
+        68.89,
+        68.15
+      ],
+      "distilled_mean": 72.22,
+      "distilled": [
+        73.33,
+        71.11
+      ],
+      "gain_mean_pp": 3.7,
+      "gain_pp": [
+        4.44,
+        2.96
+      ]
+    },
+    "30%": {
+      "hard_mean": 65.18,
+      "hard": [
+        63.33,
+        67.04
+      ],
+      "distilled_mean": 67.41,
+      "distilled": [
+        65.56,
+        69.26
+      ],
+      "gain_mean_pp": 2.22,
+      "gain_pp": [
+        2.22,
+        2.22
+      ]
+    },
+    "10%": {
+      "hard_mean": 62.78,
+      "hard": [
+        66.67,
+        58.89
+      ],
+      "distilled_mean": 64.26,
+      "distilled": [
+        64.81,
+        63.7
+      ],
+      "gain_mean_pp": 1.48,
+      "gain_pp": [
+        -1.85,
+        4.81
+      ]
+    }
+  }
+}

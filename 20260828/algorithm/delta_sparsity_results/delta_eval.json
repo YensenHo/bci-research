@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "model": "全脉冲 DeltaTCNet（delta 输入脉冲编码 + LIF-EEG-TCNet brief, 9512 参数）",
+    "data": "data_4class/eval.npz (22ch 四分类, 2592 试次, cross-session)",
+    "test_noise_seed": 20240828,
+    "noise_spec": "5bit 量化(qrange=4.0) + AWGN σ/H=10^(-SNR/20)；8dB+突发 附加域",
+    "baseline": "LIF-EEG-TCNet + HBC 增强 aug_s42（clean 63.58% / 8dB 54.67%，连续输入）",
+    "event_driven_assumption": "ACs(layer) ≈ dense_MACs(layer) × 实测输入脉冲密度；conv1 输入 = delta 脉冲（密度实测）；depthwise 输入 = BN(conv1) 连续输出，诚实按 1.0 计；LIF 之后各层按实测发放率折算；池化/加法按脉冲计数估零；理想事件驱动硬件或稀疏内核实现的理论潜力",
+    "device": "mps"
+  },
+  "domains": [
+    "clean",
+    "8dB",
+    "8dB+burst"
+  ],
+  "per_model": {
+    "delta1bit_k0.5": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_delta_delta1bit_k0.5.pth",
+      "final_test_clean_ckpt": 0.3904,
+      "is_delta": true,
+      "delta_desc": "1bit θ=k·std k=0.5 mode=signed",
+      "clean_acc": 0.3904,
+      "clean_fr": {
+        "act1": 0.0767,
+        "act2": 0.2333,
+        "tcn.0.act_a": 0.2277,
+        "tcn.0.act_b": 0.2147,
+        "tcn.0.act_res": 0.304,
+        "tcn.1.act_a": 0.1694,
+        "tcn.1.act_b": 0.1925,
+        "tcn.1.act_res": 0.2965
+      },
+      "clean_avg_fr": 0.2144,
+      "clean_input_density": 0.1387,
+      "8dB_acc": 0.4352,
+      "8dB_fr": {
+        "act1": 0.1348,
+        "act2": 0.1843,
+        "tcn.0.act_a": 0.1525,
+        "tcn.0.act_b": 0.2358,
+        "tcn.0.act_res": 0.3235,
+        "tcn.1.act_a": 0.2298,
+        "tcn.1.act_b": 0.2437,
+        "tcn.1.act_res": 0.3372
+      },
+      "8dB_avg_fr": 0.2302,
+      "8dB_input_density": 0.4528,
+      "8dB+burst_acc": 0.4375,
+      "8dB+burst_fr": {
+        "act1": 0.1351,
+        "act2": 0.1833,
+        "tcn.0.act_a": 0.1518,
+        "tcn.0.act_b": 0.2362,
+        "tcn.0.act_res": 0.3231,
+        "tcn.1.act_a": 0.2312,
+        "tcn.1.act_b": 0.2456,
+        "tcn.1.act_res": 0.3373
+      },
+      "8dB+burst_avg_fr": 0.2305,
+      "8dB+burst_input_density": 0.4586,
+      "dense_macs": 5901408.0,
+      "event_driven_acs": 977439.7,
+      "macs_reduction_ratio": 0.8344,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 0.1387,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.0767,
+          "pointwise": 0.0767,
+          "tcn0.conv_a": 0.2333,
+          "tcn0.skip": 0.2333,
+          "tcn0.conv_b": 0.2277,
+          "tcn1.conv_a": 0.304,
+          "tcn1.skip": 0.304,
+          "tcn1.conv_b": 0.1694,
+          "fc": 0.2965
+        },
+        "event_acs": {
+          "conv1": 768952.8,
+          "depthwise": 176000.0,
+          "sep_depthwise": 2454.4,
+          "pointwise": 2454.4,
+          "tcn0.conv_a": 8062.8,
+          "tcn0.conv_b": 5902.0,
+          "tcn0.skip": 671.9,
+          "tcn1.conv_a": 7879.7,
+          "tcn1.conv_b": 4390.8,
+          "tcn1.skip": 656.6,
+          "fc": 14.2
+        }
+      },
+      "phi1": {
+        "dense_macs": 5720000.0,
+        "event_acs": 944952.8,
+        "reduction": 0.8348
+      },
+      "input_spikes_per_trial": 1525.7
+    },
+    "delta1bit_k1.0": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_delta_delta1bit_k1.0.pth",
+      "final_test_clean_ckpt": 0.2924,
+      "is_delta": true,
+      "delta_desc": "1bit θ=k·std k=1 mode=signed",
+      "clean_acc": 0.2924,
+      "clean_fr": {
+        "act1": 0.0419,
+        "act2": 0.1705,
+        "tcn.0.act_a": 0.2813,
+        "tcn.0.act_b": 0.2671,
+        "tcn.0.act_res": 0.2465,
+        "tcn.1.act_a": 0.2225,
+        "tcn.1.act_b": 0.2771,
+        "tcn.1.act_res": 0.3062
+      },
+      "clean_avg_fr": 0.2266,
+      "clean_input_density": 0.0112,
+      "8dB_acc": 0.3607,
+      "8dB_fr": {
+        "act1": 0.2728,
+        "act2": 0.2846,
+        "tcn.0.act_a": 0.1307,
+        "tcn.0.act_b": 0.2368,
+        "tcn.0.act_res": 0.3673,
+        "tcn.1.act_a": 0.2302,
+        "tcn.1.act_b": 0.1965,
+        "tcn.1.act_res": 0.3236
+      },
+      "8dB_avg_fr": 0.2553,
+      "8dB_input_density": 0.1369,
+      "8dB+burst_acc": 0.3391,
+      "8dB+burst_fr": {
+        "act1": 0.2758,
+        "act2": 0.2862,
+        "tcn.0.act_a": 0.1297,
+        "tcn.0.act_b": 0.2367,
+        "tcn.0.act_res": 0.3684,
+        "tcn.1.act_a": 0.2307,
+        "tcn.1.act_b": 0.1931,
+        "tcn.1.act_res": 0.3224
+      },
+      "8dB+burst_avg_fr": 0.2554,
+      "8dB+burst_input_density": 0.1424,
+      "dense_macs": 5901408.0,
+      "event_driven_acs": 267152.8,
+      "macs_reduction_ratio": 0.9547,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 0.0112,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.0419,
+          "pointwise": 0.0419,
+          "tcn0.conv_a": 0.1705,
+          "tcn0.skip": 0.1705,
+          "tcn0.conv_b": 0.2813,
+          "tcn1.conv_a": 0.2465,
+          "tcn1.skip": 0.2465,
+          "tcn1.conv_b": 0.2225,
+          "fc": 0.3062
+        },
+        "event_acs": {
+          "conv1": 62092.8,
+          "depthwise": 176000.0,
+          "sep_depthwise": 1340.8,
+          "pointwise": 1340.8,
+          "tcn0.conv_a": 5892.5,
+          "tcn0.conv_b": 7291.3,
+          "tcn0.skip": 491.0,
+          "tcn1.conv_a": 6389.3,
+          "tcn1.conv_b": 5767.2,
+          "tcn1.skip": 532.4,
+          "fc": 14.7
+        }
+      },
+      "phi1": {
+        "dense_macs": 5720000.0,
+        "event_acs": 238092.8,
+        "reduction": 0.9584
+      },
+      "input_spikes_per_trial": 123.2
+    },
+    "delta2bit_k1.0": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_delta_delta2bit_k1.0.pth",
+      "final_test_clean_ckpt": 0.3997,
+      "is_delta": true,
+      "delta_desc": "2bit θ=k·std k=1 mode=signed",
+      "clean_acc": 0.3997,
+      "clean_fr": {
+        "act1": 0.0796,
+        "act2": 0.2199,
+        "tcn.0.act_a": 0.2096,
+        "tcn.0.act_b": 0.2079,
+        "tcn.0.act_res": 0.2917,
+        "tcn.1.act_a": 0.1946,
+        "tcn.1.act_b": 0.2105,
+        "tcn.1.act_res": 0.2993
+      },
+      "clean_avg_fr": 0.2141,
+      "clean_input_density": 0.1387,
+      "8dB_acc": 0.4363,
+      "8dB_fr": {
+        "act1": 0.1534,
+        "act2": 0.1863,
+        "tcn.0.act_a": 0.1505,
+        "tcn.0.act_b": 0.259,
+        "tcn.0.act_res": 0.3488,
+        "tcn.1.act_a": 0.2193,
+        "tcn.1.act_b": 0.2453,
+        "tcn.1.act_res": 0.341
+      },
+      "8dB_avg_fr": 0.2379,
+      "8dB_input_density": 0.4528,
+      "8dB+burst_acc": 0.4298,
+      "8dB+burst_fr": {
+        "act1": 0.1547,
+        "act2": 0.1862,
+        "tcn.0.act_a": 0.1497,
+        "tcn.0.act_b": 0.2593,
+        "tcn.0.act_res": 0.349,
+        "tcn.1.act_a": 0.2202,
+        "tcn.1.act_b": 0.2464,
+        "tcn.1.act_res": 0.3413
+      },
+      "8dB+burst_avg_fr": 0.2383,
+      "8dB+burst_input_density": 0.4586,
+      "dense_macs": 5901408.0,
+      "event_driven_acs": 976962.4,
+      "macs_reduction_ratio": 0.8345,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 0.1387,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.0796,
+          "pointwise": 0.0796,
+          "tcn0.conv_a": 0.2199,
+          "tcn0.skip": 0.2199,
+          "tcn0.conv_b": 0.2096,
+          "tcn1.conv_a": 0.2917,
+          "tcn1.skip": 0.2917,
+          "tcn1.conv_b": 0.1946,
+          "fc": 0.2993
+        },
+        "event_acs": {
+          "conv1": 768952.8,
+          "depthwise": 176000.0,
+          "sep_depthwise": 2547.2,
+          "pointwise": 2547.2,
+          "tcn0.conv_a": 7599.7,
+          "tcn0.conv_b": 5432.8,
+          "tcn0.skip": 633.3,
+          "tcn1.conv_a": 7560.9,
+          "tcn1.conv_b": 5044.0,
+          "tcn1.skip": 630.1,
+          "fc": 14.4
+        }
+      },
+      "phi1": {
+        "dense_macs": 5720000.0,
+        "event_acs": 944952.8,
+        "reduction": 0.8348
+      },
+      "input_spikes_per_trial": 1525.7
+    },
+    "delta1bit_k0.5_posneg": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_delta_delta1bit_k0.5_posneg.pth",
+      "final_test_clean_ckpt": 0.3985,
+      "is_delta": true,
+      "delta_desc": "1bit θ=k·std k=0.5 mode=posneg",
+      "clean_acc": 0.3985,
+      "clean_fr": {
+        "act1": 0.0766,
+        "act2": 0.2028,
+        "tcn.0.act_a": 0.206,
+        "tcn.0.act_b": 0.2134,
+        "tcn.0.act_res": 0.2805,
+        "tcn.1.act_a": 0.2125,
+        "tcn.1.act_b": 0.2063,
+        "tcn.1.act_res": 0.3169
+      },
+      "clean_avg_fr": 0.2144,
+      "clean_input_density": 0.1387,
+      "8dB_acc": 0.4016,
+      "8dB_fr": {
+        "act1": 0.1521,
+        "act2": 0.2148,
+        "tcn.0.act_a": 0.1736,
+        "tcn.0.act_b": 0.2478,
+        "tcn.0.act_res": 0.3237,
+        "tcn.1.act_a": 0.2776,
+        "tcn.1.act_b": 0.2428,
+        "tcn.1.act_res": 0.3459
+      },
+      "8dB_avg_fr": 0.2473,
+      "8dB_input_density": 0.4528,
+      "8dB+burst_acc": 0.4005,
+      "8dB+burst_fr": {
+        "act1": 0.1528,
+        "act2": 0.2159,
+        "tcn.0.act_a": 0.174,
+        "tcn.0.act_b": 0.2481,
+        "tcn.0.act_res": 0.3234,
+        "tcn.1.act_a": 0.2781,
+        "tcn.1.act_b": 0.2419,
+        "tcn.1.act_res": 0.3446
+      },
+      "8dB+burst_avg_fr": 0.2474,
+      "8dB+burst_input_density": 0.4586,
+      "dense_macs": 11445408.0,
+      "event_driven_acs": 1745140.0,
+      "macs_reduction_ratio": 0.8475,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 11088000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 0.1387,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.0766,
+          "pointwise": 0.0766,
+          "tcn0.conv_a": 0.2028,
+          "tcn0.skip": 0.2028,
+          "tcn0.conv_b": 0.206,
+          "tcn1.conv_a": 0.2805,
+          "tcn1.skip": 0.2805,
+          "tcn1.conv_b": 0.2125,
+          "fc": 0.3169
+        },
+        "event_acs": {
+          "conv1": 1537905.6,
+          "depthwise": 176000.0,
+          "sep_depthwise": 2451.2,
+          "pointwise": 2451.2,
+          "tcn0.conv_a": 7008.8,
+          "tcn0.conv_b": 5339.5,
+          "tcn0.skip": 584.1,
+          "tcn1.conv_a": 7270.6,
+          "tcn1.conv_b": 5508.0,
+          "tcn1.skip": 605.9,
+          "fc": 15.2
+        }
+      },
+      "phi1": {
+        "dense_macs": 11264000.0,
+        "event_acs": 1713905.6,
+        "reduction": 0.8478
+      },
+      "input_spikes_per_trial": 1525.7
+    },
+    "delta1bit_k0.5_继续微调lr3e4": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_delta_cont_k0.5_lr3e4.pth",
+      "final_test_clean_ckpt": 0.4144,
+      "is_delta": true,
+      "delta_desc": "1bit θ=k·std k=0.5 mode=signed",
+      "clean_acc": 0.4144,
+      "clean_fr": {
+        "act1": 0.0814,
+        "act2": 0.2096,
+        "tcn.0.act_a": 0.205,
+        "tcn.0.act_b": 0.2051,
+        "tcn.0.act_res": 0.2947,
+        "tcn.1.act_a": 0.1934,
+        "tcn.1.act_b": 0.1883,
+        "tcn.1.act_res": 0.3009
+      },
+      "clean_avg_fr": 0.2098,
+      "clean_input_density": 0.1387,
+      "8dB_acc": 0.4491,
+      "8dB_fr": {
+        "act1": 0.1294,
+        "act2": 0.1741,
+        "tcn.0.act_a": 0.1475,
+        "tcn.0.act_b": 0.2273,
+        "tcn.0.act_res": 0.318,
+        "tcn.1.act_a": 0.2424,
+        "tcn.1.act_b": 0.2295,
+        "tcn.1.act_res": 0.3393
+      },
+      "8dB_avg_fr": 0.226,
+      "8dB_input_density": 0.4528,
+      "8dB+burst_acc": 0.4441,
+      "8dB+burst_fr": {
+        "act1": 0.1296,
+        "act2": 0.1728,
+        "tcn.0.act_a": 0.1466,
+        "tcn.0.act_b": 0.2267,
+        "tcn.0.act_res": 0.3166,
+        "tcn.1.act_a": 0.2423,
+        "tcn.1.act_b": 0.2297,
+        "tcn.1.act_res": 0.3389
+      },
+      "8dB+burst_avg_fr": 0.2254,
+      "8dB+burst_input_density": 0.4586,
+      "dense_macs": 5901408.0,
+      "event_driven_acs": 976626.0,
+      "macs_reduction_ratio": 0.8345,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 0.1387,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.0814,
+          "pointwise": 0.0814,
+          "tcn0.conv_a": 0.2096,
+          "tcn0.skip": 0.2096,
+          "tcn0.conv_b": 0.205,
+          "tcn1.conv_a": 0.2947,
+          "tcn1.skip": 0.2947,
+          "tcn1.conv_b": 0.1934,
+          "fc": 0.3009
+        },
+        "event_acs": {
+          "conv1": 768952.8,
+          "depthwise": 176000.0,
+          "sep_depthwise": 2604.8,
+          "pointwise": 2604.8,
+          "tcn0.conv_a": 7243.8,
+          "tcn0.conv_b": 5313.6,
+          "tcn0.skip": 603.6,
+          "tcn1.conv_a": 7638.6,
+          "tcn1.conv_b": 5012.9,
+          "tcn1.skip": 636.6,
+          "fc": 14.4
+        }
+      },
+      "phi1": {
+        "dense_macs": 5720000.0,
+        "event_acs": 944952.8,
+        "reduction": 0.8348
+      },
+      "input_spikes_per_trial": 1525.7
+    },
+    "基线LIF-aug_s42(连续输入)": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_aug_s42.pth",
+      "final_test_clean_ckpt": 0.6358,
+      "is_delta": false,
+      "delta_desc": "连续输入（基线）",
+      "clean_acc": 0.6358,
+      "clean_fr": {
+        "act1": 0.1325,
+        "act2": 0.1965,
+        "tcn.0.act_a": 0.1586,
+        "tcn.0.act_b": 0.2563,
+        "tcn.0.act_res": 0.4068,
+        "tcn.1.act_a": 0.1984,
+        "tcn.1.act_b": 0.2317,
+        "tcn.1.act_res": 0.425
+      },
+      "clean_avg_fr": 0.2507,
+      "clean_input_density": 1.0,
+      "8dB_acc": 0.5467,
+      "8dB_fr": {
+        "act1": 0.1577,
+        "act2": 0.1658,
+        "tcn.0.act_a": 0.134,
+        "tcn.0.act_b": 0.2686,
+        "tcn.0.act_res": 0.3943,
+        "tcn.1.act_a": 0.2083,
+        "tcn.1.act_b": 0.2382,
+        "tcn.1.act_res": 0.4199
+      },
+      "8dB_avg_fr": 0.2483,
+      "8dB_input_density": 1.0,
+      "8dB+burst_acc": 0.5305,
+      "8dB+burst_fr": {
+        "act1": 0.1585,
+        "act2": 0.1654,
+        "tcn.0.act_a": 0.1337,
+        "tcn.0.act_b": 0.2716,
+        "tcn.0.act_res": 0.3967,
+        "tcn.1.act_a": 0.2078,
+        "tcn.1.act_b": 0.2402,
+        "tcn.1.act_res": 0.4215
+      },
+      "8dB+burst_avg_fr": 0.2494,
+      "8dB+burst_input_density": 1.0,
+      "dense_macs": 5901408.0,
+      "event_driven_acs": 5756533.7,
+      "macs_reduction_ratio": 0.0245,
+      "per_layer": {
+        "dense_macs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000,
+          "sep_depthwise": 32000,
+          "pointwise": 32000,
+          "tcn0.conv_a": 34560,
+          "tcn0.conv_b": 25920,
+          "tcn0.skip": 2880,
+          "tcn1.conv_a": 25920,
+          "tcn1.conv_b": 25920,
+          "tcn1.skip": 2160,
+          "fc": 48
+        },
+        "input_density": {
+          "conv1": 1.0,
+          "depthwise": 1.0,
+          "sep_depthwise": 0.1325,
+          "pointwise": 0.1325,
+          "tcn0.conv_a": 0.1965,
+          "tcn0.skip": 0.1965,
+          "tcn0.conv_b": 0.1586,
+          "tcn1.conv_a": 0.4068,
+          "tcn1.skip": 0.4068,
+          "tcn1.conv_b": 0.1984,
+          "fc": 0.425
+        },
+        "event_acs": {
+          "conv1": 5544000.0,
+          "depthwise": 176000.0,
+          "sep_depthwise": 4240.0,
+          "pointwise": 4240.0,
+          "tcn0.conv_a": 6791.0,
+          "tcn0.conv_b": 4110.9,
+          "tcn0.skip": 565.9,
+          "tcn1.conv_a": 10544.3,
+          "tcn1.conv_b": 5142.5,
+          "tcn1.skip": 878.7,
+          "fc": 20.4
+        }
+      },
+      "phi1": {
+        "dense_macs": 5720000.0,
+        "event_acs": 5720000.0,
+        "reduction": 0.0
+      },
+      "input_spikes_per_trial": 11000.0
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "data": "data_4class_cross",
+  "n_classes": 4,
+  "seed": 42,
+  "eps": 0.1,
+  "points": [
+    {
+      "frac": 0.1,
+      "n_labels": 461,
+      "hard": 42.19,
+      "label_smoothing": 44.62,
+      "R_pp": 2.43
+    },
+    {
+      "frac": 0.2,
+      "n_labels": 922,
+      "hard": 50.17,
+      "label_smoothing": 47.74,
+      "R_pp": -2.43
+    },
+    {
+      "frac": 0.3,
+      "n_labels": 1382,
+      "hard": 43.23,
+      "label_smoothing": 48.44,
+      "R_pp": 5.21
+    },
+    {
+      "frac": 0.5,
+      "n_labels": 2304,
+      "hard": 51.74,
+      "label_smoothing": 55.03,
+      "R_pp": 3.3
+    },
+    {
+      "frac": 1.0,
+      "n_labels": 4608,
+      "hard": 57.47,
+      "label_smoothing": 61.11,
+      "R_pp": 3.65
+    }
+  ],
+  "flip_between": [
+    0.1,
+    0.2
+  ]
+}

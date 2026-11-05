@@ -1,0 +1,76 @@
+{
+  "data": "data_4class_cross",
+  "n_classes": 4,
+  "seed": 42,
+  "sample_sizes": [
+    4608,
+    3000,
+    2000,
+    1000,
+    500
+  ],
+  "rows": [
+    {
+      "N": 4608,
+      "teacher_train": 86.26,
+      "teacher_val": 62.5,
+      "overfit_gap_pp": 23.76,
+      "student_full": 57.47,
+      "teacher_minus_student_pp": 5.03,
+      "hard_30pct": 52.6,
+      "distilled_30pct": 51.56,
+      "gain_30pct_pp": -1.04
+    },
+    {
+      "N": 3000,
+      "teacher_train": 87.57,
+      "teacher_val": 54.86,
+      "overfit_gap_pp": 32.71,
+      "student_full": 49.83,
+      "teacher_minus_student_pp": 5.03,
+      "hard_30pct": 47.22,
+      "distilled_30pct": 51.04,
+      "gain_30pct_pp": 3.82
+    },
+    {
+      "N": 2000,
+      "teacher_train": 88.9,
+      "teacher_val": 55.38,
+      "overfit_gap_pp": 33.52,
+      "student_full": 54.51,
+      "teacher_minus_student_pp": 0.87,
+      "hard_30pct": 47.05,
+      "distilled_30pct": 52.08,
+      "gain_30pct_pp": 5.03
+    },
+    {
+      "N": 1000,
+      "teacher_train": 93.6,
+      "teacher_val": 45.49,
+      "overfit_gap_pp": 48.11,
+      "student_full": 44.44,
+      "teacher_minus_student_pp": 1.04,
+      "hard_30pct": 42.01,
+      "distilled_30pct": 45.31,
+      "gain_30pct_pp": 3.3
+    },
+    {
+      "N": 500,
+      "teacher_train": 98.0,
+      "teacher_val": 47.22,
+      "overfit_gap_pp": 50.78,
+      "student_full": 40.28,
+      "teacher_minus_student_pp": 6.94,
+      "hard_30pct": 34.38,
+      "distilled_30pct": 34.9,
+      "gain_30pct_pp": 0.52
+    }
+  ],
+  "done": [
+    4608,
+    3000,
+    2000,
+    1000,
+    500
+  ]
+}

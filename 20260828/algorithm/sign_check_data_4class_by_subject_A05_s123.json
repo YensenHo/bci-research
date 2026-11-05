@@ -1,0 +1,16 @@
+{
+  "data": "data_4class_by_subject/A05",
+  "n_classes": 4,
+  "seed": 123,
+  "teacher_val": 60.76,
+  "teacher_train": 99.65,
+  "overfit_gap_pp": 38.89,
+  "student_full": 53.82,
+  "teacher_minus_student_pp": 6.94,
+  "hard_30pct": 41.67,
+  "distilled_30pct": 45.49,
+  "gain_30pct_pp": 3.82,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}

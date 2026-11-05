@@ -1,0 +1,42 @@
+设备     : mps | 激活 : lif | seed : 42
+训练集   : 4760 闪烁（hold-out 4760/840）| eval : 2800
+数据形状 : X=(5600, 1, 8, 205)（n,1,8,205 @256Hz 0.8s 窗, 跨被试）
+[热启动] p300_2class_relu_s42.pth strict=True ✓（relu→LIF 权重复用）
+参数量   : 9,262（8ch 二分类，0.8s 窗）
+MACs     : 925,880（单 0.8s epoch 前向，理论值）
+[对照] relu 权重直接换 LIF（未微调）eval : 51.18%
+  Epoch   1/100 | loss=0.5926 train=72.00% val=72.02% | 7.6s
+  Epoch   2/100 | loss=0.5556 train=73.66% val=72.02% | 6.7s
+  Epoch   3/100 | loss=0.5493 train=73.30% val=73.45% | 6.8s
+  Epoch   4/100 | loss=0.5372 train=73.70% val=74.40% | 6.9s
+  Epoch   5/100 | loss=0.5361 train=73.99% val=72.86% | 6.7s
+  Epoch   6/100 | loss=0.5342 train=73.99% val=72.38% | 6.7s
+  Epoch   7/100 | loss=0.5380 train=73.51% val=73.57% | 6.7s
+  Epoch   8/100 | loss=0.5223 train=74.94% val=73.21% | 6.8s
+  Epoch   9/100 | loss=0.5356 train=73.70% val=74.05% | 6.8s
+  Epoch  10/100 | loss=0.5279 train=74.71% val=73.21% | 6.9s
+  Epoch  11/100 | loss=0.5262 train=75.11% val=73.69% | 6.8s
+  Epoch  12/100 | loss=0.5318 train=74.20% val=73.10% | 6.7s
+  Epoch  13/100 | loss=0.5277 train=74.33% val=72.38% | 6.8s
+  Epoch  14/100 | loss=0.5301 train=74.41% val=72.62% | 6.8s
+  Epoch  15/100 | loss=0.5237 train=74.79% val=72.98% | 6.9s
+  Epoch  16/100 | loss=0.5294 train=74.85% val=72.50% | 6.9s
+  Epoch  17/100 | loss=0.5264 train=74.89% val=73.93% | 6.7s
+  Epoch  18/100 | loss=0.5205 train=75.11% val=73.21% | 6.7s
+  Epoch  19/100 | loss=0.5282 train=75.00% val=73.21% | 6.7s
+  Epoch  20/100 | loss=0.5195 train=74.94% val=72.02% | 6.8s
+  Epoch  21/100 | loss=0.5190 train=75.27% val=73.93% | 6.9s
+  Epoch  22/100 | loss=0.5232 train=75.17% val=73.10% | 6.8s
+  Epoch  23/100 | loss=0.5183 train=75.55% val=72.74% | 6.7s
+  Epoch  24/100 | loss=0.5182 train=75.13% val=72.14% | 6.8s
+  Epoch  25/100 | loss=0.5211 train=75.21% val=73.21% | 6.8s
+  Epoch  26/100 | loss=0.5179 train=75.21% val=73.57% | 6.9s
+  Epoch  27/100 | loss=0.5195 train=74.81% val=72.62% | 6.9s
+  Epoch  28/100 | loss=0.5171 train=75.63% val=73.69% | 6.7s
+  Epoch  29/100 | loss=0.5157 train=75.19% val=73.10% | 6.7s
+早停：验证集连续 25 epoch 未提升。
+
+[final test] eval（跨被试 A05-A06，2 人，只测一次）: 71.57%  (chance 50%)
+  逐类 recall: 非目标=77.07% 目标=66.07%  bacc=71.57%
+  发放率 : act1=18.3%  act2=18.5%  act_a=21.1%  act_b=22.7%  act_res=22.5%  act_a=23.8%  act_b=16.3%  act_res=20.8%
+✓ p300_2class_lif_s42.pth + p300_2class_report_lif_s42.txt + result_lif_s42.json

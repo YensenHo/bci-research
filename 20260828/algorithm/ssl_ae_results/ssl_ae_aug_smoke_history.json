@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "tag": "ssl_ae_aug_smoke",
+  "aug_desc": "HBC增强[5bit+AWGN SNR∈[10,20]dB +burst σb/H=0.3 len=16 p=0.005]",
+  "mask": {
+   "ratio": 0.5,
+   "block_min": 50,
+   "block_max": 100
+  },
+  "seed": 42
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "train_masked_mse": 1.013063,
+   "val_masked_mse": 0.981839,
+   "val_full_mse": 1.015113,
+   "mask_frac": 0.5095,
+   "sec": 1.3
+  },
+  {
+   "epoch": 2,
+   "train_masked_mse": 1.015393,
+   "val_masked_mse": 0.979757,
+   "val_full_mse": 1.012971,
+   "mask_frac": 0.5074,
+   "sec": 0.1
+  },
+  {
+   "epoch": 3,
+   "train_masked_mse": 0.997945,
+   "val_masked_mse": 0.978148,
+   "val_full_mse": 1.011295,
+   "mask_frac": 0.5148,
+   "sec": 0.1
+  },
+  {
+   "epoch": 4,
+   "train_masked_mse": 1.006516,
+   "val_masked_mse": 0.976983,
+   "val_full_mse": 1.010088,
+   "mask_frac": 0.5085,
+   "sec": 0.1
+  },
+  {
+   "epoch": 5,
+   "train_masked_mse": 0.988416,
+   "val_masked_mse": 0.976287,
+   "val_full_mse": 1.009383,
+   "mask_frac": 0.5159,
+   "sec": 0.1
+  },
+  {
+   "epoch": 6,
+   "train_masked_mse": 0.999646,
+   "val_masked_mse": 0.975997,
+   "val_full_mse": 1.009099,
+   "mask_frac": 0.5093,
+   "sec": 0.1
+  }
+ ]
+}

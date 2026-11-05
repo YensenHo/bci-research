@@ -1,0 +1,582 @@
+{
+ "semi-dry EEG electrode": [
+  {
+   "pmid": "42493516",
+   "title": "Validation of portable, semi-dry electrode-based electroencephalography device for its application in brain-computer interface solutions.",
+   "year": "2026",
+   "journal": "Scientific reports",
+   "authors": "Rokai J; Rácz M; Becske M"
+  },
+  {
+   "pmid": "41618548",
+   "title": "Noninvasive Graphene Brain-Computer Interface Integrating EEG Recording and Acoustic-Optical Stimulation for Rhythm Intervention.",
+   "year": "2026",
+   "journal": "Advanced healthcare materials",
+   "authors": "Ma Y; Li H; Li W"
+  },
+  {
+   "pmid": "41489950",
+   "title": "3-D Printed Watermill-Like Semi-Dry Electrodes for BCI Applications.",
+   "year": "2026",
+   "journal": "IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society",
+   "authors": "Chung CM; Tsai CH; Chu YL"
+  },
+  {
+   "pmid": "41228910",
+   "title": "Research on Driver Fatigue Detection in Real Driving Environments Based on Semi-Dry Electrodes with Automatic Conductive Fluid Replenishment.",
+   "year": "2025",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Wang F; Zhang Y; Song W"
+  },
+  {
+   "pmid": "41109390",
+   "title": "Ag/AgCl@agar/P(AM-co-HEAA) hydrogel with ultra-stretchability, fatigue resistance, and freezing tolerance for human motion and electrophysiological signal monitoring.",
+   "year": "2025",
+   "journal": "International journal of biological macromolecules",
+   "authors": "Ma N; Chen Y; Wang L"
+  },
+  {
+   "pmid": "40903968",
+   "title": "Technical system of electroencephalography-based brain-computer interface: Advances, applications, and challenges.",
+   "year": "2026",
+   "journal": "Neural regeneration research",
+   "authors": "Yu H; Mu Q; Liu C"
+  },
+  {
+   "pmid": "40648293",
+   "title": "Four-Dimensional Adjustable Electroencephalography Cap for Solid-Gel Electrode.",
+   "year": "2025",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Zhang J; Zhao D; Li Y"
+  },
+  {
+   "pmid": "40648249",
+   "title": "Mental Fatigue Detection of Crane Operators Based on Electroencephalogram Signals Acquired by a Novel Rotary Switch-Type Semi-Dry Electrode Using Multifractal Detrend Fluctuation Analysis.",
+   "year": "2025",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Wang F; Chen D; Zhang X"
+  }
+ ],
+ "dry EEG electrode": [
+  {
+   "pmid": "42747931",
+   "title": "SPAR-EEG: Selective Pass-Wise Artifact Reduction for Wearable Single-Channel EEG Denoising.",
+   "year": "2026",
+   "journal": "IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society",
+   "authors": "Shaikh UQ; Kalra AM; Lowe A"
+  },
+  {
+   "pmid": "42685666",
+   "title": "Dry-electrode EEG tracks alpha changes during accelerated intermittent theta burst stimulation in treatment-resistant depression.",
+   "year": "2026",
+   "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
+   "authors": "Vasileiadi M; Nona CN; Silver D"
+  },
+  {
+   "pmid": "42671585",
+   "title": "Immediate effects of binaural beat stimulation on prefrontal cortical activation after cycling exercise: an electroencephalography-based study.",
+   "year": "2026",
+   "journal": "Experimental brain research",
+   "authors": "Hsiao SF; Liu TL; Lin YC"
+  },
+  {
+   "pmid": "42655348",
+   "title": "Commercial Metallized Textiles for Dry EEG Electrodes: Structure, Textile-Level Durability, and Controlled Frontal Validation Against Ag/AgCl.",
+   "year": "2026",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Andrés Yanzón EV; Ferre-Martínez J; López-Rodríguez D"
+  },
+  {
+   "pmid": "42644383",
+   "title": "Bioinspired Epidermal Electrode With Excellent Environmental Tolerance and Adhesion for Robust Electrophysiological Monitoring.",
+   "year": "2026",
+   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+   "authors": "Li L; Ren J; Song B"
+  },
+  {
+   "pmid": "42643078",
+   "title": "State-Programmable Conductive and Reactivatable Bio-Adhesive for High-Fidelity Epidermal Biointerfaces.",
+   "year": "2026",
+   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+   "authors": "Ahmed S; Momin M; Ren J"
+  },
+  {
+   "pmid": "42640816",
+   "title": "Wireless Electroencephalography in Research on Children With Developmental Disabilities: Scoping Review.",
+   "year": "2026",
+   "journal": "Journal of medical Internet research",
+   "authors": "Park N; Shin Y; Kang J"
+  },
+  {
+   "pmid": "42630776",
+   "title": "Inkjet-Printed Aqueous Graphene Suspensions on Flexible Substrates for Multimodal Wearable Continuous Health Monitoring.",
+   "year": "2026",
+   "journal": "ACS nanoscience Au",
+   "authors": "Mirbakht SS; Ballipinar F; Arman Kuzubasoglu B"
+  }
+ ],
+ "graphene electrode electroencephalography": [
+  {
+   "pmid": "42470910",
+   "title": "Monolithic all-laser fabricated 3D bioelectronic platforms with multilayer hybrid interconnects for multimodal sensing.",
+   "year": "2026",
+   "journal": "Biosensors & bioelectronics",
+   "authors": "Kim G; Park SH; Cha H"
+  },
+  {
+   "pmid": "42080269",
+   "title": "Application of Graphene Dry Electrode in 512-Lead EEG Cap and Real-Time Monitoring EEG System.",
+   "year": "2026",
+   "journal": "ACS applied materials & interfaces",
+   "authors": "Liu J; Yang X; Li M"
+  },
+  {
+   "pmid": "42063898",
+   "title": "Gelatin-Based Head Phantoms: A Practical Guide for Artificial Brain Signal Research.",
+   "year": "2026",
+   "journal": "International journal of biomaterials",
+   "authors": "Selçuk EN; Çakmak G; Usal MR"
+  },
+  {
+   "pmid": "41618548",
+   "title": "Noninvasive Graphene Brain-Computer Interface Integrating EEG Recording and Acoustic-Optical Stimulation for Rhythm Intervention.",
+   "year": "2026",
+   "journal": "Advanced healthcare materials",
+   "authors": "Ma Y; Li H; Li W"
+  },
+  {
+   "pmid": "41460786",
+   "title": "An Electrophysiological/Electrochemical Microelectrode for Electroencephalography and Adrenaline Sensing.",
+   "year": "2026",
+   "journal": "Analytical chemistry",
+   "authors": "Ma Y; Bai H; Li H"
+  },
+  {
+   "pmid": "40963494",
+   "title": "Single-Step Patterning of Biocompatible Neural Electrodes Using Black-Pt Functionalized Laser-Induced Graphene for in Vivo Electrophysiology.",
+   "year": "2025",
+   "journal": "Small methods",
+   "authors": "Kim G; Hong Y; Lee H"
+  },
+  {
+   "pmid": "39875198",
+   "title": "Brain-Computer Interface and Electrochemical Sensor Based on Boron-Nitrogen Co-Doped Graphene-Diamond Microelectrode for EEG and Dopamine Detection.",
+   "year": "2025",
+   "journal": "ACS sensors",
+   "authors": "Chen S; Jiang D; Li M"
+  },
+  {
+   "pmid": "39665785",
+   "title": "Ultrathin Bioelectrode Array with Improved Electrochemical Performance for Electrophysiological Sensing and Modulation.",
+   "year": "2024",
+   "journal": "ACS nano",
+   "authors": "Du X; Yang L; Shi X"
+  }
+ ],
+ "ear-EEG": [
+  {
+   "pmid": "42741117",
+   "title": "Towards continuous brain monitoring: a pilot qualitative study of user experiences with in-ear EEG.",
+   "year": "2026",
+   "journal": "Frontiers in digital health",
+   "authors": "Haria C; Harris BHL; Koizia LJ"
+  },
+  {
+   "pmid": "42724715",
+   "title": "Clinical utility of in-ear EEG electrodes in hospitalized patients: comparison with standard scalp EEG.",
+   "year": "2026",
+   "journal": "Clinical neurophysiology practice",
+   "authors": "Dzalto M; Desowska A; Moutonnet N"
+  },
+  {
+   "pmid": "42724637",
+   "title": "An In-Ear Sleep Modulation SoC Featuring a CNN-LSTM Accelerator with Long-Kernel Memory Reuse and Runtime Dynamic Quantization.",
+   "year": "2026",
+   "journal": "Digest of technical papers. Symposium on VLSI Technology",
+   "authors": "Xu Y; Chen X; Hou Y"
+  },
+  {
+   "pmid": "42645055",
+   "title": "Deep Learning for Ear-EEG-Based Brain-Computer Interface: A Systematic Comparison and Design Insights.",
+   "year": "2026",
+   "journal": "Biosensors",
+   "authors": "Kim JS; Choi SI; Hwang HJ"
+  },
+  {
+   "pmid": "42592227",
+   "title": "Signal-specific performance of in-ear EEG: strengths and limitations.",
+   "year": "2026",
+   "journal": "Frontiers in neuroscience",
+   "authors": "Frei V; Mainar P; Fritz T"
+  },
+  {
+   "pmid": "42551462",
+   "title": "Music emotion recognition with cEEGrid.",
+   "year": "2026",
+   "journal": "Journal of neural engineering",
+   "authors": "Winnard C; Mikkelsen K; Kidmose P"
+  },
+  {
+   "pmid": "42512975",
+   "title": "Recent Progress in In-Ear EEG Technology and Its Emerging Real-World Applications: A Review.",
+   "year": "2026",
+   "journal": "Micromachines",
+   "authors": "Yan H; Xu X"
+  },
+  {
+   "pmid": "42398889",
+   "title": "Epileptiform discharges are associated with increased theta activity over time in patients with Lewy body dementia.",
+   "year": "2026",
+   "journal": "Neuroscience",
+   "authors": "Musaeus CS; Waldemar G; Kjær TW"
+  }
+ ],
+ "high-density EEG electrode": [
+  {
+   "pmid": "42748872",
+   "title": "Neural origins of the acoustic change complex auditory evoked potential: Topographical maps and source localization in the auditory cortex.",
+   "year": "2026",
+   "journal": "Hearing research",
+   "authors": "Meehan S; Berg RVD; Hanenberg NMJ"
+  },
+  {
+   "pmid": "42703192",
+   "title": "A high-rate 480-target hybrid BCI system based on SSVEP and sEMG.",
+   "year": "2026",
+   "journal": "Cognitive neurodynamics",
+   "authors": "Pang Z; Li Z; Xie X"
+  },
+  {
+   "pmid": "42676067",
+   "title": "Centrifugal Effects of Voluntary Movements on Somatosensory and Auditory Evoked Potentials: An Exploratory Study.",
+   "year": "2026",
+   "journal": "The European journal of neuroscience",
+   "authors": "Makibuchi T; Anazawa S; Hagino Y"
+  },
+  {
+   "pmid": "42626054",
+   "title": "Abnormal local markers of sleep homeostasis in patients with focal epilepsy.",
+   "year": "2026",
+   "journal": "Brain communications",
+   "authors": "Ciliento R; Sevak B; Papantonatos C"
+  },
+  {
+   "pmid": "42599861",
+   "title": "A Multi-Scale Adaptive EEG Feature Selection and Weighting Method for Mental Workload Estimation in Rapid Serial Visual Presentation.",
+   "year": "2026",
+   "journal": "IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society",
+   "authors": "Wang Y; Wei W; Wang K"
+  },
+  {
+   "pmid": "42575774",
+   "title": "Quantitative Validation of a Simplified 4-Lead Electroencephalogram Montage for Neuromonitoring in Post-Cardiac Surgery Intensive Care Unit Patients.",
+   "year": "2026",
+   "journal": "Journal of cardiothoracic and vascular anesthesia",
+   "authors": "Shi Z; Li M; Li H"
+  },
+  {
+   "pmid": "42480882",
+   "title": "Multimodal validation of temporal interference in a 3D-printed pediatric head phantom.",
+   "year": "2026",
+   "journal": "NeuroImage",
+   "authors": "Ghabel Damirchi B; Jahromi S; Vaysi A"
+  },
+  {
+   "pmid": "42462320",
+   "title": "Pre-stimulus alpha modulates somatosensory evoked potentials during inattentive processing through localized, bottom-up, non-linear mechanisms.",
+   "year": "2026",
+   "journal": "Cortex; a journal devoted to the study of the nervous system and behavior",
+   "authors": "Van Hoornweder S; Özger C; Tarkka IM"
+  }
+ ],
+ "electrode-skin impedance EEG": [
+  {
+   "pmid": "42643078",
+   "title": "State-Programmable Conductive and Reactivatable Bio-Adhesive for High-Fidelity Epidermal Biointerfaces.",
+   "year": "2026",
+   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+   "authors": "Ahmed S; Momin M; Ren J"
+  },
+  {
+   "pmid": "42300257",
+   "title": "Conformal phase-transition hydrogel interfaces for high fidelity electrophysiological sensing and data-driven inference.",
+   "year": "2026",
+   "journal": "Soft matter",
+   "authors": "Li X; Tang W; Wang M"
+  },
+  {
+   "pmid": "42023673",
+   "title": "tES synchronization of slow oscillations in N3 sleep decreases brain electrical impedance: implications for improved brain waste clearance.",
+   "year": "2026",
+   "journal": "Sleep",
+   "authors": "Shofner S; Morgan KK; Luu P"
+  },
+  {
+   "pmid": "42000827",
+   "title": "A systematic evaluation of EEG electrode geometry for enhanced signals: an experimental approach.",
+   "year": "2026",
+   "journal": "Scientific reports",
+   "authors": "Razaghi Z; Faraji M; Mohammadpour R"
+  },
+  {
+   "pmid": "41871172",
+   "title": "NeuroTex: Functionalized Hybrid Polymer-Metal Textile for Soft, Robust, and Dry Auricular Neural Interfaces.",
+   "year": "2026",
+   "journal": "ACS applied materials & interfaces",
+   "authors": "Liu C; Orsini AA; Perkins PL"
+  },
+  {
+   "pmid": "41643320",
+   "title": "Form factor meets function: anatomy-dependent electrode-skin coupling and signal content in consumer eyewear EEG systems.",
+   "year": "2026",
+   "journal": "Journal of neural engineering",
+   "authors": "Palmisciano AC; Farabbi A; Rossi M"
+  },
+  {
+   "pmid": "41631479",
+   "title": "Wireless in-ear EEG system for auditory brain-computer interface applications in adolescents.",
+   "year": "2026",
+   "journal": "Biomedical physics & engineering express",
+   "authors": "Leung J; Holanda LJ; Wheeler L"
+  },
+  {
+   "pmid": "41618548",
+   "title": "Noninvasive Graphene Brain-Computer Interface Integrating EEG Recording and Acoustic-Optical Stimulation for Rhythm Intervention.",
+   "year": "2026",
+   "journal": "Advanced healthcare materials",
+   "authors": "Ma Y; Li H; Li W"
+  }
+ ],
+ "EEG artifact removal deep learning": [
+  {
+   "pmid": "42716081",
+   "title": "A statistical mixture-of-experts framework for EMG artifact removal in EEG: Empirical insights and a proof-of-concept application.",
+   "year": "2026",
+   "journal": "Journal of neural engineering",
+   "authors": "Choi BJ; Milsap G; Scholl CA"
+  },
+  {
+   "pmid": "42660174",
+   "title": "Unsupervised domain transfer: overcoming signal degradation in sleep monitoring by increasing scoring realism.",
+   "year": "2026",
+   "journal": "Journal of neural engineering",
+   "authors": "Ahangarkiasari M; Damgaard AT; Haurum C"
+  },
+  {
+   "pmid": "42595811",
+   "title": "A Novel EEG-Based Topographic Brain Map-Driven Deep Learning Method for Autism Spectrum Disorder Detection in Children.",
+   "year": "2026",
+   "journal": "Brain topography",
+   "authors": "Falih BS; Sabir MK; Aydın A"
+  },
+  {
+   "pmid": "42460303",
+   "title": "Transformer architecture for diagnosing schizophrenia disabilities through EEG analysis.",
+   "year": "2026",
+   "journal": "Frontiers in physiology",
+   "authors": "Alsharif N; Ebrahim N; Al-Nefaie AH"
+  },
+  {
+   "pmid": "42270024",
+   "title": "Supervised autoencoder for gradient and BCG artifact removal in EEG during simultaneous EEG-fMRI.",
+   "year": "2026",
+   "journal": "Magnetic resonance imaging",
+   "authors": "Shahriar KA; Bhuiyan EH; Luo Q"
+  },
+  {
+   "pmid": "42175605",
+   "title": "Isolating Eye-Movement Artifacts from EEG Signals.",
+   "year": "2026",
+   "journal": "International journal of neural systems",
+   "authors": "O'Reilly C; Huberty S"
+  },
+  {
+   "pmid": "41932504",
+   "title": "EEG-AI: An agentic system for AI-assisted semi-automated EEG preprocessing and artifact removal.",
+   "year": "2026",
+   "journal": "Journal of neuroscience methods",
+   "authors": "Abdou A; Ivanov M; Shaya S"
+  },
+  {
+   "pmid": "41902307",
+   "title": "Design and Development of an Automated Electroencephalogram Signal Processing and Diagnostic Support Architecture Employing Advanced Deep Learning Models for Early Accurate and Scalable Detection of Neurological Diseases.",
+   "year": "2026",
+   "journal": "Physiotherapy research international : the journal for researchers and clinicians in physical therapy",
+   "authors": "Thammuluri R; Mathad RS; Saibaba CMH"
+  }
+ ],
+ "Artifact Subspace Reconstruction": [
+  {
+   "pmid": "42595811",
+   "title": "A Novel EEG-Based Topographic Brain Map-Driven Deep Learning Method for Autism Spectrum Disorder Detection in Children.",
+   "year": "2026",
+   "journal": "Brain topography",
+   "authors": "Falih BS; Sabir MK; Aydın A"
+  },
+  {
+   "pmid": "42557237",
+   "title": "Altered Temporal dynamics of resting-state EEG microstates as a neural signature of impaired consciousness: a high-density EEG analysis in chronic disorders of consciousness.",
+   "year": "2026",
+   "journal": "Brain injury",
+   "authors": "Dong X; Wang D; Hou J"
+  },
+  {
+   "pmid": "42528010",
+   "title": "Fully 3D Unrolled Magnetic Resonance Fingerprinting Reconstruction via Staged Pretraining and Implicit Gridding.",
+   "year": "2026",
+   "journal": "Magnetic resonance in medicine",
+   "authors": "Urman Y; Nishimura M; Abraham DR"
+  },
+  {
+   "pmid": "42451263",
+   "title": "NeuroStat: An Open-Source EEG Connectivity Platform for Randomised Controlled Trials.",
+   "year": "2026",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Ghani U; Ahmad I; Pervez S"
+  },
+  {
+   "pmid": "42180559",
+   "title": "Reliable resting-state EEG connectivity measures reveal brain network destabilization and cognitive decoupling following prolonged extreme working conditions.",
+   "year": "2026",
+   "journal": "Cognitive neurodynamics",
+   "authors": "Çelik S; Aydın S"
+  },
+  {
+   "pmid": "41955571",
+   "title": "Water/Fat Separated Echo Planar Time-Resolved Imaging (WFS-EPTI) for Distortion-Free Multi-Contrast MRI.",
+   "year": "2026",
+   "journal": "Magnetic resonance in medicine",
+   "authors": "Hu Z; Reese TG; Wald LL"
+  },
+  {
+   "pmid": "41842497",
+   "title": "Improving computed tomography of chemiluminescence under projection angle limitations via camera layout optimization.",
+   "year": "2025",
+   "journal": "Applied optics",
+   "authors": "Ren C; Jin Y; Zhai C"
+  },
+  {
+   "pmid": "41816052",
+   "title": "Distortion-free diffusion-weighted imaging using echo planar time-resolved imaging with prospective motion correction: a feasibility study in motion-sensitive patients.",
+   "year": "2026",
+   "journal": "Quantitative imaging in medicine and surgery",
+   "authors": "Bai H; Zhou Z; Dai K"
+  }
+ ],
+ "motion artifact EEG removal": [
+  {
+   "pmid": "42699506",
+   "title": "Model-based cardiac field artefact correction for OP-MEG.",
+   "year": "2026",
+   "journal": "Imaging neuroscience (Cambridge, Mass.)",
+   "authors": "Woelk SP; Alexander NA; O'Neill GC"
+  },
+  {
+   "pmid": "42566075",
+   "title": "Executive Function Assessment Through Wireless EEG and Gait Monitoring During Cognitive-Motor Dual Tasks.",
+   "year": "2026",
+   "journal": "Annals of biomedical engineering",
+   "authors": "Gargiulo L; Fullin A; Arpaia P"
+  },
+  {
+   "pmid": "42536879",
+   "title": "Quantitative Electroencephalography in Hemodialysis: Scoping Review and Translational Framework.",
+   "year": "2026",
+   "journal": "JMIR biomedical engineering",
+   "authors": "Tsai MH; Chan CH"
+  },
+  {
+   "pmid": "42501619",
+   "title": "Connectivity between neural dynamics and lower limb coordination during gait in individuals with unilateral transfemoral amputation.",
+   "year": "2026",
+   "journal": "Gait & posture",
+   "authors": "Hu M; He Y; Lam WK"
+  },
+  {
+   "pmid": "42076550",
+   "title": "Suppressing Non-Stationary Motion Artefacts in Mobile EEG Using Generalized Eigenvalue Decomposition.",
+   "year": "2026",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Khazaei M; Raeisi K; Fiedler P"
+  },
+  {
+   "pmid": "41720225",
+   "title": "Characterization of EEG power spectrum correlates of standing and walking in older adults: A scoping review.",
+   "year": "2026",
+   "journal": "Experimental gerontology",
+   "authors": "Kahya M; Li Y; Zhou J"
+  },
+  {
+   "pmid": "41682433",
+   "title": "Improved SSVEP Classification Through EEG Artifact Reduction Using Auxiliary Sensors.",
+   "year": "2026",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Kołodziej M; Majkowski A; Wiszniewski P"
+  },
+  {
+   "pmid": "41639123",
+   "title": "An EEG dataset with carbon wire loops in cognitive tasks and resting state inside and outside MR scanners.",
+   "year": "2026",
+   "journal": "Scientific data",
+   "authors": "Tsutsumi M; Kishi T; Ogawa T"
+  }
+ ],
+ "active electrode EEG amplifier": [
+  {
+   "pmid": "42655615",
+   "title": "Around the Clock: Wearing a Flex-Printed trEEGrid Electrode Patch and Miniaturized Amplifier for Nearly 24 Hours Across Daytime and Overnight EEG Sessions.",
+   "year": "2026",
+   "journal": "Sensors (Basel, Switzerland)",
+   "authors": "Scanlon JEM; Winneke AH; Pätzold W"
+  },
+  {
+   "pmid": "42608413",
+   "title": "EEG-based brain-computer interface (BCI) dataset for directional word recognition.",
+   "year": "2026",
+   "journal": "Scientific data",
+   "authors": "Kostulin DV; Shaposhnikov PD; Ekizyan AK"
+  },
+  {
+   "pmid": "42497215",
+   "title": "Single pulse electrical stimulation in white matter modulates iEEG visual responses in human early visual cortex.",
+   "year": "2026",
+   "journal": "PLoS computational biology",
+   "authors": "Huang H; Kay KN; Gregg NM"
+  },
+  {
+   "pmid": "42194293",
+   "title": "Continual-Learning-Enhanced CNN-Transformer Framework for Real-Time Motor-Imagery BCI in Virtual Environments.",
+   "year": "2026",
+   "journal": "Bioengineering (Basel, Switzerland)",
+   "authors": "Huang CJ; Cao CF; Shyu KK"
+  },
+  {
+   "pmid": "42162676",
+   "title": "Single-trial EEG-based classification reveals instrument-specific timbre perception via traditional machine learning classifiers.",
+   "year": "2026",
+   "journal": "NeuroImage",
+   "authors": "Satkunarajah P; Power SD; Zendel BR"
+  },
+  {
+   "pmid": "41722855",
+   "title": "Aperiodic Signatures of Stress Sensitivity and Depression Recurrence in Adolescents.",
+   "year": "2026",
+   "journal": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+   "authors": "Schantell M; Kim N; Trivedi E"
+  },
+  {
+   "pmid": "41631479",
+   "title": "Wireless in-ear EEG system for auditory brain-computer interface applications in adolescents.",
+   "year": "2026",
+   "journal": "Biomedical physics & engineering express",
+   "authors": "Leung J; Holanda LJ; Wheeler L"
+  },
+  {
+   "pmid": "41144291",
+   "title": "A Cost-Effective and Minimally Invasive Protocol for Chronic Multi-Site Electroencephalography Recording in Freely Moving Mice.",
+   "year": "2025",
+   "journal": "Journal of visualized experiments : JoVE",
+   "authors": "Radeen KR; Shanazz K; Hao C"
+  }
+ ]
+}

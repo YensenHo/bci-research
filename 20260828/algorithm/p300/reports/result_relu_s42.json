@@ -1,0 +1,19 @@
+{
+  "tag": "relu_s42",
+  "activation": "relu",
+  "seed": 42,
+  "final_test_acc": 0.7332142857142857,
+  "bacc": 0.7332142857142857,
+  "recall": {
+    "0": 0.755,
+    "1": 0.7114285714285714
+  },
+  "val_acc": 0.7559523809523809,
+  "best_epoch": 38,
+  "n_params": 9262,
+  "macs": 925880,
+  "device": "mps",
+  "warm_start": false,
+  "pre_warm_eval": null,
+  "epochs_run": 63
+}

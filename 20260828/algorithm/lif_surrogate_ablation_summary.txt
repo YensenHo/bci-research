@@ -1,0 +1,21 @@
+LIF-EEGNet surrogate 消融汇总
+ReLU 代理基线：clean 75.77% / HBC 75.77%
+============================================================
+A_thr0.5               thr=  0.5 tau= 2.0 T=  8 lt=  | val=81.44% clean=76.00% hbc=74.38% (fr1=25.2% fr2=23.5%)
+A_thr1.0               thr=  1.0 tau= 2.0 T=  8 lt=  | val=82.99% clean=76.85% hbc=75.85% (fr1=15.6% fr2=13.3%)
+A_thr2.0               thr=  2.0 tau= 2.0 T=  8 lt=  | val=80.93% clean=75.77% hbc=76.16% (fr1= 8.3% fr2= 6.4%)
+A_thr4.0               thr=  4.0 tau= 2.0 T=  8 lt=  | val=72.16% clean=65.59% hbc=65.20% (fr1= 1.3% fr2= 0.7%)
+B_T4                   thr=  1.0 tau= 2.0 T=  4 lt=  | val=82.47% clean=76.70% hbc=75.00% (fr1=15.4% fr2=13.1%)
+B_T8                   thr=  1.0 tau= 2.0 T=  8 lt=  | val=82.99% clean=76.85% hbc=75.85% (fr1=15.6% fr2=13.3%)
+B_T16                  thr=  1.0 tau= 2.0 T= 16 lt=  | val=82.99% clean=76.31% hbc=75.54% (fr1=15.8% fr2=13.6%)
+B_T32                  thr=  1.0 tau= 2.0 T= 32 lt=  | val=82.47% clean=76.77% hbc=75.54% (fr1=15.8% fr2=13.6%)
+C_tau1.0               thr=  1.0 tau= 1.0 T=  8 lt=  | val=80.93% clean=76.54% hbc=75.39% (fr1=13.9% fr2=11.1%)
+C_tau2.0               thr=  1.0 tau= 2.0 T=  8 lt=  | val=82.99% clean=76.85% hbc=75.85% (fr1=15.6% fr2=13.3%)
+C_tau4.0               thr=  1.0 tau= 4.0 T=  8 lt=  | val=82.47% clean=76.39% hbc=75.85% (fr1=16.7% fr2=14.9%)
+D_learnthr             thr=  1.0 tau= 2.0 T=  8 lt=✓ | val=81.96% clean=76.47% hbc=75.31% (fr1=14.8% fr2=14.0%)
+E_scratch              thr=  1.0 tau= 2.0 T=  8 lt=  | val=78.87% clean=74.54% hbc=74.92% (fr1=15.5% fr2=16.6%)
+F_seed42               thr=  1.0 tau= 2.0 T=  8 lt=  | val=82.99% clean=76.85% hbc=75.85% (fr1=15.6% fr2=13.3%)
+F_seed123              thr=  1.0 tau= 2.0 T=  8 lt=  | val=84.02% clean=77.70% hbc=77.16% (fr1=15.8% fr2=14.0%)
+F_seed2024             thr=  1.0 tau= 2.0 T=  8 lt=  | val=86.60% clean=76.08% hbc=76.00% (fr1=15.5% fr2=12.7%)
+
+最优配置：threshold=1.0, tau=2.0, timesteps=8

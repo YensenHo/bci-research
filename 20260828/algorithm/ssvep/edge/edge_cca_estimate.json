@@ -1,0 +1,45 @@
+{
+  "6ch 0.5s": {
+    "channels": 6,
+    "samples": 125,
+    "MFLOP": 0.461,
+    "ms_fp64_0.5GF": 0.922,
+    "ms_fp32_2GF": 0.23
+  },
+  "6ch 1.0s": {
+    "channels": 6,
+    "samples": 250,
+    "MFLOP": 0.831,
+    "ms_fp64_0.5GF": 1.661,
+    "ms_fp32_2GF": 0.415
+  },
+  "6ch 2.0s": {
+    "channels": 6,
+    "samples": 500,
+    "MFLOP": 1.57,
+    "ms_fp64_0.5GF": 3.14,
+    "ms_fp32_2GF": 0.785
+  },
+  "6ch 3.0s": {
+    "channels": 6,
+    "samples": 750,
+    "MFLOP": 2.31,
+    "ms_fp64_0.5GF": 4.619,
+    "ms_fp32_2GF": 1.155
+  },
+  "64ch 1.0s": {
+    "channels": 64,
+    "samples": 250,
+    "MFLOP": 18.623,
+    "ms_fp64_0.5GF": 37.246,
+    "ms_fp32_2GF": 9.311
+  },
+  "64ch 3.0s": {
+    "channels": 64,
+    "samples": 750,
+    "MFLOP": 38.111,
+    "ms_fp64_0.5GF": 76.222,
+    "ms_fp32_2GF": 19.055
+  },
+  "note": "6ch 1s 主流程约 0.9 MFLOP/决策; RV1106 标量 C 实现估算 0.3~2 ms; C 代码实测(主机) 171.5us/决策含数据合成; CNN 对照 50ms(NPU)"
+}

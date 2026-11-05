@@ -1,0 +1,104 @@
+{
+  "dataset": "BNCI 008-2014 EPFL P300 speller (ALS patients)",
+  "license": "CC BY-NC-ND 4.0 (IRCCS Fondazione Santa Lucia, Rome)",
+  "description_pdf": "https://bnci-horizon-2020.eu/database/data-sets/008-2014/description.pdf",
+  "subjects_downloaded": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06"
+  ],
+  "subject_files": {
+    "A01": 21548593,
+    "A02": 21588837,
+    "A03": 21611830,
+    "A04": 21580390,
+    "A05": 21607457,
+    "A06": 21596479
+  },
+  "bytes_verified": "逐文件 == HEAD content-length (2026-09-02)",
+  "channels": [
+    "Fz",
+    "Cz",
+    "Pz",
+    "Oz",
+    "P3",
+    "P4",
+    "PO7",
+    "PO8"
+  ],
+  "fs": 256,
+  "flash_ms": 125,
+  "isi_ms": 125,
+  "soa_ms": 250,
+  "stim_per_trial": 12,
+  "repetitions_per_trial": 10,
+  "target_flash_per_trial": 20,
+  "trials_per_subject": 35,
+  "words": "7 词 × 5 字符",
+  "window": "[0, 0.8]s = 205 样本 @256Hz（含闪烁期 125ms）",
+  "labels": {
+    "0": "非目标闪烁 NonTarget",
+    "1": "目标闪烁 Target",
+    "y_raw": "0=无闪烁 1=NonTarget 2=Target",
+    "y_stim": "0=无 1-6=Row 7-12=Col"
+  },
+  "zscore": "逐 epoch 整体标量（跨 8ch×T，与 2a 逐试次一致），每 epoch 方差=1",
+  "split": {
+    "train_subjects": [
+      "A01",
+      "A02",
+      "A03",
+      "A04"
+    ],
+    "eval_subjects": [
+      "A05",
+      "A06"
+    ],
+    "note": "跨被试，被试级隔离；epoch 未打乱（chronological）"
+  },
+  "class_balance": {
+    "raw_ratio": "1 目标 : 5 非目标（协议固有）",
+    "train": "2800 目标 + 2800 非目标（seed 42 子采样）",
+    "eval": "1400 目标 + 1400 非目标（seed 42 子采样）",
+    "eval_full": "A05-A06 全部 1400 目标 + 7000 非目标（叠加评估/真实分布用）"
+  },
+  "per_subject": {
+    "A01": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    },
+    "A02": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    },
+    "A03": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    },
+    "A04": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    },
+    "A05": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    },
+    "A06": {
+      "n_epochs": 4200,
+      "n_target": 700,
+      "n_non_target": 3500
+    }
+  },
+  "n_train": 5600,
+  "n_eval": 2800,
+  "n_eval_full": 8400,
+  "chance": "50%（目标/非目标二分类）"
+}

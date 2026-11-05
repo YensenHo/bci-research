@@ -1,0 +1,41 @@
+{
+  "config": {
+    "student": "relu",
+    "teacher_params": 35148,
+    "student_params": 9496,
+    "temperature": 4.0,
+    "alpha": 0.5,
+    "epochs": 100,
+    "cosine": true,
+    "seeds": [
+      123
+    ],
+    "smoke": false
+  },
+  "per_seed": {
+    "123": {
+      "30%": {
+        "n_labels": 648,
+        "hard": 35.56,
+        "distilled": 34.07,
+        "gain_pp": -1.48
+      }
+    }
+  },
+  "aggregated": {
+    "30%": {
+      "hard_mean": 35.56,
+      "hard": [
+        35.56
+      ],
+      "distilled_mean": 34.07,
+      "distilled": [
+        34.07
+      ],
+      "gain_mean_pp": -1.48,
+      "gain_pp": [
+        -1.48
+      ]
+    }
+  }
+}

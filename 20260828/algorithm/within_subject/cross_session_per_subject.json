@@ -1,0 +1,61 @@
+{
+  "model": "eeg_tcnet_4class_lif_hbc_aug_s42.pth",
+  "results": [
+    {
+      "subject": "A01",
+      "acc": 68.75,
+      "correct": 198,
+      "total": 288
+    },
+    {
+      "subject": "A02",
+      "acc": 45.49,
+      "correct": 131,
+      "total": 288
+    },
+    {
+      "subject": "A03",
+      "acc": 83.33,
+      "correct": 240,
+      "total": 288
+    },
+    {
+      "subject": "A04",
+      "acc": 54.17,
+      "correct": 156,
+      "total": 288
+    },
+    {
+      "subject": "A05",
+      "acc": 51.04,
+      "correct": 147,
+      "total": 288
+    },
+    {
+      "subject": "A06",
+      "acc": 51.74,
+      "correct": 149,
+      "total": 288
+    },
+    {
+      "subject": "A07",
+      "acc": 63.54,
+      "correct": 183,
+      "total": 288
+    },
+    {
+      "subject": "A08",
+      "acc": 80.56,
+      "correct": 232,
+      "total": 288
+    },
+    {
+      "subject": "A09",
+      "acc": 73.61,
+      "correct": 212,
+      "total": 288
+    }
+  ],
+  "mean": 63.58,
+  "std": 12.99
+}

@@ -1,0 +1,13 @@
+{
+  "data": "isruc/data_n0.5",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 37.0,
+  "hard": 38.43,
+  "label_smoothing": 27.32,
+  "distilled": 30.23,
+  "R_pp": -11.11,
+  "K_pp": 2.91,
+  "total_gain_pp": -8.2
+}

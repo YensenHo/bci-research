@@ -1,0 +1,132 @@
+{
+  "n_points": 19,
+  "n_strong": 13,
+  "strong_hit": 13,
+  "strong_acc": 1.0,
+  "n_weak": 6,
+  "weak_fail": [
+    "S-A09",
+    "P300"
+  ],
+  "negative_gain_points": [
+    "EEGMMIDB-4c",
+    "S-A03",
+    "CHB-MIT"
+  ],
+  "points": [
+    {
+      "name": "EEGMMIDB-4c",
+      "task": "MI 4-class cross-subject",
+      "t_minus_s": -2.2,
+      "gain": -2.78
+    },
+    {
+      "name": "BCIC-2a-cross",
+      "task": "MI 4-class cross-subject",
+      "t_minus_s": 4.68,
+      "gain": 5.56
+    },
+    {
+      "name": "BCIC-2a-within",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 3.59,
+      "gain": 4.17
+    },
+    {
+      "name": "S-A01",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 3.47,
+      "gain": 6.42
+    },
+    {
+      "name": "S-A02",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 2.08,
+      "gain": 1.39
+    },
+    {
+      "name": "S-A03",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": -3.64,
+      "gain": -1.21
+    },
+    {
+      "name": "S-A04",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 10.07,
+      "gain": 2.25
+    },
+    {
+      "name": "S-A05",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 5.03,
+      "gain": 3.12
+    },
+    {
+      "name": "S-A06",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 7.46,
+      "gain": 3.99
+    },
+    {
+      "name": "S-A07",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 7.12,
+      "gain": 4.68
+    },
+    {
+      "name": "S-A08",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": 3.47,
+      "gain": 7.3
+    },
+    {
+      "name": "S-A09",
+      "task": "MI 4-class within-subject",
+      "t_minus_s": -0.35,
+      "gain": 3.12
+    },
+    {
+      "name": "CHB-MIT",
+      "task": "seizure 2-class cross-patient",
+      "t_minus_s": -3.28,
+      "gain": -0.89
+    },
+    {
+      "name": "NinaPro-17",
+      "task": "EMG 17-class cross-subject",
+      "t_minus_s": 4.93,
+      "gain": 3.73
+    },
+    {
+      "name": "NinaPro-12",
+      "task": "EMG 12-class cross-subject",
+      "t_minus_s": 2.0,
+      "gain": 1.62
+    },
+    {
+      "name": "BCI-2b",
+      "task": "MI 2-class cross-subject",
+      "t_minus_s": 0.18,
+      "gain": 1.89
+    },
+    {
+      "name": "EEGMMIDB-2c",
+      "task": "MI 2-class cross-subject",
+      "t_minus_s": 1.48,
+      "gain": 2.22
+    },
+    {
+      "name": "EEGMMIDB-2c9",
+      "task": "MI 2-class cross-subject (small)",
+      "t_minus_s": 1.29,
+      "gain": 0.37
+    },
+    {
+      "name": "P300",
+      "task": "P300 2-class cross-subject",
+      "t_minus_s": -0.43,
+      "gain": 1.12
+    }
+  ]
+}

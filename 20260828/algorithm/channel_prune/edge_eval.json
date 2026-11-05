@@ -1,0 +1,33 @@
+{
+  "board_22ch_reference_ms": 50.5,
+  "note": "板载估算 = 50.5ms × MACs比例（conv1+depthwise 随 NCH 线性收缩；separable/TCN/LIF 与通道数无关）。MPS 耗时仅主机参考，非板载。",
+  "rows": [
+    {
+      "name": "基线22ch",
+      "n_channels": 22,
+      "n_params": 9512,
+      "macs": 5901408,
+      "mps_latency_ms": 15.011,
+      "board_latency_est_ms": 50.5,
+      "final_test_clean": 0.6358024691358025
+    },
+    {
+      "name": "剪枝16ch",
+      "n_channels": 16,
+      "n_params": 9416,
+      "macs": 4341408,
+      "mps_latency_ms": 15.115,
+      "board_latency_est_ms": 37.15,
+      "final_test_clean": 0.5995370370370371
+    },
+    {
+      "name": "剪枝12ch",
+      "n_channels": 12,
+      "n_params": 9352,
+      "macs": 3301408,
+      "mps_latency_ms": 15.309,
+      "board_latency_est_ms": 28.25,
+      "final_test_clean": 0.5771604938271605
+    }
+  ]
+}

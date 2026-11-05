@@ -1,0 +1,425 @@
+{
+ "all:\"semi-dry electrode\"": [],
+ "all:\"dry electrode\" AND all:EEG": [
+  {
+   "id": "2409.03976v1",
+   "title": "DECAN: A Denoising Encoder via Contrastive Alignment Network for Dry Electrode EEG Emotion Recognition",
+   "published": "2024-09-06",
+   "authors": "Meihong Zhang; Shaokai Zhao; Shuai Wang",
+   "abstract": "EEG signal is important for brain-computer interfaces (BCI). Nevertheless, existing dry and wet electrodes are difficult to balance between high signal-to-noise ratio and portability in EEG recording, which limits the practical use of BCI. In this study, we propose a Denoising Encoder via Contrastiv"
+  },
+  {
+   "id": "2008.07621v1",
+   "title": "Speech Recognition using EEG signals recorded using dry electrodes",
+   "published": "2020-08-13",
+   "authors": "Gautam Krishna; Co Tran; Mason Carnahan",
+   "abstract": "In this paper, we demonstrate speech recognition using electroencephalography (EEG) signals obtained using dry electrodes on a limited English vocabulary consisting of three vowels and one word using a deep learning model. We demonstrate a test accuracy of 79.07 percent on a subset vocabulary consis"
+  },
+  {
+   "id": "2601.18424v1",
+   "title": "Fusion of Spatio-Temporal and Multi-Scale Frequency Features for Dry Electrodes MI-EEG Decoding",
+   "published": "2026-01-26",
+   "authors": "Tianyi Gong; Can Han; Junxi Wu",
+   "abstract": "Dry-electrode Motor Imagery Electroencephalography (MI-EEG) enables fast, comfortable, real-world Brain Computer Interface by eliminating gels and shortening setup for at-home and wearable use.However, dry recordings pose three main issues: lower Signal-to-Noise Ratio with more baseline drift and su"
+  },
+  {
+   "id": "2003.00657v2",
+   "title": "Wireless User-Generic Ear EEG",
+   "published": "2020-03-02",
+   "authors": "Ryan Kaveh; Justin Doong; Andy Zhou",
+   "abstract": "In the past few years it has been demonstrated that electroencephalography (EEG) can be recorded from inside the ear (in-ear EEG). To open the door to low-profile earpieces as wearable brain-computer interfaces (BCIs), this work presents a practical in-ear EEG device based on multiple dry electrodes"
+  },
+  {
+   "id": "2303.14841v1",
+   "title": "Driver Drowsiness Detection with Commercial EEG Headsets",
+   "published": "2023-03-26",
+   "authors": "Qazal Rezaee; Mehdi Delrobaei; Ashkan Giveki",
+   "abstract": "Driver Drowsiness is one of the leading causes of road accidents. Electroencephalography (EEG) is highly affected by drowsiness; hence, EEG-based methods detect drowsiness with the highest accuracy. Developments in manufacturing dry electrodes and headsets have made recording EEG more convenient. Ve"
+  },
+  {
+   "id": "1806.03045v1",
+   "title": "System Level Framework for Assessing the Accuracy of Neonatal EEG Acquisition",
+   "published": "2018-06-08",
+   "authors": "Mark O'Sullivan; Emanuel Popovici; Andrea Bocchino",
+   "abstract": "Significant research has been conducted in recent years to design low-cost alternatives to the current EEG monitoring systems used in healthcare facilities. Testing such systems on a vulnerable population such as newborns is complicated due to ethical and regulatory considerations that slow down the"
+  },
+  {
+   "id": "2205.08419v1",
+   "title": "Human Emotion Classification based on EEG Signals Using Recurrent Neural Network And KNN",
+   "published": "2022-05-10",
+   "authors": "Shashank Joshi; Falak Joshi",
+   "abstract": "In human contact, emotion is very crucial. Attributes like words, voice intonation, facial expressions, and kinesics can all be used to portray one's feelings. However, brain-computer interface (BCI) devices have not yet reached the level required for emotion interpretation. With the rapid developme"
+  },
+  {
+   "id": "2404.15753v1",
+   "title": "Introducing EEG Analyses to Help Personal Music Preference Prediction",
+   "published": "2024-04-24",
+   "authors": "Zhiyu He; Jiayu Li; Weizhi Ma",
+   "abstract": "Nowadays, personalized recommender systems play an increasingly important role in music scenarios in our daily life with the preference prediction ability. However, existing methods mainly rely on users' implicit feedback (e.g., click, dwell time) which ignores the detailed user experience. This pap"
+  }
+ ],
+ "all:\"graphene\" AND all:EEG AND all:electrode": [],
+ "all:\"e-tattoo\" AND all:electrode": [
+  {
+   "id": "2410.05449v1",
+   "title": "Skin Controlled Electronic and Neuromorphic Tattoos",
+   "published": "2024-10-07",
+   "authors": "Dmitry Kireev; Nandu Koripally; Samuel Liu",
+   "abstract": "Wearable human activity sensors developed in the past decade show a distinct trend of becoming thinner and more imperceptible while retaining their electrical qualities, with graphene e-tattoos, as the ultimate example. A persistent challenge in modern wearables, however, is signal degradation due t"
+  }
+ ],
+ "all:\"ear-EEG\"": [
+  {
+   "id": "1701.04398v1",
+   "title": "Automatic sleep monitoring using ear-EEG",
+   "published": "2017-01-03",
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Mary J. Morrell",
+   "abstract": "The monitoring of sleep patterns without patient's inconvenience or involvement of a medical specialist is a clinical question of significant importance. To this end, we propose an automatic sleep stage monitoring system based on an affordable, unobtrusive, discreet, and long-term wearable in-ear se"
+  },
+  {
+   "id": "2207.08497v1",
+   "title": "Ear-EEG Sensitivity Modelling for Neural and Artifact Sources",
+   "published": "2022-07-18",
+   "authors": "Metin Yarici; Mike Thornton; Danilo Mandic",
+   "abstract": "The ear-EEG has emerged as a promising candidate for wearable brain monitoring in real-world scenarios. While experimental studies have validated ear-EEG in multiple scenarios, the source-sensor relationship for a variety of neural sources has not been established. In addition, a detailed theoretica"
+  },
+  {
+   "id": "2507.12873v1",
+   "title": "An Investigation of Ear-EEG Signals for a Novel Biometric Authentication System",
+   "published": "2025-07-17",
+   "authors": "Danilo Avola; Giancarlo Crocetti; Gian Luca Foresti",
+   "abstract": "This work explores the feasibility of biometric authentication using EEG signals acquired through in-ear devices, commonly referred to as ear-EEG. Traditional EEG-based biometric systems, while secure, often suffer from low usability due to cumbersome scalp-based electrode setups. In this study, we "
+  },
+  {
+   "id": "2005.01329v3",
+   "title": "Prediction of Memory Retrieval Performance Using Ear-EEG Signals",
+   "published": "2020-05-04",
+   "authors": "Jenifer Kalafatovich; Minji Lee; Seong-Whan Lee",
+   "abstract": "Many studies have explored brain signals during the performance of a memory task to predict later remembered items. However, prediction methods are still poorly used in real life and are not practical due to the use of electroencephalography (EEG) recorded from the scalp. Ear-EEG has been recently u"
+  },
+  {
+   "id": "2409.08710v1",
+   "title": "Using Ear-EEG to Decode Auditory Attention in Multiple-speaker Environment",
+   "published": "2024-09-13",
+   "authors": "Haolin Zhu; Yujie Yan; Xiran Xu",
+   "abstract": "Auditory Attention Decoding (AAD) can help to determine the identity of the attended speaker during an auditory selective attention task, by analyzing and processing measurements of electroencephalography (EEG) data. Most studies on AAD are based on scalp-EEG signals in two-speaker scenarios, which "
+  },
+  {
+   "id": "2211.02638v1",
+   "title": "A Knowledge Distillation Framework For Enhancing Ear-EEG Based Sleep Staging With Scalp-EEG Data",
+   "published": "2022-10-27",
+   "authors": "Mithunjha Anandakumar; Jathurshan Pradeepkumar; Simon L. Kappel",
+   "abstract": "Sleep plays a crucial role in the well-being of human lives. Traditional sleep studies using Polysomnography are associated with discomfort and often lower sleep quality caused by the acquisition setup. Previous works have focused on developing less obtrusive methods to conduct high-quality sleep st"
+  },
+  {
+   "id": "2002.01085v1",
+   "title": "Decoding Visual Responses based on Deep Neural Networks with Ear-EEG Signals",
+   "published": "2020-02-04",
+   "authors": "Young-Eun Lee; Minji Lee",
+   "abstract": "Recently, practical brain-computer interface is actively carried out, especially, in an ambulatory environment. However, the electroencephalography signals are distorted by movement artifacts and electromyography signals in ambulatory condition, which make hard to recognize human intention. In addit"
+  },
+  {
+   "id": "2003.00657v2",
+   "title": "Wireless User-Generic Ear EEG",
+   "published": "2020-03-02",
+   "authors": "Ryan Kaveh; Justin Doong; Andy Zhou",
+   "abstract": "In the past few years it has been demonstrated that electroencephalography (EEG) can be recorded from inside the ear (in-ear EEG). To open the door to low-profile earpieces as wearable brain-computer interfaces (BCIs), this work presents a practical in-ear EEG device based on multiple dry electrodes"
+  }
+ ],
+ "all:\"in-ear EEG\"": [
+  {
+   "id": "2003.00657v2",
+   "title": "Wireless User-Generic Ear EEG",
+   "published": "2020-03-02",
+   "authors": "Ryan Kaveh; Justin Doong; Andy Zhou",
+   "abstract": "In the past few years it has been demonstrated that electroencephalography (EEG) can be recorded from inside the ear (in-ear EEG). To open the door to low-profile earpieces as wearable brain-computer interfaces (BCIs), this work presents a practical in-ear EEG device based on multiple dry electrodes"
+  },
+  {
+   "id": "2505.14478v4",
+   "title": "A Direct Comparison of Simultaneously Recorded Scalp, Around-Ear, and In-Ear EEG for Neural Selective Auditory Attention Decoding to Speech",
+   "published": "2025-05-20",
+   "authors": "Simon Geirnaert; Simon L. Kappel; Preben Kidmose",
+   "abstract": "Current assistive hearing devices, such as hearing aids and cochlear implants, lack the ability to adapt to the listener's focus of auditory attention, limiting their effectiveness in complex acoustic environments like cocktail party scenarios where multiple conversations occur simultaneously. Neuro"
+  },
+  {
+   "id": "1701.04398v1",
+   "title": "Automatic sleep monitoring using ear-EEG",
+   "published": "2017-01-03",
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Mary J. Morrell",
+   "abstract": "The monitoring of sleep patterns without patient's inconvenience or involvement of a medical specialist is a clinical question of significant importance. To this end, we propose an automatic sleep stage monitoring system based on an affordable, unobtrusive, discreet, and long-term wearable in-ear se"
+  },
+  {
+   "id": "2207.08497v1",
+   "title": "Ear-EEG Sensitivity Modelling for Neural and Artifact Sources",
+   "published": "2022-07-18",
+   "authors": "Metin Yarici; Mike Thornton; Danilo Mandic",
+   "abstract": "The ear-EEG has emerged as a promising candidate for wearable brain monitoring in real-world scenarios. While experimental studies have validated ear-EEG in multiple scenarios, the source-sensor relationship for a variety of neural sources has not been established. In addition, a detailed theoretica"
+  },
+  {
+   "id": "2301.06406v1",
+   "title": "Hearables: Ear EEG Based Driver Fatigue Detection",
+   "published": "2023-01-16",
+   "authors": "Metin C. Yarici; Pierluigi Amadori; Harry Davies",
+   "abstract": "Ear EEG based driver fatigue monitoring systems have the potential to provide a seamless, efficient, and feasibly deployable alternative to existing scalp EEG based systems, which are often cumbersome and impractical. However, the feasibility of detecting the relevant delta, theta, alpha, and beta b"
+  },
+  {
+   "id": "1705.03742v2",
+   "title": "In-ear EEG biometrics for feasible and readily collectable real-world person authentication",
+   "published": "2017-05-10",
+   "authors": "Takashi Nakamura; Valentin Goverdovsky; Danilo P. Mandic",
+   "abstract": "The use of EEG as a biometrics modality has been investigated for about a decade, however its feasibility in real-world applications is not yet conclusively established, mainly due to the issues with collectability and reproducibility. To this end, we propose a readily deployable EEG biometrics syst"
+  },
+  {
+   "id": "2507.12873v1",
+   "title": "An Investigation of Ear-EEG Signals for a Novel Biometric Authentication System",
+   "published": "2025-07-17",
+   "authors": "Danilo Avola; Giancarlo Crocetti; Gian Luca Foresti",
+   "abstract": "This work explores the feasibility of biometric authentication using EEG signals acquired through in-ear devices, commonly referred to as ear-EEG. Traditional EEG-based biometric systems, while secure, often suffer from low usability due to cumbersome scalp-based electrode setups. In this study, we "
+  },
+  {
+   "id": "2005.01329v3",
+   "title": "Prediction of Memory Retrieval Performance Using Ear-EEG Signals",
+   "published": "2020-05-04",
+   "authors": "Jenifer Kalafatovich; Minji Lee; Seong-Whan Lee",
+   "abstract": "Many studies have explored brain signals during the performance of a memory task to predict later remembered items. However, prediction methods are still poorly used in real life and are not practical due to the use of electroencephalography (EEG) recorded from the scalp. Ear-EEG has been recently u"
+  }
+ ],
+ "all:\"active electrode\" AND all:EEG": [
+  {
+   "id": "2503.23338v3",
+   "title": "An Active Dry-Contact Continuous EEG Monitoring System for Seizure Detection Applications in Clinical Neurophysiology",
+   "published": "2025-03-30",
+   "authors": "Nima L. Wickramasinghe; Dinuka Sandun Udayantha; Akila Abeyratne",
+   "abstract": "Objective: Young children and infants, especially newborns, are highly susceptible to seizures, which, if undetected and untreated, can lead to severe long-term neurological consequences. Early detection typically requires continuous electroencephalography (cEEG) monitoring in hospital settings, inv"
+  },
+  {
+   "id": "1809.00502v1",
+   "title": "Deep Learning of Human Perception in Audio Event Classification",
+   "published": "2018-09-03",
+   "authors": "Yi Yu; Samuel Beuret; Donghuo Zeng",
+   "abstract": "In this paper, we introduce our recent studies on human perception in audio event classification by different deep learning models. In particular, the pre-trained model VGGish is used as feature extractor to process audio data, and DenseNet is trained by and used as feature extractor for our electro"
+  },
+  {
+   "id": "1610.06421v3",
+   "title": "Mixed Neural Network Approach for Temporal Sleep Stage Classification",
+   "published": "2016-10-15",
+   "authors": "Hao Dong; Akara Supratak; Wei Pan",
+   "abstract": "This paper proposes a practical approach to addressing limitations posed by use of single active electrodes in applications for sleep stage classification. Electroencephalography (EEG)-based characterizations of sleep stage progression contribute the diagnosis and monitoring of the many pathologies "
+  }
+ ],
+ "all:\"high-density EEG\"": [
+  {
+   "id": "2604.02362v1",
+   "title": "CIPHER: Conformer-based Inference of Phonemes from High-density EEG",
+   "published": "2026-03-22",
+   "authors": "Varshith Madishetty",
+   "abstract": "Decoding speech information from scalp EEG remains difficult due to low SNR and spatial blurring. We present CIPHER (Conformer-based Inference of Phonemes from High-density EEG Representations), a dual-pathway model using (i) ERP features and (ii) broadband DDA coefficients. On OpenNeuro ds006104 (2"
+  },
+  {
+   "id": "2507.17242v1",
+   "title": "High-Density EEG Enables the Fastest Visual Brain-Computer Interfaces",
+   "published": "2025-07-23",
+   "authors": "Gege Ming; Weihua Pei; Sen Tian",
+   "abstract": "Brain-computer interface (BCI) technology establishes a direct communication pathway between the brain and external devices. Current visual BCI systems suffer from insufficient information transfer rates (ITRs) for practical use. Spatial information, a critical component of visual perception, remain"
+  },
+  {
+   "id": "physics/0011006v1",
+   "title": "Spherical harmonic decomposition applied to spatial-temporal analysis of human high-density EEG",
+   "published": "2000-11-02",
+   "authors": "Brett M. Wingeier; Paul L. Nunez; Richard B. Silberstein",
+   "abstract": "We demonstrate an application of spherical harmonic decomposition to analysis of the human electroencephalogram (EEG). We implement two methods and discuss issues specific to analysis of hemispherical, irregularly sampled data. Performance of the methods and spatial sampling requirements are quantif"
+  },
+  {
+   "id": "2212.00712v1",
+   "title": "Nonlinear and Machine Learning Analyses on High-Density EEG data of Math Experts and Novices",
+   "published": "2022-12-01",
+   "authors": "Hanna Poikonen; Tomasz Zaluska; Xiaying Wang",
+   "abstract": "Current trend in neurosciences is to use naturalistic stimuli, such as cinema, class-room biology or video gaming, aiming to understand the brain functions during ecologically valid conditions. Naturalistic stimuli recruit complex and overlapping cognitive, emotional and sensory brain processes. Bra"
+  },
+  {
+   "id": "1710.09139v3",
+   "title": "Deep Transfer Learning for Error Decoding from Non-Invasive EEG",
+   "published": "2017-10-25",
+   "authors": "Martin Völker; Robin T. Schirrmeister; Lukas D. J. Fiederer",
+   "abstract": "We recorded high-density EEG in a flanker task experiment (31 subjects) and an online BCI control paradigm (4 subjects). On these datasets, we evaluated the use of transfer learning for error decoding with deep convolutional neural networks (deep ConvNets). In comparison with a regularized linear di"
+  },
+  {
+   "id": "2411.19230v2",
+   "title": "Pre-Training Graph Contrastive Masked Autoencoders are Strong Distillers for EEG",
+   "published": "2024-11-28",
+   "authors": "Xinxu Wei; Kanhao Zhao; Yong Jiao",
+   "abstract": "Effectively utilizing extensive unlabeled high-density EEG data to improve performance in scenarios with limited labeled low-density EEG data presents a significant challenge. In this paper, we address this challenge by formulating it as a graph transfer learning and knowledge distillation problem. "
+  },
+  {
+   "id": "2507.10093v1",
+   "title": "Dissociating Cognitive Load and Stress Responses Using Single-Channel EEG: Behavioral and Neural Correlates of Anxiety Across Cognitive States",
+   "published": "2025-07-14",
+   "authors": "Neta Batya Maimon; Lior Molcho; Talya Zaimer",
+   "abstract": "Identifying neural markers of stress and cognitive load is key to developing scalable tools for mental state assessment. This study evaluated whether a single-channel high-density EEG (hdrEEG) system could dissociate cognitive and stress-related activity during a brief auditory task-based protocol. "
+  },
+  {
+   "id": "2511.18057v1",
+   "title": "The Hydraulic Brain: Understanding as Constraint-Release Phase Transition in Whole-Body Resonance",
+   "published": "2025-11-22",
+   "authors": "Ahmed Gamal Eldin",
+   "abstract": "Current models treat physiological signals as noise corrupting neural computation. Previously, we showed that removing these \"artifacts\" eliminates 70% of predictive correlation, suggesting body signals functionally drive cognition. Here, we investigate the mechanism using high-density EEG (64 chann"
+  }
+ ],
+ "all:\"EEG artifact removal\" AND all:\"deep learning\"": [
+  {
+   "id": "2209.11980v1",
+   "title": "Removal of Ocular Artifacts in EEG Using Deep Learning",
+   "published": "2022-09-24",
+   "authors": "Mehmet Akif Ozdemir; Sumeyye Kizilisik; Onan Guren",
+   "abstract": "EEG signals are complex and low-frequency signals. Therefore, they are easily influenced by external factors. EEG artifact removal is crucial in neuroscience because artifacts have a significant impact on the results of EEG analysis. The removal of ocular artifacts is the most challenging among thes"
+  },
+  {
+   "id": "2507.22263v1",
+   "title": "Deep Learning for Gradient and BCG Artifacts Removal in EEG During Simultaneous fMRI",
+   "published": "2025-07-29",
+   "authors": "K. A. Shahriar; E. H. Bhuiyan; Q. Luo",
+   "abstract": "Simultaneous EEG-fMRI recording combines high temporal and spatial resolution for tracking neural activity. However, its usefulness is greatly limited by artifacts from magnetic resonance (MR), especially gradient artifacts (GA) and ballistocardiogram (BCG) artifacts, which interfere with the EEG si"
+  },
+  {
+   "id": "2502.08686v1",
+   "title": "EEG Artifact Detection and Correction with Deep Autoencoders",
+   "published": "2025-02-12",
+   "authors": "David Aquilué-Llorens; Aureli Soria-Frisch",
+   "abstract": "EEG signals convey important information about brain activity both in healthy and pathological conditions. However, they are inherently noisy, which poses significant challenges for accurate analysis and interpretation. Traditional EEG artifact removal methods, while effective, often require extensi"
+  }
+ ],
+ "all:\"Artifact Subspace Reconstruction\"": [
+  {
+   "id": "2407.04727v2",
+   "title": "Dynamical Embedding of Single Channel Electroencephalogram for Artifact Subspace Reconstruction",
+   "published": "2024-06-28",
+   "authors": "Doli Hazarika; Vishnu KN; Ramdas Ransing",
+   "abstract": "This study introduces a novel framework to apply Artifact Subspace Reconstruction (ASR) algorithm on single-channel Electroencephalogram (EEG) data. ASR, renowned for its automated capability to effectively eliminate various artifacts like eye-blinks and eye movements from EEG signals. Importantly i"
+  },
+  {
+   "id": "2605.14941v2",
+   "title": "nASR: An End-to-End Trainable Neural Layer for Channel-Level EEG Artifact Subspace Reconstruction in Real-Time BCI",
+   "published": "2026-05-14",
+   "authors": "Shantanu Sarkar; Jose L. Contreras-Vidal",
+   "abstract": "Electroencephalogram (EEG) signals are highly susceptible to artifacts, resulting in a low signal-to-noise ratio, which makes extraction of meaningful neural information challenging. Artifact Subspace Reconstruction (ASR) is one of the most widely used artifact filtering techniques in EEG-based BCI "
+  },
+  {
+   "id": "2204.13444v1",
+   "title": "Mobile EEG artifact correction on limited hardware using artifact subspace recon- struction",
+   "published": "2022-04-28",
+   "authors": "Paul Maanen; Sarah Blum; Stefan Debener",
+   "abstract": "Biological data like electroencephalography (EEG) are typically contaminated by unwanted signals, called artifacts. Therefore, many applications dealing with biological data with low signal-to-noise ratio require robust artifact correction. For some applications like brain-computer-interfaces (BCI),"
+  },
+  {
+   "id": "2509.01073v1",
+   "title": "IMU-Enhanced EEG Motion Artifact Removal with Fine-Tuned Large Brain Models",
+   "published": "2025-09-01",
+   "authors": "Yuhong Zhang; Xusheng Zhu; Yuchen Xu",
+   "abstract": "Electroencephalography (EEG) is a non-invasive method for measuring brain activity with high temporal resolution; however, EEG signals often exhibit low signal-to-noise ratios because of contamination from physiological and environmental artifacts. One of the major challenges hindering the real-worl"
+  },
+  {
+   "id": "2510.19832v1",
+   "title": "Low-Latency Neural Inference on an Edge Device for Real-Time Handwriting Recognition from EEG Signals",
+   "published": "2025-10-07",
+   "authors": "Ovishake Sen; Raghav Soni; Darpan Virmani",
+   "abstract": "Brain-computer interfaces (BCIs) offer a pathway to restore communication for individuals with severe motor or speech impairments. Imagined handwriting provides an intuitive paradigm for character-level neural decoding, bridging the gap between human intention and digital communication. While invasi"
+  },
+  {
+   "id": "2507.17405v1",
+   "title": "Automatic Blink-based Bad EEG channels Detection for BCI Applications",
+   "published": "2025-07-23",
+   "authors": "Eva Guttmann-Flury; Yanyan Wei; Shan Zhao",
+   "abstract": "In Brain-Computer Interface (BCI) applications, noise presents a persistent challenge, often compromising the quality of EEG signals essential for accurate data interpretation. This paper focuses on optimizing the signal-to-noise ratio (SNR) to improve BCI performance, with channel selection being a"
+  },
+  {
+   "id": "2410.11339v3",
+   "title": "EEG-based 90-Degree Turn Intention Detection for Brain-Computer Interface",
+   "published": "2024-10-15",
+   "authors": "Pradyot Anand; Anant Jain; Suriya Prakash Muthukrishnan",
+   "abstract": "Electroencephalography (EEG)--based turn intention prediction for lower limb movement is important to build an efficient brain-computer interface (BCI) system. This study investigates the feasibility of intention detection of left-turn, right-turn, and straight walk by utilizing EEG signals obtained"
+  },
+  {
+   "id": "2405.11394v1",
+   "title": "Online Mental Stress Detection Using Frontal-channel EEG Recordings in a Classroom Scenario",
+   "published": "2024-05-18",
+   "authors": "Chi-Yuan Chang; Chieh Hsu; Ying Choon Wu",
+   "abstract": "Objective: To investigate the effects of different approaches to EEG preprocessing, channel montage selection, and model architecture on the performance of an online-capable stress detection algorithm in a classroom scenario. Methods: This analysis used EEG data from a longitudinal stress and fatigu"
+  }
+ ],
+ "all:\"electrode-skin impedance\" AND all:EEG": [
+  {
+   "id": "2609.02777v1",
+   "title": "A Dry-Contact Ear-EEG System With Continuous Electrode-Skin Impedance Mismatch Monitoring for Motion Artifact Cancellation Using DRL Stimulus",
+   "published": "2026-09-02",
+   "authors": "Lohan Atapattu; Sajitha Madugalle; Imasha Nethmal",
+   "abstract": "Dry-contact ear-electroencephalography (Ear-EEG) enables wearable neural monitoring. However, motion induced electrode-skin impedance (ESI) mismatches between electrodes can severely degrade signal quality. To the best of our knowledge, this paper presents the first proof-of-concept dry-contact EarE"
+  }
+ ],
+ "all:\"motion artifact\" AND all:EEG": [
+  {
+   "id": "2509.01073v1",
+   "title": "IMU-Enhanced EEG Motion Artifact Removal with Fine-Tuned Large Brain Models",
+   "published": "2025-09-01",
+   "authors": "Yuhong Zhang; Xusheng Zhu; Yuchen Xu",
+   "abstract": "Electroencephalography (EEG) is a non-invasive method for measuring brain activity with high temporal resolution; however, EEG signals often exhibit low signal-to-noise ratios because of contamination from physiological and environmental artifacts. One of the major challenges hindering the real-worl"
+  },
+  {
+   "id": "2609.02777v1",
+   "title": "A Dry-Contact Ear-EEG System With Continuous Electrode-Skin Impedance Mismatch Monitoring for Motion Artifact Cancellation Using DRL Stimulus",
+   "published": "2026-09-02",
+   "authors": "Lohan Atapattu; Sajitha Madugalle; Imasha Nethmal",
+   "abstract": "Dry-contact ear-electroencephalography (Ear-EEG) enables wearable neural monitoring. However, motion induced electrode-skin impedance (ESI) mismatches between electrodes can severely degrade signal quality. To the best of our knowledge, this paper presents the first proof-of-concept dry-contact EarE"
+  },
+  {
+   "id": "2204.04533v1",
+   "title": "Motion Artifacts Correction from Single-Channel EEG and fNIRS Signals using Novel Wavelet Packet Decomposition in Combination with Canonical Correlation Analysis",
+   "published": "2022-04-09",
+   "authors": "Md Shafayet Hossain; Muhammad E. H. Chowdhury; Mamun Bin Ibne Reaz",
+   "abstract": "The electroencephalogram (EEG) and functional near-infrared spectroscopy (fNIRS) signals, highly non-stationary in nature, greatly suffers from motion artifacts while recorded using wearable sensors. This paper proposes two robust methods: i) Wavelet packet decomposition (WPD), and ii) WPD in combin"
+  },
+  {
+   "id": "1201.4481v2",
+   "title": "EEG-assisted retrospective motion correction for fMRI: E-REMCOR",
+   "published": "2012-01-21",
+   "authors": "Vadim Zotev; Han Yuan; Raquel Phillips",
+   "abstract": "We propose a method for retrospective motion correction of fMRI data in simultaneous EEG-fMRI that employs the EEG array as a sensitive motion detector. EEG motion artifacts are used to generate motion regressors describing rotational head movements with millisecond temporal resolution. These regres"
+  },
+  {
+   "id": "2604.26379v1",
+   "title": "A Multimodal Pre-trained Network for Integrated EEG-Video Seizure Detection",
+   "published": "2026-04-29",
+   "authors": "Tong Lu; Ke Xu; Zimo Zhang",
+   "abstract": "Reliable seizure detection in mouse models is essential for preclinical epilepsy research, yet manual review of synchronized video-EEG recordings is labor-intensive and single-modality systems fail for complementary reasons: video-based methods are easily confounded by benign behaviors, whereas EEG-"
+  },
+  {
+   "id": "2503.22024v2",
+   "title": "Beyond Subjectivity: Continuous Cybersickness Detection Using EEG-based Multitaper Spectrum Estimation",
+   "published": "2025-03-27",
+   "authors": "Berken Utku Demirel; Adnan Harun Dogan; Juliete Rossie",
+   "abstract": "Virtual reality (VR) presents immersive opportunities across many applications, yet the inherent risk of developing cybersickness during interaction can severely reduce enjoyment and platform adoption. Cybersickness is marked by symptoms such as dizziness and nausea, which previous work primarily as"
+  },
+  {
+   "id": "2608.02083v2",
+   "title": "A 2-Block Architecture for Real-Time EEG Gait Decoding: A Pilot Study",
+   "published": "2026-08-03",
+   "authors": "Shantanu Sarkar; Saurabh Prasad; Jose L. Contreras-Vidal",
+   "abstract": "Closed-loop lower-limb exoskeleton control via Electroencephalography (EEG) remains limited by motion artifacts, low signal-to-noise ratio, and binary gait formulations that fail to capture full cortical gait complexity. We propose a 2-block Brain-Computer Interface (BCI) architecture: a trainable s"
+  },
+  {
+   "id": "2604.09649v1",
+   "title": "WearBCI Dataset: Understanding and Benchmarking Real-World Wearable Brain-Computer Interfaces Signals",
+   "published": "2026-03-29",
+   "authors": "Haoxian Liu; Hengle Jiang; Lanxuan Hong",
+   "abstract": "Brain-computer interfaces (BCIs) have opened new platforms for human-computer interaction, medical diagnostics, and neurorehabilitation. Wearable BCI systems, which typically employ non-invasive electrodes for portable monitoring, hold great promise for real-world applications, but also face signifi"
+  }
+ ],
+ "all:\"conductive polymer\" AND all:EEG AND all:electrode": [
+  {
+   "id": "1609.08565v1",
+   "title": "Carbon nanofiber-filled conductive silicone elastomers as soft, dry bioelectronic interfaces",
+   "published": "2016-09-27",
+   "authors": "G. A. Slipher; W. D. Hairston; R. A. Mrozek",
+   "abstract": "Soft and pliable conductive polymer composites hold promise for application as bioelectronic interfaces such as for electroencephalography (EEG). In clinical, laboratory, and real-world EEG there is a desire for dry, soft, and comfortable interfaces to the scalp that are capable of relaying the micr"
+  }
+ ]
+}

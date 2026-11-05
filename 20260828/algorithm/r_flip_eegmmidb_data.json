@@ -1,0 +1,61 @@
+{
+  "data": "eegmmidb/data",
+  "n_classes": 4,
+  "seed": 42,
+  "eps": 0.1,
+  "points": [
+    {
+      "frac": 0.1,
+      "n_labels": 216,
+      "hard": 31.3,
+      "label_smoothing": 35.0,
+      "R_pp": 3.7
+    },
+    {
+      "frac": 0.15,
+      "n_labels": 324,
+      "hard": 37.04,
+      "label_smoothing": 32.59,
+      "R_pp": -4.44
+    },
+    {
+      "frac": 0.2,
+      "n_labels": 432,
+      "hard": 35.19,
+      "label_smoothing": 35.19,
+      "R_pp": 0.0
+    },
+    {
+      "frac": 0.25,
+      "n_labels": 540,
+      "hard": 35.74,
+      "label_smoothing": 35.19,
+      "R_pp": -0.56
+    },
+    {
+      "frac": 0.3,
+      "n_labels": 648,
+      "hard": 40.0,
+      "label_smoothing": 37.41,
+      "R_pp": -2.59
+    },
+    {
+      "frac": 0.5,
+      "n_labels": 1080,
+      "hard": 36.85,
+      "label_smoothing": 37.04,
+      "R_pp": 0.19
+    },
+    {
+      "frac": 1.0,
+      "n_labels": 2160,
+      "hard": 38.89,
+      "label_smoothing": 37.41,
+      "R_pp": -1.48
+    }
+  ],
+  "flip_between": [
+    0.1,
+    0.15
+  ]
+}

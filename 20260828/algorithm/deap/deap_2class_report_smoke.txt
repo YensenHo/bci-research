@@ -1,0 +1,19 @@
+DEAP 情绪识别（valence 高/低二分类）训练报告 — EEG-TCNet
+================================================================
+tag             : smoke
+激活            : relu（LIF: thr=1.0 tau=2.0 T=8 alpha=4.0）
+最佳验证准确率  : 58.40%（epoch 2，hold-out 早停）
+final test(eval): 58.56%（跨被试 23-32，10 人，只测一次，chance 50%）
+训练窗口数      : 8976 | 验证 1584 | eval 4800
+参数量          : 9,646
+设备            : mps | seed 42
+超参数          : lr=0.001, batch=32, epochs=2, patience=25, val_split=0.15, dropout=0.25, cosine
+结构            : brief（F1=8 D=2 F2=16 FT=12 KE=63 KT=12 pool4/8 GAP, 32ch 5s 窗）
+热启动          : 
+对照(未微调)    : N/A
+发放率(eval)    : N/A
+注              : 无 HBC 增强（情绪识别无 HBC 场景，干净训练）
+----------------------------------------------------------------
+逐 epoch (epoch, train_loss, train_acc, val_acc):
+    1  0.686722  54.36%  55.11%
+    2  0.676555  57.25%  58.40%

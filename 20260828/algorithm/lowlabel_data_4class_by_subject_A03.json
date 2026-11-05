@@ -1,0 +1,15 @@
+{
+  "data": "data_4class_by_subject/A03",
+  "n_classes": 4,
+  "seed": 42,
+  "teacher_full": 83.68,
+  "teacher_30pct": 67.01,
+  "student_full": 88.19,
+  "hard_30pct": 66.67,
+  "ts_full_pp": -4.51,
+  "gain_full_pp": -1.74,
+  "ts_low_pp": 0.35,
+  "gain_low_pp": -3.12,
+  "A_consistent": true,
+  "B_consistent": false
+}

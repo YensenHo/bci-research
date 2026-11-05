@@ -1,0 +1,12 @@
+{
+  "data": "eegmmidb/data_ch1",
+  "permute": "shift=1",
+  "n_classes": 4,
+  "seed": 42,
+  "chance": 25.0,
+  "teacher_val": 22.04,
+  "student_full": 31.11,
+  "hard_30pct": 27.96,
+  "distilled_30pct": 25.93,
+  "gain_30pct_pp": -2.04
+}

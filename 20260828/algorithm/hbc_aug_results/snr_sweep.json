@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "model": "LIF-EEG-TCNet (brief, thr=1.0/tau=2.0/T=8, 9512 参数)",
+    "data": "data_4class/eval.npz (22ch 四分类, 2592 试次, cross-session)",
+    "test_noise_seed": 20240828,
+    "noise_spec": "5bit 量化(qrange=4.0) + AWGN σ/H=10^(-SNR/20)；8dB+突发 附加域",
+    "device": "mps"
+  },
+  "sweep_points": [
+    "clean(∞dB)",
+    "20dB",
+    "16dB",
+    "12dB",
+    "8dB",
+    "4dB",
+    "8dB+突发"
+  ],
+  "per_model": {
+    "无增强_s42": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_noaug_s42.pth",
+      "final_test_clean": 0.6242,
+      "clean(∞dB)": 0.6242,
+      "20dB": 0.6173,
+      "16dB": 0.598,
+      "12dB": 0.5293,
+      "8dB": 0.3873,
+      "4dB": 0.2689,
+      "8dB+突发": 0.3981
+    },
+    "增强_s42": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_aug_s42.pth",
+      "final_test_clean": 0.6358,
+      "clean(∞dB)": 0.6358,
+      "20dB": 0.6154,
+      "16dB": 0.5968,
+      "12dB": 0.588,
+      "8dB": 0.5467,
+      "4dB": 0.4167,
+      "8dB+突发": 0.5305
+    },
+    "无增强_s123": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_noaug_s123.pth",
+      "final_test_clean": 0.6042,
+      "clean(∞dB)": 0.6042,
+      "20dB": 0.5922,
+      "16dB": 0.5868,
+      "12dB": 0.5343,
+      "8dB": 0.4174,
+      "4dB": 0.2874,
+      "8dB+突发": 0.4333
+    },
+    "增强_s123": {
+      "ckpt": "/Users/heyixuan/BCI/20260828/algorithm/eeg_tcnet_4class_lif_hbc_aug_s123.pth",
+      "final_test_clean": 0.6111,
+      "clean(∞dB)": 0.6111,
+      "20dB": 0.6096,
+      "16dB": 0.6057,
+      "12dB": 0.5883,
+      "8dB": 0.5475,
+      "4dB": 0.424,
+      "8dB+突发": 0.5374
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "note": "gap 扫描对照（100 epoch，30% 标签，relu 学生）。v4 结论：红利符号 = sign(teacher − student 满标签)；teacher 弱于 student 的根因是过拟合（容量 vs 数据量）；过拟合 gap（train−val）是事前判据。EEGMMIDB 4类与 BCIC IV 2a cross 均双 seed（42/123）。",
+  "low_ceiling_teacher_weak": {
+    "dataset": "EEGMMIDB 4类（跨被试，21ch/320/2160样本）",
+    "teacher_eval": "~36-39%（弱于 student ~38.5%）",
+    "sample_count": 2160,
+    "seeds": [42, 123],
+    "points": [
+      {"gap": 1.00, "gain_30pct_pp": 0.09, "per_seed": [-0.93, 1.11]},
+      {"gap": 1.53, "gain_30pct_pp": -0.56, "per_seed": [-2.41, 1.30]},
+      {"gap": 2.14, "gain_30pct_pp": -0.93, "per_seed": [-2.04, 0.19]},
+      {"gap": 3.70, "gain_30pct_pp": -2.78, "per_seed": [-4.07, -1.48]},
+      {"gap": 6.77, "gain_30pct_pp": -1.95, "per_seed": [-3.33, -0.56]},
+      {"gap": 14.21, "gain_30pct_pp": -1.67, "per_seed": [-2.41, -0.93]}
+    ]
+  },
+  "cross_subject_same_dataset": {
+    "dataset": "BCIC IV 2a cross（跨被试，22ch/500/4608样本）",
+    "teacher_eval": "62.15%（强于 student 57.47%）",
+    "sample_count": 4608,
+    "seeds": [42, 123],
+    "points": [
+      {"gap": 1.00, "gain_30pct_pp": 6.25, "per_seed": [10.76, 1.74]},
+      {"gap": 1.53, "gain_30pct_pp": 3.47, "per_seed": [5.38, 1.56]},
+      {"gap": 2.14, "gain_30pct_pp": 5.12, "per_seed": [7.64, 2.60]},
+      {"gap": 3.70, "gain_30pct_pp": 5.56, "per_seed": [9.72, 1.39]},
+      {"gap": 6.77, "gain_30pct_pp": 5.12, "per_seed": [11.11, -0.87]},
+      {"gap": 14.19, "gain_30pct_pp": 4.78, "per_seed": [7.81, 1.74]}
+    ]
+  },
+  "within_subject": {
+    "dataset": "BCIC IV 2a within（22ch/500/2592样本）",
+    "teacher_eval": "65.7%（强于 student 60.6%）",
+    "sample_count": 2592,
+    "seeds": [42],
+    "points": [
+      {"gap": 1.00, "gain_30pct_pp": 2.70},
+      {"gap": 1.53, "gain_30pct_pp": 3.32},
+      {"gap": 2.14, "gain_30pct_pp": 2.85},
+      {"gap": 3.70, "gain_30pct_pp": 2.58},
+      {"gap": 6.77, "gain_30pct_pp": 4.09},
+      {"gap": 14.19, "gain_30pct_pp": 1.08}
+    ]
+  }
+}

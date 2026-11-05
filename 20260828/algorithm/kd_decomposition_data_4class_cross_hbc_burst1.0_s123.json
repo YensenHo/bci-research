@@ -1,0 +1,13 @@
+{
+  "data": "data_4class_cross_hbc_burst1.0",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 123,
+  "teacher_eval": 42.71,
+  "hard": 37.85,
+  "label_smoothing": 34.38,
+  "distilled": 47.05,
+  "R_pp": -3.47,
+  "K_pp": 12.67,
+  "total_gain_pp": 9.2
+}

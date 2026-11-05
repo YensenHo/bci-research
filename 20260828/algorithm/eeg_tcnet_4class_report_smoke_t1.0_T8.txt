@@ -1,0 +1,22 @@
+BCIC 2a 22ch 四分类训练报告 — LIF-EEG-TCNet（surrogate，热启动 relu）
+================================================================
+tag             : smoke_t1.0_T8
+最佳验证准确率  : 62.63%（epoch 3，hold-out 早停用）
+final test(eval): 59.72%（cross-session，只测一次）
+chance level    : 25.0%
+n_channels      : 22 | n_classes : 4
+训练样本数      : 2204 | 验证 388 | final test 2592
+参数量          : 9,512
+设备            : mps
+超参数          : lr=0.001, batch=16, epochs=3, patience=100, seed=42, val_split=0.15, dropout=0.25, cosine=True
+结构            : F1=8, D=2, F2=16, FT=12, kernel=63, tcn_kernel=12, dilations=(1,2), pool1=4, pool2=8, readout=gap
+LIF 超参        : threshold=1.0, tau=2.0, timesteps=8, alpha=4.0
+热启动          : True（eeg_tcnet_4class_relu_brief.pth）
+对照(未微调)    : 48.19%（eval，relu 权重直接换 LIF）
+发放率(eval)    : act1=14.5%  act2=21.8%  act_a=17.5%  act_b=24.5%  act_res=33.7%  act_a=20.2%  act_b=27.0%  act_res=36.5%
+LIF 位点        : act1/act2（前端 pool 前）+ TCN 每残差块 act_a/act_b/act_res （膨胀因果卷积后）
+----------------------------------------------------------------
+逐 epoch 记录 (epoch, train_loss, train_acc, val_acc):
+    1  1.125452  58.76%  58.76%
+    2  1.059161  60.03%  59.54%
+    3  1.007257  63.34%  62.63%

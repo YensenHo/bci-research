@@ -1,0 +1,13 @@
+{
+  "data": "data_4class_by_subject/A03",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 83.68,
+  "hard": 66.67,
+  "label_smoothing": 64.58,
+  "distilled": 64.93,
+  "R_pp": -2.08,
+  "K_pp": 0.35,
+  "total_gain_pp": -1.74
+}

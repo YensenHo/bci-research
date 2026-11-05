@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Hermes 本地数据(含桌面附件大文件)
+.hermes/
+
+# 已单独发布到 GitHub 的子仓库(见 README)
+hbc-bci-sim/
+luckfox-deploy/
+
+# 数据集 / 模型权重 / 缓存 / 大体积产物
+*.npy
+*.npz
+*.edf
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.rknn
+*.mat
+*.h5
+*.hdf5
+*.dat
+*.bin
+*.wav
+*.mp4
+*.mp3
+*.mov
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.gz
+*_cache/
+.cache/
+
+# 日志
+*.log

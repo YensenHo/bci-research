@@ -1,0 +1,27 @@
+{
+  "0": {
+    "eegnet": 42.13,
+    "signed_lif": 43.06,
+    "gap": 0.93
+  },
+  "1": {
+    "eegnet": 41.44,
+    "signed_lif": 39.93,
+    "gap": -1.51
+  },
+  "3": {
+    "eegnet": 35.3,
+    "signed_lif": 35.19,
+    "gap": -0.11
+  },
+  "5": {
+    "eegnet": 33.22,
+    "signed_lif": 36.92,
+    "gap": 3.7
+  },
+  "8": {
+    "eegnet": 33.45,
+    "signed_lif": 33.45,
+    "gap": 0.0
+  }
+}

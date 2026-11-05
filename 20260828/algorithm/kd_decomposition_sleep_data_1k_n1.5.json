@@ -1,0 +1,13 @@
+{
+  "data": "sleep/data_1k_n1.5",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 4.82,
+  "hard": 65.26,
+  "label_smoothing": 7.75,
+  "distilled": 27.37,
+  "R_pp": -57.51,
+  "K_pp": 19.62,
+  "total_gain_pp": -37.89
+}

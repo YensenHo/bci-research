@@ -1,0 +1,13 @@
+{
+  "data": "data_4class_cross_n1.0",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 42,
+  "teacher_eval": 50.52,
+  "hard": 20.31,
+  "label_smoothing": 28.3,
+  "distilled": 44.27,
+  "R_pp": 7.99,
+  "K_pp": 15.97,
+  "total_gain_pp": 23.96
+}

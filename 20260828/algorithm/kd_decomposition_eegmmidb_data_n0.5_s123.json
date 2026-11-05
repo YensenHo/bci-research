@@ -1,0 +1,13 @@
+{
+  "data": "eegmmidb/data_n0.5",
+  "label_frac": 0.3,
+  "eps": 0.1,
+  "seed": 123,
+  "teacher_eval": 35.93,
+  "hard": 34.81,
+  "label_smoothing": 35.37,
+  "distilled": 34.63,
+  "R_pp": 0.56,
+  "K_pp": -0.74,
+  "total_gain_pp": -0.19
+}

@@ -1,0 +1,16 @@
+{
+  "data": "myo_cross_17_n1.0",
+  "n_classes": 17,
+  "seed": 42,
+  "teacher_val": 25.9,
+  "teacher_train": 60.9,
+  "overfit_gap_pp": 34.99,
+  "student_full": 19.84,
+  "teacher_minus_student_pp": 6.06,
+  "hard_30pct": 20.33,
+  "distilled_30pct": 20.15,
+  "gain_30pct_pp": -0.18,
+  "threshold_predict": "neg",
+  "actual": "neg",
+  "consistent": true
+}

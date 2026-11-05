@@ -1,0 +1,16 @@
+{
+  "data": "data_4class_cross_n3.0",
+  "n_classes": 4,
+  "seed": 123,
+  "teacher_val": 30.9,
+  "teacher_train": 68.77,
+  "overfit_gap_pp": 37.87,
+  "student_full": 40.1,
+  "teacher_minus_student_pp": -9.2,
+  "hard_30pct": 24.65,
+  "distilled_30pct": 39.41,
+  "gain_30pct_pp": 14.76,
+  "threshold_predict": "neg",
+  "actual": "pos",
+  "consistent": false
+}
