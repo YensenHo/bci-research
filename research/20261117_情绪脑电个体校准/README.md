@@ -16,6 +16,8 @@
 
 FACED 的 16 人训练/6 人验证、112/42 个试次的开发实验中，训练均值、无校准 EEG、短基线校准 EEG 的 MAE 分别为 1.029、1.160、1.316（量表 0–7）。类别均值 MAE 0.992，但它额外使用刺激类别，不是同信息预算的模型排名。信号质量与事件时间仍需核实；个人情绪标签是观看后自报，不能代指动态脑电真值。
 
+[短基线固定权重与错配对照](outputs/FACED_短基线权重与错配对照_结果_20261117.md)中，权重从 0 到 1 的开发误差虽然下降，仍未超过训练均值；错配不能证明情绪神经机制。
+
 训练侧 16 人×7 部影片、逐人逐片双重留出下，均值、无校准及校准模型 MAE 分别为 1.422、2.308、1.694。这是 112 个重复交叉验证预测，不是 112 个独立人，也不是独立测试。每个影片对应一个类别，留出片也留出了该类。
 
 脚本固定 FACED NEMAR v1.1.4 commit `b19270dcf75170fc7588ddba3b1e9129a01e9e43`、DENS NEMAR v1.0.0 commit `beb73da6fde5c043d42145637db9f5bce7e3fe12`。`.gitignore` 排除 `work/` 下的生成数据目录。本仓库不包含 EEG、个人评分、特征缓存或逐试次预测；使用者需要根据数据集条款独立获取。
@@ -30,6 +32,7 @@ python work/faced_ratings_crosscheck_20261117.py
 python work/faced_development_20261117.py
 python work/faced_development_v2_20261117.py
 python work/faced_crossed_cv_20261117.py
+python work/faced_baseline_weight_cv_20261117.py
 python work/faced_cohort_prior_cv_20261117.py
 python work/baseline_noise_simulation_20261117.py
 ```
