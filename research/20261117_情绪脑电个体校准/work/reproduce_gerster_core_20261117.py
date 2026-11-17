@@ -15,6 +15,7 @@ from pathlib import Path
 import numpy as np
 import requests
 from sklearn.svm import LinearSVC
+from sklearn.metrics import balanced_accuracy_score
 
 COMMIT = 'b19270dcf75170fc7588ddba3b1e9129a01e9e43'
 S3 = 'https://nemar.s3.us-east-2.amazonaws.com/nm000112/objects/'
@@ -211,7 +212,7 @@ def lds_smooth(X):
 
 
 def loso(F, labels, subjects, label_key='stim', video_mask=None):
-    accs = []
+    accs, baccs, majs = [], [], []
     for held in subjects:
         tr = [s for s in subjects if s != held]
         Xtr, ytr, Xte, yte = [], [], [], []
@@ -230,8 +231,13 @@ def loso(F, labels, subjects, label_key='stim', video_mask=None):
         ytr = np.repeat(ytr, WPT); yte = np.repeat(yte, WPT)
         clf = LinearSVC(C=1.0, random_state=7, max_iter=5000)
         clf.fit(Xtr, ytr)
-        accs.append(np.mean(clf.predict(Xte) == yte))
-    return np.array(accs)
+        pred = clf.predict(Xte)
+        accs.append(np.mean(pred == yte))
+        baccs.append(balanced_accuracy_score(yte, pred))
+        vals, counts = np.unique(ytr, return_counts=True)
+        maj_cls = vals[np.argmax(counts)]
+        majs.append(np.mean(yte == maj_cls))
+    return np.array(accs), np.array(baccs), np.array(majs)
 
 
 def main():
@@ -254,14 +260,17 @@ def main():
         F[s] = zscore_per_subject(lds_smooth(flat)).reshape(F[s].shape)
 
     print('=== Phase C: LOSO LinearSVC (C=1) ===', flush=True)
-    a2 = loso(F, labels, subjects, 'stim')
-    ac = loso(F, labels, subjects, 'subj')
-    ad = loso(F, labels, subjects, 'stim', video_mask=SINGLE_VIDEOS)
-    print(f'2a stimulus labels  : {100*a2.mean():.1f}% +/- {100*a2.std()/np.sqrt(len(a2)):.1f}%', flush=True)
-    print(f'2c subjective labels : {100*ac.mean():.1f}% +/- {100*ac.std()/np.sqrt(len(ac)):.1f}%', flush=True)
-    print(f'2d single video      : {100*ad.mean():.1f}% +/- {100*ad.std()/np.sqrt(len(ad)):.1f}%', flush=True)
-    print(f'chance 11.1%  n_subjects={len(subjects)}  sec/video={SECONDS_PER_VIDEO}', flush=True)
-    np.savez(CACHE / f'repro_{SECONDS_PER_VIDEO}s.npz', a2=a2, ac=ac, ad=ad,
+    a2, b2, m2 = loso(F, labels, subjects, 'stim')
+    ac, bc, mc = loso(F, labels, subjects, 'subj')
+    ad, bd, md = loso(F, labels, subjects, 'stim', video_mask=SINGLE_VIDEOS)
+    def fmt(a):
+        return f'{100*a.mean():.1f}% +/- {100*a.std()/np.sqrt(len(a)):.1f}%'
+    print(f'2a stimulus labels  : acc {fmt(a2)}  balanced {fmt(b2)}  majority-baseline {fmt(m2)}', flush=True)
+    print(f'2c subjective labels : acc {fmt(ac)}  balanced {fmt(bc)}  majority-baseline {fmt(mc)}', flush=True)
+    print(f'2d single video      : acc {fmt(ad)}  balanced {fmt(bd)}  majority-baseline {fmt(md)}', flush=True)
+    print(f'n_subjects={len(subjects)}  sec/video={SECONDS_PER_VIDEO}', flush=True)
+    np.savez(CACHE / f'repro_{SECONDS_PER_VIDEO}s.npz', a2=a2, b2=b2, m2=m2,
+             ac=ac, bc=bc, mc=mc, ad=ad, bd=bd, md=md,
              subjects=np.array(subjects), conc=conc[np.array(subjects)])
 
 
