@@ -8,7 +8,7 @@
 |---|---|---|---|
 | PRED | "When and How to Adapt: Subject Shifts Detection and Prototype-Guided Correction for Online EEG Decoding"，IJCAI 2026，DOI 10.24963/ijcai.2026/418，全文 PDF 公开 | Shaoqi Zhang, Xi Jin, Xiaojun Ning, Yilin Chen, Jing Wang | 会议论文（已发表，cited 0） |
 | SPDIM | "SPDIM: Source-Free Unsupervised Conditional and Label Shift Adaptation in EEG"，ICLR 2025，arXiv 2411.07249 | Shanglin Li, Motoaki Kawanabe, Reinmar J. Kobler | 会议论文（arXiv cited 8） |
-| ResMF | **未能定位**：arXiv（ti/全字段）、OpenAlex、Crossref、GitHub 检索均无匹配（返回膜过滤、奥斯曼史等无关结果）。需 GPT 提供全称、DOI 或链接，否则无法对比 | — | 待澄清 |
+| ResMF | **已定位**：Chu 等，Cross-subject Multimodal Emotion Recognition via Resting-state EEG Adaptation，EUSIPCO 2026；目标受试者用无标签静息 EEG 适配，推理同时依赖 EEG 与面部动作单元 | [会议论文全文](https://www.eurasip.org/Proceedings/Eusipco/Eusipco2026/pdfs/0001487.pdf) | 已读全文；逐项对照见审计回应 |
 | Gerster | "Stimulus identity rather than emotion drives EEG classification on the FACED dataset"，bioRxiv 2026-06-16，DOI 10.64898/2026.06.12.731889，CC-BY 4.0 | Moritz Gerster 等（Human Augmented Brain System 员工） | 预印本 |
 
 ## 二、七项逐条对比（摘要/页面级已核实；标注「需全文」的未逐字核到）
@@ -38,11 +38,11 @@
 - **PRED**：任务为**类别分类**且用刺激指派标签，与我们「连续个人自评回归」协议不同；但「无标签在线何时适配」这一核心主张已被它跨三任务覆盖，不能称首创。
 - **SPDIM**：解决 label shift 的轻量黎曼修正，与我们「短基线校准」目标相邻但不重叠；「标签偏移下对齐有害 + 参数高效修正」已有先例。
 - **Gerster**：直接支撑我们的阴性结果——它证明 FACED 用刺激指派标签做分类会高估，换成个人自评则难。我们项目恰好在用更难的个人自评做回归目标，且当前 EEG 未超常数均值，与 Gerster 的结论方向一致。**这篇最值得复现并作为本文 related work / 反证引用**。
-- **ResMF**：无法评估，需先定位。
+- **ResMF**：已读全文。其 DEAP（22 人、LOSO）和 AMIGOS（40 人、10 折跨被试）使用 EEG + 面部动作单元、无标签静息 EEG 适配；AMIGOS 全模型 50.32%、去校准 48.80% 是作者报告的分类准确率，不能与本项目 EEG 单模态的连续回归直接比较。作者将方法简称写作 Resting-state Multimodal Fusion，也称 Resting-state EEG and Multimodal Features-based transfer learning。目标试验标签未用于适配，但伪标签由模型生成；是否严格在线、素材跨情境划分及公开实现仍需核实。
 
 ## 五、结论（诚实）
 
 1. 「无标签何时适配」「标签偏移对齐有害+轻量修正」「FACED 刺激混杂」三个创新点均已被 PRED / SPDIM / Gerster 占据，不能靠术语拼接声称首创——与 GPT 交接结论一致。
 2. 本文唯一可能的差异空间是**协议细节组合**：连续个人自评（非类别）+ 短基线无标签校准 + 已知先验下测增量。但拆开看，每个单点都有先例（2017 预测个人主观评分、EMAP 连续评分、静息 EEG 基线可重复性研究、PRISM 通道重要性+半监督适配）。
 3. **下一步最该做的是复现 Gerster**（代码公开、数据公开），把它的「自评换标签」分析接到我们的连续唤醒度协议上，看是否一致；这比自实现 PRED/SPDIM 更省、且直接决定本文选题是否成立。
-4. **ResMF 需 GPT 澄清**全称，补到本表后再定是否需要对比。
+4. **ResMF 已定位并读全文**；不把无标签静息个体适配声称为首创。是否能复现需进一步核对代码、面部模态和数据许可。

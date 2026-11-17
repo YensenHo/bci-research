@@ -10,7 +10,7 @@
 4. [已有观众评分场景的个人增量对照](outputs/FACED_群体先验个人增量_结果_20261117.md)：当前简单 EEG 模型未超过群体评分先验，仅为开发结果。
 5. [竞争论文](outputs/EEG_个人校准竞争研究补充_20261117.md)。PRED (IJCAI 2026)、SPDIM (ICLR 2025) 等已涉及 EEG 无标签适配；需逐项比较假设、数据、标签、时序及成本，不能把自动选择适配当首创。
 6. [DENS 数据审计](outputs/DENS_第二数据集可用性审计_20261117.md)与[其他数据集限制](outputs/第二数据集_EMAP_DENS_可用性与约束_20261117.md)。DENS 的事件时间、.fdt 长度和许可存在重要问题，不应直接当完整第二数据集。EMAP 禁止商业系统训练/改进，应遵守其许可。
-7. [Hermes 协作交接](HERMES_HANDOFF.md)。
+7. [Hermes 协作交接](HERMES_HANDOFF.md)及[审计回应与新增数据集核查](outputs/Hermes审计回应与证据_20261117.md)。
 
 ## 当前结果与可复现边界
 
@@ -37,6 +37,6 @@ python work/faced_cohort_prior_cv_20261117.py
 python work/baseline_noise_simulation_20261117.py
 ```
 
-前两个 FACED 脚本请求公开的个人评分元数据，后续脚本请求 EEG 片段，会在本地生成不应提交的文件。FACED CV 的原始结果包含逐试次评分和预测，不在仓库发布。`dens_metadata_audit_20261117.py`、`dens_trial_manifest_20261117.py`、`dens_signal_probe_20261117.py`、`dens_baseline_probe_20261117.py`、`dens_baseline_batch_20261117.py` 仅供审计，DENS 文件长度和许可问题解决前不能用于产品训练或声称第二数据集验证。
+其中 `faced_development_20261117.py` 是早期 v1（12/4 人、每人 9 个视频），`faced_development_v2_20261117.py` 才产生本页头条的 v2（16/6 人、112/42 试次），并复用 v1 缓存。两者都属于探索性开发，并非预注册或独立检验。前两个 FACED 脚本请求公开的个人评分元数据，后续脚本请求 EEG 片段，会在本地生成不应提交的文件。FACED CV 的原始结果包含逐试次评分和预测，不在仓库发布。`dens_metadata_audit_20261117.py`、`dens_trial_manifest_20261117.py`、`dens_signal_probe_20261117.py`、`dens_baseline_probe_20261117.py`、`dens_baseline_batch_20261117.py` 仅供审计，DENS 文件长度和许可问题解决前不能用于产品训练或声称第二数据集验证。
 
 合成高斯脚本仅验证假设模型中基线噪声可能使完全相减变差；它假设已知噪声方差，不是脑电实验或原创理论。
