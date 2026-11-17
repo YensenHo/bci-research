@@ -51,3 +51,7 @@ python work/on006866_verify_read_20261117.py <events.tsv路径> <channels.tsv路
 python work/on006866_pilot_20261117.py <events.tsv路径> <channels.tsv路径>
 python work/on006866_pilot_20261117.py <events.tsv路径> <channels.tsv路径> --full
 ```
+
+## ON006866 跨被试探索
+
+[固定方案](outputs/ON006866_跨被试小样本方案_20261117.md)及[结果](outputs/ON006866_跨被试小样本结果_20261117.md)：6 人训练、2 人测试，每位目标人用 10 条个人评分做有标签校准，再评估后 20 试次。只属于数据与方法开发，不能当作无标签静息校准、跨新素材检验或部署效果。运行 `python work/test_on006866_cross_subject_20261117.py`，再运行 `python work/on006866_cross_subject_20261117.py`；需联网并访问公开数据。特征缓存在被忽略目录，改变特征方法后需隔离或删除旧缓存，不得提交缓存或评分。
