@@ -1,0 +1,34 @@
+{
+  "warning": "synthetic Gaussian example, oracle knows noise variance; not EEG and not evidence of clinical or product performance",
+  "seed": 20261117,
+  "n": 100000,
+  "results": [
+    {
+      "baseline_noise_sd": 0.1,
+      "mse": {
+        "no_calibration": 0.5007181822135023,
+        "full_subtraction": 0.010005378063478901,
+        "known_noise_conditional_mean": 0.009805240899887279
+      },
+      "oracle_theoretical_mse": 0.009803921568627453
+    },
+    {
+      "baseline_noise_sd": 1.0,
+      "mse": {
+        "no_calibration": 0.503958373662857,
+        "full_subtraction": 1.0037180421515197,
+        "known_noise_conditional_mean": 0.3346502092958972
+      },
+      "oracle_theoretical_mse": 0.3333333333333333
+    },
+    {
+      "baseline_noise_sd": 3.0,
+      "mse": {
+        "no_calibration": 0.5038660924264248,
+        "full_subtraction": 9.01623892099651,
+        "known_noise_conditional_mean": 0.476543097677445
+      },
+      "oracle_theoretical_mse": 0.47368421052631576
+    }
+  ]
+}
