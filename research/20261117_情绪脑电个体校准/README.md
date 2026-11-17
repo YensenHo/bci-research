@@ -7,9 +7,10 @@
 1. 项目根目录的 `README.md`、`HARNESS.md` 和 `AGENTS.md`。
 2. [研究问题与边界](outputs/第一篇论文_研究问题重新收束_20261117.md)。
 3. [FACED 跨电影开发结果](outputs/FACED_跨电影混合采样率开发结果_20261117.md)和[训练侧双重留出结果](outputs/FACED_双重留出_训练侧交叉验证结果_20261117.md)。两项都属于开发，当前 EEG 模型没有稳定超过常数均值；不要称为论文成功或产品有效。
-4. [竞争论文](outputs/EEG_个人校准竞争研究补充_20261117.md)。PRED (IJCAI 2026)、SPDIM (ICLR 2025) 等已涉及 EEG 无标签适配；需逐项比较假设、数据、标签、时序及成本，不能把自动选择适配当首创。
-5. [DENS 数据审计](outputs/DENS_第二数据集可用性审计_20261117.md)与[其他数据集限制](outputs/第二数据集_EMAP_DENS_可用性与约束_20261117.md)。DENS 的事件时间、.fdt 长度和许可存在重要问题，不应直接当完整第二数据集。EMAP 禁止商业系统训练/改进，应遵守其许可。
-6. [Hermes 协作交接](HERMES_HANDOFF.md)。
+4. [已有观众评分场景的个人增量对照](outputs/FACED_群体先验个人增量_结果_20261117.md)：当前简单 EEG 模型未超过群体评分先验，仅为开发结果。
+5. [竞争论文](outputs/EEG_个人校准竞争研究补充_20261117.md)。PRED (IJCAI 2026)、SPDIM (ICLR 2025) 等已涉及 EEG 无标签适配；需逐项比较假设、数据、标签、时序及成本，不能把自动选择适配当首创。
+6. [DENS 数据审计](outputs/DENS_第二数据集可用性审计_20261117.md)与[其他数据集限制](outputs/第二数据集_EMAP_DENS_可用性与约束_20261117.md)。DENS 的事件时间、.fdt 长度和许可存在重要问题，不应直接当完整第二数据集。EMAP 禁止商业系统训练/改进，应遵守其许可。
+7. [Hermes 协作交接](HERMES_HANDOFF.md)。
 
 ## 当前结果与可复现边界
 
@@ -29,6 +30,7 @@ python work/faced_ratings_crosscheck_20261117.py
 python work/faced_development_20261117.py
 python work/faced_development_v2_20261117.py
 python work/faced_crossed_cv_20261117.py
+python work/faced_cohort_prior_cv_20261117.py
 python work/baseline_noise_simulation_20261117.py
 ```
 
