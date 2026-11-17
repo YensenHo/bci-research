@@ -40,3 +40,14 @@ python work/baseline_noise_simulation_20261117.py
 其中 `faced_development_20261117.py` 是早期 v1（12/4 人、每人 9 个视频），`faced_development_v2_20261117.py` 才产生本页头条的 v2（16/6 人、112/42 试次），并复用 v1 缓存。两者都属于探索性开发，并非预注册或独立检验。前两个 FACED 脚本请求公开的个人评分元数据，后续脚本请求 EEG 片段，会在本地生成不应提交的文件。FACED CV 的原始结果包含逐试次评分和预测，不在仓库发布。`dens_metadata_audit_20261117.py`、`dens_trial_manifest_20261117.py`、`dens_signal_probe_20261117.py`、`dens_baseline_probe_20261117.py`、`dens_baseline_batch_20261117.py` 仅供审计，DENS 文件长度和许可问题解决前不能用于产品训练或声称第二数据集验证。
 
 合成高斯脚本仅验证假设模型中基线噪声可能使完全相减变差；它假设已知噪声方差，不是脑电实验或原创理论。
+
+## ON006866 单人探索性流程
+
+[单人探索方案](outputs/ON006866_单人管线试验方案_20261117.md)：只用于检验数据读取与时序建模，受试者数为 1，不是跨人或医疗验证。请从 [NEMAR 固定版本](https://github.com/nemarDatasets/on006866/tree/7350e08e5e5e4cb7d2c96b3933a298b3ef67daa3)取得 sub-001 的 `events.tsv`、`channels.tsv`，将实际路径分别传给下面脚本；原始 `.set` 由脚本按范围读取。不要提交这些元数据（包含逐试次评分）、原始信号或缓存。脚本当前对 sub-001 文件的对象 ID 和 MATLAB 数据偏移做了固定校验，不能直接用于其他受试者。
+
+```text
+python work/test_on006866_pilot_20261117.py
+python work/on006866_verify_read_20261117.py <events.tsv路径> <channels.tsv路径>
+python work/on006866_pilot_20261117.py <events.tsv路径> <channels.tsv路径>
+python work/on006866_pilot_20261117.py <events.tsv路径> <channels.tsv路径> --full
+```
