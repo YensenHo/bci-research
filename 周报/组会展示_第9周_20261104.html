@@ -17,6 +17,9 @@ h2.sec .n.b{background:#58a6ff22;color:#58a6ff;border:1px solid #58a6ff55}
 h2.sec .n.g{background:#3fb95022;color:#3fb950;border:1px solid #3fb95055}
 h2.sec .n.y{background:#d2992222;color:#d29922;border:1px solid #d2992255}
 h2.sec .n.p{background:#bc8cff22;color:#bc8cff;border:1px solid #bc8cff55}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-left:8px;vertical-align:middle}
+.tag.new{background:#3fb95022;color:#3fb950;border:1px solid #3fb95055}
+.tag.prev{background:#58a6ff22;color:#58a6ff;border:1px solid #58a6ff55}
 p.lead{color:#b0bec5;font-size:15px;margin:8px 0 18px}
 .card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:14px 0}
 .card .ct{font-size:15px;font-weight:700;color:#e6edf3;margin-bottom:10px}
@@ -30,7 +33,6 @@ tr:last-child td{border-bottom:none}
 .neg{color:#f85149;font-weight:600}
 .callout{border-left:3px solid #3fb950;background:#3fb95011;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
 .warn{border-left:3px solid #d29922;background:#d2992211;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
-.alert{border-left:3px solid #f85149;background:#f8514911;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14.5px;color:#e6edf3}
 ul.plan{margin:8px 0 4px 22px;color:#c9d1d9;font-size:14.5px}
 ul.plan li{margin:10px 0}
 footer{text-align:center;color:#8b949e;font-size:14px;margin-top:60px;padding-top:24px;border-top:1px solid #21262d}
@@ -39,11 +41,7 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
 .kpi .k{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:18px;text-align:center}
 .kpi .k .v{font-size:24px;font-weight:800}
 .kpi .k .t{color:#8b949e;font-size:13px;margin-top:4px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
-.grid2 .u{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:18px}
-.grid2 .u .ut{font-size:15px;font-weight:700;color:#bc8cff;margin-bottom:6px}
-.grid2 .u .ud{color:#b0bec5;font-size:13.5px;line-height:1.65}
-@media(max-width:860px){.kpi{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+@media(max-width:860px){.kpi{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -55,20 +53,19 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
 </header>
 
 <!-- 总览 -->
-<h2 class="sec"><span class="n b">总</span>一句话：采集端采到真脑电，解码端知识蒸馏少标注</h2>
-<p class="lead">这条线补上了两端：<strong>前端</strong>用 16 通道 ADS1299 + 免涂抹弹针干电极采到了真实脑电（闭眼 alpha 增强 4.56 倍）；<strong>后端</strong>用知识蒸馏在少标注下追平满标注。下面分「采集」和「解码」两块讲。</p>
+<h2 class="sec"><span class="n b">总</span>一句话：采集端 64 通道脑电帽采到真脑电，解码端知识蒸馏少标注</h2>
+<p class="lead">这条线补上了两端：<strong>采集端</strong> 64 通道脑电帽（免涂抹弹针干电极）实测采到真脑电，闭眼 alpha 增强 4.56 倍；<strong>解码端</strong> 知识蒸馏在少标注下追平满标注。下面分「采集」和「解码」两块讲。</p>
 
 <div class="kpi">
+  <div class="k"><div class="v" style="color:#3fb950">64 通道</div><div class="t">脑电帽（10-10 布局）</div></div>
   <div class="k"><div class="v" style="color:#3fb950">×4.56</div><div class="t">闭眼 alpha 增强</div></div>
-  <div class="k"><div class="v" style="color:#58a6ff">16ch</div><div class="t">ADS1299 免涂抹采集</div></div>
-  <div class="k"><div class="v" style="color:#d29922">sign(t−s)</div><div class="t">蒸馏红利符号判据</div></div>
-  <div class="k"><div class="v" style="color:#bc8cff">+16.15</div><div class="t">σ=1.0 抗噪暴涨</div></div>
+  <div class="k"><div class="v" style="color:#58a6ff">sign(t−s)</div><div class="t">蒸馏红利符号判据</div></div>
+  <div class="k"><div class="v" style="color:#d29922">+16.15</div><div class="t">σ=1.0 抗噪暴涨</div></div>
 </div>
 
-<!-- 一、采集链路（脑电帽成果） -->
-<h2 class="sec"><span class="n g">一</span>采集端：脑电帽采到真实脑电</h2>
-<p class="lead">前端是<strong>可穿戴脑电采集链路</strong>：16 通道 ADS1299（OpenBCI 兼容）+ 免涂抹弹针干电极。实测打通了「电极 → ADS1299 → STM32 → USB 串口 → 滤波 → 频谱」整条链路。</p>
-
+<!-- 一、采集端（这几天成果） -->
+<h2 class="sec"><span class="n g">一</span>采集端：64 通道脑电帽采到真实脑电 <span class="tag new">这几天成果</span></h2>
+<p class="lead">64 通道脑电帽（10-10 布局）4 块 16 通道 ADS1299（<strong>RT-BCI EXP-8CH，OpenBCI 兼容</strong>）级联，用<strong>免涂抹弹针干电极</strong>。真机已把 64 通道调通：4 板参考 REF 共享接同一耳后电极、地 RLD 只接一块（其余悬空，否则抢地打架整组通道打满）。</p>
 <div class="card">
   <div class="ct">链路自检：闭眼 alpha 增强（枕区 Oz，睁眼 vs 闭眼）</div>
   <table>
@@ -77,15 +74,12 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
     <tr><td>峰值频率</td><td>10.7 Hz</td><td class="pos">10.0 Hz</td><td class="pos">移到 alpha 中心</td></tr>
     <tr><td>峰值功率</td><td>1,401 µV²</td><td class="pos">4,901 µV²</td><td class="pos">×3.5</td></tr>
   </table>
-  <div class="cd">闭眼 alpha 是睁眼的 <b>4.56 倍</b>，峰值稳稳落在 10Hz——这是脑电最经典的「枕区闭眼 alpha 增强」，证明采到的是真实脑电，不是噪声。接法：Oz 枕区（活动）+ A2 耳后（参考）+ RLD（地）。</div>
+  <div class="cd">闭眼 alpha 是睁眼的 <b>4.56 倍</b>，峰值稳稳落在 10Hz——经典「枕区闭眼 alpha 增强」，证明采到的是真实脑电。接法：Oz 枕区（活动）+ A2 耳后（参考）+ RLD（地）。</div>
 </div>
+<div class="callout"><b>采集端现状</b>：64 通道真机已调通，闭眼 alpha 增强 4.56 倍验证链路通；4 板识板用「拔线法」（同型号串口每次插随机分配），采集软件带调试向导自动检测板子、标出打满/平线。</div>
 
-<div class="callout">
-  <b>采集端现状</b>：16 通道板已实测打通（当前只用 1 个 Oz 通道验证），后续扩到 64 通道（4 块 16ch 板软件合并）。弹针干电极免涂抹，符合可穿戴方向，但接触阻抗高，后续测额叶 F3/F4 情绪指标需补导电膏或换弹针材质。
-</div>
-
-<!-- 二、解码端：知识蒸馏 -->
-<h2 class="sec"><span class="n b">二</span>解码端：知识蒸馏的符号判据 + K/R 机制</h2>
+<!-- 二、解码端（上次周报内容） -->
+<h2 class="sec"><span class="n b">二</span>解码端：知识蒸馏的符号判据 + K/R 机制 <span class="tag prev">上次周报</span></h2>
 <p class="lead">后端是可穿戴小模型的训练问题——标注贵。知识蒸馏用大模型软标签，少标注追平满标注。核心判据：<strong>红利符号 = sign(teacher−student)</strong>。</p>
 <div class="card">
   <div class="ct">K/R 定量分解（红利 = 知识传递 K + 正则化 R）</div>
@@ -97,10 +91,13 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
   </table>
   <div class="cd">负红利 = K 负 + R 负叠加；CHB-MIT 的「红利 0」是 K 负与 R 正精确抵消。负红利根因是 teacher 过拟合（容量 vs 数据量不匹配）。</div>
 </div>
+<div class="card">
+  <div class="ct">信噪比相图：加噪不产生负红利，反而暴露「蒸馏抗噪鲁棒性」</div>
+  <div class="cd">想闭环「加噪→teacher弱→负红利」被证伪——<strong>加噪不产生负红利</strong>，σ=1.0 红利暴涨 <b>+16.15（双 seed）</b>。机制：含噪下 30% 硬标签「学不动」（hard 崩到 &lt;25% chance），teacher 满标签软标签抗噪（救回 ~44%）。「hard 崩」是红利暴涨的必要前提。</div>
+</div>
 
-<!-- 三、信噪比 + 真实信道 -->
-<h2 class="sec"><span class="n y">三</span>信噪比相图 + 真实人体信道</h2>
-<p class="lead">加噪不产生负红利，σ=1.0 红利暴涨 <strong>+16.15（双 seed）</strong>；升级到真实人体信道（量化/突发/脉冲）红利全程正。</p>
+<!-- 三、真实人体信道 -->
+<h2 class="sec"><span class="n y">三</span>真实人体信道：量化/突发/脉冲下蒸馏依然抗噪 <span class="tag prev">上次周报</span></h2>
 <div class="card">
   <table>
     <tr><th>场景</th><th>物理含义</th><th>K（知识）</th><th>R（正则化）</th><th>总红利</th></tr>
@@ -109,11 +106,11 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
     <tr><td>impulse</td><td>AWGN+脉冲（静电放电）</td><td class="pos">+13.89</td><td class="pos">+3.99</td><td class="pos">+17.88</td></tr>
     <tr><td>full</td><td>量化+AWGN+突发+脉冲</td><td class="pos">+10.42</td><td class="pos">+5.38</td><td class="pos">+15.80</td></tr>
   </table>
-  <div class="cd">真实信道下蒸馏依然抗噪——蒸馏是「可穿戴人体通信系统」在<b>解码端</b>的那块拼图。</div>
+  <div class="cd">真实信道下蒸馏全程抗噪——蒸馏是「可穿戴人体通信系统」在<b>解码端</b>的那块拼图。</div>
 </div>
 
-<!-- 四、量化边界（证伪） -->
-<h2 class="sec"><span class="n p">四</span>量化边界：本周围绕「量化吃 K 不吃 R」做了证伪</h2>
+<!-- 四、量化边界（这几天成果） -->
+<h2 class="sec"><span class="n p">四</span>量化边界：bit 扫描证伪「量化吃 K 不吃 R」 <span class="tag new">这几天成果</span></h2>
 <p class="lead">想验证「5bit 量化吃 K（知识）不吃 R（正则化）」能否升成端侧部署判据，bit 扫描（2/3/4/5/8bit）结果把它证伪了。</p>
 <div class="card">
   <table>
@@ -132,8 +129,8 @@ code{background:#21262d;padding:1px 6px;border-radius:4px;font-size:13px;color:#
 <h2 class="sec"><span class="n g">五</span>诚实边界</h2>
 <div class="warn">
   <ul class="plan">
-    <li><b>采集端</b>：16 通道板当前只用 1 个 Oz 通道验证了 alpha，64 通道全量采集（4 块板软件合并）尚未实测；弹针干电极接触阻抗高，情绪指标（F3/F4 的 FAA）还没实测。</li>
-    <li><b>解码端 novelty 是切入角度级</b>，不是现象级：2026「蒸馏何时有害」已成红海，我们靠「脑电测试床 + 符号判据 + K/R 分解」的组合角度。</li>
+    <li><b>采集端</b>：16 通道板当前只用 1 个 Oz 通道验证了 alpha，64 通道全量（4 块板软件合并）尚未实测；弹针干电极接触阻抗高，情绪指标（F3/F4 的 FAA）还没实测。</li>
+    <li><b>解码端 novelty 是切入角度级</b>：2026「蒸馏何时有害」已成红海，靠「脑电测试床 + 符号判据 + K/R 分解」的组合角度。</li>
     <li><b>单 seed 不可信</b>：蒸馏红利结论必须双 seed 均值（量化边界证伪就是单 seed 假象的典型例子）。</li>
     <li><b>量化边界已证伪</b>：K/R 随 bit 非单调，端侧量化判据这条创新点不成立。</li>
   </ul>
