@@ -18,6 +18,7 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import balanced_accuracy_score
 
 COMMIT = 'b19270dcf75170fc7588ddba3b1e9129a01e9e43'
+RAW = 'https://raw.githubusercontent.com/nemarDatasets/nm000112/' + COMMIT
 S3 = 'https://nemar.s3.us-east-2.amazonaws.com/nm000112/objects/'
 CACHE = Path('/tmp/faced_repro'); CACHE.mkdir(exist_ok=True)
 PROXIES = {'http': 'http://127.0.0.1:8890', 'https': 'http://127.0.0.1:8890'}
@@ -66,9 +67,8 @@ def fetch_events(i):
     p = CACHE / f'{sid}_events.tsv'
     if p.exists():
         return sid, p.read_text(encoding='utf-8-sig')
-    gh = get(f'https://api.github.com/repos/nemarDatasets/nm000112/contents/{sid}/eeg/{sid}_task-watchingVideoClips_events.tsv?ref={COMMIT}',
-             headers={'User-Agent': 'h', 'Accept': 'application/vnd.github+json'})
-    t = base64.b64decode(gh.json()['content']).decode('utf-8', 'replace').lstrip('\ufeff')
+    gh = get(f'{RAW}/{sid}/eeg/{sid}_task-watchingVideoClips_events.tsv', proxy_first=False)
+    t = gh.text.lstrip('\ufeff')
     p.write_text(t, encoding='utf-8')
     return sid, t
 
@@ -163,9 +163,8 @@ def compute_subject_features(i, labels_i):
     if feat_cache.exists():
         return np.load(feat_cache)
     stem = f'{sid}_task-watchingVideoClips'
-    gh = get(f'https://api.github.com/repos/nemarDatasets/nm000112/contents/{sid}/eeg/{stem}_eeg.bdf?ref={COMMIT}',
-             headers={'User-Agent': 'h', 'Accept': 'application/vnd.github+json'})
-    key = base64.b64decode(gh.json()['content']).decode('utf-8', 'replace').strip().split('/')[-1]
+    ptr = get(f'{RAW}/{sid}/eeg/{stem}_eeg.bdf', proxy_first=False)
+    key = ptr.text.strip().split('/')[-1]
     url = S3 + key
     h0 = read_range(url, 0, 256)
     head = read_range(url, 0, int(h0[184:192]))
