@@ -43,7 +43,7 @@ python work/baseline_noise_simulation_20261117.py
 
 ## ON006866 单人探索性流程
 
-[单人探索方案](outputs/ON006866_单人管线试验方案_20261117.md)：只用于检验数据读取与时序建模，受试者数为 1，不是跨人或医疗验证。请从 [NEMAR 固定版本](https://github.com/nemarDatasets/on006866/tree/7350e08e5e5e4cb7d2c96b3933a298b3ef67daa3)取得 sub-001 的 `events.tsv`、`channels.tsv`，将实际路径分别传给下面脚本；原始 `.set` 由脚本按范围读取。不要提交这些元数据（包含逐试次评分）、原始信号或缓存。脚本当前对 sub-001 文件的对象 ID 和 MATLAB 数据偏移做了固定校验，不能直接用于其他受试者。
+[单人探索方案](outputs/ON006866_单人管线试验方案_20261117.md)及[运行结果](outputs/ON006866_单人试验结果_20261117.md)：只用于检验数据读取与时序建模，受试者数为 1，不是跨人或医疗验证。请从 [NEMAR 固定版本](https://github.com/nemarDatasets/on006866/tree/7350e08e5e5e4cb7d2c96b3933a298b3ef67daa3)取得 sub-001 的 `events.tsv`、`channels.tsv`，将实际路径分别传给下面脚本；原始 `.set` 由脚本按范围读取。不要提交这些元数据（包含逐试次评分）、原始信号或缓存。脚本当前对 sub-001 文件的对象 ID 和 MATLAB 数据偏移做了固定校验，不能直接用于其他受试者。
 
 ```text
 python work/test_on006866_pilot_20261117.py
