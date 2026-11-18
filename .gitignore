@@ -20,6 +20,7 @@ hbc-bci-sim/
 luckfox-deploy/
 
 # 数据集 / 模型权重 / 缓存 / 大体积产物
+outputs/
 *.npy
 *.npz
 *.edf

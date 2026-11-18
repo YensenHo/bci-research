@@ -1,0 +1,60 @@
+{
+  "variant": "signed_fixed",
+  "seed": 123,
+  "device": "mps",
+  "threshold": 1.0,
+  "epochs": 150,
+  "patience": 25,
+  "batch_size": 16,
+  "protocol": "cross-session, same subjects; random trial validation",
+  "validation_accuracy": 0.6778350515463918,
+  "best_epoch": 80,
+  "test_accuracy": 0.597608024691358,
+  "subject_accuracy": {
+    "1": {
+      "n": 288,
+      "accuracy": 0.6840277777777778
+    },
+    "2": {
+      "n": 288,
+      "accuracy": 0.4236111111111111
+    },
+    "3": {
+      "n": 288,
+      "accuracy": 0.7881944444444444
+    },
+    "4": {
+      "n": 288,
+      "accuracy": 0.4826388888888889
+    },
+    "5": {
+      "n": 288,
+      "accuracy": 0.5243055555555556
+    },
+    "6": {
+      "n": 288,
+      "accuracy": 0.4618055555555556
+    },
+    "7": {
+      "n": 288,
+      "accuracy": 0.6423611111111112
+    },
+    "8": {
+      "n": 288,
+      "accuracy": 0.7847222222222222
+    },
+    "9": {
+      "n": 288,
+      "accuracy": 0.5868055555555556
+    }
+  },
+  "train_trials": 2204,
+  "validation_trials": 388,
+  "test_trials": 2592,
+  "parameters": 9512,
+  "data_sha256": {
+    "train.npz": "e808dac3304b4bb1d4a43d4ccc88b54bf268bb35f7aa285b752042680eb1e731",
+    "eval.npz": "0a7711eec6760a8408870b93b8b89dc52b896785eee1c62e357757b78d5c3e42"
+  },
+  "warm_start_sha256": "e55cfc78e83f26a448d6d09ca69c20fb4645d74faebe347f2e0573edca51ada4"
+}

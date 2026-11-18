@@ -1,0 +1,23 @@
+{
+  "variant": "relu",
+  "seed": 123,
+  "device": "mps",
+  "threshold": 1.0,
+  "epochs": 150,
+  "patience": 25,
+  "batch_size": 16,
+  "protocol": "cross-session, same subjects; random trial validation",
+  "validation_accuracy": 0.6520618556701031,
+  "best_epoch": 70,
+  "test_accuracy": null,
+  "subject_accuracy": null,
+  "train_trials": 2204,
+  "validation_trials": 388,
+  "test_trials": 2592,
+  "parameters": 9512,
+  "data_sha256": {
+    "train.npz": "e808dac3304b4bb1d4a43d4ccc88b54bf268bb35f7aa285b752042680eb1e731",
+    "eval.npz": "0a7711eec6760a8408870b93b8b89dc52b896785eee1c62e357757b78d5c3e42"
+  },
+  "warm_start_sha256": null
+}
