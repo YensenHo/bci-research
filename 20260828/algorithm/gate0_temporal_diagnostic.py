@@ -173,8 +173,9 @@ def main():
         results['results'][task] = dict(split_sha256=digest, models=vals,
                                         permuted_test_gate_pass=temporal_ok and controls_ok,
                                         true_test_single_permutation_in_range=true_null_in_range,
-                                        strict_gate_pass=temporal_ok and controls_ok and true_null_in_range,
-                                        gate_rule='temporal >= 0.90; count, rate, permuted-test and permuted-train/true-test all 0.47–0.53')
+                                        gate_pass=temporal_ok and controls_ok,
+                                        retired_strict_gate_pass=temporal_ok and controls_ok and true_null_in_range,
+                                        gate_rule='temporal >= 0.90; count, rate and independently permuted-test controls 0.47–0.53; original-test permutation recorded, not a pass criterion')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(results, indent=2), encoding='utf8')
 

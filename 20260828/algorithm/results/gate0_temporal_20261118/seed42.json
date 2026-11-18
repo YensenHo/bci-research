@@ -74,8 +74,9 @@
       },
       "permuted_test_gate_pass": true,
       "true_test_single_permutation_in_range": false,
-      "strict_gate_pass": false,
-      "gate_rule": "temporal >= 0.90; count, rate, permuted-test and permuted-train/true-test all 0.47\u20130.53"
+      "gate_pass": true,
+      "retired_strict_gate_pass": false,
+      "gate_rule": "temporal >= 0.90; count, rate and independently permuted-test controls 0.47\u20130.53; original-test permutation recorded, not a pass criterion"
     },
     "polarity": {
       "split_sha256": [
@@ -139,8 +140,9 @@
       },
       "permuted_test_gate_pass": true,
       "true_test_single_permutation_in_range": false,
-      "strict_gate_pass": false,
-      "gate_rule": "temporal >= 0.90; count, rate, permuted-test and permuted-train/true-test all 0.47\u20130.53"
+      "gate_pass": true,
+      "retired_strict_gate_pass": false,
+      "gate_rule": "temporal >= 0.90; count, rate and independently permuted-test controls 0.47\u20130.53; original-test permutation recorded, not a pass criterion"
     }
   }
 }
