@@ -1,0 +1,343 @@
+{
+  "format": "benchmark",
+  "protocol": "64-channel benchmark, 6 selected channels; blocks 1\u20134/5/6; IDs must match NPZ order",
+  "seed": 42,
+  "source_sha256": {
+    "occipital_onset05.npz": "e26a3d0b08a74bf90f0cd0a84a68ec822ca162a29a9534fe2f240235d7aefd9b",
+    "Freq_Phase.mat": "6059f712688ec9e5df0beace9244dc0a4b03c418dacdef86bac50cf2b95f71b5"
+  },
+  "results": {
+    "1": {
+      "test_trials": 40,
+      "threshold": [
+        4.383966541290284,
+        3.9419429779052737,
+        4.844463920593262,
+        2.8246965408325195,
+        2.8997512817382813,
+        3.513560390472412
+      ],
+      "event_count": 344.675,
+      "cca_raw": 0.225,
+      "cca_signed_events": 0.1,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.425,
+        "penalty": 100.0,
+        "test_accuracy": 0.425
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.175,
+        "penalty": 0.1,
+        "test_accuracy": 0.25
+      },
+      "event_counts": {
+        "train_accuracy": 0.26875,
+        "validation_accuracy": 0.025,
+        "penalty": 10.0,
+        "test_accuracy": 0.075
+      }
+    },
+    "2": {
+      "test_trials": 40,
+      "threshold": [
+        5.553670883178711,
+        5.557317733764648,
+        6.945186805725098,
+        5.205591487884522,
+        4.996737575531006,
+        4.868690872192383
+      ],
+      "event_count": 313.1,
+      "cca_raw": 0.325,
+      "cca_signed_events": 0.025,
+      "cca_shuffled_events": 0.05,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.3,
+        "penalty": 0.1,
+        "test_accuracy": 0.4
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.275,
+        "penalty": 0.1,
+        "test_accuracy": 0.3
+      },
+      "event_counts": {
+        "train_accuracy": 0.375,
+        "validation_accuracy": 0.025,
+        "penalty": 0.1,
+        "test_accuracy": 0.05
+      }
+    },
+    "3": {
+      "test_trials": 40,
+      "threshold": [
+        3.9968032360076906,
+        3.8565980911254885,
+        3.3515304565429687,
+        3.2286148071289062,
+        2.5738534927368164,
+        3.321432113647461
+      ],
+      "event_count": 417.575,
+      "cca_raw": 0.425,
+      "cca_signed_events": 0.325,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.85,
+        "penalty": 1.0,
+        "test_accuracy": 0.675
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.7,
+        "penalty": 100.0,
+        "test_accuracy": 0.65
+      },
+      "event_counts": {
+        "train_accuracy": 0.4625,
+        "validation_accuracy": 0.1,
+        "penalty": 0.1,
+        "test_accuracy": 0.075
+      }
+    },
+    "4": {
+      "test_trials": 40,
+      "threshold": [
+        6.491007232666016,
+        8.323359107971193,
+        8.47927989959717,
+        4.8799305915832525,
+        5.135073757171631,
+        4.236971282958985
+      ],
+      "event_count": 217.0,
+      "cca_raw": 0.675,
+      "cca_signed_events": 0.2,
+      "cca_shuffled_events": 0.05,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.475,
+        "penalty": 10.0,
+        "test_accuracy": 0.575
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.1,
+        "penalty": 0.1,
+        "test_accuracy": 0.175
+      },
+      "event_counts": {
+        "train_accuracy": 0.2125,
+        "validation_accuracy": 0.025,
+        "penalty": 100.0,
+        "test_accuracy": 0.1
+      }
+    },
+    "5": {
+      "test_trials": 40,
+      "threshold": [
+        4.040305709838868,
+        3.6188914299011232,
+        3.822170352935791,
+        3.4441996574401856,
+        3.3647266387939454,
+        2.746706485748291
+      ],
+      "event_count": 341.525,
+      "cca_raw": 0.2,
+      "cca_signed_events": 0.075,
+      "cca_shuffled_events": 0.1,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.3,
+        "penalty": 0.1,
+        "test_accuracy": 0.3
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.175,
+        "penalty": 0.1,
+        "test_accuracy": 0.175
+      },
+      "event_counts": {
+        "train_accuracy": 0.3,
+        "validation_accuracy": 0.05,
+        "penalty": 0.1,
+        "test_accuracy": 0.05
+      }
+    },
+    "6": {
+      "test_trials": 40,
+      "threshold": [
+        10.734322929382325,
+        8.615865898132324,
+        9.222766113281251,
+        5.660068607330322,
+        4.815964317321777,
+        4.498074722290039
+      ],
+      "event_count": 377.6,
+      "cca_raw": 0.2,
+      "cca_signed_events": 0.15,
+      "cca_shuffled_events": 0.05,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.225,
+        "penalty": 0.1,
+        "test_accuracy": 0.225
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.075,
+        "penalty": 0.1,
+        "test_accuracy": 0.05
+      },
+      "event_counts": {
+        "train_accuracy": 0.29375,
+        "validation_accuracy": 0.05,
+        "penalty": 0.1,
+        "test_accuracy": 0.025
+      }
+    },
+    "7": {
+      "test_trials": 40,
+      "threshold": [
+        12.995621681213379,
+        8.183569717407227,
+        9.797580337524415,
+        12.852896881103517,
+        4.8232605934143065,
+        4.920200538635254
+      ],
+      "event_count": 263.575,
+      "cca_raw": 0.15,
+      "cca_signed_events": 0.1,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.1,
+        "penalty": 1.0,
+        "test_accuracy": 0.125
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.05,
+        "penalty": 0.1,
+        "test_accuracy": 0.125
+      },
+      "event_counts": {
+        "train_accuracy": 0.36875,
+        "validation_accuracy": 0.1,
+        "penalty": 0.1,
+        "test_accuracy": 0.1
+      }
+    },
+    "8": {
+      "test_trials": 40,
+      "threshold": [
+        11.956247711181643,
+        11.153422927856445,
+        11.454974746704103,
+        5.546553325653076,
+        4.931499385833741,
+        4.993505573272706
+      ],
+      "event_count": 474.35,
+      "cca_raw": 0.175,
+      "cca_signed_events": 0.025,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.3,
+        "penalty": 100.0,
+        "test_accuracy": 0.275
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.075,
+        "penalty": 0.1,
+        "test_accuracy": 0.15
+      },
+      "event_counts": {
+        "train_accuracy": 0.2875,
+        "validation_accuracy": 0.025,
+        "penalty": 0.1,
+        "test_accuracy": 0.0
+      }
+    },
+    "9": {
+      "test_trials": 40,
+      "threshold": [
+        12.377779579162599,
+        8.335991096496583,
+        8.769949913024902,
+        10.565116310119631,
+        7.3176418304443365,
+        6.3286487579345705
+      ],
+      "event_count": 150.9,
+      "cca_raw": 0.15,
+      "cca_signed_events": 0.075,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.35,
+        "penalty": 100.0,
+        "test_accuracy": 0.125
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.025,
+        "penalty": 0.1,
+        "test_accuracy": 0.075
+      },
+      "event_counts": {
+        "train_accuracy": 0.3875,
+        "validation_accuracy": 0.025,
+        "penalty": 0.1,
+        "test_accuracy": 0.025
+      }
+    },
+    "10": {
+      "test_trials": 40,
+      "threshold": [
+        6.353440093994141,
+        5.901927566528321,
+        6.942192173004151,
+        5.246336174011231,
+        4.650674819946289,
+        4.036747932434082
+      ],
+      "event_count": 227.15,
+      "cca_raw": 0.175,
+      "cca_signed_events": 0.1,
+      "cca_shuffled_events": 0.0,
+      "raw_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.35,
+        "penalty": 100.0,
+        "test_accuracy": 0.325
+      },
+      "signed_events_flat": {
+        "train_accuracy": 1.0,
+        "validation_accuracy": 0.125,
+        "penalty": 0.1,
+        "test_accuracy": 0.15
+      },
+      "event_counts": {
+        "train_accuracy": 0.31875,
+        "validation_accuracy": 0.075,
+        "penalty": 0.1,
+        "test_accuracy": 0.05
+      }
+    }
+  },
+  "warning": "CCA and flattening consume whole windows offline; model/time control is diagnostic only; CCA on transformed data does not prove SNN can use it.",
+  "status": "completed"
+}
