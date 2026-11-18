@@ -1,0 +1,111 @@
+{
+  "task": "real_40",
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "source_sha256": {
+    "occipital_onset05.npz": "e26a3d0b08a74bf90f0cd0a84a68ec822ca162a29a9534fe2f240235d7aefd9b",
+    "Freq_Phase.mat": "6059f712688ec9e5df0beace9244dc0a4b03c418dacdef86bac50cf2b95f71b5"
+  },
+  "comparisons": {
+    "B_vs_A": {
+      "n_subjects": 10,
+      "mean_difference_pp": 0.33333333333333326,
+      "mean_accuracy": 0.027500000000000004,
+      "improved": 5,
+      "declined": 3,
+      "tied": 2,
+      "per_subject_difference_pp": [
+        0.0,
+        0.0,
+        1.6666666666666667,
+        3.3333333333333335,
+        -1.6666666666666667,
+        1.6666666666666667,
+        -2.5000000000000004,
+        -0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "development_gate": false
+    },
+    "C_vs_A": {
+      "n_subjects": 10,
+      "mean_difference_pp": 1.3333333333333333,
+      "mean_accuracy": 0.037500000000000006,
+      "improved": 6,
+      "declined": 1,
+      "tied": 3,
+      "per_subject_difference_pp": [
+        0.8333333333333334,
+        0.0,
+        0.8333333333333334,
+        3.3333333333333335,
+        0.8333333333333337,
+        3.3333333333333335,
+        -2.3129646346357425e-16,
+        0.0,
+        0.0,
+        4.166666666666666
+      ],
+      "development_gate": false
+    },
+    "D_vs_A": {
+      "n_subjects": 10,
+      "mean_difference_pp": 0.24999999999999997,
+      "mean_accuracy": 0.026666666666666665,
+      "improved": 5,
+      "declined": 4,
+      "tied": 1,
+      "per_subject_difference_pp": [
+        0.8333333333333334,
+        0.0,
+        1.6666666666666667,
+        -0.8333333333333334,
+        -0.8333333333333331,
+        3.3333333333333335,
+        -2.5000000000000004,
+        0.8333333333333331,
+        -0.8333333333333334,
+        0.8333333333333334
+      ],
+      "development_gate": null
+    },
+    "C_vs_D": {
+      "n_subjects": 10,
+      "mean_difference_pp": 1.0833333333333335,
+      "mean_accuracy": 0.037500000000000006,
+      "improved": 6,
+      "declined": 2,
+      "tied": 2,
+      "per_subject_difference_pp": [
+        0.0,
+        0.0,
+        -0.8333333333333331,
+        4.166666666666666,
+        1.6666666666666667,
+        2.3129646346357425e-16,
+        2.5,
+        -0.8333333333333331,
+        0.8333333333333334,
+        3.3333333333333335
+      ],
+      "development_gate": null
+    }
+  },
+  "warning": "Exploratory development gate; repeated seeds are averaged within subject, not independent people."
+}
