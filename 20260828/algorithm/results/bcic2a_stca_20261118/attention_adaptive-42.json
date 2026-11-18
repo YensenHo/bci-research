@@ -1,0 +1,22 @@
+{
+  "variant": "attention_adaptive",
+  "seed": 42,
+  "device": "cpu",
+  "threshold": 1.0,
+  "epochs": 150,
+  "patience": 25,
+  "batch_size": 16,
+  "protocol": "cross-session, same subjects; random trial validation",
+  "validation_accuracy": 0.6752577319587629,
+  "best_epoch": 76,
+  "test_accuracy": 0.6246141975308642,
+  "train_trials": 2204,
+  "validation_trials": 388,
+  "test_trials": 2592,
+  "parameters": 10004,
+  "data_sha256": {
+    "train.npz": "6f557ef91c8be83d0dd5ce12602c1afe2a7f6b91992113ec3763314226a228bf",
+    "eval.npz": "6f245a4a234bb552bf635ef7728f7e6dfafad5cd8e28d2f8e7ee25cf5a7c6abd"
+  },
+  "warm_start_sha256": "d08b40482759e6febafe0e0b1da122e7d2feafac695d968ecb36baaef614bc9b"
+}
