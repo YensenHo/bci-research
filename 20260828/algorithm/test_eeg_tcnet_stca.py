@@ -2,6 +2,7 @@
 import unittest
 import torch
 from eeg_tcnet_stca import AdaptiveSignedLIF, TemporalChannelAttention, EEGTCNetAttention
+from lif_eegnet import SignedLIFActivation
 
 class Checks(unittest.TestCase):
     def test_attention(self):
@@ -31,6 +32,16 @@ class Checks(unittest.TestCase):
             self.assertEqual(y.shape, (2, 4))
             self.assertTrue(torch.isfinite(y).all())
             self.assertGreater(sum(p.numel() for p in model.parameters()), 0)
+
+    def test_fixed_signed_matches_zero_adaptation(self):
+        x = torch.linspace(-2, 2, 31)
+        fixed = SignedLIFActivation(threshold=.5)(x)
+        adaptive = AdaptiveSignedLIF(threshold=.5, adapt_gain=0)(x)
+        self.assertTrue(torch.equal(fixed, adaptive))
+        self.assertLess(fixed[0].item(), 0)
+        self.assertGreater(fixed[-1].item(), 0)
+        for kwargs in ({'signed': True}, {'adaptive': True}):
+            self.assertEqual(EEGTCNetAttention(**kwargs)(torch.randn(2, 1, 22, 500)).shape, (2, 4))
 
 if __name__ == '__main__':
     unittest.main()

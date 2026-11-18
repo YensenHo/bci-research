@@ -103,8 +103,9 @@ def _process_session(mat_path: Path, loadmat, butter, filtfilt, iirnotch
             label = int(label)
             if label not in KEEP_LABELS:
                 continue                  # 只保留四类 MI
-            start = int(onset) + START
-            stop = int(onset) + STOP
+            # BNCI trial contains 1-based MATLAB sample positions.
+            start = int(onset) - 1 + START
+            stop = int(onset) - 1 + STOP
             if stop > X.shape[0]:
                 continue                  # 越界段丢弃
             seg = X[start:stop, EEG_IDX]          # (500, 22) 只取 22 EEG 通道
@@ -135,35 +136,38 @@ def main() -> int:
     subjects = sorted(set(args.subjects))
 
     train_X, train_y, eval_X, eval_y = [], [], [], []
+    train_subject, eval_subject = [], []
     for subj in subjects:
-        for sess, buckets in (("T", (train_X, train_y)), ("E", (eval_X, eval_y))):
+        for sess, buckets in (("T", (train_X, train_y, train_subject)), ("E", (eval_X, eval_y, eval_subject))):
             p = args.raw_dir / f"A{subj:02d}{sess}.mat"
             if not p.exists():
                 raise FileNotFoundError(f"required file missing: {p}")
             res = _process_session(p, loadmat, butter, filtfilt, iirnotch)
-            if res is not None:
-                buckets[0].append(res[0]); buckets[1].append(res[1])
+            if res is None:
+                raise ValueError(f'no trials in {p}')
+            buckets[0].append(res[0]); buckets[1].append(res[1])
+            buckets[2].append(np.full(len(res[1]), subj, dtype=np.int16))
 
     if not train_X and not eval_X:
         raise SystemExit(f"✗ 无数据。请确认 RAW_DIR 存在：{RAW_DIR}")
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def _save(name, Xs, ys):
+    def _save(name, Xs, ys, subject_ids):
         if not Xs:
             print(f"  ⚠ {name}: 无数据，跳过")
             return
         X = np.concatenate(Xs, axis=0)
         y = np.concatenate(ys, axis=0)
-        np.savez_compressed(args.output_dir / name, X=X.astype(np.float32), y=y.astype(np.int64))
+        np.savez_compressed(args.output_dir / name, X=X.astype(np.float32), y=y.astype(np.int64), subject=np.concatenate(subject_ids))
         counts = np.bincount(y, minlength=N_CLASSES)
         print(f"  ✓ {name}: X={X.shape}, y={y.shape}")
         print(f"      类别分布[左/右/双脚/舌头] = {counts.tolist()}  "
               f"(共 {counts.sum()} 试次)")
 
     print("\n保存预处理结果 ...")
-    _save("train.npz", train_X, train_y)
-    _save("eval.npz", eval_X, eval_y)
+    _save("train.npz", train_X, train_y, train_subject)
+    _save("eval.npz", eval_X, eval_y, eval_subject)
     print(f"\n✓ 完成，输出目录：{args.output_dir}")
     print("  下一步：train_eegnet_4class.py / train_lif_4class.py")
     return 0

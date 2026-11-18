@@ -7,7 +7,7 @@ import math
 import torch
 from torch import nn
 from eeg_tcnet_lif import EEGTCNetLIF
-from lif_eegnet import LIFActivation, SurrogateStep
+from lif_eegnet import LIFActivation, SignedLIFActivation, SurrogateStep
 
 
 class TemporalChannelAttention(nn.Module):
@@ -60,17 +60,17 @@ class AdaptiveSignedLIF(nn.Module):
 
 
 class EEGTCNetAttention(EEGTCNetLIF):
-    def __init__(self, attention=False, adaptive=False, **kwargs):
+    def __init__(self, attention=False, adaptive=False, signed=False, **kwargs):
         kwargs.setdefault('activation', 'lif')
         super().__init__(**kwargs)
         if attention:
             self.tcn.add_module('attention', TemporalChannelAttention(self.FT))
-        if adaptive:
+        if adaptive or signed:
             hp = {k: kwargs[k] for k in ('threshold', 'tau', 'timesteps', 'alpha') if k in kwargs}
             def replace(module):
                 for name, child in module.named_children():
                     if isinstance(child, LIFActivation):
-                        setattr(module, name, AdaptiveSignedLIF(**hp))
+                        setattr(module, name, (AdaptiveSignedLIF if adaptive else SignedLIFActivation)(**hp))
                     else:
                         replace(child)
             replace(self)

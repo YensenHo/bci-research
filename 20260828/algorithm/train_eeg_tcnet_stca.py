@@ -33,7 +33,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--data-dir', required=True, type=Path)
     p.add_argument('--output-dir', required=True, type=Path)
-    p.add_argument('--variant', required=True, choices=['relu', 'baseline', 'attention', 'attention_adaptive'])
+    p.add_argument('--variant', required=True, choices=['relu', 'baseline', 'attention', 'attention_adaptive', 'adaptive_only', 'signed_fixed'])
     p.add_argument('--warm-start', type=Path)
     p.add_argument('--seed', type=int, default=42)
     p.add_argument('--epochs', type=int, default=150)
@@ -53,7 +53,7 @@ def main():
     test_loader = DataLoader(test, batch_size=args.batch_size)
     if (args.variant == 'relu') != (args.warm_start is None):
         p.error('relu trains from scratch; other variants require --warm-start')
-    model = EEGTCNetAttention(attention=args.variant in ('attention','attention_adaptive'), adaptive=args.variant == 'attention_adaptive', activation='relu' if args.variant == 'relu' else 'lif', threshold=args.threshold, tau=2.0, timesteps=8, alpha=4.0)
+    model = EEGTCNetAttention(attention=args.variant in ('attention','attention_adaptive'), adaptive=args.variant in ('attention_adaptive', 'adaptive_only'), signed=args.variant == 'signed_fixed', activation='relu' if args.variant == 'relu' else 'lif', threshold=args.threshold, tau=2.0, timesteps=8, alpha=4.0)
     if args.warm_start is not None:
         ck = torch.load(args.warm_start, map_location='cpu', weights_only=False)
         weights = ck.get('state_dict', ck)
@@ -80,8 +80,20 @@ def main():
             if stale >= args.patience: break
     model.load_state_dict(best_state)
     score = None if args.variant == 'relu' else accuracy(model, test_loader, device)
+    subject_accuracy = None
+    if args.variant != 'relu':
+        with np.load(test_path, allow_pickle=False) as d:
+            if 'subject' in d.files:
+                subject_ids = np.asarray(d['subject']).reshape(-1)
+                if len(subject_ids) != len(test):
+                    raise ValueError('subject identifiers do not match test trials')
+                subject_accuracy = {}
+                for subject in np.unique(subject_ids):
+                    indices = np.flatnonzero(subject_ids == subject).tolist()
+                    subset = torch.utils.data.Subset(test, indices)
+                    subject_accuracy[str(int(subject))] = dict(n=len(indices), accuracy=accuracy(model, DataLoader(subset, batch_size=args.batch_size), device))
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    meta = dict(variant=args.variant, seed=args.seed, device=args.device, threshold=args.threshold, epochs=args.epochs, patience=args.patience, batch_size=args.batch_size, protocol='cross-session, same subjects; random trial validation', validation_accuracy=best, best_epoch=best_epoch, test_accuracy=score, train_trials=n_train, validation_trials=n_val, test_trials=len(test), parameters=sum(p.numel() for p in model.parameters()), data_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (train_path,test_path)}, warm_start_sha256=hashlib.sha256(args.warm_start.read_bytes()).hexdigest() if args.warm_start else None)
+    meta = dict(variant=args.variant, seed=args.seed, device=args.device, threshold=args.threshold, epochs=args.epochs, patience=args.patience, batch_size=args.batch_size, protocol='cross-session, same subjects; random trial validation', validation_accuracy=best, best_epoch=best_epoch, test_accuracy=score, subject_accuracy=subject_accuracy, train_trials=n_train, validation_trials=n_val, test_trials=len(test), parameters=sum(p.numel() for p in model.parameters()), data_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (train_path,test_path)}, warm_start_sha256=hashlib.sha256(args.warm_start.read_bytes()).hexdigest() if args.warm_start else None)
     (args.output_dir/'summary.json').write_text(json.dumps(meta,indent=2),encoding='utf8')
     torch.save({'state_dict':best_state, 'summary':meta},args.output_dir/'model.pth')
     print(json.dumps(meta,indent=2))
