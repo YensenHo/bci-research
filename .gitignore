@@ -21,6 +21,7 @@ luckfox-deploy/
 
 # 数据集 / 模型权重 / 缓存 / 大体积产物
 outputs/
+gate1_ssvep_local/
 *.npy
 *.npz
 *.edf

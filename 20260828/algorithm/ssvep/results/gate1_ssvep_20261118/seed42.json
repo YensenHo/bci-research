@@ -1,0 +1,556 @@
+{
+  "protocol": "same subject blocks 1-4 train, 5 val, 6 test; offline developmental",
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seed": 42,
+  "device": "cpu",
+  "epochs": 60,
+  "patience": 10,
+  "files_sha256": {
+    "occipital_onset05.npz": "e26a3d0b08a74bf90f0cd0a84a68ec822ca162a29a9534fe2f240235d7aefd9b",
+    "Freq_Phase.mat": "6059f712688ec9e5df0beace9244dc0a4b03c418dacdef86bac50cf2b95f71b5"
+  },
+  "results": {
+    "1": {
+      "cca_accuracy": 0.225,
+      "thresholds": [
+        4.383966541290284,
+        3.9419429779052737,
+        4.844463920593262,
+        2.8246965408325195,
+        2.8997512817382813,
+        3.513560390472412
+      ],
+      "mean_input_events": 344.675,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 10,
+          "epochs_run": 20,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 40.325,
+          "seconds_per_trial": 0.0002671770750000024,
+          "shuffle_test_only_accuracy": 0.0
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 42.4,
+          "seconds_per_trial": 0.0002638989499999966
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 257.25,
+          "seconds_per_trial": 0.00042068437500000224
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 390.125,
+          "seconds_per_trial": 0.0004953968749999982
+        }
+      }
+    },
+    "2": {
+      "cca_accuracy": 0.325,
+      "thresholds": [
+        5.553670883178711,
+        5.557317733764648,
+        6.945186805725098,
+        5.205591487884522,
+        4.996737575531006,
+        4.868690872192383
+      ],
+      "mean_input_events": 313.1,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 33.175,
+          "seconds_per_trial": 0.00025839062500001566,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 32.925,
+          "seconds_per_trial": 0.00025006977499999474
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 194.975,
+          "seconds_per_trial": 0.000416582299999968
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 3,
+          "epochs_run": 13,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 308.9,
+          "seconds_per_trial": 0.0004912614499999801
+        }
+      }
+    },
+    "3": {
+      "cca_accuracy": 0.425,
+      "thresholds": [
+        3.9968032360076906,
+        3.8565980911254885,
+        3.3515304565429687,
+        3.2286148071289062,
+        2.5738534927368164,
+        3.321432113647461
+      ],
+      "mean_input_events": 417.575,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 19,
+          "epochs_run": 29,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 44.225,
+          "seconds_per_trial": 0.00026430417499998524,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 12,
+          "epochs_run": 22,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 56.05,
+          "seconds_per_trial": 0.0002692729250000081
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 329.35,
+          "seconds_per_trial": 0.0004180729249999793
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 5,
+          "epochs_run": 15,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 416.825,
+          "seconds_per_trial": 0.000489013550000017
+        }
+      }
+    },
+    "4": {
+      "cca_accuracy": 0.675,
+      "thresholds": [
+        6.491007232666016,
+        8.323359107971193,
+        8.47927989959717,
+        4.8799305915832525,
+        5.135073757171631,
+        4.236971282958985
+      ],
+      "mean_input_events": 217.0,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 5,
+          "epochs_run": 15,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 18.725,
+          "seconds_per_trial": 0.0002664614499999551,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 22.825,
+          "seconds_per_trial": 0.000247166674999999
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 102.625,
+          "seconds_per_trial": 0.00042317499999997563
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 188.825,
+          "seconds_per_trial": 0.0004859229250000041
+        }
+      }
+    },
+    "5": {
+      "cca_accuracy": 0.2,
+      "thresholds": [
+        4.040305709838868,
+        3.6188914299011232,
+        3.822170352935791,
+        3.4441996574401856,
+        3.3647266387939454,
+        2.746706485748291
+      ],
+      "mean_input_events": 341.525,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 2,
+          "epochs_run": 12,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 37.65,
+          "seconds_per_trial": 0.0002576104000000079,
+          "shuffle_test_only_accuracy": 0.075
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.1,
+          "best_epoch": 24,
+          "epochs_run": 34,
+          "test_accuracy": 0.075,
+          "internal_events_per_trial": 36.85,
+          "seconds_per_trial": 0.00025694582499999894
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 5,
+          "epochs_run": 15,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 215.325,
+          "seconds_per_trial": 0.000419361475000013
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 9,
+          "epochs_run": 19,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 304.175,
+          "seconds_per_trial": 0.00047349895000010634
+        }
+      }
+    },
+    "6": {
+      "cca_accuracy": 0.2,
+      "thresholds": [
+        10.734322929382325,
+        8.615865898132324,
+        9.222766113281251,
+        5.660068607330322,
+        4.815964317321777,
+        4.498074722290039
+      ],
+      "mean_input_events": 377.6,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 4,
+          "epochs_run": 14,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 34.7,
+          "seconds_per_trial": 0.00024994687499990675,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 4,
+          "epochs_run": 14,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 40.9,
+          "seconds_per_trial": 0.0002487437499999245
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 13,
+          "epochs_run": 23,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 191.9,
+          "seconds_per_trial": 0.00041906562499995916
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 10,
+          "epochs_run": 20,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 283.975,
+          "seconds_per_trial": 0.0004956104250000593
+        }
+      }
+    },
+    "7": {
+      "cca_accuracy": 0.15,
+      "thresholds": [
+        12.995621681213379,
+        8.183569717407227,
+        9.797580337524415,
+        12.852896881103517,
+        4.8232605934143065,
+        4.920200538635254
+      ],
+      "mean_input_events": 263.575,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 13,
+          "epochs_run": 23,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 19.45,
+          "seconds_per_trial": 0.000255619800000062,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 4,
+          "epochs_run": 14,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 23.025,
+          "seconds_per_trial": 0.00027323854999998786
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 174.875,
+          "seconds_per_trial": 0.0004360520749999708
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 11,
+          "epochs_run": 21,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 206.975,
+          "seconds_per_trial": 0.000502772899999826
+        }
+      }
+    },
+    "8": {
+      "cca_accuracy": 0.175,
+      "thresholds": [
+        11.956247711181643,
+        11.153422927856445,
+        11.454974746704103,
+        5.546553325653076,
+        4.931499385833741,
+        4.993505573272706
+      ],
+      "mean_input_events": 474.35,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 5,
+          "epochs_run": 15,
+          "test_accuracy": 0.05,
+          "internal_events_per_trial": 61.175,
+          "seconds_per_trial": 0.0002523104250000685,
+          "shuffle_test_only_accuracy": 0.0
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 75.35,
+          "seconds_per_trial": 0.000251820849999973
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 7,
+          "epochs_run": 17,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 317.85,
+          "seconds_per_trial": 0.00042221144999992076
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 566.15,
+          "seconds_per_trial": 0.0004981364500000751
+        }
+      }
+    },
+    "9": {
+      "cca_accuracy": 0.15,
+      "thresholds": [
+        12.377779579162599,
+        8.335991096496583,
+        8.769949913024902,
+        10.565116310119631,
+        7.3176418304443365,
+        6.3286487579345705
+      ],
+      "mean_input_events": 150.9,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 7.275,
+          "seconds_per_trial": 0.0002556385500000147,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 6.775,
+          "seconds_per_trial": 0.0002536093750000745
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 70.375,
+          "seconds_per_trial": 0.00042985937500006344
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.05,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 133.875,
+          "seconds_per_trial": 0.0005112718750000412
+        }
+      }
+    },
+    "10": {
+      "cca_accuracy": 0.175,
+      "thresholds": [
+        6.353440093994141,
+        5.901927566528321,
+        6.942192173004151,
+        5.246336174011231,
+        4.650674819946289,
+        4.036747932434082
+      ],
+      "mean_input_events": 227.15,
+      "models": {
+        "lif": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 2,
+          "epochs_run": 12,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 15.8,
+          "seconds_per_trial": 0.0002596843750000133,
+          "shuffle_test_only_accuracy": 0.025
+        },
+        "lif_shuffled_train": {
+          "validation_accuracy": 0.075,
+          "best_epoch": 8,
+          "epochs_run": 18,
+          "test_accuracy": 0.0,
+          "internal_events_per_trial": 15.075,
+          "seconds_per_trial": 0.0002519416749999337
+        },
+        "signed_fixed": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 1,
+          "epochs_run": 11,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 117.175,
+          "seconds_per_trial": 0.0004205166750001155
+        },
+        "bd_candidate": {
+          "validation_accuracy": 0.025,
+          "best_epoch": 2,
+          "epochs_run": 12,
+          "test_accuracy": 0.025,
+          "internal_events_per_trial": 196.05,
+          "seconds_per_trial": 0.00048305104999997185
+        }
+      }
+    }
+  },
+  "note": "CCA full window and shuffled control are offline; BD source-informed, not a validated reproduction; no hardware energy claim.",
+  "paired_descriptive": {
+    "bd_vs_signed_fixed": {
+      "mean_difference_pp": 0.0,
+      "improved": 1,
+      "declined": 1,
+      "tied": 8,
+      "n_subjects": 10,
+      "per_subject_difference_pp": [
+        0.0,
+        0.0,
+        0.0,
+        2.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.5,
+        0.0
+      ]
+    },
+    "bd_vs_lif": {
+      "mean_difference_pp": -0.25,
+      "improved": 3,
+      "declined": 4,
+      "tied": 3,
+      "n_subjects": 10,
+      "per_subject_difference_pp": [
+        0.0,
+        0.0,
+        -2.5,
+        -2.5,
+        2.5,
+        2.5,
+        0.0,
+        -2.5,
+        -2.5,
+        2.5
+      ]
+    },
+    "shuffled_train_vs_lif": {
+      "mean_difference_pp": -0.2500000000000001,
+      "improved": 2,
+      "declined": 4,
+      "tied": 4,
+      "n_subjects": 10,
+      "per_subject_difference_pp": [
+        0.0,
+        -2.5,
+        -2.5,
+        -2.5,
+        5.0,
+        5.0,
+        0.0,
+        -5.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "status": "completed"
+}
