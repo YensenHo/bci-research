@@ -1,0 +1,146 @@
+{
+  "split_seeds": [
+    1001,
+    2002,
+    3003
+  ],
+  "sizes": [
+    4096,
+    1024,
+    4096
+  ],
+  "training_seed": 42,
+  "task_definitions": "two event pairs; exact per-feature counts constant; only early/late order changes",
+  "results": {
+    "timing": {
+      "split_sha256": [
+        "17eddac5a0900c6f32bedc99cf305302abc6106bdf9b36087df85f51bddca2fc",
+        "5a03a2d506f5e983fa267be3655e40cbd7defcded65abc48f35527b8d934a987",
+        "0f1052f1372075741508458e9873ffa0d54b8a785f697a361e703c20fdaa3b0c"
+      ],
+      "models": {
+        "counts": {
+          "accuracy": 0.5,
+          "correct": 2048,
+          "n": 4096,
+          "ci95_wilson": [
+            0.48469495665340023,
+            0.5153050433465998
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 0.5,
+          "best_epoch": 1,
+          "epochs_run": 9
+        },
+        "constant_rate": {
+          "accuracy": 0.5,
+          "correct": 2048,
+          "n": 4096,
+          "ci95_wilson": [
+            0.48469495665340023,
+            0.5153050433465998
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 0.5,
+          "best_epoch": 1,
+          "epochs_run": 9
+        },
+        "temporal_lif": {
+          "accuracy": 1.0,
+          "correct": 4096,
+          "n": 4096,
+          "ci95_wilson": [
+            0.9990630225926348,
+            0.9999999999999999
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 1.0,
+          "best_epoch": 12,
+          "epochs_run": 12
+        },
+        "permuted_labels_lif": {
+          "accuracy": 0.50390625,
+          "correct": 2064,
+          "n": 4096,
+          "ci95_wilson": [
+            0.48859801322773583,
+            0.519207166636269
+          ],
+          "true_label_accuracy": 0.38916015625,
+          "best_validation_accuracy": 0.53515625,
+          "best_epoch": 12,
+          "epochs_run": 20
+        }
+      },
+      "permuted_test_gate_pass": true,
+      "true_test_single_permutation_in_range": false,
+      "strict_gate_pass": false,
+      "gate_rule": "temporal >= 0.90; count, rate, permuted-test and permuted-train/true-test all 0.47\u20130.53"
+    },
+    "polarity": {
+      "split_sha256": [
+        "e8502845fb18f78044426f9ccc407a547f41d56099889ca44e4ac768d0168384",
+        "43fdaa7232a077813d9c5f14179e1352822bc36225af33256dab10072b97c98d",
+        "0332bfc02912f01fe70c2f2163cecbdfd43a78684ef727712cccd0619f412c11"
+      ],
+      "models": {
+        "counts": {
+          "accuracy": 0.5,
+          "correct": 2048,
+          "n": 4096,
+          "ci95_wilson": [
+            0.48469495665340023,
+            0.5153050433465998
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 0.5,
+          "best_epoch": 1,
+          "epochs_run": 9
+        },
+        "constant_rate": {
+          "accuracy": 0.5,
+          "correct": 2048,
+          "n": 4096,
+          "ci95_wilson": [
+            0.48469495665340023,
+            0.5153050433465998
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 0.5,
+          "best_epoch": 1,
+          "epochs_run": 9
+        },
+        "temporal_lif": {
+          "accuracy": 1.0,
+          "correct": 4096,
+          "n": 4096,
+          "ci95_wilson": [
+            0.9990630225926348,
+            0.9999999999999999
+          ],
+          "true_label_accuracy": null,
+          "best_validation_accuracy": 1.0,
+          "best_epoch": 10,
+          "epochs_run": 10
+        },
+        "permuted_labels_lif": {
+          "accuracy": 0.484619140625,
+          "correct": 1985,
+          "n": 4096,
+          "ci95_wilson": [
+            0.46933574517555054,
+            0.4999313591099299
+          ],
+          "true_label_accuracy": 0.383544921875,
+          "best_validation_accuracy": 0.51953125,
+          "best_epoch": 4,
+          "epochs_run": 12
+        }
+      },
+      "permuted_test_gate_pass": true,
+      "true_test_single_permutation_in_range": false,
+      "strict_gate_pass": false,
+      "gate_rule": "temporal >= 0.90; count, rate, permuted-test and permuted-train/true-test all 0.47\u20130.53"
+    }
+  }
+}
