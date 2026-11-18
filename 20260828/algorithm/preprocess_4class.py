@@ -127,6 +127,8 @@ def _process_session(mat_path: Path, loadmat, butter, filtfilt, iirnotch
 def main() -> int:
     parser = argparse.ArgumentParser(description="BCIC IV 2a 预处理（.mat → 22ch 四分类 npz）")
     parser.add_argument("--subjects", type=int, nargs="+", default=list(range(1, 10)))
+    parser.add_argument("--raw-dir", type=Path, default=RAW_DIR)
+    parser.add_argument("--output-dir", type=Path, default=PROCESSED_DIR)
     args = parser.parse_args()
 
     loadmat, butter, filtfilt, iirnotch = _load_scipy()
@@ -135,10 +137,9 @@ def main() -> int:
     train_X, train_y, eval_X, eval_y = [], [], [], []
     for subj in subjects:
         for sess, buckets in (("T", (train_X, train_y)), ("E", (eval_X, eval_y))):
-            p = RAW_DIR / f"A{subj:02d}{sess}.mat"
+            p = args.raw_dir / f"A{subj:02d}{sess}.mat"
             if not p.exists():
-                print(f"  ⚠ 缺失 {p.name}，跳过")
-                continue
+                raise FileNotFoundError(f"required file missing: {p}")
             res = _process_session(p, loadmat, butter, filtfilt, iirnotch)
             if res is not None:
                 buckets[0].append(res[0]); buckets[1].append(res[1])
@@ -146,7 +147,7 @@ def main() -> int:
     if not train_X and not eval_X:
         raise SystemExit(f"✗ 无数据。请确认 RAW_DIR 存在：{RAW_DIR}")
 
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
 
     def _save(name, Xs, ys):
         if not Xs:
@@ -154,7 +155,7 @@ def main() -> int:
             return
         X = np.concatenate(Xs, axis=0)
         y = np.concatenate(ys, axis=0)
-        np.savez_compressed(PROCESSED_DIR / name, X=X.astype(np.float32), y=y.astype(np.int64))
+        np.savez_compressed(args.output_dir / name, X=X.astype(np.float32), y=y.astype(np.int64))
         counts = np.bincount(y, minlength=N_CLASSES)
         print(f"  ✓ {name}: X={X.shape}, y={y.shape}")
         print(f"      类别分布[左/右/双脚/舌头] = {counts.tolist()}  "
@@ -163,7 +164,7 @@ def main() -> int:
     print("\n保存预处理结果 ...")
     _save("train.npz", train_X, train_y)
     _save("eval.npz", eval_X, eval_y)
-    print(f"\n✓ 完成，输出目录：{PROCESSED_DIR}")
+    print(f"\n✓ 完成，输出目录：{args.output_dir}")
     print("  下一步：train_eegnet_4class.py / train_lif_4class.py")
     return 0
 

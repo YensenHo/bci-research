@@ -33,8 +33,8 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--data-dir', required=True, type=Path)
     p.add_argument('--output-dir', required=True, type=Path)
-    p.add_argument('--variant', required=True, choices=['baseline', 'attention', 'attention_adaptive'])
-    p.add_argument('--warm-start', required=True, type=Path)
+    p.add_argument('--variant', required=True, choices=['relu', 'baseline', 'attention', 'attention_adaptive'])
+    p.add_argument('--warm-start', type=Path)
     p.add_argument('--seed', type=int, default=42)
     p.add_argument('--epochs', type=int, default=150)
     p.add_argument('--patience', type=int, default=25)
@@ -51,12 +51,15 @@ def main():
     loader = DataLoader(train, batch_size=args.batch_size, shuffle=True, generator=torch.Generator().manual_seed(args.seed))
     val_loader = DataLoader(val, batch_size=args.batch_size)
     test_loader = DataLoader(test, batch_size=args.batch_size)
-    model = EEGTCNetAttention(attention=args.variant != 'baseline', adaptive=args.variant == 'attention_adaptive', threshold=args.threshold, tau=2.0, timesteps=8, alpha=4.0)
-    ck = torch.load(args.warm_start, map_location='cpu', weights_only=False)
-    weights = ck.get('state_dict', ck)
-    missing, unexpected = model.load_state_dict(weights, strict=False)
-    if unexpected or any(not name.startswith('tcn.attention.') for name in missing):
-        raise ValueError(f'unsupported warm start: missing={missing}, unexpected={unexpected}')
+    if (args.variant == 'relu') != (args.warm_start is None):
+        p.error('relu trains from scratch; other variants require --warm-start')
+    model = EEGTCNetAttention(attention=args.variant in ('attention','attention_adaptive'), adaptive=args.variant == 'attention_adaptive', activation='relu' if args.variant == 'relu' else 'lif', threshold=args.threshold, tau=2.0, timesteps=8, alpha=4.0)
+    if args.warm_start is not None:
+        ck = torch.load(args.warm_start, map_location='cpu', weights_only=False)
+        weights = ck.get('state_dict', ck)
+        missing, unexpected = model.load_state_dict(weights, strict=False)
+        if unexpected or any(not name.startswith('tcn.attention.') for name in missing):
+            raise ValueError(f'unsupported warm start: missing={missing}, unexpected={unexpected}')
     device = torch.device(args.device); model.to(device)
     opt = torch.optim.Adam(model.parameters(), lr=.001)
     schedule = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=args.epochs)
@@ -76,9 +79,9 @@ def main():
             stale += 1
             if stale >= args.patience: break
     model.load_state_dict(best_state)
-    score = accuracy(model, test_loader, device)
+    score = None if args.variant == 'relu' else accuracy(model, test_loader, device)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    meta = dict(variant=args.variant, seed=args.seed, device=args.device, threshold=args.threshold, epochs=args.epochs, patience=args.patience, batch_size=args.batch_size, protocol='cross-session, same subjects; random trial validation', validation_accuracy=best, best_epoch=best_epoch, test_accuracy=score, train_trials=n_train, validation_trials=n_val, test_trials=len(test), parameters=sum(p.numel() for p in model.parameters()), data_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (train_path,test_path)}, warm_start_sha256=hashlib.sha256(args.warm_start.read_bytes()).hexdigest())
+    meta = dict(variant=args.variant, seed=args.seed, device=args.device, threshold=args.threshold, epochs=args.epochs, patience=args.patience, batch_size=args.batch_size, protocol='cross-session, same subjects; random trial validation', validation_accuracy=best, best_epoch=best_epoch, test_accuracy=score, train_trials=n_train, validation_trials=n_val, test_trials=len(test), parameters=sum(p.numel() for p in model.parameters()), data_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (train_path,test_path)}, warm_start_sha256=hashlib.sha256(args.warm_start.read_bytes()).hexdigest() if args.warm_start else None)
     (args.output_dir/'summary.json').write_text(json.dumps(meta,indent=2),encoding='utf8')
     torch.save({'state_dict':best_state, 'summary':meta},args.output_dir/'model.pth')
     print(json.dumps(meta,indent=2))
