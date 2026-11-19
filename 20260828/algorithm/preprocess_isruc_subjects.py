@@ -8,11 +8,10 @@
 处理：C3-A2 单通道 → 200→100Hz 降采样 → 0.5-35Hz 带通 → 30s epoch（3000 样本）
       → 5 类映射（W/N1/N2/N3/REM，过滤 U）→ 逐 epoch z-score。
 
-⚠️ 数据源已知问题（如实记录）：
-    NEMAR 托管的 ISRUC .edf 是「截断」的——header 声明的数据记录数对应的文件大小
-    大于实际文件字节数（约缺后 1/3）。pyedflib 会因 filesize 校验不通过直接拒绝；
-    mne 能读但会「读超」（把文件末尾之后的 buffer 当数据）。本脚本按实际文件字节数
-    算有效样本数并截断，只保留真实数据，并在 meta 里记录每个受试者的有效时长。
+EDF 边界审计：
+    各通道每个 EDF 数据记录可能包含不同数量的样本，必须按 header 中每通道 n_samps 计算记录字节数。
+    不能用「通道数 × 单样本字节数」估计记录长度。本脚本检查完整记录数并记录核验结果；
+    此检查不等同于与上游原始文件逐字节校验。
 
 输出：
   {out}/data_subjects.npz       X=(n,1,1,3000) float32, y=(n,) int64, subject=(n,) int64
@@ -43,7 +42,7 @@ from pathlib import Path
 
 import numpy as np
 import mne
-from scipy.signal import butter, filtfilt
+from scipy.signal import butter, filtfilt, resample_poly
 
 SFREQ_TARGET = 100.0
 EPOCH_SEC = 30.0
@@ -65,13 +64,15 @@ def read_events_values(tsv_path: Path) -> list[int]:
     return values
 
 
-def find_c3a2(labels: list[str]):
-    """找 C3-A2 通道（模糊匹配：label 含 C3 且含 A2）。"""
+def find_c3_reference(labels: list[str]):
+    """优先取 C3-A2；I011 只有 C3-M2，使用并记录该近似乳突参考通道。"""
     for i, lab in enumerate(labels):
-        up = lab.upper().replace(" ", "")
-        if "C3" in up and "A2" in up:
-            return i
-    return None
+        if lab.upper().replace(" ", "") == "C3-A2":
+            return i, lab
+    for i, lab in enumerate(labels):
+        if lab.upper().replace(" ", "") == "C3-M2":
+            return i, lab
+    return None, None
 
 
 def process_subject(edf_path: Path, events_path: Path, subj_id: int):
@@ -80,23 +81,31 @@ def process_subject(edf_path: Path, events_path: Path, subj_id: int):
     raw = mne.io.read_raw_edf(str(edf_path), preload=True, verbose=False)
     labels = list(raw.ch_names)
     n_ch = len(labels)
-    idx = find_c3a2(labels)
+    idx, channel_used = find_c3_reference(labels)
     if idx is None:
         return None, None, dict(err="no C3-A2 channel", labels=labels)
     sfreq = float(raw.info["sfreq"])
     declared_n = raw.n_times  # header 声明的样本数
 
-    # 截断保护：按文件字节数算真实有效样本数（EDF 被 NEMAR 截断，header 声明偏大）
-    header_bytes = 256 * (n_ch + 1)
-    valid_n = max(0, (filesize - header_bytes) // (n_ch * 2))
+    # EDF 各通道每个 data record 的采样数可能不同，按完整 record 算有效长度。
+    # 旧算法用 n_channels*2 会把有低采样率辅助通道的文件时长低估。
+    extras = raw._raw_extras[0]
+    data_offset = int(extras["data_offset"])
+    samples_per_record = np.asarray(extras["n_samps"], dtype=np.int64)
+    bytes_per_record = int(samples_per_record.sum() * int(extras["dtype_byte"]))
+    declared_records = int(extras["n_records"])
+    available_records = max(0, (filesize - data_offset) // bytes_per_record)
+    valid_records = min(declared_records, available_records)
+    valid_n = valid_records * int(samples_per_record[idx])
+    truncated = available_records < declared_records
     data = raw.get_data()[idx].astype(np.float64)
     if valid_n < len(data):
         data = data[:valid_n]  # 丢弃 mne 读超的 buffer 残留
 
-    # 200 → 100Hz 简单降采样
+    # 200 → 100Hz 抗混叠重采样
     ratio = sfreq / SFREQ_TARGET
     if abs(ratio - 2.0) < 0.01:
-        data = data[::2]
+        data = resample_poly(data, up=1, down=2)
     elif abs(ratio - 1.0) < 0.01:
         pass
     else:
@@ -125,8 +134,9 @@ def process_subject(edf_path: Path, events_path: Path, subj_id: int):
                  sfreq=sfreq, n_ch=n_ch,
                  declared_n_samples=int(declared_n),
                  valid_n_samples=int(valid_n),
+                 declared_records=declared_records, valid_records=valid_records,
                  valid_seconds=round(valid_n / sfreq, 1),
-                 truncated=bool(valid_n < declared_n),
+                 truncated=bool(truncated), channel_used=channel_used,
                  edf_bytes=filesize, events_bytes=events_path.stat().st_size)
     return X, y, stats
 
@@ -155,8 +165,9 @@ def main() -> int:
 
     Xs, ys, subs = [], [], []
     per_subject = {}
-    for subj_id, edf_path in enumerate(edfs):
+    for edf_path in edfs:
         sub = edf_path.name.split("_")[0]          # sub-I001
+        subj_id = int(sub[-3:]) - 1                 # stable IDs even when a subject is skipped
         events_path = raw / f"{sub}_events.tsv"
         if not events_path.exists():
             print(f"  {sub}: 缺 events.tsv，跳过", flush=True)
@@ -182,19 +193,22 @@ def main() -> int:
     subj = np.concatenate(subs, axis=0)
 
     np.savez_compressed(out / "data_subjects.npz", X=X, y=y, subject=subj)
-    meta = dict(sfreq_target=SFREQ_TARGET, epoch_sec=EPOCH_SEC, channel="C3-A2",
+    valid_subjects = sorted(per_subject[k]["subject_id"] for k in per_subject
+                            if "subject_id" in per_subject[k])
+    meta = dict(sfreq_target=SFREQ_TARGET, epoch_sec=EPOCH_SEC,
+                channel="C3-A2 (I011 fallback: C3-M2)",
                 bandpass=list(BAND), label_map={str(k): v for k, v in LABEL_MAP.items()},
-                n_subjects=len(edfs), n_total=int(len(y)),
-                note="ISRUC/NEMAR .edf 为截断文件（header 声明 > 实际字节），已按文件大小截断到真实数据",
+                n_subjects=len(valid_subjects), subject_ids=valid_subjects, n_total=int(len(y)),
+                note="按各通道每个 EDF data record 的样本数计算完整记录；该检查不等同于与上游原始文件逐字节校验。",
                 per_subject=per_subject,
                 loocv_note="subject 数组取值 0..11 对应 sub-I001..sub-I012；LOOCV: train=subject!=s, eval=subject==s")
     (out / "data_subjects_meta.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n✓ 合并 {len(edfs)} 受试者，共 {len(y)} epoch，shape={X.shape}", flush=True)
+    print(f"\n[OK] 合并 {len(edfs)} 受试者，共 {len(y)} epoch，shape={X.shape}", flush=True)
     print(f"  类别分布: {dict(sorted(Counter(y.tolist()).items()))}", flush=True)
     print(f"  每被试: { {s: int((subj == s).sum()) for s in range(len(edfs))} }", flush=True)
-    print(f"✓ 已保存 {out}/data_subjects.npz + data_subjects_meta.json", flush=True)
+    print(f"[OK] 已保存 {out}/data_subjects.npz + data_subjects_meta.json", flush=True)
     return 0
 
 

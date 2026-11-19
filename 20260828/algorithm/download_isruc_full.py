@@ -7,8 +7,8 @@
 """
 import concurrent.futures
 import os
-import subprocess
 import sys
+import urllib.request
 
 # (subject, eeg_s3_url, expected_edf_size_bytes)
 FILES = [
@@ -30,14 +30,34 @@ DEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "isruc_raw")
 os.makedirs(DEST, exist_ok=True)
 
 
+def download(url, out, timeout=180):
+    """Stream a URL to disk and resume a partial file when the server supports Range."""
+    existing = os.path.getsize(out) if os.path.exists(out) else 0
+    headers = {"Range": f"bytes={existing}-"} if existing else {}
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        append = existing > 0 and response.status == 206
+        mode = "ab" if append else "wb"
+        with open(out, mode) as f:
+            while True:
+                chunk = response.read(1024 * 1024)
+                if not chunk:
+                    break
+                f.write(chunk)
+
+
 def fetch_edf(sub, url, size):
     out = os.path.join(DEST, f"{sub}_eeg.edf")
     if os.path.exists(out) and os.path.getsize(out) == size:
         return f"{sub}: 已完整 ({size})"
-    subprocess.run(["curl", "-s", "-C", "-", "-o", out, url], timeout=7200)
-    got = os.path.getsize(out) if os.path.exists(out) else 0
-    ok = "OK" if got == size else f"不完整 {got}/{size}（删掉重下）"
-    return f"{sub}: {ok}"
+    try:
+        download(url, out, timeout=300)
+        got = os.path.getsize(out) if os.path.exists(out) else 0
+        if got != size:
+            raise IOError(f"下载字节数不符：{got}/{size}；可重跑脚本续传")
+        return f"{sub}: OK ({got} bytes)"
+    except Exception as e:
+        return f"{sub}: 失败：{e}"
 
 
 def fetch_events(sub):
@@ -45,20 +65,33 @@ def fetch_events(sub):
     out = os.path.join(DEST, f"{sub}_events.tsv")
     if os.path.exists(out) and os.path.getsize(out) > 1000:
         return f"{sub}_events: 已存在"
-    subprocess.run(["curl", "-s", "-o", out, url], timeout=120)
-    return f"{sub}_events: {os.path.getsize(out)} bytes"
+    try:
+        download(url, out, timeout=60)
+        got = os.path.getsize(out) if os.path.exists(out) else 0
+        if got < 1000:
+            raise IOError(f"事件文件异常短：{got} bytes")
+        return f"{sub}_events: OK ({got} bytes)"
+    except Exception as e:
+        return f"{sub}_events: 失败：{e}"
 
 
 def main():
+    failures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
         futs = [ex.submit(fetch_edf, s, u, z) for s, u, z in FILES] + \
                [ex.submit(fetch_events, s) for s, _, _ in FILES]
         for f in concurrent.futures.as_completed(futs):
             try:
-                print(f.result(), flush=True)
+                result = f.result()
+                print(result, flush=True)
+                if "失败" in result:
+                    failures.append(result)
             except Exception as e:
                 print("ERR", e, flush=True)
-    print("ALL DONE — 检查上面没有『不完整』字样即全量到位", flush=True)
+                failures.append(str(e))
+    print("ALL DONE — 全部文件校验通过" if not failures else
+          f"下载未完成：{len(failures)} 个文件失败；可重跑续传", flush=True)
+    return 0 if not failures else 1
 
 
 if __name__ == "__main__":

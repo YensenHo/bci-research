@@ -50,3 +50,6 @@ gate1_ssvep_local/
 
 # 日志
 *.log
+# ISRUC private local download and preprocessed data
+20260828/algorithm/isruc_raw/
+20260828/algorithm/isruc_data_subjects/
